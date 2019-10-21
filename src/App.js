@@ -11,16 +11,23 @@ import projects from './projects';
 
 function App() {
     const [projectsList, setProjectsList] = useState(projects)
-    function setSkills(skills){
+    function setSkills(skillsArr){
+        console.log(skillsArr)
         const newProjectsList = [];
-        projects.filter(project=>{
-            if(project.skills.includes(skills) && !newProjectsList.includes(project)){
-                newProjectsList.push(project)
-            }
-            return null;
-        })
-        setProjectsList(newProjectsList)
-        document.querySelector('.Projects').scrollIntoView();
+        if(skillsArr.length > 0){
+            projects.filter(project=>{
+                if(skillsArr.every(val => project.skills.includes(val))){
+                    newProjectsList.push(project)
+                }
+            })
+            console.log(newProjectsList)
+            setProjectsList(newProjectsList)
+        //
+        }else{
+            setProjectsList(projects)
+        }
+
+        // document.querySelector('.Projects').scrollIntoView();
 
     }
   return (

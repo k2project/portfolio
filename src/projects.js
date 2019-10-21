@@ -16,14 +16,14 @@ const rte = {
         'CSS3', 'HTML5', 'JavaScript', 'React','Node.js', 'Meteor.js','Sass',  'CSS Grid/Flexbox', 'Responsive Design',
     ],
     imgs:[
-        'rte_2.png',
+        'rte_1.png',
     ]
 }
 const grant = {
     name:(<span>Murray Grant <br/><small>Official Website</small></span>),
     desc:(<p>A responsive SPA built with React.js. This project featurs all businesses of a local entrepreneur. End-to-end commercial project delivered with Agile methodology. Features: multiple reusable swipeable carousels and HTML5 Video.</p>),
     skills:[
-        'CSS3', 'HTML5', 'JavaScript', 'React', 'GitHub', 'Sass', 'SVG', 'CSS Grid/Flexbox', 'Responsive Design',
+        'CSS3', 'HTML5', 'JavaScript', 'React', 'GitHub', 'Sass', 'CSS Grid/Flexbox', 'Responsive Design',
     ],
     imgs:[
         'grant_1.png',
@@ -66,7 +66,7 @@ const spm = {
         'CSS3', 'HTML5','jQuery','Responsive Design',
     ],
     imgs:[
-        'spm_1.png',
+        'spm_2.png',
     ]
 }
 const donutChart = {
@@ -93,13 +93,13 @@ const cards = {
 const projects = [
     grant,
     rte,
-    amb,
     calvocoressi,
     game,
+    donutChart,
+    cards,
+    amb,
     mcBride,
     spm,
-    cards,
-    donutChart,
 
 ]
 export default projects;

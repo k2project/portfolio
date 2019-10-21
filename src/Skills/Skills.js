@@ -6,11 +6,25 @@ const mainSkillsList = ['CSS3', 'HTML5', 'JavaScript', 'React'];
 const otherSkillsList = [ 'jQuery','Node.js', 'Meteor.js', 'GitHub', 'Heroku','Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design',];
 
 function Skills(props) {
+
+    let skillsArr = [];
+    
     function handleClick(e){
         const btn = e.target.closest('.Button');
         if(btn){
             const skills = btn.dataset.skills;
-            props.setSkills(skills)
+
+            btn.classList.toggle('selected');
+
+            if(btn.getAttribute("aria-pressed")==="true"){
+                btn.setAttribute("aria-pressed", "false")
+                skillsArr = skillsArr.filter(el=>el!==skills);
+            }else{
+                btn.setAttribute("aria-pressed", "true")
+                skillsArr.push(skills);
+            }
+
+            props.setSkills(skillsArr)
         }
     }
     useEffect(()=>{
@@ -21,6 +35,7 @@ function Skills(props) {
     })
     const mainSkills = mainSkillsList.map(skill=><Button
         dataSet={skill}
+        toggle
         key={"main_skill_"+skill}>
             <span className="sr-only">display</span>
             <b>{skill}</b>
@@ -29,6 +44,7 @@ function Skills(props) {
     const otherSkills = otherSkillsList.map(skill=><Button
         dataSet={skill}
         key={"main_skill_"+skill}
+        toggle
         secondary>
             <span className="sr-only">display</span>
             <span>{skill}</span>

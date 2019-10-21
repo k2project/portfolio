@@ -1,10 +1,23 @@
 import React, {useEffect} from 'react';
 import './Projects.scss';
+import gitHub from './../media/icons/gitHub.svg';
 
 
 
 function Projects(props) {
-    const projectsToDisplay = props.projects.map((project,i)=><Project project={project} key={i+'_'+project.name}/>)
+    let projects = props.projects;
+    if(props.projects.length % 3 === 1){
+        projects.push(null, null)
+    }else if(props.projects.length % 3 === 2){
+        projects.push(null)
+    }
+    const projectsToDisplay = projects.map((project,i)=>{
+        if(project !== null){
+            return <Project project={project} key={i+'_'+project.name}/>
+        }
+        return <ProjectNull key={i+'_emptyProject'}/>
+    })
+
     useEffect(()=>{
         const projectsList = document.querySelectorAll('.Project');
         projectsList.forEach((project,index)=>{
@@ -47,6 +60,13 @@ function Project(props){
                     {desc}
                 </div>
             </div>
+        </div>
+    )
+}
+function ProjectNull(){
+    return(
+        <div className="Project ProjectNull">
+            <img src={gitHub} alt=""/>
         </div>
     )
 }
