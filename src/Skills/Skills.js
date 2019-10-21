@@ -5,10 +5,9 @@ import Button from './../components/Button/Button';
 const mainSkillsList = ['CSS3', 'HTML5', 'JavaScript', 'React'];
 const otherSkillsList = [ 'jQuery','Node.js', 'Meteor.js', 'GitHub', 'Heroku','Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design',];
 
+let skillsArr = [];
 function Skills(props) {
 
-    let skillsArr = [];
-    
     function handleClick(e){
         const btn = e.target.closest('.Button');
         if(btn){

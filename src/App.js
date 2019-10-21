@@ -12,16 +12,16 @@ import projects from './projects';
 function App() {
     const [projectsList, setProjectsList] = useState(projects)
     function setSkills(skillsArr){
-        console.log(skillsArr)
         const newProjectsList = [];
         if(skillsArr.length > 0){
-            projects.filter(project=>{
+            console.log(skillsArr)
+            projects.forEach(project=>{
                 if(skillsArr.every(val => project.skills.includes(val))){
                     newProjectsList.push(project)
                 }
             })
-            console.log(newProjectsList)
             setProjectsList(newProjectsList)
+            console.log(newProjectsList)
         //
         }else{
             setProjectsList(projects)

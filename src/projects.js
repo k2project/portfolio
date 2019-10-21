@@ -73,7 +73,7 @@ const donutChart = {
     name:' Svg Animated Char',
     desc:(<p>A responsive SPA built with React.js. This project featurs all businesses of a local entrepreneur. End-to-end commercial project delivered with Agile methodology. Features: multiple reusable swipeable carousels and HTML5 Video.</p>),
     skills:[
-        'CSS3', 'HTML5','JavaScript', 'React','CSS Grid/Flexbox'
+        'CSS3', 'HTML5','JavaScript', 'React','CSS Grid/Flexbox', 'GitHub'
     ],
     imgs:[
         'donutChart_1.png',
@@ -83,7 +83,7 @@ const cards = {
     name:' Marvel Memory Game',
     desc:(<p>A responsive SPA built with React.js. This project featurs all businesses of a local entrepreneur. End-to-end commercial project delivered with Agile methodology. Features: multiple reusable swipeable carousels and HTML5 Video.</p>),
     skills:[
-        'CSS3', 'HTML5','JavaScript', 'React','CSS Grid/Flexbox'
+        'CSS3', 'HTML5','JavaScript', 'React','CSS Grid/Flexbox', 'GitHub'
     ],
     imgs:[
         'cards_1.png',
