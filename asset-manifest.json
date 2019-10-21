@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.27032f07.chunk.css",
+    "main.js": "/portfolio/static/js/main.f188602d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f188602d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
+    "static/js/2.3b043c71.chunk.js": "/portfolio/static/js/2.3b043c71.chunk.js",
+    "static/js/2.3b043c71.chunk.js.map": "/portfolio/static/js/2.3b043c71.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.8c0bfe5da77b8de358789de8d8fadb7e.js": "/portfolio/precache-manifest.8c0bfe5da77b8de358789de8d8fadb7e.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.27032f07.chunk.css.map": "/portfolio/static/css/main.27032f07.chunk.css.map",
+    "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.0e61dbcb.pdf",
+    "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.212e4b26.png",
+    "static/media/rte_1.png": "/portfolio/static/media/rte_1.995395c7.png",
+    "static/media/rte_2.png": "/portfolio/static/media/rte_2.02b32d89.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e92c632a.js",
+    "static/js/2.3b043c71.chunk.js",
+    "static/css/main.27032f07.chunk.css",
+    "static/js/main.f188602d.chunk.js"
+  ]
+}
