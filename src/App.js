@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
+import Header from './Header/Header';
+import About from './About/About';
+import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
+import Resume from './Resume/Resume';
+import Footer from './Footer/Footer';
+
+import projects from './projects';
 
 function App() {
+    const [projectsList, setProjectsList] = useState(projects)
+    function setSkills(skills){
+        const newProjectsList = [];
+        projects.filter(project=>{
+            if(project.skills.includes(skills) && !newProjectsList.includes(project)){
+                newProjectsList.push(project)
+            }
+        })
+        setProjectsList(newProjectsList)
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Portfolio">
+        <Header/>
+        <About/>
+        <Skills setSkills={setSkills}/>
+        <Projects projects={projectsList}/>
+        <Resume/>
+        <Footer/>
     </div>
   );
 }
