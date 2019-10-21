@@ -1,10 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Projects.scss';
 
 
 
 function Projects(props) {
-    const projectsToDisplay = props.projects.map(project=><Project project={project} key={project.name}/>)
+    const projectsToDisplay = props.projects.map((project,i)=><Project project={project} key={i+'_'+project.name}/>)
+    useEffect(()=>{
+        const projectsList = document.querySelectorAll('.Project');
+        projectsList.forEach((project,index)=>{
+            project.style.opacity = 0;
+            project.style.top = '150px';
+            project.style.transition = 'none';
+            setTimeout(()=>{
+                project.style.opacity = 1;
+                project.style.top = 0;
+                project.style.transition = '.5s ease-in-out';
+
+            },index*100+500)
+        })
+    })
   return (
     <div className="Projects" id="projects">
         {/* <div className="wrapper">

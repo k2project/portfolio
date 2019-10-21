@@ -17,8 +17,11 @@ function App() {
             if(project.skills.includes(skills) && !newProjectsList.includes(project)){
                 newProjectsList.push(project)
             }
+            return null;
         })
         setProjectsList(newProjectsList)
+        document.querySelector('.Projects').scrollIntoView();
+
     }
   return (
     <div className="Portfolio">

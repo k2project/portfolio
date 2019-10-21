@@ -10,12 +10,12 @@ function Header() {
             <a href="#resume">resume</a>
             <a href="https://github.com/k2project" target="_blank" rel="noopener noreferrer">
                 gitHub
-                <span class="sr-only">external link</span>
+                <span className="sr-only">external link</span>
 
             </a>
             <a href="https://twitter.com/_k2project" target="_blank" rel="noopener noreferrer">
                 twitter
-                <span class="sr-only">external link</span>
+                <span className="sr-only">external link</span>
             </a>
         </nav>
     </header>

@@ -22,17 +22,17 @@ function Skills(props) {
     const mainSkills = mainSkillsList.map(skill=><Button
         dataSet={skill}
         key={"main_skill_"+skill}>
-            <span class="sr-only">display</span>
+            <span className="sr-only">display</span>
             <b>{skill}</b>
-            <span class="sr-only">based projects</span>
+            <span className="sr-only">based projects</span>
         </Button>);
     const otherSkills = otherSkillsList.map(skill=><Button
         dataSet={skill}
         key={"main_skill_"+skill}
         secondary>
-            <span class="sr-only">display</span>
+            <span className="sr-only">display</span>
             <span>{skill}</span>
-            <span class="sr-only">based projects</span>
+            <span className="sr-only">based projects</span>
         </Button>);
   return (
     <div className="Skills" id="skills">

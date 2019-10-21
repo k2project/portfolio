@@ -13,7 +13,7 @@ const rte = {
     name:(<span>Rose Theatre Edinburgh <br/><small>Schaufuss Entertainment</small></span>),
     desc:(<p>A responsive SPA built with React.js. This project featurs all businesses of a local entrepreneur. End-to-end commercial project delivered with Agile methodology. Features: multiple reusable swipeable carousels and HTML5 Video.</p>),
     skills:[
-        'CSS3', 'HTML5', 'JavaScript', 'React','Node.js', 'Meteor.js','Sass', 'SVG',  'CSS Grid/Flexbox', 'Responsive Design',
+        'CSS3', 'HTML5', 'JavaScript', 'React','Node.js', 'Meteor.js','Sass',  'CSS Grid/Flexbox', 'Responsive Design',
     ],
     imgs:[
         'rte_2.png',
@@ -36,7 +36,7 @@ const calvocoressi = {
         'CSS3', 'HTML5', 'JavaScript', 'React','Node.js', 'GitHub', 'Heroku','Sass',  'CSS Grid/Flexbox','Responsive Design',
     ],
     imgs:[
-        'gameOn_1.png',
+        'calvocoressi_1.png',
     ]
 }
 const mcBride = {
@@ -46,7 +46,7 @@ const mcBride = {
         'CSS3', 'HTML5', 'JavaScript', 'React', 'GitHub', 'CSS Grid/Flexbox','Responsive Design',
     ],
     imgs:[
-        'gameOn_1.png',
+        'mcBride_1.png',
     ]
 }
 const amb = {
@@ -56,7 +56,7 @@ const amb = {
         'CSS3', 'HTML5', 'JavaScript', 'React', 'GitHub', 'CSS Grid/Flexbox','Responsive Design',
     ],
     imgs:[
-        'gameOn_1.png',
+        'amb_1.png',
     ]
 }
 const spm = {
@@ -66,7 +66,7 @@ const spm = {
         'CSS3', 'HTML5','jQuery','Responsive Design',
     ],
     imgs:[
-        'gameOn_1.png',
+        'spm_1.png',
     ]
 }
 const donutChart = {
@@ -76,7 +76,7 @@ const donutChart = {
         'CSS3', 'HTML5','JavaScript', 'React','CSS Grid/Flexbox'
     ],
     imgs:[
-        'gameOn_1.png',
+        'donutChart_1.png',
     ]
 }
 const cards = {
@@ -86,20 +86,20 @@ const cards = {
         'CSS3', 'HTML5','JavaScript', 'React','CSS Grid/Flexbox'
     ],
     imgs:[
-        'gameOn_1.png',
+        'cards_1.png',
     ]
 }
 // 'CSS3', 'HTML5', 'JavaScript', 'React','jQuery','Node.js', 'Meteor.js', 'GitHub', 'Heroku','Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design',
 const projects = [
     grant,
-    game,
     rte,
-    calvocoressi,
-    mcBride,
     amb,
+    calvocoressi,
+    game,
+    mcBride,
     spm,
-    donutChart,
     cards,
+    donutChart,
 
 ]
 export default projects;
