@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79eb9b7d6673e1cf038ce146071277ff",
+    "revision": "0aeeecfeeef37abb1e523473258926f3",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "d14a3b5f5495a134038f",
+    "revision": "23ff7d5b18882efce8a1",
     "url": "/portfolio/static/css/main.e9cc0f01.chunk.css"
   },
   {
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.eadc3613.chunk.js"
   },
   {
-    "revision": "d14a3b5f5495a134038f",
-    "url": "/portfolio/static/js/main.44d12aa5.chunk.js"
+    "revision": "23ff7d5b18882efce8a1",
+    "url": "/portfolio/static/js/main.b1925a24.chunk.js"
   },
   {
     "revision": "76aa8cbd67b5c937ec2c",
     "url": "/portfolio/static/js/runtime-main.e92c632a.js"
   },
   {
-    "revision": "0e61dbcb96213b7b32f4ecd5993d94f2",
-    "url": "/portfolio/static/media/KrisKopczynskiResume.0e61dbcb.pdf"
+    "revision": "a432478aaa49ac291567474627397571",
+    "url": "/portfolio/static/media/KrisKopczynskiResume.a432478a.pdf"
   },
   {
     "revision": "30bade5729ed413cd50b0a8bab2aed00",
