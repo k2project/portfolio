@@ -1,25 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27032f07.chunk.css",
-    "main.js": "/portfolio/static/js/main.f188602d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f188602d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.724a11ab.chunk.css",
+    "main.js": "/portfolio/static/js/main.df92a6c8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.df92a6c8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.3b043c71.chunk.js": "/portfolio/static/js/2.3b043c71.chunk.js",
-    "static/js/2.3b043c71.chunk.js.map": "/portfolio/static/js/2.3b043c71.chunk.js.map",
+    "static/js/2.eadc3613.chunk.js": "/portfolio/static/js/2.eadc3613.chunk.js",
+    "static/js/2.eadc3613.chunk.js.map": "/portfolio/static/js/2.eadc3613.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.8c0bfe5da77b8de358789de8d8fadb7e.js": "/portfolio/precache-manifest.8c0bfe5da77b8de358789de8d8fadb7e.js",
+    "precache-manifest.d9e5a9f51bea658a153a6d0d4a1bf637.js": "/portfolio/precache-manifest.d9e5a9f51bea658a153a6d0d4a1bf637.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.27032f07.chunk.css.map": "/portfolio/static/css/main.27032f07.chunk.css.map",
+    "static/css/main.724a11ab.chunk.css.map": "/portfolio/static/css/main.724a11ab.chunk.css.map",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.0e61dbcb.pdf",
-    "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.212e4b26.png",
+    "static/media/amb_1.png": "/portfolio/static/media/amb_1.38615fa0.png",
+    "static/media/calvocoressi_1.png": "/portfolio/static/media/calvocoressi_1.18e5c65f.png",
+    "static/media/calvocoressi_2.png": "/portfolio/static/media/calvocoressi_2.0a9cd3d3.png",
+    "static/media/cards_1.png": "/portfolio/static/media/cards_1.04f1c4fe.png",
+    "static/media/donutChart_1.png": "/portfolio/static/media/donutChart_1.86963a6f.png",
+    "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.8978ff60.png",
+    "static/media/gitHub.png": "/portfolio/static/media/gitHub.8a69dab0.png",
+    "static/media/mcBride_1.png": "/portfolio/static/media/mcBride_1.dca42f24.png",
     "static/media/rte_1.png": "/portfolio/static/media/rte_1.995395c7.png",
-    "static/media/rte_2.png": "/portfolio/static/media/rte_2.02b32d89.png"
+    "static/media/rte_2.png": "/portfolio/static/media/rte_2.02b32d89.png",
+    "static/media/spm_1.png": "/portfolio/static/media/spm_1.77859165.png",
+    "static/media/spm_2.png": "/portfolio/static/media/spm_2.00cf6964.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
-    "static/js/2.3b043c71.chunk.js",
-    "static/css/main.27032f07.chunk.css",
-    "static/js/main.f188602d.chunk.js"
+    "static/js/2.eadc3613.chunk.js",
+    "static/css/main.724a11ab.chunk.css",
+    "static/js/main.df92a6c8.chunk.js"
   ]
 }
