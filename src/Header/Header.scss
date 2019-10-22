@@ -26,11 +26,10 @@ nav{
  }
  @include mobile{
      .Header{
-         padding: 4rem 0 0;
+         padding: 4rem 4rem 0;
      }
 
      nav{
-         text-align: center;
          font-size: 1.4rem;
          a{
              padding: 0 .5rem;
@@ -39,9 +38,14 @@ nav{
 
  }
  @include mobile-sm{
+     .Header{
+         padding-right: 0;
+         padding-left: 0;
+     }
      nav{
+         text-align: center;
          font-size: 1.2rem;
-         
+
      }
 
  }

@@ -8,7 +8,7 @@ function About() {
             <p className="p_larger">
                 <b>
                     Hello!  <br/>
-                    I'm Kris, an Edinburgh based front-end web developer passionate about <span className="color_themed_secondary">React</span> and <span className="color_themed_secondary">WebAccessibility</span>.
+                    I'm Kris, an Edinburgh based front-end web developer passionate about <span className="color_themed_secondary">React</span> and <span className="color_themed_secondary">Web Accessibility</span>.
                 </b>
             </p>
             <p className="p_larger">

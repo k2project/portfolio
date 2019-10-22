@@ -98,6 +98,16 @@ p{
         width: 100%;
     }
 }
-@include tablet{}
-@include mobile{}
-@include mobile-sm{}
+@include tablet{
+    .p_larger{
+        font-size: 2.5rem;
+    }
+
+}
+@include mobile{
+}
+@include mobile-sm{
+    .p_larger{
+        font-size: 1.8rem;
+    }
+}
