@@ -43,15 +43,17 @@
 .Project:hover{
     .Project_desc{
         opacity: 1;
+        transition: .1s;
     }
     .Project_anim{
         opacity: 1;
         left: 0;
-        transition: .25s ease-in-out;
+        transition: .25s .2s ease-in-out;
     }
 }
 .ProjectNull{
     background: #eee;
+    background-image: linear-gradient(to right, #eee, #ebebeb);
     display: grid;
     align-content: center;
     text-align: center;

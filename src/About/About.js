@@ -12,7 +12,7 @@ function About() {
                 </b>
             </p>
             <p className="p_larger">
-                     I enjoy turning complex problems into simple, beautiful and intuitive applications. My goal is to make my work a better experience for every user.
+                     I enjoy turning complex problems into simple, beautiful and intuitive applications. My currrent goal is to learn how to make my work a better experience for every user!
             </p>
         </div>
     </div>
