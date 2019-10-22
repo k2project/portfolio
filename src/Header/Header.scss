@@ -39,12 +39,21 @@ nav{
  }
  @include mobile-sm{
      .Header{
+         background: $color_secondary_dark;
+         color: #fff;
          padding-right: 0;
          padding-left: 0;
+         padding-bottom: 3rem;
      }
      nav{
          text-align: center;
-         font-size: 1.2rem;
+         font-size: 1.1rem;
+         // display: grid;
+         // grid-template-columns: repeat(5, 1fr);
+         // justify-items:center;
+         a{
+             padding: 0 .8rem;
+         }
 
      }
 

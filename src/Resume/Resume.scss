@@ -1,10 +1,14 @@
 @import './../App.scss';
 
 .Resume{
-    // padding-top: 5rem;
     text-align: center;
-    // background: $color_grey;
     min-height: 55rem;
     display: grid;
     align-content: center;
+    padding: 0 8rem;
+}
+@include mobile-sm{
+    .Resume{
+        padding: 0 4rem;
+    }
 }
