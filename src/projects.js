@@ -5,7 +5,7 @@ const game = {
     skills:[
         'CSS3', 'HTML5', 'JavaScript', 'React', 'GitHub', 'Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design',
     ],
-    img:'gameOn_1.png',
+    img:'gameOn.gif',
     web:'https://k2project.github.io/game_On/',
     git:'https://github.com/k2project/game_On'
 }

@@ -49,7 +49,7 @@ function Project(props){
     }
     const cmlCls = !git ? 'toTop': '';
     return(
-        <a href={web} target="_blank" rel="noopener noreferrer" className="Project" style={projectStyle}>
+        <a href={web} target="_blank" rel="noopener noreferrer" className="Project" style={projectStyle} >
 
             <span className="sr-only">project's external link</span>
 
