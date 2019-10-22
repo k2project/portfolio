@@ -1,24 +1,16 @@
 @import './../App.scss';
 .Projects{
     background: $color_grey;
-    // padding: 2rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 18vw;
-    // grid-gap: 1rem;
-    .wrapper{
-        grid-column: span 3;
-    }
+
 }
 .Project{
-    display: grid;;
-    align-content: center;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
     opacity: 0;
     top: 5rem;
-    // box-shadow: 0 0 1rem 0 #cfcfcf;
 
 }
 .Project_desc{
@@ -35,9 +27,14 @@
     color: #fff;
     font-size: 1.4rem;
 }
-.Project_anim{
+.Project_title{
     opacity: 0;
-    left: -5rem;
+    top: 10rem;
+
+}
+.Project_details{
+    opacity: 0;
+    top: 5rem;
 
 }
 .Project:hover{
@@ -45,10 +42,11 @@
         opacity: 1;
         transition: .1s;
     }
-    .Project_anim{
+    .Project_title,
+    .Project_details{
         opacity: 1;
-        left: 0;
-        transition: .25s .2s ease-in-out;
+        top: 0;
+        transition: .4s .2s ease-in-out;
     }
 }
 .ProjectNull{
@@ -57,10 +55,23 @@
     display: grid;
     align-content: center;
     text-align: center;
-    img{
-        width: 8rem;
-        opacity: .1;
-        margin: auto;
-    }
 
+}
+.Project_git{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+}
+.Project_img{
+    width: 5rem;
+    padding: 1rem;
+    // position: absolute;
+    // top: 3rem;
+    // right: 0;
+}
+.ProjectNull_img{
+    width: 8rem;
+    opacity: .1;
+    margin: auto;
 }

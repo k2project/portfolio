@@ -13,7 +13,7 @@ const game = {
 }
 const rte = {
     name:(<span>Rose Theatre Edinburgh <br/><small>Schaufuss Entertainment</small></span>),
-    desc:(<p>Responsive SPA built with Meteor.j and React.js. End-to-end commercial project for a local theatre. Features: dynamically created routes based on a show's name and a customised contact form. I'm currently managing the website for running shows.</p>),
+    desc:(<p>Responsive SPA built with Meteor.j and React.js. End-to-end commercial project for a local theatre. Features: dynamically created routes based on a show's name and a customised contact form. </p>),
     skills:[
         'CSS3', 'HTML5', 'JavaScript', 'React','Node.js', 'Meteor.js','Sass',  'CSS Grid/Flexbox', 'Responsive Design',
     ],

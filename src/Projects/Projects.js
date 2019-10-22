@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './Projects.scss';
-import gitHub from './../media/icons/gitHub.svg';
+import gitHub from './../media/icons/gitHub.png';
 
 
 
@@ -34,11 +34,6 @@ function Projects(props) {
     })
   return (
     <div className="Projects" id="projects">
-        {/* <div className="wrapper">
-            <p className="p_large">
-                 I enjoy turning complex problems into simple, beautiful and intuitive applications. My goal is to make my work a better experience for every user. Take a look at my projects.
-            </p>
-        </div> */}
         {projectsToDisplay}
     </div>
   );
@@ -47,26 +42,35 @@ function Projects(props) {
 export default Projects;
 
 function Project(props){
-    let {name,desc, imgs} = props.project;
+    let {name,desc, imgs, web, git} = props.project;
     const bg = require('./../media/imgs/'+imgs[0]);
     const projectStyle={
         backgroundImage: "url("+bg+")",
     }
     return(
-        <div className="Project" style={projectStyle}>
+        <a href={web} target="_blank" rel="noopener noreferrer" className="Project" style={projectStyle}>
+            <span className="sr-only">project's external link</span>
             <div className="Project_desc">
-                <div className="Project_anim">
+                <div className="Project_title">
                     <b>{name}</b>
+                </div>
+                <div className="Project_details">
                     {desc}
                 </div>
             </div>
-        </div>
+            {git && <div className="Project_git">
+                <a href={git} target="_blank" rel="noopener noreferrer" aria-hidden="true" >
+                    <img src={gitHub} alt="" className="Project_img"/>
+                </a>
+            </div>}
+        </a>
     )
 }
 function ProjectNull(){
     return(
-        <div className="Project ProjectNull">
-            <img src={gitHub} alt=""/>
-        </div>
+        <a href="https://github.com/k2project" target="_blank" rel="noopener noreferrer" className="Project ProjectNull">
+            <img src={gitHub} alt="" className="ProjectNull_img"/>
+            <span className="sr-only">github account opens up in an external link</span>
+        </a>
     )
 }
