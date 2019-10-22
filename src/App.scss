@@ -41,7 +41,10 @@ $color_secondary_light:   #51CEFA;
         @content;
     }
 }
-
+// @include desktop-sm{}
+// @include tablet{}
+// @include mobile{}
+// @include mobile-sm{}
 // =====================
 //  global app styling
 //======================
@@ -89,3 +92,12 @@ p{
 .color_themed_secondary{
     color: $color_secondary_light;
 }
+
+@include desktop-sm{
+    .wrapper{
+        width: 100%;
+    }
+}
+@include tablet{}
+@include mobile{}
+@include mobile-sm{}

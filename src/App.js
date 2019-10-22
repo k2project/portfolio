@@ -33,11 +33,11 @@ function App() {
   return (
     <div className="Portfolio">
         <Header/>
-        <About/>
+        {/* <About/>
         <Skills setSkills={setSkills}/>
         <Projects projects={projectsList}/>
         <Resume/>
-        <Footer/>
+        <Footer/> */}
     </div>
   );
 }

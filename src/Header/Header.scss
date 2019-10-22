@@ -1,7 +1,7 @@
 @import './../App.scss';
 .Header{
     padding: 5rem 10rem 0;
-    
+
 }
 nav{
     text-align: right;
@@ -18,3 +18,30 @@ nav{
     font-size: 3rem;
     font-weight: bold;
 }
+ @include desktop-sm{}
+ @include tablet{
+     .Header{
+         padding: 4rem 4rem 0;
+     }
+ }
+ @include mobile{
+     .Header{
+         padding: 4rem 0 0;
+     }
+
+     nav{
+         text-align: center;
+         font-size: 1.4rem;
+         a{
+             padding: 0 .5rem;
+         }
+     }
+
+ }
+ @include mobile-sm{
+     nav{
+         font-size: 1.2rem;
+         
+     }
+
+ }
