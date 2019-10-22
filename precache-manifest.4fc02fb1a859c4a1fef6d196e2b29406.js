@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0aeeecfeeef37abb1e523473258926f3",
+    "revision": "5f17055956507053f035afbae30f7d4b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "23ff7d5b18882efce8a1",
-    "url": "/portfolio/static/css/main.e9cc0f01.chunk.css"
+    "revision": "bf4ce794302712d96a3d",
+    "url": "/portfolio/static/css/main.fc11be73.chunk.css"
   },
   {
-    "revision": "0a9430efc4ef3d989545",
-    "url": "/portfolio/static/js/2.eadc3613.chunk.js"
+    "revision": "2481fb949f08634d6a15",
+    "url": "/portfolio/static/js/2.350ee675.chunk.js"
   },
   {
-    "revision": "23ff7d5b18882efce8a1",
-    "url": "/portfolio/static/js/main.b1925a24.chunk.js"
+    "revision": "bf4ce794302712d96a3d",
+    "url": "/portfolio/static/js/main.ff521139.chunk.js"
   },
   {
     "revision": "76aa8cbd67b5c937ec2c",
     "url": "/portfolio/static/js/runtime-main.e92c632a.js"
   },
   {
-    "revision": "a432478aaa49ac291567474627397571",
-    "url": "/portfolio/static/media/KrisKopczynskiResume.a432478a.pdf"
+    "revision": "a3b08511de1fbf5a42561551eb3dadb8",
+    "url": "/portfolio/static/media/KrisKopczynskiResume.a3b08511.pdf"
   },
   {
-    "revision": "30bade5729ed413cd50b0a8bab2aed00",
-    "url": "/portfolio/static/media/amb_1.30bade57.png"
+    "revision": "3305f8147c8b016d28b0eefd6ed7f681",
+    "url": "/portfolio/static/media/amb_1.3305f814.png"
   },
   {
-    "revision": "b7ef527898dedac393f50520ba4d8934",
-    "url": "/portfolio/static/media/calvocoressi_1.b7ef5278.png"
+    "revision": "0edee3ae3fe3278517bbd35c98d01c6e",
+    "url": "/portfolio/static/media/calvocoressi_1.0edee3ae.png"
   },
   {
     "revision": "7ba465aa7f389bc4c3f12b677b50ec29",
@@ -56,8 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/gitHub.8a69dab0.png"
   },
   {
-    "revision": "58cab8c92281b78306a37c3a5e176bb7",
-    "url": "/portfolio/static/media/mcBride_1.58cab8c9.png"
+    "revision": "19b7f1813bef5649a4558842596ca397",
+    "url": "/portfolio/static/media/grant.19b7f181.png"
+  },
+  {
+    "revision": "ade5ee57dcd294c2d0bf1ccbf991e475",
+    "url": "/portfolio/static/media/mcBride_1.ade5ee57.png"
+  },
+  {
+    "revision": "28bf9d991f8e798361f88965f601839c",
+    "url": "/portfolio/static/media/rte_1.28bf9d99.png"
   },
   {
     "revision": "07bd298ced70b341170d67e239b4dcd8",
