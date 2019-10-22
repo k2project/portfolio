@@ -42,14 +42,18 @@ function Projects(props) {
 export default Projects;
 
 function Project(props){
-    let {name,desc, imgs, web, git} = props.project;
-    const bg = require('./../media/imgs/'+imgs[0]);
+    let {name,desc, img, web, git, cml} = props.project;
+    const bg = require('./../media/imgs/'+img);
     const projectStyle={
         backgroundImage: "url("+bg+")",
     }
+    const cmlCls = !git ? 'toTop': '';
     return(
         <a href={web} target="_blank" rel="noopener noreferrer" className="Project" style={projectStyle}>
+
             <span className="sr-only">project's external link</span>
+
+            {cml && <div className={"Project_cml "+cmlCls}>cml.</div>}
             <div className="Project_desc">
                 <div className="Project_title">
                     <b>{name}</b>
@@ -63,6 +67,7 @@ function Project(props){
                     <img src={gitHub} alt="" className="Project_img"/>
                 </a>
             </div>}
+
         </a>
     )
 }
