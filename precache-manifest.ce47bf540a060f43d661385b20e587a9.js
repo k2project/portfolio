@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4aee6991dd190a06ab7d0916a6ba1e35",
+    "revision": "d356adeb7277c67e2212810e4653a4d0",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "290241c1502f95270d47",
-    "url": "/portfolio/static/css/main.724a11ab.chunk.css"
+    "revision": "fa3d519e555b5a5e78ec",
+    "url": "/portfolio/static/css/main.3538003d.chunk.css"
   },
   {
     "revision": "0a9430efc4ef3d989545",
     "url": "/portfolio/static/js/2.eadc3613.chunk.js"
   },
   {
-    "revision": "290241c1502f95270d47",
-    "url": "/portfolio/static/js/main.df92a6c8.chunk.js"
+    "revision": "fa3d519e555b5a5e78ec",
+    "url": "/portfolio/static/js/main.24ed24eb.chunk.js"
   },
   {
     "revision": "76aa8cbd67b5c937ec2c",
@@ -36,12 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/calvocoressi_2.0a9cd3d3.png"
   },
   {
+    "revision": "f86abb30ec23d53555ba4bc40332a8e4",
+    "url": "/portfolio/static/media/cards.f86abb30.gif"
+  },
+  {
     "revision": "04f1c4fecaa967c5056dde547a0409b6",
     "url": "/portfolio/static/media/cards_1.04f1c4fe.png"
   },
   {
-    "revision": "86963a6f79ab189aa0c4f4670ebbd453",
-    "url": "/portfolio/static/media/donutChart_1.86963a6f.png"
+    "revision": "a34aa1db59728c4d3726441652620552",
+    "url": "/portfolio/static/media/donutChart.a34aa1db.gif"
+  },
+  {
+    "revision": "a270b3131ec3fe615bcc6f187b7bdee4",
+    "url": "/portfolio/static/media/game.a270b313.gif"
   },
   {
     "revision": "8978ff60717c9396bddfb5416c26036f",
