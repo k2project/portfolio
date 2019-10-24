@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     opacity: 0;
     top: 5rem;
 
@@ -94,7 +94,7 @@
 }
 @include desktop-sm{
     .Projects{
-        grid-auto-rows: 25vw;
+        grid-auto-rows: 22vw;
     }
     .Project:nth-child(4){
         background-size: contain;
@@ -120,23 +120,18 @@
 
 }
 @include mobile{
+
     .Projects{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 50vw;
+        grid-auto-rows: 35vw;
 
     }
+
     .Project_desc{
-        font-size: 1.2rem;
-        padding-right: 12%;
+        font-size: 1rem;
+        padding: 2rem 5vw;
+        // padding-right: 12%;
     }
-    .Project:nth-child(2){
-        grid-row: 2;
 
-    }
-    .Project:nth-child(1){
-        grid-row: 1;
-
-    }
 }
 @include mobile-sm{
     .Projects{
@@ -145,9 +140,15 @@
 
     }
     .Project_desc{
-        font-size: 1.1rem;
         line-height: 1.4;
-        padding-right: 2rem;
+    }
+    .Project:nth-child(2){
+        grid-row: 2;
+
+    }
+    .Project:nth-child(1){
+        grid-row: 1;
+
     }
 
 }
