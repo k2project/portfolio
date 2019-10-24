@@ -1,17 +1,17 @@
 import React, {useEffect} from 'react';
 import './Skills.scss';
-import Button from './../components/Button/Button';
+import Button from './../../components/Button/Button';
 
-import reactIcon from './../media/icons/reactIcon.png';
-import css3Icon from './../media/icons/css3Icon.png';
-import html5Icon from './../media/icons/html5Icon.png';
-import jsIcon from './../media/icons/jsIcon.png';
-import sass from './../media/icons/sass.png';
-import gitHub from './../media/icons/gitHub.png';
-import heroku from './../media/icons/heroku.png';
-import jQuery from './../media/icons/jQuery.png';
-import meteor from './../media/icons/meteor.png';
-import nodeJs from './../media/icons/nodeJs.png';
+import reactIcon from './../../media/icons/reactIcon.png';
+import css3Icon from './../../media/icons/css3Icon.png';
+import html5Icon from './../../media/icons/html5Icon.png';
+import jsIcon from './../../media/icons/jsIcon.png';
+import sass from './../../media/icons/sass.png';
+import gitHub from './../../media/icons/gitHub.png';
+import heroku from './../../media/icons/heroku.png';
+import jQuery from './../../media/icons/jQuery.png';
+import meteor from './../../media/icons/meteor.png';
+import nodeJs from './../../media/icons/nodeJs.png';
 
 const mainSkillsList = ['CSS3', 'HTML5', 'JavaScript', 'React'];
 const otherSkillsList = [ 'jQuery','Node.js', 'Meteor.js', 'GitHub', 'Heroku','Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design',];

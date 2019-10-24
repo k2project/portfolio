@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './Projects.scss';
-import gitHub from './../media/icons/gitHub.png';
+import gitHub from './../../media/icons/gitHub.png';
 
 
 
@@ -43,7 +43,7 @@ export default Projects;
 
 function Project(props){
     let {name,desc, img, web, git, cml} = props.project;
-    const bg = require('./../media/imgs/'+img);
+    const bg = require('./../../media/imgs/'+img);
     const projectStyle={
         backgroundImage: "url("+bg+")",
     }
