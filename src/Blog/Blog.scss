@@ -1,6 +1,25 @@
 @import './../App.scss';
 .BlogPage{
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+.BlogPage_accordion{
+    height: 50rem;
+    background: $color_grey;
+    display: grid;
+    align-content: center;
+    margin-top: 4rem;
+    background-image: url('./../media/imgs/laptop.jpeg');
+    background-size: cover;
+    background-position: right top;
+    .wrapper{
+        padding-right: 20%;
+    }
+    .fill{
+        background: rgba($color_grey,.6);
+    }
+}
+.BlogPage_body{
+    padding: 10rem 0;
 }

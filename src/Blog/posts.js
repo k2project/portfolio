@@ -2,18 +2,18 @@ import React from 'react';
 
 
 const posts=[
-    {
-        id:'1',
-        title:'My first blog\'s post goes here'
-    },
-    {
-        id:'2',
-        title:'My second blog\'s post goes here'
-    },
-    {
-        id:'3',
-        title:'3'
-    },
+    // {
+    //     id:'1',
+    //     title:'My first blog\'s post goes here'
+    // },
+    // {
+    //     id:'2',
+    //     title:'My second blog\'s post goes here'
+    // },
+    // {
+    //     id:'3',
+    //     title:'3'
+    // },
 
 ]
 export default posts;

@@ -21,7 +21,7 @@ function Post() {
 
 
     return(
-        <BlogPage cls="Post">
+        <BlogPage cls="Post" post={post}>
             <h1>{post.title}</h1>
         </BlogPage>
     )
