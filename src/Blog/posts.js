@@ -5,10 +5,12 @@ const posts=[
     {
         id:'1',
         featured:true,
-        title:'Web development with accessibility in mind makes the internet a better place.',
+        title:'Web development with accessibility in mind.',
         date:'2019-10-24',
-        location:'Edinburgh',
-        image:'post1.jpeg',
+        image:{
+            path:'post1.jpeg',
+            position:'right center '
+        },
     },
 
 
@@ -35,4 +37,10 @@ export function getPostViaURL(location){
         return post;
     }
     return;
+}
+export function formatDate(date){
+    let _date = new Date(date);
+    const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "Novemebr", "December"];
+    return  months[(_date.getMonth() + 1)]+" " +_date.getDate() + ", " + _date.getFullYear()
+
 }

@@ -3,13 +3,15 @@
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+
 }
+
 .BlogPage_accordion{
     height: 50rem;
     background: $color_grey;
     display: grid;
     align-content: center;
-    margin-top: 4rem;
+    // margin-top: 4rem;
     background-image: url('./../media/blog/laptop.jpeg');
     background-size: cover;
     background-position: right top;
@@ -22,4 +24,20 @@
 }
 .BlogPage_body{
     padding: 10rem 0;
+}
+.accordion__blog{
+    font-size: 3rem;
+}
+.accordion__post_date{
+    margin-top: 5rem;
+    margin-bottom: -.5rem;
+}
+.accordion__post_title{
+    font-size: 3rem;
+    line-height: 1.2;
+}
+@include mobile-sm{
+    .Post .accordion__blog{
+        display: none;
+    }
 }
