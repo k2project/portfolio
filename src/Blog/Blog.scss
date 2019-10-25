@@ -10,14 +10,14 @@
     display: grid;
     align-content: center;
     margin-top: 4rem;
-    background-image: url('./../media/imgs/laptop.jpeg');
+    background-image: url('./../media/blog/laptop.jpeg');
     background-size: cover;
     background-position: right top;
     .wrapper{
         padding-right: 20%;
     }
     .fill{
-        background: rgba($color_grey,.6);
+        background: rgba($color_grey,.7);
     }
 }
 .BlogPage_body{

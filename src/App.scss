@@ -96,6 +96,7 @@ p{
 @include desktop-sm{
     .wrapper{
         width: 100%;
+        padding: 0 8rem;
     }
 }
 @include tablet{
@@ -109,5 +110,8 @@ p{
 @include mobile-sm{
     .p_larger{
         font-size: 1.8rem;
+    }
+    .wrapper{
+        padding: 0 4rem;
     }
 }

@@ -2,7 +2,7 @@
 
 .About{
     text-align: center;
-    padding: 8rem 8rem 14rem;
+    padding: 5rem 0 14rem;
 
 }
 @include desktop-sm{}
@@ -10,7 +10,7 @@
 @include mobile{}
 @include mobile-sm{
     .About{
-        padding: 6rem 2rem 12rem 4rem;
+        padding: 6rem 0 10rem;
 
     }
 }

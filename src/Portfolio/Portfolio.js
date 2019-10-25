@@ -19,9 +19,7 @@ const hashArr = ['skills', 'projects', 'resume'];
 function Portfolio() {
     //handle routing
     let history = useHistory();
-    if(window.location.pathname.length>1){
-        history.push('/')
-    }
+
     let hash = window.location.hash;
     hash = hash.slice(1,);
     if(hash && !hashArr.includes(hash)){

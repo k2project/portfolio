@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import Portfolio from './Portfolio/Portfolio';
 import Blog from './Blog/Blog';
@@ -15,7 +15,7 @@ function App() {
                 <Route exact path={`/`} component={Portfolio}/>
                 <Route  exact path={`/blog/`} component={Blog}/>
                 <Route  exact path={`/blog/:post`} component={Post}/>
-                <Route  component={Portfolio}/>
+                <Redirect from='*' to='/' />
             </Switch>
        </Router>
 

@@ -2,18 +2,15 @@ import React from 'react';
 
 
 const posts=[
-    // {
-    //     id:'1',
-    //     title:'My first blog\'s post goes here'
-    // },
-    // {
-    //     id:'2',
-    //     title:'My second blog\'s post goes here'
-    // },
-    // {
-    //     id:'3',
-    //     title:'3'
-    // },
+    {
+        id:'1',
+        featured:true,
+        title:'Web development with accessibility in mind makes the internet a better place.',
+        date:'2019-10-24',
+        location:'Edinburgh',
+        image:'post1.jpeg',
+    },
+
 
 ]
 export default posts;

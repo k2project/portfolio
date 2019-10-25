@@ -13,9 +13,14 @@ function BlogPage(props) {
                 <div className="BlogPage_accordion">
                     <div className="fill"></div>
                     <div className="wrapper">
-                        {props.post && <p className="p_larger">{props.post.title}</p>}
+                        <p className="p_large"><b> &#10094; KrisBlog &#x2215;&#10095; </b></p>
+
+                        {props.post && <div>
+                            <p className="p_larger">{props.post.title}</p>
+                            <p>{props.post.date}</p>
+                        </div>}
+
                         {!props.post && <div>
-                            <p className="p_larger"><b> &#10094; KrisBlog &#x2215;&#10095; </b></p>
                             <p className="p_larger">Bits and pieces on my journey to become a better web developer.</p>
                             <p>Feel free to comment on my post via <a href="https://twitter.com/_k2project" target="_blank" rel="noopener noreferrer">
                                     <b>my twitter</b>

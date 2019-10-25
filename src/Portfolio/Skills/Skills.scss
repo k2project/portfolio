@@ -1,6 +1,6 @@
 @import './../../App.scss';
 .Skills{
-    padding: 14rem 8rem 10rem;
+    padding: 14rem 0 10rem;
     background: $color_grey;
     text-align: center;
 
@@ -15,12 +15,16 @@
 @include desktop-sm{
 }
 @include tablet{
+    .Skills{
+        padding: 12rem 0 10rem;
+    }
     .Skills__desk{
         display: none;
     }
     .Skills__mob{
         display: block;
         text-align: center;
+        left: -.5rem;
     }
     .Skills__mob_main{
         margin-bottom: 4rem;
@@ -42,22 +46,20 @@
         margin-bottom: 3rem;
         img{
             height: 6.6rem;
-            margin: 0 .5rem;
+            margin: 0.5rem;
         }
     }
     .Skills__mob_other{
         img{
-            height: 3.5rem;
-            margin: 0 .7rem;
+            height: 4rem;
+            margin: 0.5rem .7rem;
             opacity: .1;
         }
     }
 
 }
 @include mobile-sm{
-    .Skills{
-        padding: 12rem 4rem 10rem;
-    }
+
     .Skills__mob_main{
         display: grid;
         grid-template-columns: 9rem 9rem;
