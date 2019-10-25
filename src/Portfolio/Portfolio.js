@@ -1,23 +1,39 @@
 import React, {useState, useEffect} from 'react';
+import { useHistory} from "react-router-dom";
 import './../App.scss';
+
 import Header from './../components/Header/Header';
+import Footer from './../components/Footer/Footer';
+
 import About from './About/About';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
 import Resume from './Resume/Resume';
-import Footer from './../components/Footer/Footer';
 
 import projects from './projects';
 
 //for resize function
 let projectsSelected = [];
+const hashArr = ['skills', 'projects', 'resume'];
 
 function Portfolio() {
+    //handle routing
+    let history = useHistory();
+    if(window.location.pathname.length>1){
+        history.push('/')
+    }
+    let hash = window.location.hash;
+    hash = hash.slice(1,);
+    if(hash && !hashArr.includes(hash)){
+        history.push('/')
+        window.scrollTo(0,0);
+
+    }
+
     const [projectsList, setProjectsList] = useState(projects)
     function setSkills(skillsArr){
         const newProjectsList = [];
         if(skillsArr.length > 0){
-            console.log(skillsArr)
             projects.forEach(project=>{
                 if(skillsArr.every(val => project.skills.includes(val))){
                     newProjectsList.push(project)
@@ -26,16 +42,15 @@ function Portfolio() {
             setProjectsList(newProjectsList)
             projectsSelected = newProjectsList;
             return newProjectsList;
-        //
         }else{
             setProjectsList(projects)
             projectsSelected = [];
         }
 
-        // document.querySelector('.Projects').scrollIntoView();
-
     }
     function handleResize(){
+        //display all projects when smaller viewscreen
+        //even when projects are selected in skills section
         if(document.documentElement.clientWidth > 1024){
             if(projectsSelected.length>0){
                 setProjectsList(projectsSelected);
@@ -49,6 +64,8 @@ function Portfolio() {
         }
     }
     useEffect(()=>{
+        handleGoBackBtn();
+
         window.addEventListener('resize', handleResize);
         return ()=>{
             window.removeEventListener('resize', handleResize);
@@ -68,3 +85,13 @@ function Portfolio() {
 }
 
 export default Portfolio;
+
+function handleGoBackBtn(){
+    let hash = window.location.hash;
+    hash = hash.slice(1,);
+    if(hash && hashArr.includes(hash)){
+        document.getElementById(hash).scrollIntoView({behavior:'smooth'});
+        return;
+    }
+    return;
+}

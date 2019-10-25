@@ -3,6 +3,24 @@
     padding: 5rem 10rem 0;
 
 }
+.Portfolio .Header{
+    nav a:first-child{
+        display: none;
+    }
+}
+
+.BlogPage{
+    nav a {
+        display: none;
+    }
+    nav a.link_portfolio,
+    nav a.link_twitter{
+        display: inline;
+    }
+}
+.BlogPage.Post nav a.link_blog{
+    display: inline;
+}
 nav{
     text-align: right;
     font-size: 1.8rem;
@@ -53,6 +71,9 @@ nav{
          // justify-items:center;
          a{
              padding: 0 .8rem;
+         }
+         a.link_resume{
+             display: none;
          }
 
      }

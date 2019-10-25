@@ -49,9 +49,7 @@ function Project(props){
     }
     const cmlCls = !git ? 'toTop': '';
     return(
-        <a href={web} target="_blank" rel="noopener noreferrer" className="Project" style={projectStyle} >
-
-            <span className="sr-only">project's external link</span>
+        <div className="Project" style={projectStyle} >
 
             {cml && <div className={"Project_cml "+cmlCls}>cml.</div>}
             <div className="Project_desc">
@@ -62,13 +60,16 @@ function Project(props){
                     {desc}
                 </div>
             </div>
+            <a href={web} target="_blank" rel="noopener noreferrer"  className="Project_web fill">
+                <span className="sr-only">project's external link</span>
+            </a>
             {git && <div className="Project_git">
                 <a href={git} target="_blank" rel="noopener noreferrer" aria-hidden="true" >
                     <img src={gitHub} alt="" className="Project_img"/>
                 </a>
             </div>}
 
-        </a>
+        </div>
     )
 }
 function ProjectNull(){
