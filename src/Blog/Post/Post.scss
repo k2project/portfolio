@@ -1,1 +1,29 @@
 @import './../../App.scss';
+
+.Post{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    p{
+        margin-bottom: 4rem;
+    }
+
+
+}
+p.Post_subtitle{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.Post_body{
+    a{
+        text-decoration: underline;
+    }
+}
+.Post_card{
+    padding: 4rem 6rem;
+    margin-bottom: 4rem;
+    background: $color_grey;
+    p{
+        margin: 2rem 0;
+    }
+}

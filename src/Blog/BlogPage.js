@@ -47,10 +47,11 @@ function AccordionBlog(){
     </div>
 }
 function AccordionPost(props){
-    let{title, date} = props.post;
+    let{title, subtitle, date} = props.post;
 
     return<div>
         <p className="accordion__post_date">{formatDate(date)}</p>
-        <p className="accordion__post_title">{title}</p>
+        <p className="accordion__post_title"><b>{title}</b> {subtitle && <small> <br/>{subtitle}</small> }</p>
+
     </div>
 }

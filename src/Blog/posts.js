@@ -1,18 +1,21 @@
-import React from 'react';
+import post1 from './posts/post1';
 
+// const postId={
+//     id:'',
+//     featured:false,
+//     title:'',
+//     subtitle:'',
+//     date:'YYYY-MM-DD',
+//     image:{
+//         path:'',
+//         position:'right center '
+//     },
+//     body:((<div className="Post_body"></div>),
+// }
+//export default postId;
 
 const posts=[
-    {
-        id:'1',
-        featured:true,
-        title:'Web development with accessibility in mind.',
-        date:'2019-10-24',
-        image:{
-            path:'post1.jpeg',
-            position:'right center '
-        },
-    },
-
+    post1,
 
 ]
 export default posts;
