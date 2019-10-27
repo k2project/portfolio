@@ -3,16 +3,18 @@
 .Post{
     font-size: 1.8rem;
     line-height: 1.8;
-    p{
-        margin-bottom: 4rem;
+    .BlogPage_body{
+        p{
+            margin-bottom: 4rem;
+        }
+        .Post_subtitle{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
     }
 
 
-}
-p.Post_subtitle{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
 }
 .Post_body{
     a{

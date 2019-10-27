@@ -26,7 +26,6 @@ function Post() {
     return(
         <BlogPage cls="Post" post={post}>
             <div className="wrapper">
-                <h1>{post.title}</h1>
                 {post.body}
             </div>
         </BlogPage>

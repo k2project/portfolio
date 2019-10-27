@@ -16,32 +16,39 @@
     background-image: url('./../media/blog/laptop.jpeg');
     background-size: cover;
     background-position: right top;
-    .wrapper{
-        padding-right: 20%;
-    }
+
     .fill{
         background: rgba($color_grey,.75);
+    }
+    h1{
+        line-height: 1.2;
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    h2{
+        font-weight: 400;
     }
 
 }
 .BlogPage_body{
     padding: 10rem 0;
 }
-p.accordion__blog{
+p.accordion__blogTag{
     font-size: 3rem;
 }
 p.accordion__post_date{
-    margin-top: -3rem;
-    top: 3.5rem;
-    font-size: 1.4rem;
+    width: 20rem;
+    border-bottom: solid .1rem #111;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
 }
-p.accordion__post_title{
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 0;
-}
+// p.accordion__post_title{
+//     font-size: 3rem;
+//     line-height: 1.2;
+//     margin-bottom: 0;
+// }
 @include mobile-sm{
-    .Post .accordion__blog{
-        display: none;
-    }
+    // .Post .accordion__blogTag{
+    //     display: none;
+    // }
 }

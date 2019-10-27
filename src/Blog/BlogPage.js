@@ -21,7 +21,7 @@ function BlogPage(props) {
                 <div className="BlogPage_accordion" style={styleDiv}>
                     <div className="fill"></div>
                     <div className="wrapper">
-                        <p className="accordion__blog"><b> &#10094; KrisBlog &#x2215;&#10095; </b></p>
+
                         {props.post && <AccordionPost post={props.post}/>}
                         {!props.post && <AccordionBlog/>}
                     </div>
@@ -39,6 +39,7 @@ export default BlogPage;
 
 function AccordionBlog(){
     return <div>
+        <p className="accordion__blogTag"><b> &#10094; KrisBlog &#x2215;&#10095; </b></p>
         <p className="p_larger">Bits and pieces on my journey to become a better web developer.</p>
         <p>Feel free to comment on my post via <a href="https://twitter.com/_k2project" target="_blank" rel="noopener noreferrer">
                 <b>my twitter</b>
@@ -50,8 +51,9 @@ function AccordionPost(props){
     let{title, subtitle, date} = props.post;
 
     return<div>
-        <p className="accordion__post_date">{formatDate(date)}</p>
-        <p className="accordion__post_title"><b>{title}</b> {subtitle && <small> <br/>{subtitle}</small> }</p>
+        <p className="accordion__post_date"><small>{formatDate(date)}</small></p>
+        <h1>{title}</h1>
+        {subtitle && <h2>{subtitle}</h2> }
 
     </div>
 }

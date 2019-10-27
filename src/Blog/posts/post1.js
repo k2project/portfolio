@@ -11,11 +11,14 @@ const post1={
         position:'right center '
     },
     body:(<div className="Post_body">
+        <p className="Post_subtitle">Mea culpa of self-taught web developer.</p>
+
         <p>As a self-taught web developer, I'm guilty of many coder's sins. However, not until very recently I have realised that my biggest wrongdoing was neglecting the semantic aspect of my code in favour of design and/or making my work easier. How many of us hate the default styling of Html button tag? I would very often favour styling div element with a button class as prefered solution. And that's only one of many...</p>
 
         <p className="Post_subtitle">Back to basics.</p>
 
-        <p>Attending React Meeting group in Edinburgh last month and being able to listen to <b>Kathleen McMahon</b>, a senior front engineer from O'Reilly Media, talk on <a href="https://noti.st/resource11/MZsVDq"><i>Accessibility-flavored React components make your design system delicious!</i></a> opened my eyes to two things. First of all, to how important it is to stick to the basics rules of coding. And secondly, to how often we forget to include all users in our design thoughts. Let's face it, there are not many tutorials for beginners out there that would emphasise the importance of the accessibility best practices. I get that at this stage of learning particularly, it is hard to implement that in the lectures due to the amount of information one wants to pass on so the content doesn't fell overwhelming. Also, it's not my intention to critise any of the tutors out there, for many of whom I have great respect and eternal gratitude for the hard work they do. My point is, that I would like to raise awareness of accessibilty so that we can tear down the accessibility barriers that make websites difficult or impossible for some people to use.  </p>
+        <p>Attending React Meeting group in Edinburgh last month and being able to listen to <b>Kathleen McMahon</b>, a senior front engineer from O'Reilly Media, talk on <a href="https://noti.st/resource11/MZsVDq"><i>Accessibility-flavored React components make your design system delicious!</i></a> opened my eyes to two things. First of all, to how important it is to stick to the basics rules of coding. And secondly, to how often we forget to include all users in our design thoughts. </p>
+        <p>Let's face it, there are not many tutorials for beginners out there that would emphasise the importance of the accessibility best practices. I get that at this stage of learning particularly, it is hard to implement that in the lectures due to the amount of information one wants to pass on so the content doesn't fell overwhelming. Also, it's not my intention to critise any of the tutors out there, for many of whom I have great respect and eternal gratitude for the hard work they do. My point is, that I would like to raise awareness of accessibilty so that we can tear down the accessibility barriers that make websites difficult or impossible for some people to use.  </p>
 
         <p className="Post_subtitle">Accessibility Standards and Guidelines.</p>
 
