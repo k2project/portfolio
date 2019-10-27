@@ -4,7 +4,6 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
 
-
 }
 
 .BlogPage_accordion{
@@ -24,9 +23,15 @@
         line-height: 1.2;
         font-size: 4rem;
         margin-top: 2rem;
+        width: 120%;
     }
     h2{
         font-weight: 400;
+        line-height: 1.4;
+        width: 120%;
+    }
+    .wrapper{
+        padding-right: 20%;
     }
 
 }
