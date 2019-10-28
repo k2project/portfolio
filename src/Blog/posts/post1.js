@@ -32,7 +32,7 @@ const post1={
         </div>
 
 
-        <p className="Post_subtitle"> Let's the learning commence!</p>
+        <p className="Post_subtitle"> Let the learning commence!</p>
 
         <p>According to WAI many aspects of accessibility are fairly easy to understand and implement. However, some solutions can be more complex and may need more knowledge and work to implement. Over the next few weeks, I will try to tackle as many challenges as possible in a bid to make my code in line with international web standards define for accessibility.</p>
     </div>),
