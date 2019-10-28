@@ -35,3 +35,34 @@
         margin: 2rem 0;
     }
 }
+
+@include tablet{
+    .Post{
+        font-size: 1.6rem;
+    }
+    .Post .wrapper{
+        width: 80%;
+        padding: 0;
+    }
+    .Post .BlogPage_body .Post_subtitle{
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+    .Post_card{
+        padding: 4rem;
+        font-size: 1.4rem;
+    }
+
+}
+@include mobile-sm{
+    .Post{
+        font-size: 1.4rem;
+    }
+    .Post .wrapper{
+        width: 90%;
+    }
+    .Post_card{
+        padding: 2rem 3rem ;
+        font-size: 1.2rem;
+    }
+}

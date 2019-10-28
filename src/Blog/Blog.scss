@@ -61,6 +61,7 @@ p.accordion__post_date{
         grid-template-columns: auto 1fr;
         grid-column-gap: 4rem;
         align-items: center;
+        padding-bottom: 3rem;
     }
     .BlogPostList__img{
         background-size: cover;
@@ -72,6 +73,47 @@ p.accordion__post_date{
         font-size: 2.5rem;
     }
     .BlogPostList__subtitle{
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@include tablet{
+    .BlogPage_accordion{
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .Blog__divider{
+        font-size: 1.6rem;
+    }
+    .BlogPostsList__recent{
+        a{
+            grid-template-columns: 1fr;
+            border-bottom: solid .2rem $color_grey;
+        }
+        .BlogPostList__img{
+            display: none;
+        }
+    }
+}
+
+@include mobile-sm{
+    .Blog__divider{
+        font-size: 1.4rem;
+    }
+    .BlogPostsList__recent{
+
+        .BlogPostList__title{
+            font-size: 1.8rem;
+        }
+        .BlogPostList__subtitle{
+            font-size: 1.4rem;
+        }
+        .BlogPostList__date{
+            font-size: 1rem;
+        }
     }
 }
