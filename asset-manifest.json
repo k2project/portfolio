@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.33b8c319.chunk.css",
-    "main.js": "/portfolio/static/js/main.4c9b87cd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4c9b87cd.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.8f07d8fb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8f07d8fb.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.36a44bd4.chunk.js": "/portfolio/static/js/2.36a44bd4.chunk.js",
-    "static/js/2.36a44bd4.chunk.js.map": "/portfolio/static/js/2.36a44bd4.chunk.js.map",
+    "static/js/2.176e8124.chunk.js": "/portfolio/static/js/2.176e8124.chunk.js",
+    "static/js/2.176e8124.chunk.js.map": "/portfolio/static/js/2.176e8124.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.5f87f5423484fe82c3b00551d880c56a.js": "/portfolio/precache-manifest.5f87f5423484fe82c3b00551d880c56a.js",
+    "precache-manifest.77275a474c31d989b6ea5867f140a11f.js": "/portfolio/precache-manifest.77275a474c31d989b6ea5867f140a11f.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.33b8c319.chunk.css.map": "/portfolio/static/css/main.33b8c319.chunk.css.map",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.a3b08511.pdf",
@@ -30,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
-    "static/js/2.36a44bd4.chunk.js",
+    "static/js/2.176e8124.chunk.js",
     "static/css/main.33b8c319.chunk.css",
-    "static/js/main.4c9b87cd.chunk.js"
+    "static/js/main.8f07d8fb.chunk.js"
   ]
 }
