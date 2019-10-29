@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 import './Blog.scss';
 
-import BlogPage from './BlogPage';
+import BlogPage from './BlogPage/BlogPage';
 
-import posts, {getPostLink, formatDate} from './posts';
+import posts, {getPostLink, formatDate} from './posts/posts';
 
 const postFreatured = posts.filter(post=>post.featured);
 

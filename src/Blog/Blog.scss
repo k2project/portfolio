@@ -1,51 +1,4 @@
 @import './../App.scss';
-.BlogPage{
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-
-}
-
-.BlogPage_accordion{
-    height: 50rem;
-    background: $color_grey;
-    display: grid;
-    align-content: center;
-    // margin-top: 4rem;
-    background-image: url('./../media/blog/laptop.jpeg');
-    background-size: cover;
-    background-position: right top;
-
-    .fill{
-        background: rgba($color_grey,.75);
-    }
-    h1{
-        line-height: 1.2;
-        font-size: 4rem;
-        margin-top: 2rem;
-    }
-    h2{
-        font-weight: 400;
-        line-height: 1.4;
-        font-size: 2.4rem;
-    }
-    .wrapper{
-        padding-right: 20%;
-    }
-
-}
-.BlogPage_body{
-    padding: 10rem 0;
-}
-p.accordion__blogTag{
-    font-size: 3rem;
-}
-p.accordion__post_date{
-    width: 20rem;
-    border-bottom: solid .1rem #111;
-    padding-bottom: .5rem;
-    margin-bottom: 1rem;
-}
 
 .Blog__divider{
     font-size: 2.4rem;
@@ -78,14 +31,7 @@ p.accordion__post_date{
 }
 
 @include tablet{
-    .BlogPage_accordion{
-        h1{
-            font-size: 3rem;
-        }
-        h2{
-            font-size: 2rem;
-        }
-    }
+    
     .Blog__divider{
         font-size: 1.6rem;
     }

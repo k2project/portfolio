@@ -1,4 +1,4 @@
-import post1 from './posts/post1';
+import post1 from './post1';
 
 // const postId={
 //     id:'',

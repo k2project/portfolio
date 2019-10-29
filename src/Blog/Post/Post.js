@@ -3,9 +3,9 @@ import { useHistory} from "react-router-dom";
 import {Helmet} from "react-helmet";
 import './Post.scss';
 
-import BlogPage from './../BlogPage';
+import BlogPage from './../BlogPage/BlogPage';
 
-import {getPostViaURL, getPostLink} from './../posts';
+import {getPostViaURL, getPostLink} from './../posts/posts';
 
 function Post() {
     console.log(window.location.pathname)
@@ -22,17 +22,19 @@ function Post() {
         history.push('/blog')
         return (null);
     }
-
+    //:og meta
     let img = require('./../../media/blog/'+post.image.path);
     img = 'https://k2project.github.io'+img;
+    let path = 'https://k2project.github.io/portfolio'+getPostLink(post);
 
     return(
         <BlogPage cls="Post" post={post}>
             <Helmet>
                <title>Kris Kopczynski Portfolio | Blog</title>
-               {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+               <link rel="canonical" href={path} />
+               <meta name="description" content={post.title+' '+post.subtitle}/>
                <meta property="og:title" content={post.title+' |Blog'} />
-                {/* <meta property="og:url" content={canonical} /> */}
+                <meta property="og:url" content={path} />
                 <meta property="og:description" content={post.subtitle} />
                 <meta property="og:image" content={img}/>
            </Helmet>
