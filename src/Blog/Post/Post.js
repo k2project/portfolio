@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory} from "react-router-dom";
 import {Helmet} from "react-helmet";
+
 import './Post.scss';
 
 import BlogPage from './../BlogPage/BlogPage';
@@ -33,10 +34,18 @@ function Post() {
                <title>Kris Kopczynski Portfolio | Blog</title>
                <link rel="canonical" href={path} />
                <meta name="description" content={post.title+' '+post.subtitle}/>
-               <meta property="og:title" content={post.title+' |Blog'} />
-                <meta property="og:url" content={path} />
-                <meta property="og:description" content={post.subtitle} />
-                <meta property="og:image" content={img}/>
+
+               <meta property="og:title" content={post.title+' | Kris\'Blog'} />
+               <meta property="og:url" content={path} />
+               <meta property="og:type" content="website" />
+               <meta property="og:description" content={post.subtitle} />
+               <meta property="og:image" content={img}/>
+
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:url" content={path} />
+                <meta name="twitter:title" content={post.title+' | Kris\'Blog'} />
+                <meta name="twitter:description" content={post.subtitle} />
+                <meta name="twitter:image" content={img}/>
            </Helmet>
             <div className="wrapper">
                 {post.body}

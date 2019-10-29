@@ -1,24 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 import './Blog.scss';
-
 import BlogPage from './BlogPage/BlogPage';
-
 import posts, {getPostLink, formatDate} from './posts/posts';
+import og from './../media/blog/og.png';
 
 const postFreatured = posts.filter(post=>post.featured);
 
 function Blog() {
 
-    const postsList = posts.map(post=>{
-
-    })
     return(
         <BlogPage>
+            <OpenGraph/>
+           {/* =======no posts========*/}
             {posts.length===0 && <div className="wrapper">
                 <p className="p_large"> I have no posts yet, but I'm working on it. Please check with me again later.</p>
             </div>}
+            {/* =======posts available========*/}
             {posts.length>0 && <div className="wrapper">
                 {postFreatured.length > 2 && <FeaturedPostList />}
                 <RecentPostList />
@@ -28,6 +28,28 @@ function Blog() {
 }
 
 export default Blog;
+
+function OpenGraph(){
+    return (
+        <Helmet>
+           <title>Kris Kopczynski Portfolio | Blog</title>
+           <link rel="canonical" href='https://k2project.github.io/portfolio/blog/' />
+           <meta name="description" content='Bits and pieces on my journey to become a better web developer.'/>
+
+           <meta property="og:title" content='Kris Kopczynski Portfolio | Blog' />
+           <meta property="og:url" content='https://k2project.github.io/portfolio/blog/' />
+           <meta property="og:type" content="website" />
+           <meta property="og:description" content='Bits and pieces on my journey to become a better web developer.' />
+           <meta property="og:image" content={'https://k2project.github.io'+og}/>
+
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:url" content='https://k2project.github.io/portfolio/blog/' />
+            <meta name="twitter:title" content='Kris Kopczynski Portfolio | Blog'/>
+            <meta name="twitter:description" content='Bits and pieces on my journey to become a better web developer.' />
+            <meta name="twitter:image" content={'https://k2project.github.io'+og}/>
+       </Helmet>
+   )
+}
 
 function FeaturedPostList(){
     const postFreaturedDisplay = postFreatured.map(post=><BlogPostDisplay post={post}/>)
