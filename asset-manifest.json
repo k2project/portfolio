@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.793b13f9.chunk.css",
-    "main.js": "/portfolio/static/js/main.ba4f874e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ba4f874e.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.a1874262.chunk.css",
+    "main.js": "/portfolio/static/js/main.dfbfc73b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dfbfc73b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.35c983cb.chunk.js": "/portfolio/static/js/2.35c983cb.chunk.js",
-    "static/js/2.35c983cb.chunk.js.map": "/portfolio/static/js/2.35c983cb.chunk.js.map",
+    "static/js/2.e7f995b2.chunk.js": "/portfolio/static/js/2.e7f995b2.chunk.js",
+    "static/js/2.e7f995b2.chunk.js.map": "/portfolio/static/js/2.e7f995b2.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.9e9af8f9c5e0585bf15f83e4cfa091f0.js": "/portfolio/precache-manifest.9e9af8f9c5e0585bf15f83e4cfa091f0.js",
+    "precache-manifest.07f4eac38d0db930a4703781fdcbf8ee.js": "/portfolio/precache-manifest.07f4eac38d0db930a4703781fdcbf8ee.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.793b13f9.chunk.css.map": "/portfolio/static/css/main.793b13f9.chunk.css.map",
+    "static/css/main.a1874262.chunk.css.map": "/portfolio/static/css/main.a1874262.chunk.css.map",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.a3b08511.pdf",
     "static/media/amb_1.png": "/portfolio/static/media/amb_1.3305f814.png",
     "static/media/calvocoressi_1.png": "/portfolio/static/media/calvocoressi_1.0edee3ae.png",
@@ -21,7 +21,7 @@
     "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.2118bef5.png",
     "static/media/gitHub.png": "/portfolio/static/media/gitHub.8a69dab0.png",
     "static/media/grant.png": "/portfolio/static/media/grant.19b7f181.png",
-    "static/media/laptop.jpeg": "/portfolio/static/media/laptop.c838cbd0.jpeg",
+    "static/media/BlogPage.scss": "/portfolio/static/media/laptop.c838cbd0.jpeg",
     "static/media/mcBride_1.png": "/portfolio/static/media/mcBride_1.ade5ee57.png",
     "static/media/post1.jpeg": "/portfolio/static/media/post1.5ca6029e.jpeg",
     "static/media/rte_1.png": "/portfolio/static/media/rte_1.28bf9d99.png",
@@ -29,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
-    "static/js/2.35c983cb.chunk.js",
-    "static/css/main.793b13f9.chunk.css",
-    "static/js/main.ba4f874e.chunk.js"
+    "static/js/2.e7f995b2.chunk.js",
+    "static/css/main.a1874262.chunk.css",
+    "static/js/main.dfbfc73b.chunk.js"
   ]
 }
