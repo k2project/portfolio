@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory} from "react-router-dom";
+import {Helmet} from "react-helmet";
 import './Post.scss';
 
 import BlogPage from './../BlogPage';
@@ -22,9 +23,19 @@ function Post() {
         return (null);
     }
 
+    let img = require('./../../media/blog/'+post.image.path);
+    img = 'https://k2project.github.io'+img;
 
     return(
         <BlogPage cls="Post" post={post}>
+            <Helmet>
+               <title>Kris Kopczynski Portfolio | Blog</title>
+               {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+               <meta property="og:title" content={post.title+' |Blog'} />
+                {/* <meta property="og:url" content={canonical} /> */}
+                <meta property="og:description" content={post.subtitle} />
+                <meta property="og:image" content={img}/>
+           </Helmet>
             <div className="wrapper">
                 {post.body}
             </div>
