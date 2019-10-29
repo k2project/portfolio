@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.33b8c319.chunk.css",
-    "main.js": "/portfolio/static/js/main.f2e5da50.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f2e5da50.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.4c9b87cd.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4c9b87cd.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
     "static/js/2.36a44bd4.chunk.js": "/portfolio/static/js/2.36a44bd4.chunk.js",
     "static/js/2.36a44bd4.chunk.js.map": "/portfolio/static/js/2.36a44bd4.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.6954051fb524164e22fdcc7c148e0556.js": "/portfolio/precache-manifest.6954051fb524164e22fdcc7c148e0556.js",
+    "precache-manifest.5f87f5423484fe82c3b00551d880c56a.js": "/portfolio/precache-manifest.5f87f5423484fe82c3b00551d880c56a.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.33b8c319.chunk.css.map": "/portfolio/static/css/main.33b8c319.chunk.css.map",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.a3b08511.pdf",
@@ -21,9 +21,9 @@
     "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.2118bef5.png",
     "static/media/gitHub.png": "/portfolio/static/media/gitHub.8a69dab0.png",
     "static/media/grant.png": "/portfolio/static/media/grant.19b7f181.png",
-    "static/media/BlogPage.scss": "/portfolio/static/media/laptop.c838cbd0.jpeg",
+    "static/media/laptop.jpeg": "/portfolio/static/media/laptop.c838cbd0.jpeg",
     "static/media/mcBride_1.png": "/portfolio/static/media/mcBride_1.ade5ee57.png",
-    "static/media/og.png": "/portfolio/static/media/og.00a31ffd.png",
+    "static/media/og.png": "/portfolio/static/media/og.101a675f.png",
     "static/media/post1.jpeg": "/portfolio/static/media/post1.5ca6029e.jpeg",
     "static/media/rte_1.png": "/portfolio/static/media/rte_1.28bf9d99.png",
     "static/media/spm_1.png": "/portfolio/static/media/spm_1.07bd298c.png"
@@ -32,6 +32,6 @@
     "static/js/runtime-main.e92c632a.js",
     "static/js/2.36a44bd4.chunk.js",
     "static/css/main.33b8c319.chunk.css",
-    "static/js/main.f2e5da50.chunk.js"
+    "static/js/main.4c9b87cd.chunk.js"
   ]
 }
