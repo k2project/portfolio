@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a1874262.chunk.css",
-    "main.js": "/portfolio/static/js/main.dfbfc73b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.dfbfc73b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.33b8c319.chunk.css",
+    "main.js": "/portfolio/static/js/main.7ba25eb8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7ba25eb8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.e7f995b2.chunk.js": "/portfolio/static/js/2.e7f995b2.chunk.js",
-    "static/js/2.e7f995b2.chunk.js.map": "/portfolio/static/js/2.e7f995b2.chunk.js.map",
+    "static/js/2.36a44bd4.chunk.js": "/portfolio/static/js/2.36a44bd4.chunk.js",
+    "static/js/2.36a44bd4.chunk.js.map": "/portfolio/static/js/2.36a44bd4.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.07f4eac38d0db930a4703781fdcbf8ee.js": "/portfolio/precache-manifest.07f4eac38d0db930a4703781fdcbf8ee.js",
+    "precache-manifest.af991e179abf6bb8db433e6b548cdd48.js": "/portfolio/precache-manifest.af991e179abf6bb8db433e6b548cdd48.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.a1874262.chunk.css.map": "/portfolio/static/css/main.a1874262.chunk.css.map",
+    "static/css/main.33b8c319.chunk.css.map": "/portfolio/static/css/main.33b8c319.chunk.css.map",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.a3b08511.pdf",
     "static/media/amb_1.png": "/portfolio/static/media/amb_1.3305f814.png",
     "static/media/calvocoressi_1.png": "/portfolio/static/media/calvocoressi_1.0edee3ae.png",
@@ -23,14 +23,15 @@
     "static/media/grant.png": "/portfolio/static/media/grant.19b7f181.png",
     "static/media/BlogPage.scss": "/portfolio/static/media/laptop.c838cbd0.jpeg",
     "static/media/mcBride_1.png": "/portfolio/static/media/mcBride_1.ade5ee57.png",
+    "static/media/og.png": "/portfolio/static/media/og.00a31ffd.png",
     "static/media/post1.jpeg": "/portfolio/static/media/post1.5ca6029e.jpeg",
     "static/media/rte_1.png": "/portfolio/static/media/rte_1.28bf9d99.png",
     "static/media/spm_1.png": "/portfolio/static/media/spm_1.07bd298c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
-    "static/js/2.e7f995b2.chunk.js",
-    "static/css/main.a1874262.chunk.css",
-    "static/js/main.dfbfc73b.chunk.js"
+    "static/js/2.36a44bd4.chunk.js",
+    "static/css/main.33b8c319.chunk.css",
+    "static/js/main.7ba25eb8.chunk.js"
   ]
 }
