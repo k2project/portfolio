@@ -10,7 +10,7 @@ const post1={
         path:'post1.jpeg',
         position:'right center '
     },
-    tags:['accessibility',],
+    tags:['Accessibility',],
     body:(<div className="Post_body">
         <p className="Post_subtitle">Mea culpa of the self-taught web developer.</p>
 

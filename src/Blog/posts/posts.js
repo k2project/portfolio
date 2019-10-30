@@ -18,6 +18,7 @@ import post2 from './post2';
 
 let posts=[
     post1,
+    post2,
 
 
 ]

@@ -13,7 +13,7 @@ function Tags(props) {
             }
         })
     })
-    const tagsList = tags.map(tag=><Button
+    let tagsList = tags.sort().map(tag=><Button
         dataSet={tag}
         toggle
         key={"tag_"+tag}>
@@ -45,7 +45,6 @@ function Tags(props) {
                     }
                 })
                 //display slected posts
-                console.log(tagsArr)
                 props.setPostsSelected(selectedPostsArr);
             }else{
                 //hide all selcted posts
