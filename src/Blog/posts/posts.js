@@ -3,8 +3,8 @@ import post2 from './post2';
 
 // const postId={
 //     id:'',
-//     featured:false,
 //     title:'',
+//     featured:false,
 //     subtitle:'',
 //     date:'YYYY-MM-DD',
 //     image:{
@@ -18,19 +18,14 @@ import post2 from './post2';
 
 let posts=[
     post1,
-    post2,
-    post1,
-    post2,
-    post1,
-    post2,
-    post1,
-    post2,
-    post1,
-    post2,
+
 
 ]
-export const postFreatured = posts.filter((post,i)=>post.featured && i<4);
 
+export const postFreatured = [
+    post1,
+
+]
 posts = posts.sort(function(a,b){
   return new Date(b.date) - new Date(a.date);
 });

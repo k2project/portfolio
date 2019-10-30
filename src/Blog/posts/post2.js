@@ -2,10 +2,9 @@ import React from 'react';
 
 const post2={
     id:'2',
-    featured:true,
     title:'Test',
     subtitle:'JavaScript\'s Interview Questions And Answers.',
-    date:'2019-10-28',
+    date:'2019-10-08',
     image:{
         path:'laptop.jpeg',
         position:'right center '

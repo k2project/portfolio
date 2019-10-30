@@ -1,4 +1,7 @@
 @import './../App.scss';
+.BlogPage__noPosts{
+    padding: 10rem 0;
+}
 
 .Blog__divider{
     font-size: 2.4rem;
@@ -58,8 +61,11 @@
 
 .BlogPostsList__featured{
     padding-bottom: 10rem;
-    a:last-child{
-        display: none;
+    // a:last-child{
+    //     display: none;
+    // }
+    .BlogPostLink__desc{
+        border: solid .2rem $color_grey;
     }
 }
 .BlogPostsList__featured,
@@ -81,7 +87,6 @@
     .BlogPostLink__desc{
         background: #fff;
         padding: 4rem 2rem;
-        border: solid .2rem $color_grey;
     }
     .BlogPostLink__title{
         font-size: 1.8rem;
@@ -95,6 +100,17 @@
     }
 
 
+}
+.BlogPostLink__star{
+    background: $color_secondary_light;
+    color: #fff;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
 }
 @include tablet{
 

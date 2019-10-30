@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import { NavLink } from 'react-router-dom';
 import './Tags.scss';
 import Button from './../../components/Button/Button';
 import posts from './../posts/posts';

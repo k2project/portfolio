@@ -9,7 +9,6 @@ import posts, { postFreatured, getPostLink, formatDate} from './posts/posts';
 import og from './../media/blog/og.png';
 
 
-
 function Blog() {
     const [postsSelected, setPostsSelected] = useState(false);
     return(
@@ -47,15 +46,17 @@ function OpenGraph(){
    )
 }
 function BlogNoPosts(){
-    return <div className="wrapper">
-        <p className="p_large"> I have no posts yet, but I'm working on it. Please check with me again later.</p>
+    return <div className="BlogPage__noPosts">
+        <div className="wrapper">
+            <p className="p_large"> I have no posts yet, but I'm working on it. Please check with me again later.</p>
+        </div>
     </div>
 }
 function BlogPostsList(){
     return(
         <div className="BlogPage__postsLists">
             <div className="wrapper">
-                {postFreatured.length > 2 && <FeaturedPostList />}
+                <FeaturedPostList />
                 <RecentPostList />
             </div>
         </div>
@@ -63,7 +64,7 @@ function BlogPostsList(){
 }
 
 function FeaturedPostList(){
-    const postFreaturedDisplay = postFreatured.map(post=><BlogPostLink post={post}/>)
+    const postFreaturedDisplay = postFreatured.map(post=><BlogPostLink post={post} key={'featuredPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__featured">
             <div className="Blog__divider"> Featured Posts</div>
@@ -74,7 +75,7 @@ function FeaturedPostList(){
     )
 }
 function RecentPostList(){
-    const postRecentDisplay = postFreatured.map(post=><BlogPostLink post={post}/>)
+    const postRecentDisplay = posts.map(post=><BlogPostLink post={post} key={'recentPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__recent">
             <div className="Blog__divider"> Most Recent Posts</div>
@@ -84,10 +85,12 @@ function RecentPostList(){
 }
 
 function BlogPostLink(props){
-    const{id, title, subtitle, date, image} = props.post;
+    const{id, title, subtitle, date, image, featured} = props.post;
     const bg = require('./../media/blog/'+image.path);
     return <NavLink to={getPostLink(props.post)} key={'props.post_'+id} className="BlogPostLink">
-        <div className="BlogPostLink__img" style={{backgroundImage:"url("+bg+")"}}></div>
+        <div className="BlogPostLink__img" style={{backgroundImage:"url("+bg+")"}}>
+            {featured && <span className="BlogPostLink__star">&#x2605;</span>}
+        </div>
         <div className="BlogPostLink__desc">
             <p className="BlogPostLink__title"><b>{title}</b></p>
             {subtitle && <p className="BlogPostLink__subtitle">{subtitle}</p>}
@@ -98,7 +101,7 @@ function BlogPostLink(props){
 
 function BlogPostSelected(props){
 
-    const displaySelectedPosts = props.postsSelected.map(post=><BlogPostLink post={post}/>)
+    const displaySelectedPosts = props.postsSelected.map(post=><BlogPostLink post={post} key={'selectedPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__selected ">
             <div className="wrapper">
