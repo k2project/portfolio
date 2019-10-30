@@ -5,10 +5,10 @@ import {Helmet} from "react-helmet";
 import './Blog.scss';
 import BlogPage from './BlogPage/BlogPage';
 import Tags from './Tags/Tags';
-import posts, {getPostLink, formatDate} from './posts/posts';
+import posts, { postFreatured, getPostLink, formatDate} from './posts/posts';
 import og from './../media/blog/og.png';
 
-const postFreatured = posts.filter(post=>post.featured);
+
 
 function Blog() {
     const [postsSelected, setPostsSelected] = useState(false);
@@ -67,7 +67,9 @@ function FeaturedPostList(){
     return(
         <div className="BlogPostsList__featured">
             <div className="Blog__divider"> Featured Posts</div>
-            {postFreaturedDisplay}
+            <div className="wrapper">
+                {postFreaturedDisplay}
+            </div>
         </div>
     )
 }
@@ -98,7 +100,7 @@ function BlogPostSelected(props){
 
     const displaySelectedPosts = props.postsSelected.map(post=><BlogPostLink post={post}/>)
     return(
-        <div className="BlogPostsList__selected">
+        <div className="BlogPostsList__selected ">
             <div className="wrapper">
                 {displaySelectedPosts}
             </div>

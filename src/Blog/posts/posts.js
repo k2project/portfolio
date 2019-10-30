@@ -16,12 +16,27 @@ import post2 from './post2';
 // }
 //export default postId;
 
-const posts=[
+let posts=[
+    post1,
+    post2,
+    post1,
+    post2,
+    post1,
+    post2,
+    post1,
+    post2,
     post1,
     post2,
 
 ]
+export const postFreatured = posts.filter((post,i)=>post.featured && i<4);
+
+posts = posts.sort(function(a,b){
+  return new Date(b.date) - new Date(a.date);
+});
+
 export default posts;
+
 
 function getTitleURL(title){
     return title.split(' ').map(t=>t.replace(/[^\w\s-]/gi, '')).filter(t=> t!=="").join('-').toLowerCase();

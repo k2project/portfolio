@@ -54,6 +54,16 @@
 .BlogPostsList__selected{
     background: $color_grey;
     padding: 10rem 0;
+}
+
+.BlogPostsList__featured{
+    padding-bottom: 10rem;
+    a:last-child{
+        display: none;
+    }
+}
+.BlogPostsList__featured,
+.BlogPostsList__selected{
     .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -71,6 +81,7 @@
     .BlogPostLink__desc{
         background: #fff;
         padding: 4rem 2rem;
+        border: solid .2rem $color_grey;
     }
     .BlogPostLink__title{
         font-size: 1.8rem;

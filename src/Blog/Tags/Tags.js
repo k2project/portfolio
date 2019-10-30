@@ -55,7 +55,7 @@ function Tags(props) {
             //check if buttons selected
             if(tagsSelected()){
                 document.querySelector('.BlogPage__postsLists').classList.add('hidden');
-                // document.querySelector('.BlogPage__tags').scrollIntoView({block: "end", inline: "nearest"});
+                document.querySelector('.BlogPage__tags').scrollIntoView({behavior:'smooth'});
                 document.querySelector('.BlogPage__tags').classList.add('selected');
 
             }else{
