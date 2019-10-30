@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import { NavLink } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 
@@ -6,11 +6,13 @@ import './Blog.scss';
 import BlogPage from './BlogPage/BlogPage';
 import Tags from './Tags/Tags';
 import posts, { postFreatured, getPostLink, formatDate} from './posts/posts';
+import LikesContext from './posts/LikesContext';
 import og from './../media/blog/og.png';
 
 
 function Blog() {
     const [postsSelected, setPostsSelected] = useState(false);
+
     return(
         <BlogPage>
             <OpenGraph/>
@@ -53,11 +55,13 @@ function BlogNoPosts(){
     </div>
 }
 function BlogPostsList(){
+    const likes =  JSON.parse(localStorage.getItem("k2BlogLikes")) || [];
     return(
         <div className="BlogPage__postsLists">
             <div className="wrapper">
                 <FeaturedPostList />
                 <RecentPostList />
+                {likes.length>0 && <BlogPostsLiked />}
             </div>
         </div>
     )
@@ -66,7 +70,7 @@ function BlogPostsList(){
 function FeaturedPostList(){
     const postFreaturedDisplay = postFreatured.map(post=><BlogPostLink post={post} key={'featuredPosts_'+post.id}/>)
     return(
-        <div className="BlogPostsList__featured">
+        <div className="BlogPostsList__featured" id="posts-featured">
             <div className="Blog__divider"> Featured Posts</div>
             <div className="wrapper">
                 {postFreaturedDisplay}
@@ -80,6 +84,25 @@ function RecentPostList(){
         <div className="BlogPostsList__recent">
             <div className="Blog__divider"> Most Recent Posts</div>
             {postRecentDisplay}
+        </div>
+    )
+}
+function BlogPostsLiked(){
+    const likes = useContext(LikesContext).likes;
+    const postsLiked = []
+    posts.forEach(post=>{
+        if(likes.includes(+post.id)){
+            postsLiked.push(post)
+        }
+    })
+    console.log(likes,postsLiked)
+    const postLikedDisplay = postsLiked.map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
+    return(
+        <div className="BlogPostsList__liked" id="posts-liked">
+            <div className="Blog__divider"> Posts You Saved</div>
+            <div className="wrapper">
+                {postLikedDisplay}
+            </div>
         </div>
     )
 }

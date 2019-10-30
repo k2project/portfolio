@@ -6,7 +6,7 @@
 
 }
 
-.BlogPage_accordion{
+.BlogPage__accordion{
     height: 50rem;
     background: $color_grey;
     display: grid;
@@ -19,6 +19,7 @@
     .fill{
         background: rgba($color_grey,.75);
     }
+
     h1{
         line-height: 1.2;
         font-size: 4rem;
@@ -46,10 +47,31 @@ p.accordion__post_date{
     padding-bottom: .5rem;
     margin-bottom: 1rem;
 }
+.PostsFeatured,
+.PostsLiked{
+    top: 2rem;
+    font-family:Arial;
+    font-size: 2.2rem;
+    line-height: 1;
+    // font-weight: bold;
+    text-align: right;
+    a{
+        color: $color_secondary_light;
+        font-size: 3.3rem;
+        padding-right: .5rem;
+        top: .2rem;
+    }
 
+}
+.PostsLiked a{
+    color: $color_primary;
+}
+.PostsFeatured{
+    padding-left: 2rem;
+}
 
 @include tablet{
-    .BlogPage_accordion{
+    .BlogPage__accordion{
         h1{
             font-size: 3rem;
         }

@@ -4,7 +4,7 @@ const post2={
     id:'2',
     featured:false,
     title:'Test',
-    subtitle:'JavaScript\'s Interview Questions And Answers.',
+    subtitle:'JavaScript\'s Interview Q&A.',
     date:'2019-10-30',
     image:{
         path:'js.png',
