@@ -4,13 +4,15 @@
     font-size: 1.8rem;
     line-height: 1.8;
     .BlogPage_body{
+        padding: 10rem 0;
         p{
             margin-bottom: 4rem;
         }
         .Post_subtitle{
             font-size: 3rem;
             font-weight: bold;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.4;
         }
     }
     .wrapper{

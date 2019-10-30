@@ -7,7 +7,7 @@ function Button(props) {
 
   return (
     <button className={btnClass}
-        data-skills={props.dataSet? props.dataSet : null}
+        data-gen={props.dataSet? props.dataSet : null}
         aria-pressed={props.toggle? 'false' : undefined}>
             <span className="Button_span_top"></span>
             <span className="Button_span_bottom"></span>

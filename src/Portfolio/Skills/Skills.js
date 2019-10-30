@@ -22,7 +22,7 @@ function Skills(props) {
     function handleClick(e){
         const btn = e.target.closest('.Button');
         if(btn){
-            const skills = btn.dataset.skills;
+            const skills = btn.dataset.gen;
 
             btn.classList.toggle('selected');
 

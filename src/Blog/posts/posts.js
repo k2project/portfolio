@@ -1,4 +1,5 @@
 import post1 from './post1';
+import post2 from './post2';
 
 // const postId={
 //     id:'',
@@ -10,12 +11,14 @@ import post1 from './post1';
 //         path:'',
 //         position:'right center '
 //     },
+//     tags:[],
 //     body:((<div className="Post_body"></div>),
 // }
 //export default postId;
 
 const posts=[
     post1,
+    post2,
 
 ]
 export default posts;

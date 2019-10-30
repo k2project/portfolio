@@ -1,16 +1,16 @@
 import React from 'react';
 
-const post1={
-    id:'1',
+const post2={
+    id:'2',
     featured:true,
-    title:'Web development with accessibility in mind...',
-    subtitle:'Why it is important to make sure that everyone is included!',
+    title:'Test',
+    subtitle:'JavaScript\'s Interview Questions And Answers.',
     date:'2019-10-28',
     image:{
-        path:'post1.jpeg',
+        path:'laptop.jpeg',
         position:'right center '
     },
-    tags:['accessibility','JavaScript'],
+    tags:['JavaScript', 'Q&A'],
     body:(<div className="Post_body">
         <p className="Post_subtitle">Mea culpa of the self-taught web developer.</p>
 
@@ -39,4 +39,4 @@ const post1={
     </div>),
 
 }
-export default post1;
+export default post2;

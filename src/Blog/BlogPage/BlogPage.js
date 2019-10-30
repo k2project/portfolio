@@ -9,12 +9,12 @@ import {formatDate} from './../posts/posts';
 function BlogPage(props) {
     const cls = props.cls? props.cls : '';
     const styleDiv = {};
-    // if(props.post && props.post.image){
-    //     const bg = require('./../../media/blog/'+props.post.image.path);
-    //     styleDiv.backgroundImage = "url("+bg+")";
-    //     styleDiv.backgroundPosition = props.post.image.position;
-    // }
-    
+    if(props.post && props.post.image){
+        const bg = require('./../../media/blog/'+props.post.image.path);
+        styleDiv.backgroundImage = "url("+bg+")";
+        styleDiv.backgroundPosition = props.post.image.position;
+    }
+
     return(
         <div className={"BlogPage "+cls}>
             <Header/>

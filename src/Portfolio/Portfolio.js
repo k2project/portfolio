@@ -15,7 +15,7 @@ import projects from './projects';
 
 import og from './../media/imgs/og.png';
 
-//for resize function
+//for resize function!!!
 let projectsSelected = [];
 const hashArr = ['skills', 'projects', 'resume'];
 

@@ -7,6 +7,10 @@
     margin-bottom: 3rem;
     border-bottom: solid .2rem $color_grey;
 }
+.Blog__divider.darker{
+    color: #ccc;
+    border-bottom:solid .1rem #ccc;
+}
 
 .BlogPostsList__recent{
     a{
@@ -16,22 +20,73 @@
         align-items: center;
         padding-bottom: 3rem;
     }
-    .BlogPostList__img{
+    .BlogPostLink__img{
         background-size: cover;
         background-repeat: no-repeat;
         width: 30rem;
         height: 20rem;
     }
-    .BlogPostList__title{
+    .BlogPostLink__title{
         font-size: 2.5rem;
     }
-    .BlogPostList__subtitle{
+    .BlogPostLink__subtitle{
         font-size: 1.8rem;
     }
 }
+.BlogPage__postsLists{
+    .BlogPostsList__featured,
+    .BlogPostsList__recent{
+        display: block;
+    }
+    padding: 10rem 0;
+    height: 100%;
+    transition: .5s;
+}
+.BlogPage__postsLists.hidden{
+    .BlogPostsList__featured,
+    .BlogPostsList__recent{
+        display: none;
+    }
+    height: 0;
+    padding: 0;
+    transition: .5s;
+}
+.BlogPostsList__selected{
+    background: $color_grey;
+    padding: 10rem 0;
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 2rem;
+    }
+    .BlogPostLink{
+        display: grid;
+        grid-template-rows: auto 1fr;
+    }
+    .BlogPostLink__img{
+        height: 20rem;
+        background-size: cover;
+    }
+    .BlogPostLink__desc{
+        background: #fff;
+        padding: 4rem 2rem;
+    }
+    .BlogPostLink__title{
+        font-size: 1.8rem;
+        margin: 0 0 -.5rem;
+    }
+    .BlogPostLink__subtitle{
+        font-size: 1.4rem;
+    }
+    .BlogPostLink__date{
+        font-size: 1rem;
+    }
 
+
+}
 @include tablet{
-    
+
     .Blog__divider{
         font-size: 1.6rem;
     }
@@ -40,7 +95,7 @@
             grid-template-columns: 1fr;
             border-bottom: solid .2rem $color_grey;
         }
-        .BlogPostList__img{
+        .BlogPostLink__img{
             display: none;
         }
     }
@@ -52,13 +107,13 @@
     }
     .BlogPostsList__recent{
 
-        .BlogPostList__title{
+        .BlogPostLink__title{
             font-size: 1.8rem;
         }
-        .BlogPostList__subtitle{
+        .BlogPostLink__subtitle{
             font-size: 1.4rem;
         }
-        .BlogPostList__date{
+        .BlogPostLink__date{
             font-size: 1rem;
         }
     }

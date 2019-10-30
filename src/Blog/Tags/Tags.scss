@@ -1,0 +1,9 @@
+@import './../../App.scss';
+
+.BlogPage__tags{
+    background: $color_grey;
+    padding: 10rem 0;
+}
+.BlogPage__tags.selected{
+    background: #fff;
+}
