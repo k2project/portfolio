@@ -16,9 +16,12 @@ function BlogPage(props) {
     const [likes, setLikes] = useState(savedPosts);
     savedPosts.arr =  JSON.parse(localStorage.getItem("k2BlogLikes")) || [];
     savedPosts.add = function(id){
-        this.arr.push(+id)
-        localStorage.setItem("k2BlogLikes", JSON.stringify(this.arr));
-        setLikes(this)
+        if(!this.arr.includes(+id)){
+            this.arr.push(+id)
+            localStorage.setItem("k2BlogLikes", JSON.stringify(this.arr));
+            setLikes(this)
+
+        }
 
     }
     savedPosts.remove = function(id){
@@ -33,7 +36,7 @@ function BlogPage(props) {
         styleDiv.backgroundImage = "url("+bg+")";
         styleDiv.backgroundPosition = props.post.image.position;
     }
-    console.log(likes.arr)
+    // console.log(likes.arr)
     return(
         <LikesProvider value={likes}>
             <div className={"BlogPage "+cls}>

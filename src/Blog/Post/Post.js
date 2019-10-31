@@ -64,23 +64,25 @@ export default Post;
 function PostSidebar(props){
     const likes = useContext(LikesContext);
     const [saved, setSaved] = useState(likes.arr.includes(+props.post.id))
+    console.log(props.post.id, likes.arr,likes.arr.includes(+props.post.id), saved)
     function handleClick(e){
         if(e.target.closest('button')){
             if(saved){
                 likes.remove(props.post.id);
                 setSaved(false);
-                console.log(likes)
             }else{
                 likes.add(props.post.id)
                 setSaved(true);
-                console.log(likes)
             }
         }
     }
-    const relatedPosts = getRelatedPosts(props.post);
-    console.log(relatedPosts)
-    // const relatedPost;
-    // const linkToRelatedPost;
+
+    function handleLinkClick(){
+        //without the saved value doesnt update
+        //useState is async
+        setSaved(likes.arr.includes(+relatedPost.id))
+    }
+    const relatedPost = getRelatedPosts(props.post);
     return(
         <div className="PostSidebar">
             <div className="PostSidebar__stickersBox" onClick={handleClick}>
@@ -97,10 +99,10 @@ function PostSidebar(props){
                     <span className="tooltip">Save In Browser</span>
                 </button>}
             </div>
-            {relatedPosts && <div className="PostSidebar__relatedPost">
-                <NavLink to={getPostLink(relatedPosts)} key={'related.postLink_'+relatedPosts.id}>
-                    <b>{relatedPosts.title}</b><br/>
-                    <small>{relatedPosts.subtitle}</small> <br/>
+            {relatedPost && <div className="PostSidebar__relatedPost">
+                <NavLink to={getPostLink(relatedPost)} onClick={handleLinkClick} key={'related.postLink_'+relatedPost.id}>
+                    <b>{relatedPost.title}</b><br/>
+                    <small>{relatedPost.subtitle}</small> <br/>
                     <i>Read more...</i>
                 </NavLink>
             </div>}
