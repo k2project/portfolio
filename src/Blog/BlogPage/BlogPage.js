@@ -6,7 +6,8 @@ import Footer from './../../components/Footer/Footer';
 import {postFreatured,formatDate} from './../posts/posts';
 import LikesContext from './../posts/LikesContext';
 
-localStorage.setItem("k2BlogLikes", JSON.stringify([1]))
+// localStorage.removeItem("k2BlogLikes");
+// localStorage.setItem("k2BlogLikes", JSON.stringify([1,2]))
 
 function BlogPage(props) {
     const cls = props.cls? props.cls : '';
@@ -61,13 +62,10 @@ function AccordionPost(props){
         <p className="accordion__post_date"><small>{formatDate(date)}</small></p>
         <h1>{title}</h1>
         {subtitle && <h2>{subtitle}</h2> }
-        <div>
-            {featured && <span>&#x2605;</span>}
-            {likes.includes(+id) && <span>&#9829;</span>}
+        <div className="accordion__post_stickers">
+            {featured && <span className="star">&#x2605;</span>}
+            {likes.includes(+id) && <span className="heart">&#9829;</span>}
         </div>
-
-        {/* {!saved && <button> <span>&#9825;</span> Save To Favourites</button> }
-        {saved && <button><span>&#9829;</span> Remove From Favourite</button>} */}
 
     </div>
 }

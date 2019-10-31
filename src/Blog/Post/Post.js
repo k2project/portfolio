@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { useHistory} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import './Post.scss';
 
 import BlogPage from './../BlogPage/BlogPage';
-
+import Button from './../../components/Button/Button';
 import {getPostViaURL, getPostLink} from './../posts/posts';
+import LikesContext from './../posts/LikesContext';
 
 function Post() {
     console.log(window.location.pathname)
@@ -49,8 +50,30 @@ function Post() {
            </Helmet>
             <div className="wrapper">
                 {post.body}
+                <ButtonsBox id={post.id}/>
             </div>
         </BlogPage>
     )
 }
 export default Post;
+
+function ButtonsBox(props){
+    const ctx = useContext(LikesContext);
+    const saved = ctx.likes.includes(+props.id);
+    function handleClick(e){
+        if(e.target.closest('button')){
+            console.log('clicked')
+            if(saved){
+                ctx.remove(props.id);
+            }else{
+                ctx.add(props.id)
+            }
+        }
+    }
+    return(
+        <div className="ButtonsBox center" onClick={handleClick}>
+            {saved && <Button centered> <span aria-hidden="true" className="heart">&#9825;</span> Remove From Favourite</Button>}
+            {!saved && <Button centered> <span aria-hidden="true" className="heart">&#9825;</span> Save To Favourite</Button>}
+        </div>
+    )
+}

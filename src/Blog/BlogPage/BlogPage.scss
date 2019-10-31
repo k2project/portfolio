@@ -5,7 +5,11 @@
     grid-template-rows: auto 1fr auto;
 
 }
-
+.BlogPage__accordion_post{
+    height: 50rem;
+    display: grid;
+    align-content: center;
+}
 .BlogPage__accordion{
     height: 50rem;
     background: $color_grey;
@@ -47,6 +51,7 @@ p.accordion__post_date{
     padding-bottom: .5rem;
     margin-bottom: 1rem;
 }
+
 .PostsFeatured,
 .PostsLiked{
     top: 2rem;
@@ -69,7 +74,24 @@ p.accordion__post_date{
 .PostsFeatured{
     padding-left: 2rem;
 }
-
+.accordion__post_stickers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 5rem 5rem;
+    grid-auto-rows: 5rem;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #fff;
+    text-align: center;
+    .heart{
+        background: $color_primary;
+    }
+    .star{
+        background:$color_secondary_light;
+    }
+}
 @include tablet{
     .BlogPage__accordion{
         h1{

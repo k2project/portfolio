@@ -21,7 +21,21 @@
     .BlogPage_accordion .wrapper{
         padding-right: 0;
     }
+    .ButtonsBox .Button{
+        width: 22rem;
+    }
+    .ButtonsBox .Button_content{
+        width: 22rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
 
+    }
+    .ButtonsBox span.heart{
+        font-size: 3rem;
+        padding-right: .6rem;
+    }
 
 }
 .Post_body{

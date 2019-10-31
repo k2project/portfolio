@@ -2,8 +2,10 @@ import React, {useContext} from 'react';
 const saved = {}
 saved.likes =  JSON.parse(localStorage.getItem("k2BlogLikes")) || [];
 saved.add = function(id){
-    this.likes.push(id)
-    localStorage.setItem("k2BlogLikes", JSON.stringify(this.likes));
+    if(!this.likes.includes(id)){
+        this.likes.push(id)
+        localStorage.setItem("k2BlogLikes", JSON.stringify(this.likes));
+    }
 
 }
 saved.remove = function(id){
