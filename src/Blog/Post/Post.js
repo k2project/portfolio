@@ -1,4 +1,5 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
 import { useHistory} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
@@ -6,10 +7,13 @@ import './Post.scss';
 
 import BlogPage from './../BlogPage/BlogPage';
 import Button from './../../components/Button/Button';
-import {getPostViaURL, getPostLink} from './../posts/posts';
+import {getPostViaURL, getPostLink, getRelatedPosts} from './../posts/posts';
 import LikesContext from './../posts/LikesContext';
 
 function Post() {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    })
     // console.log(window.location.pathname)
     const post = getPostViaURL(window.location);
     let history = useHistory();
@@ -73,6 +77,10 @@ function PostSidebar(props){
             }
         }
     }
+    const relatedPosts = getRelatedPosts(props.post);
+    console.log(relatedPosts)
+    // const relatedPost;
+    // const linkToRelatedPost;
     return(
         <div className="PostSidebar">
             <div className="PostSidebar__stickersBox" onClick={handleClick}>
@@ -82,16 +90,20 @@ function PostSidebar(props){
                 </div>}
                 {saved && <button className="saved">
                     <span aria-hidden="true" className="heart">&#9825;</span>
-                    <span>Remove From Favourite</span>
+                    <span className="tooltip">Remove From Saved</span>
                 </button>}
                 {!saved && <button className="unsaved">
                     <span aria-hidden="true" className="heart">&#9825;</span>
-                    <span>Add To Favourite</span>
+                    <span className="tooltip">Save In Browser</span>
                 </button>}
             </div>
-            <div className="PostSidebar__relatedPost">
-                another post link goes here...
-            </div>
+            {relatedPosts && <div className="PostSidebar__relatedPost">
+                <NavLink to={getPostLink(relatedPosts)} key={'related.postLink_'+relatedPosts.id}>
+                    <b>{relatedPosts.title}</b><br/>
+                    <small>{relatedPosts.subtitle}</small> <br/>
+                    <i>Read more...</i>
+                </NavLink>
+            </div>}
         </div>
 
     )

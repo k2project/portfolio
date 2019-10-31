@@ -99,17 +99,60 @@
         color: #fff;
         border: solid .1rem $color_grey;
     }
+    .tooltip{
+        position: absolute;
+        width: 15rem;
+        background: $color_grey;
+        font-size: 1rem;
+        color: #111;
+        height: 4rem;
+        line-height: 1;
+        top: .5rem;
+        right: 0;
+        //anim
+        opacity: 0;
+        z-index: -1;
+        display: grid;
+        align-content: center;
+    }
+    .tooltip::after{
+        content:'';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 1rem 1rem 1rem;
+        border-color: transparent transparent $color_grey transparent;
+        position: absolute;
+        top: -.9rem;
+        right: 1.5rem;
+    }
+    .unsaved:hover,
+    .saved:hover{
+        .tooltip{
+            top: 6rem;
+            z-index: 9;
+            opacity:1;
+            transition: .5s;
+
+        }
+    }
+
 }
+
 @keyframes animHeart{
     to{
         transform: scale(1);
     }
 }
 .PostSidebar__relatedPost{
-    font-size: 1.2rem;
-    padding-bottom: 40rem;
+    font-size: 1.4rem;
+    padding-bottom: 10rem;
+    line-height: 1.2;
+    color: $color_grey_darker;
     // padding-top: 2rem;
 }
+
 @include tablet{
     .Post{
         font-size: 1.6rem;

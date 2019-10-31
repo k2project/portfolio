@@ -1,11 +1,11 @@
 import React from 'react';
 
-const post2={
-    id:'2',
+const post3={
+    id:'3',
     featured:false,
-    title:'Test. Post 2. What about getting ready for the interview?',
+    title:'Test. Post 3.',
     subtitle:'JavaScript\'s Interview Q&A.',
-    date:'2019-10-30',
+    date:'2019-10-31',
     image:{
         path:'js.png',
         position:'right center '
@@ -19,4 +19,4 @@ const post2={
     </div>),
 
 }
-export default post2;
+export default post3;
