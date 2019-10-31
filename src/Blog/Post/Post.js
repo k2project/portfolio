@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import { useHistory} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
@@ -10,7 +10,7 @@ import {getPostViaURL, getPostLink} from './../posts/posts';
 import LikesContext from './../posts/LikesContext';
 
 function Post() {
-    console.log(window.location.pathname)
+    // console.log(window.location.pathname)
     const post = getPostViaURL(window.location);
     let history = useHistory();
     if(!post){
@@ -49,31 +49,50 @@ function Post() {
                 <meta name="twitter:image" content={img}/>
            </Helmet>
             <div className="wrapper">
+                <PostSidebar post={post}/>
                 {post.body}
-                <ButtonsBox id={post.id}/>
             </div>
         </BlogPage>
     )
 }
 export default Post;
 
-function ButtonsBox(props){
-    const ctx = useContext(LikesContext);
-    const saved = ctx.likes.includes(+props.id);
+function PostSidebar(props){
+    const likes = useContext(LikesContext);
+    const [saved, setSaved] = useState(likes.arr.includes(+props.post.id))
     function handleClick(e){
         if(e.target.closest('button')){
-            console.log('clicked')
             if(saved){
-                ctx.remove(props.id);
+                likes.remove(props.post.id);
+                setSaved(false);
+                console.log(likes)
             }else{
-                ctx.add(props.id)
+                likes.add(props.post.id)
+                setSaved(true);
+                console.log(likes)
             }
         }
     }
     return(
-        <div className="ButtonsBox center" onClick={handleClick}>
-            {saved && <Button centered> <span aria-hidden="true" className="heart">&#9825;</span> Remove From Favourite</Button>}
-            {!saved && <Button centered> <span aria-hidden="true" className="heart">&#9825;</span> Save To Favourite</Button>}
+        <div className="PostSidebar">
+            <div className="PostSidebar__stickersBox" onClick={handleClick}>
+                {props.post.featured && <div>
+                    <span className="star" aria-hidden="true">&#x2605;</span>
+                    <span className="sr-only">featured post</span>
+                </div>}
+                {saved && <button className="saved">
+                    <span aria-hidden="true" className="heart">&#9825;</span>
+                    <span>Remove From Favourite</span>
+                </button>}
+                {!saved && <button className="unsaved">
+                    <span aria-hidden="true" className="heart">&#9825;</span>
+                    <span>Add To Favourite</span>
+                </button>}
+            </div>
+            <div className="PostSidebar__relatedPost">
+                another post link goes here...
+            </div>
         </div>
+
     )
 }

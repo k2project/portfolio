@@ -112,16 +112,23 @@
 .BlogPostLink__img{
     background-position: 60% center;
 }
-.BlogPostLink__star{
-    background: $color_secondary_light;
+.BlogPostLink__stickers{
+    display: grid;
+    grid-template-rows: 4rem 4rem;
     color: #fff;
     font-size: 3rem;
+    line-height: 4rem;
     width: 4rem;
-    height: 4rem;
     position: absolute;
     right: 0;
     top: 0;
     text-align: center;
+    .heart{
+        background: $color_primary;
+    }
+    .star{
+        background: $color_secondary_light;
+    }
 }
 
 @include tablet{

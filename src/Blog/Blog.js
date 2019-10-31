@@ -88,14 +88,13 @@ function RecentPostList(){
     )
 }
 function BlogPostsLiked(){
-    const likes = useContext(LikesContext).likes;
+    const likes = useContext(LikesContext);
     const postsLiked = []
     posts.forEach(post=>{
-        if(likes.includes(+post.id)){
+        if(likes.arr.includes(+post.id)){
             postsLiked.push(post)
         }
     })
-    console.log(likes,postsLiked)
     const postLikedDisplay = postsLiked.map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__liked" id="posts-liked">
@@ -110,9 +109,13 @@ function BlogPostsLiked(){
 function BlogPostLink(props){
     const{id, title, subtitle, date, image, featured} = props.post;
     const bg = require('./../media/blog/'+image.path);
+    const likes = useContext(LikesContext);
     return <NavLink to={getPostLink(props.post)} key={'props.post_'+id} className="BlogPostLink">
         <div className="BlogPostLink__img" style={{backgroundImage:"url("+bg+")"}}>
-            {featured && <span className="BlogPostLink__star">&#x2605;</span>}
+            <div className="BlogPostLink__stickers">
+                {featured && <span className="star">&#x2605;</span>}
+                {likes.arr.includes(+id) && <span className="heart">&#9829;</span>}
+            </div>
         </div>
         <div className="BlogPostLink__desc">
             <p className="BlogPostLink__title"><b>{title}</b></p>
