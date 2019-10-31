@@ -25,7 +25,7 @@ function BlogPage(props) {
 
     }
     savedPosts.remove = function(id){
-        this.arr.splice(this.arr.indexOf(id), 1);
+        this.arr.splice(this.arr.indexOf(+id), 1);
         localStorage.setItem("k2BlogLikes", JSON.stringify(this.arr));
         setLikes(this)
     }

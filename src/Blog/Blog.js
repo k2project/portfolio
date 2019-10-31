@@ -90,12 +90,20 @@ function RecentPostList(){
 function BlogPostsLiked(){
     const likes = useContext(LikesContext);
     const postsLiked = []
-    posts.forEach(post=>{
-        if(likes.arr.includes(+post.id)){
-            postsLiked.push(post)
-        }
+    // posts.forEach(post=>{
+    //     if(likes.arr.includes(+post.id)){
+    //         postsLiked.push(post)
+    //     }
+    // })
+    likes.arr.forEach(id=>{
+        posts.forEach(post=>{
+            if(+id===+post.id){
+                postsLiked.push(post)
+            }
+        })
     })
-    const postLikedDisplay = postsLiked.map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
+    console.log(postsLiked)
+    const postLikedDisplay = postsLiked.reverse().map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__liked" id="posts-liked">
             <div className="Blog__divider"> Posts You Saved</div>

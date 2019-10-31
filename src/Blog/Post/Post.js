@@ -63,15 +63,16 @@ export default Post;
 
 function PostSidebar(props){
     const likes = useContext(LikesContext);
+    const [id, setId] = useState(props.post.id)
     const [saved, setSaved] = useState(likes.arr.includes(+props.post.id))
-    console.log(props.post.id, likes.arr,likes.arr.includes(+props.post.id), saved)
+    console.log(id,props.post.id, likes.arr,likes.arr.includes(+props.post.id), saved)
     function handleClick(e){
         if(e.target.closest('button')){
             if(saved){
-                likes.remove(props.post.id);
+                likes.remove(id);
                 setSaved(false);
             }else{
-                likes.add(props.post.id)
+                likes.add(id)
                 setSaved(true);
             }
         }
@@ -81,6 +82,7 @@ function PostSidebar(props){
         //without the saved value doesnt update
         //useState is async
         setSaved(likes.arr.includes(+relatedPost.id))
+        setId(relatedPost.id)
     }
     const relatedPost = getRelatedPosts(props.post);
     return(
