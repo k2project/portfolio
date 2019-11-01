@@ -130,7 +130,24 @@
         background: $color_secondary_light;
     }
 }
-
+.Blog__btn{
+    padding: 2rem 4rem;
+    font-weight: bold;
+}
+.Blog__pagination{
+    text-align: right;
+    padding-right: 1rem;
+    button{
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        border: solid .1rem $color_grey_darker;
+        color: $color_grey_darker;
+        margin: .2em;
+        text-align: center;
+    }
+}
 @include tablet{
 
     .Blog__divider{

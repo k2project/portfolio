@@ -5,11 +5,11 @@ import {Helmet} from "react-helmet";
 import './Blog.scss';
 import BlogPage from './BlogPage/BlogPage';
 import Tags from './Tags/Tags';
-import posts, { postFreatured, getPostLink, formatDate} from './posts/posts';
+import posts, { postFeatured, getPostLink, formatDate} from './posts/posts';
 import LikesContext from './posts/LikesContext';
 import og from './../media/blog/og.png';
 
-
+console.log(posts.length, posts.length/5,posts.length%5)
 function Blog() {
     const [postsSelected, setPostsSelected] = useState(false);
 
@@ -68,22 +68,54 @@ function BlogPostsList(){
 }
 
 function FeaturedPostList(){
-    const postFreaturedDisplay = postFreatured.map(post=><BlogPostLink post={post} key={'featuredPosts_'+post.id}/>)
+    const [arr, setArr] = useState(postFeatured.slice(0,6))
+    const postFreaturedDisplay = arr.map(post=><BlogPostLink post={post} key={'featuredPosts_'+post.id}/>)
+    function showAll(e){
+        e.target.remove();
+        setArr(postFeatured)
+    }
     return(
         <div className="BlogPostsList__featured" id="posts-featured">
             <div className="Blog__divider"> Featured Posts</div>
             <div className="wrapper">
                 {postFreaturedDisplay}
             </div>
+            {postFeatured.length>6 && <div className="txt_right">
+                <button class="Blog__btn" onClick={showAll}>Show all</button>
+            </div>}
         </div>
     )
 }
 function RecentPostList(){
-    const postRecentDisplay = posts.map(post=><BlogPostLink post={post} key={'recentPosts_'+post.id}/>)
+    //pagination
+    const n = 5; //number of posts displayed per page
+
+    const pages = posts.length%n? Math.floor(posts.length/n)+1 :posts.length/n;
+    const pagesList = new Array(pages).fill(posts.length).map((p,index,a)=><button
+        key={'pag_recentPosts_'+index}
+        data-page = {index}
+        onClick={getPage}>
+        <span className="sr-only">Posts from {index*n+1} to {index===a.length-1?p:index*n+n}</span>
+        {++index}
+    </button>)
+    function getPage(e){
+        const index = Number(e.target.closest('button').dataset.page);
+        const start = index*n;
+        const end = index*n+n
+        console.log(start, end,posts.slice(start,end))
+        setArr(posts.slice(start,end))
+    }
+
+    const [arr, setArr] = useState(posts.slice(0,n))
+    console.log(arr)
+    const postRecentDisplay = arr.map(post=><BlogPostLink post={post} key={'recentPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__recent">
             <div className="Blog__divider"> Most Recent Posts</div>
             {postRecentDisplay}
+            {posts.length>5 && <div className="Blog__pagination">
+                {pagesList}
+            </div>}
         </div>
     )
 }
@@ -102,7 +134,7 @@ function BlogPostsLiked(){
             }
         })
     })
-    console.log(postsLiked)
+
     const postLikedDisplay = postsLiked.reverse().map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__liked" id="posts-liked">

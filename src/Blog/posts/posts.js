@@ -21,13 +21,24 @@ let posts=[
     post1,
     post2,
     post3,
-
-]
-
-export const postFreatured = [
+    post1,
+    post2,
+    post3,
+    post1,
+    post2,
+    post3,
+    post3,
+    post1,
+    post1,
+    post1,
+    post1,
+    post1,
+    post1,
     post1,
 
 ]
+
+export const postFeatured = posts.filter(post=>post.featured);
 posts = posts.sort(function(a,b){
   return new Date(b.date) - new Date(a.date);
 });

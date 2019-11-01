@@ -2,7 +2,7 @@ import React from 'react';
 
 const post2={
     id:'2',
-    featured:false,
+    featured:true,
     title:'Test. Post 2. What about getting ready for the interview?',
     subtitle:'JavaScript\'s Interview Q&A.',
     date:'2019-10-30',

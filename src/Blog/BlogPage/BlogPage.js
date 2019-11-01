@@ -3,7 +3,7 @@ import './BlogPage.scss';
 import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
 
-import {postFreatured,formatDate} from './../posts/posts';
+import {postFeatured,formatDate} from './../posts/posts';
 import LikesContext, {LikesProvider, LikesConsumer} from './../posts/LikesContext';
 
 // localStorage.removeItem("k2BlogLikes");
@@ -104,7 +104,7 @@ function PostsFeatured(){
     return(
         <span className="PostsFeatured">
             <a href="#posts-featured" className="icon-heart" aria-hidden="true">&#9734;</a>
-            <span>{postFreatured.length}</span>
+            <span>{postFeatured.length}</span>
             <span className="sr-only">posts featured</span>
         </span>
     )

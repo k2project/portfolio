@@ -93,7 +93,9 @@ p{
 .color_themed_secondary{
     color: $color_secondary_light;
 }
-
+.txt_right{
+    text-align: right;
+}
 @include desktop-sm{
     .wrapper{
         width: 100%;
