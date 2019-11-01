@@ -89,31 +89,39 @@ function FeaturedPostList(){
 function RecentPostList(){
     //pagination
     const n = 5; //number of posts displayed per page
-
+    const [arr, setArr] = useState(posts.slice(0,n))
     const pages = posts.length%n? Math.floor(posts.length/n)+1 :posts.length/n;
     const pagesList = new Array(pages).fill(posts.length).map((p,index,a)=><button
         key={'pag_recentPosts_'+index}
         data-page = {index}
-        onClick={getPage}>
+        >
         <span className="sr-only">Posts from {index*n+1} to {index===a.length-1?p:index*n+n}</span>
         {++index}
     </button>)
     function getPage(e){
-        const index = Number(e.target.closest('button').dataset.page);
-        const start = index*n;
-        const end = index*n+n
-        console.log(start, end,posts.slice(start,end))
-        setArr(posts.slice(start,end))
+        if(e.target.closest('button')){
+
+            const index = Number(e.target.closest('button').dataset.page);
+            const start = index*n;
+            const end = index*n+n
+            console.log(index,start, end,posts.slice(+start,+end))
+            setArr([])
+            // setArr(posts.slice(8,9))
+            setTimeout(()=>{
+                setArr(posts.slice(start,end))
+
+            },0)
+        }
     }
 
-    const [arr, setArr] = useState(posts.slice(0,n))
-    console.log(arr)
+
+    console.log('@===>',arr, posts.length)
     const postRecentDisplay = arr.map(post=><BlogPostLink post={post} key={'recentPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__recent">
             <div className="Blog__divider"> Most Recent Posts</div>
             {postRecentDisplay}
-            {posts.length>5 && <div className="Blog__pagination">
+            {posts.length>5 && <div className="Blog__pagination" onClick={getPage}>
                 {pagesList}
             </div>}
         </div>

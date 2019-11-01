@@ -14,7 +14,11 @@
     color: #ccc;
     border-bottom:solid .1rem #ccc;
 }
-
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
 .BlogPostsList__recent{
     a{
         display: grid;
@@ -22,6 +26,8 @@
         grid-column-gap: 4rem;
         align-items: center;
         padding-bottom: 3rem;
+        animation: fadeIn .75s forwards;
+        opacity: 0;
     }
     .BlogPostLink__img{
         background-size: cover;
@@ -41,6 +47,8 @@
     .BlogPostsList__featured,
     .BlogPostsList__recent{
         display: block;
+        animation: fadeIn .75s forwards;
+        opacity: 0;
     }
     padding: 10rem 0;
     height: 100%;
