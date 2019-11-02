@@ -20,16 +20,15 @@ import post3 from './post3';
 let posts=[
     post1,
     post1,
+    post2,
+    post3,
+    post1,
+    post2,
+    post3,
     post1,
     post2,
     post2,
-    post2,
     post3,
-    post3,
-    post3,
-    post1,
-    post1,
-    post1,
 
 
 ]

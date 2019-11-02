@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 
@@ -90,6 +90,7 @@ function RecentPostList(){
     //pagination
     const n = 5; //number of posts displayed per page
     const [arr, setArr] = useState(posts.slice(0,n))
+    const [range, setRange] = useState(`1 - ${n}`)
     const pages = posts.length%n? Math.floor(posts.length/n)+1 :posts.length/n;
     const pagesList = new Array(pages).fill(posts.length).map((p,index,a)=><button
         key={'pag_recentPosts_'+index}
@@ -100,26 +101,29 @@ function RecentPostList(){
     </button>)
     function getPage(e){
         if(e.target.closest('button')){
-
             const index = Number(e.target.closest('button').dataset.page);
             const start = index*n;
             const end = index*n+n
-            console.log(index,start, end,posts.slice(+start,+end))
+            // console.log(index,start, end,posts.slice(+start,+end))
             setArr([])
-            // setArr(posts.slice(8,9))
+            setRange(`${index*n+1} - ${index===pagesList.length-1?posts.length:index*n+n}`)
             setTimeout(()=>{
                 setArr(posts.slice(start,end))
-
             },0)
+            setTimeout(()=>{
+                document.querySelector('.BlogPostsList__recent').scrollIntoView()
+            },100)
+
         }
     }
 
 
-    console.log('@===>',arr, posts.length)
+    // console.log('@===>',arr, posts.length)
     const postRecentDisplay = arr.map(post=><BlogPostLink post={post} key={'recentPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__recent">
-            <div className="Blog__divider"> Most Recent Posts</div>
+            <div className="Blog__divider"> Most Recent Posts </div>
+            {posts.length>5 && <div className="Blog__range">{range}</div>}
             {postRecentDisplay}
             {posts.length>5 && <div className="Blog__pagination" onClick={getPage}>
                 {pagesList}
@@ -129,7 +133,7 @@ function RecentPostList(){
 }
 function BlogPostsLiked(){
     const likes = useContext(LikesContext);
-    const postsLiked = []
+    let postsLiked = []
     // posts.forEach(post=>{
     //     if(likes.arr.includes(+post.id)){
     //         postsLiked.push(post)
@@ -142,14 +146,23 @@ function BlogPostsLiked(){
             }
         })
     })
-
-    const postLikedDisplay = postsLiked.reverse().map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
+    //from newly liked to oldest
+    postsLiked = postsLiked.reverse();
+    const [arr, setArr] = useState(postsLiked.slice(0,6))
+    function showAll(e){
+        e.target.remove();
+        setArr(postsLiked)
+    }
+    const postLikedDisplay = arr.map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
     return(
         <div className="BlogPostsList__liked" id="posts-liked">
             <div className="Blog__divider"> Posts You Saved</div>
             <div className="wrapper">
                 {postLikedDisplay}
             </div>
+            {postsLiked.length>6 && <div className="txt_right">
+                <button class="Blog__btn" onClick={showAll}>Show all</button>
+            </div>}
         </div>
     )
 }
