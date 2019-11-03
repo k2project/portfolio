@@ -92,7 +92,7 @@ function RecentPostList(){
     const [arr, setArr] = useState(posts.slice(0,n))
     const [range, setRange] = useState(`1 - ${n}`)
     const pages = posts.length%n? Math.floor(posts.length/n)+1 :posts.length/n;
-    const pagesList = new Array(pages).fill(posts.length).map((p,index,a)=><button
+    const pagesBtns = new Array(pages).fill(posts.length).map((p,index,a)=><button
         key={'pag_recentPosts_'+index}
         data-page = {index}
         >
@@ -100,19 +100,22 @@ function RecentPostList(){
         {++index}
     </button>)
     function getPage(e){
-        if(e.target.closest('button')){
-            const index = Number(e.target.closest('button').dataset.page);
+        let btn = e.target.closest('button');
+        if(btn){
+            const index = Number(btn.dataset.page);
             const start = index*n;
             const end = index*n+n
             // console.log(index,start, end,posts.slice(+start,+end))
             setArr([])
-            setRange(`${index*n+1} - ${index===pagesList.length-1?posts.length:index*n+n}`)
+            setRange(`${index*n+1} - ${index===pagesBtns.length-1?posts.length:index*n+n}`)
             setTimeout(()=>{
                 setArr(posts.slice(start,end))
             },0)
             setTimeout(()=>{
                 document.querySelector('.BlogPostsList__recent').scrollIntoView()
             },100)
+            document.querySelectorAll('.Blog__pagination button').forEach(btn=>btn.style.background='#fff');
+            btn.style.background='#f2f2f2';
 
         }
     }
@@ -126,7 +129,7 @@ function RecentPostList(){
             {posts.length>5 && <div className="Blog__range">{range}</div>}
             {postRecentDisplay}
             {posts.length>5 && <div className="Blog__pagination" onClick={getPage}>
-                {pagesList}
+                {pagesBtns}
             </div>}
         </div>
     )
