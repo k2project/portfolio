@@ -105,9 +105,12 @@ function RecentPostList(){
             const index = Number(btn.dataset.page);
             const start = index*n;
             const end = index*n+n
+            const rangeStart = index*n+1;
+            const rangeEnd = index===pagesBtns.length-1 ? posts.length : index*n+n;
+            let nums = rangeStart === rangeEnd ? rangeEnd : `${rangeStart} - ${rangeEnd}`;
             // console.log(index,start, end,posts.slice(+start,+end))
             setArr([])
-            setRange(`${index*n+1} - ${index===pagesBtns.length-1?posts.length:index*n+n}`)
+            setRange(nums)
             setTimeout(()=>{
                 setArr(posts.slice(start,end))
             },0)
