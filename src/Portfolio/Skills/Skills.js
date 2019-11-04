@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Skills.scss';
 import Button from './../../components/Button/Button';
 
@@ -37,12 +37,7 @@ function Skills(props) {
             props.setSkills(skillsArr)
         }
     }
-    useEffect(()=>{
-        document.querySelector('.Skills').addEventListener('click',handleClick)
-        return ()=>{
-            document.querySelector('.Skills').removeEventListener('click',handleClick)
-        }
-    })
+
     const mainSkills = mainSkillsList.map(skill=><Button
         dataSet={skill}
         toggle
@@ -61,7 +56,7 @@ function Skills(props) {
             <span className="sr-only">based projects</span>
         </Button>);
   return (
-    <div className="Skills" id="skills">
+    <div className="Skills" id="skills" onClick={handleClick}>
         <div className="wrapper">
             <div className="Skills__desk">
                 <div className="Skills__desk_main">

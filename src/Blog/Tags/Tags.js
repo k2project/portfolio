@@ -45,7 +45,9 @@ function Tags(props) {
                     }
                 })
                 //display slected posts
-                props.setPostsSelected(selectedPostsArr);
+                props.setPostsSelected(selectedPostsArr)
+                setTimeout(()=>{document.querySelector('.BlogPage__tags_posts').scrollIntoView()},100);
+
             }else{
                 //hide all selcted posts
                 props.setPostsSelected(false);
@@ -60,6 +62,7 @@ function Tags(props) {
                 document.querySelector('.BlogPage__postsLists').classList.remove('hidden');
                 document.querySelector('.BlogPage__tags').classList.remove('selected');
             }
+
 
         }
     }
@@ -78,6 +81,7 @@ function Tags(props) {
         <div className="BlogPage__tags">
             <div className="wrapper">
                 <div className="Blog__divider darker"> Tags</div>
+                <div className="BlogPage__tags_posts"></div>
                 {tagsList}
             </div>
         </div>

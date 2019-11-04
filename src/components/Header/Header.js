@@ -5,14 +5,19 @@ import './Header.scss';
 
 
 function Header() {
+    function scrollToHash(e){
+        e.preventDefault();
+        const hash = e.target.getAttribute('href');
+        document.querySelector(hash).scrollIntoView({behavior:'smooth'});
+    }
   return (
     <header className="Header">
         <nav>
             <NavLink exact to={'/'} className="link_portfolio">portfolio</NavLink>
-            <a href="#skills">skills</a>
-            <a href="#projects">projects</a>
+            <a href="#skills" onClick={scrollToHash}>skills</a>
+            <a href="#projects" onClick={scrollToHash}>projects</a>
             <NavLink  to={'/blog'} className="link_blog">blog</NavLink>
-            <a href="#resume" className="link_resume">resume</a>
+            <a href="#resume" className="link_resume" onClick={scrollToHash}>resume</a>
             <a href="https://github.com/k2project" target="_blank" rel="noopener noreferrer">
                 gitHub
                 <span className="sr-only">external link</span>
