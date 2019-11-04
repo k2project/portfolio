@@ -46,7 +46,7 @@ function Tags(props) {
                 })
                 //display slected posts
                 props.setPostsSelected(selectedPostsArr)
-                setTimeout(()=>{document.querySelector('.BlogPage__tags_posts').scrollIntoView()},100);
+
 
             }else{
                 //hide all selcted posts
@@ -71,17 +71,11 @@ function Tags(props) {
         return tagsSelected.length;
 
     }
-    useEffect(()=>{
-        document.querySelector('.BlogPage__tags').addEventListener('click',handleClick)
-        return ()=>{
-            document.querySelector('.BlogPage__tags').removeEventListener('click',handleClick)
-        }
-    })
+
     return(
-        <div className="BlogPage__tags">
+        <div className="BlogPage__tags" onClick={handleClick}>
             <div className="wrapper">
                 <div className="Blog__divider darker"> Tags</div>
-                <div className="BlogPage__tags_posts"></div>
                 {tagsList}
             </div>
         </div>

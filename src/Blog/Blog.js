@@ -72,7 +72,8 @@ function FeaturedPostList(){
     const postFreaturedDisplay = arr.map(post=><BlogPostLink post={post} key={'featuredPosts_'+post.id}/>)
     function showAll(e){
         e.target.remove();
-        setArr(postFeatured)
+        setArr(postFeatured);
+        document.querySelector('.BlogPostsList__featured').classList.add('all');
     }
     return(
         <div className="BlogPostsList__featured" id="posts-featured">
@@ -157,7 +158,8 @@ function BlogPostsLiked(){
     const [arr, setArr] = useState(postsLiked.slice(0,6))
     function showAll(e){
         e.target.remove();
-        setArr(postsLiked)
+        setArr(postsLiked);
+        document.querySelector('.BlogPostsList__liked').classList.add('all');
     }
     const postLikedDisplay = arr.map(post=><BlogPostLink post={post} key={'likedPosts_'+post.id}/>)
     return(

@@ -103,5 +103,19 @@ p.accordion__post_date{
             font-size: 2rem;
         }
     }
+    .BlogPage__accordion_blog{
+        padding-right: 20%;
+    }
+    p.accordion__blogTag{
+        font-size: 2.5rem;
+    }
 
+}
+@include mobile{
+    .BlogPage__accordion_blog{
+        padding-right: 0;
+    }
+    p.accordion__blogTag{
+        font-size: 2.2rem;
+    }
 }

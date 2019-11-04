@@ -7,3 +7,42 @@
 .BlogPage__tags.selected{
     background: #fff;
 }
+.BlogPage__tags .Button{
+    padding: 2.1rem 0;
+    margin: .5rem;
+}
+.BlogPage__tags .Button,
+.BlogPage__tags .Button_content{
+    width: 11em;
+    font-size: 1.2rem;
+
+}
+.BlogPage__tags .Button_toggle{
+    right: .5rem;
+    top: -.3rem;
+}
+@include mobile{
+    .BlogPage__tags .Button{
+        padding: 1.8rem 0;
+        margin: .4rem;
+    }
+    .BlogPage__tags .Button,
+    .BlogPage__tags .Button_content{
+        font-size: 1rem;
+
+    }
+    .BlogPage__tags .Button_toggle{
+        right: .2rem;
+        top: -.3rem;
+        font-size: 2rem;
+    }
+}
+@include mobile-sm{
+    .BlogPage__tags{
+        background: $color_grey;
+        padding: 7rem 0;
+    }
+    .BlogPage__tags .wrapper{
+        padding:0 2rem;
+    }
+}

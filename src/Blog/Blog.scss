@@ -14,34 +14,6 @@
     color: #ccc;
     border-bottom:solid .1rem #ccc;
 }
-@keyframes fadeIn{
-    to{
-        opacity: 1;
-    }
-}
-.BlogPostsList__recent{
-    a{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-column-gap: 4rem;
-        align-items: center;
-        padding-bottom: 3rem;
-        animation: fadeIn .75s forwards;
-        opacity: 0;
-    }
-    .BlogPostLink__img{
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 30rem;
-        height: 20rem;
-    }
-    .BlogPostLink__title{
-        font-size: 2.5rem;
-    }
-    .BlogPostLink__subtitle{
-        font-size: 1.8rem;
-    }
-}
 .BlogPage__postsLists{
     .BlogPostsList__liked,
     .BlogPostsList__featured,
@@ -64,23 +36,16 @@
     padding: 0;
     transition: .5s;
 }
-.BlogPostsList__selected{
-    background: $color_grey;
-    padding: 10rem 0;
-}
-.BlogPostsList__liked{
-    padding-top: 10rem;
-    .BlogPostLink__desc{
-        border: solid .2rem $color_grey;
+@keyframes fadeIn{
+    to{
+        opacity: 1;
     }
 }
+
+.BlogPostsList__liked,
 .BlogPostsList__featured{
-    padding-bottom: 10rem;
-    // a:last-child{
-    //     display: none;
-    // }
-    .BlogPostLink__desc{
-        border: solid .2rem $color_grey;
+    .wrapper{
+        padding: 0;
     }
 }
 .BlogPostsList__liked,
@@ -138,13 +103,58 @@
         background: $color_secondary_light;
     }
 }
+.BlogPostsList__selected{
+    background: $color_grey;
+    padding: 10rem 0;
+}
+.BlogPostsList__recent,
+.BlogPostsList__liked,
+.BlogPostsList__featured{
+    .BlogPostLink__desc{
+        border: solid .2rem $color_grey;
+    }
+}
+
+
+.BlogPostsList__recent{
+    padding-top: 4rem;
+    a{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding-bottom: 3rem;
+        animation: fadeIn .75s forwards;
+        opacity: 0;
+    }
+    .BlogPostLink__img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30rem;
+        height: 20rem;
+    }
+    .BlogPostLink__desc{
+        padding:2rem 2rem 2rem 4rem;
+        display: grid;
+        align-content: center;
+        border-left: none;
+    }
+    .BlogPostLink__title{
+        font-size: 2.2rem;
+    }
+    .BlogPostLink__subtitle{
+        font-size: 1.8rem;
+    }
+}
+
+
 .Blog__btn{
-    padding: 2rem 4rem;
+    padding: 2rem;
     font-weight: bold;
+    margin-bottom: 0;
 }
 .Blog__pagination{
     text-align: right;
-    padding-right: 4rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
     button{
         display: inline-block;
         width: 3rem;
@@ -161,40 +171,95 @@
 }
 .Blog__range{
     text-align: right;
-    padding-right: 4rem;
+    padding-right: 2rem;
     font-size: 1.6rem;
     top: -6rem;
 }
 @include tablet{
-
-    .Blog__divider{
-        font-size: 1.6rem;
+    .BlogPostsList__liked,
+    .BlogPostsList__featured,
+    .BlogPostsList__selected{
+        .wrapper{
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 1fr;
+        }
     }
     .BlogPostsList__recent{
-        a{
-            grid-template-columns: 1fr;
-            border-bottom: solid .2rem $color_grey;
-        }
         .BlogPostLink__img{
-            display: none;
+            width: 20rem;
+            height: 16rem;
         }
-    }
-}
-
-@include mobile-sm{
-    .Blog__divider{
-        font-size: 1.4rem;
-    }
-    .BlogPostsList__recent{
-
         .BlogPostLink__title{
             font-size: 1.8rem;
         }
         .BlogPostLink__subtitle{
             font-size: 1.4rem;
         }
-        .BlogPostLink__date{
-            font-size: 1rem;
+    }
+
+
+}
+
+@include mobile{
+    .Blog__divider{
+        font-size: 1.8rem;
+    }
+
+    .BlogPostsList__liked,
+    .BlogPostsList__featured{
+        a:nth-last-child(-n+3){
+            display: none;
         }
     }
+    .BlogPostsList__liked.all,
+    .BlogPostsList__featured.all{
+        a:nth-last-child(-n+3){
+            display: inline-block;
+        }
+    }
+    .BlogPostsList__liked,
+    .BlogPostsList__featured,
+    .BlogPostsList__selected{
+        .wrapper{
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr;
+        }
+    }
+    .BlogPostsList__recent{
+        a{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+
+        }
+
+        .BlogPostLink__img{
+            height: 20rem;
+            width: 100%;
+        }
+        .BlogPostLink__desc{
+            padding: 4rem 2rem 5rem;
+            border-left: solid .2rem $color_grey;
+        }
+    }
+
+}
+@include mobile-sm{
+    .Blog__divider{
+        padding-left: 1rem;
+    }
+    .BlogPage__postsLists{
+        padding: 10rem 0 7rem;
+    }
+    .BlogPage__postsLists .wrapper{
+        padding: 0 1rem;
+    }
+    .BlogPostsList__selected{
+        padding: 7rem 0;
+        .wrapper{
+            padding: 0 2rem;
+        }
+    }
+
+
 }
