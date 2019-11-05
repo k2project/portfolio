@@ -13,13 +13,14 @@
 }
 .BlogPage__tags .Button,
 .BlogPage__tags .Button_content{
-    width: 11em;
+    width: 10em;
     font-size: 1.2rem;
 
 }
 .BlogPage__tags .Button_toggle{
-    right: .5rem;
-    top: -.3rem;
+    font-size: 1.8rem;
+    right: .6rem;
+    top: -.1rem;
 }
 @include mobile{
     .BlogPage__tags .Button{
@@ -31,11 +32,11 @@
         font-size: 1rem;
 
     }
-    .BlogPage__tags .Button_toggle{
-        right: .2rem;
-        top: -.3rem;
-        font-size: 2rem;
-    }
+    // .BlogPage__tags .Button_toggle{
+    //     right: .2rem;
+    //     top: -.3rem;
+    //     font-size: 2rem;
+    // }
 }
 @include mobile-sm{
     .BlogPage__tags{

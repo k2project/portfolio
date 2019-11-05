@@ -24,7 +24,7 @@
     }
     padding: 10rem 0;
     height: 100%;
-    transition: .5s;
+    transition: .25s;
 }
 .BlogPage__postsLists.hidden{
     .BlogPostsList__liked,
@@ -34,7 +34,7 @@
     }
     height: 0;
     padding: 0;
-    transition: .5s;
+    transition: .25s;
 }
 @keyframes fadeIn{
     to{

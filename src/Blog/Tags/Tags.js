@@ -36,6 +36,18 @@ function Tags(props) {
                 tagsArr.push(tags);
             }
 
+            //check if buttons selected
+            //hide other posts list on selected
+            if(tagsSelected()){
+                document.querySelector('.BlogPage__postsLists').classList.add('hidden');
+                document.querySelector('.BlogPage__tags').scrollIntoView({behavior:'smooth'});
+                document.querySelector('.BlogPage__tags').classList.add('selected');
+
+            }else{
+                document.querySelector('.BlogPage__postsLists').classList.remove('hidden');
+                document.querySelector('.BlogPage__tags').classList.remove('selected');
+            }
+
             //get the selected posts
             let selectedPostsArr = [];
             if(tagsArr.length > 0){
@@ -46,22 +58,16 @@ function Tags(props) {
                 })
                 //display slected posts
                 props.setPostsSelected(selectedPostsArr)
+                setTimeout(()=>{
+                    document.querySelector('.BlogPostsList__selected').scrollIntoView({behavior:'smooth'})
+                },600)
 
 
             }else{
                 //hide all selcted posts
                 props.setPostsSelected(false);
             }
-            //check if buttons selected
-            if(tagsSelected()){
-                document.querySelector('.BlogPage__postsLists').classList.add('hidden');
-                document.querySelector('.BlogPage__tags').scrollIntoView({behavior:'smooth'});
-                document.querySelector('.BlogPage__tags').classList.add('selected');
 
-            }else{
-                document.querySelector('.BlogPage__postsLists').classList.remove('hidden');
-                document.querySelector('.BlogPage__tags').classList.remove('selected');
-            }
 
 
         }

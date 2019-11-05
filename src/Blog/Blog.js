@@ -183,7 +183,7 @@ function BlogPostLink(props){
         <div className="BlogPostLink__img" style={{backgroundImage:"url("+bg+")"}}>
             <div className="BlogPostLink__stickers">
                 {featured && <span className="star">&#x2605;</span>}
-                {likes.arr.includes(+id) && <span className="heart">&#9829;</span>}
+                {likes.arr.includes(+id) && <span className="heart">&#9825;</span>}
             </div>
         </div>
         <div className="BlogPostLink__desc">
