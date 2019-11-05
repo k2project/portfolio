@@ -3,11 +3,7 @@
 .Post{
     font-size: 1.8rem;
     line-height: 1.8;
-    .wrapper{
-        width: 100rem;
-        padding-left: 10rem;
-        // left: -10rem;
-    }
+
     .BlogPage_body{
         padding: 10rem 0;
         p{
@@ -20,6 +16,8 @@
             line-height: 1.4;
         }
         .wrapper{
+            width: 100rem;
+            padding-left: 10rem;
             padding-left: 0;
             display: grid;
             grid-template-columns: 20rem 1fr;
@@ -46,6 +44,7 @@
     }
 
 }
+
 .Post_body{
     a{
         text-decoration: underline;
@@ -62,6 +61,7 @@
 .PostSidebar{
     text-align: right;
     padding-right: 4rem;
+    padding-left: 2rem;
     display: grid;
     align-content: space-between;
 }
@@ -93,6 +93,7 @@
         margin-bottom: 1rem;
         animation: animHeart .5s forwards;
         transform: scale(2);
+        border: none;
     }
     .unsaved .heart{
         background: $color_grey;
@@ -150,7 +151,6 @@
     padding-bottom: 10rem;
     line-height: 1.2;
     color: $color_grey_darker;
-    // padding-top: 2rem;
 }
 
 @include tablet{
@@ -169,17 +169,48 @@
         padding: 4rem;
         font-size: 1.4rem;
     }
-
+    .Post .BlogPage_body .wrapper{
+        width: 80%;
+        padding-left: 0;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    .PostSidebar{
+        display: grid;
+        align-items: end;
+        grid-template-columns: 1fr auto;
+        padding: 0;
+        margin: 0 0 2rem;
+    }
+    .PostSidebar__stickersBox{
+        grid-template-columns: 5rem 5rem;
+        grid-template-rows: 5rem;
+        justify-content: start;
+        margin: 0;
+        .tooltip{
+            right: -5rem;
+        }
+            .tooltip::after{
+                right: 6.5rem;
+            }
+    }
+    .PostSidebar__relatedPost{
+        padding: 0 0 0 2rem;
+        font-size: 1.2rem;
+    }
 }
 @include mobile-sm{
     .Post{
         font-size: 1.4rem;
-    }
-    .Post .wrapper{
-        width: 90%;
+        .BlogPage_body{
+            padding-bottom: 5rem;
+        }
     }
     .Post_card{
         padding: 2rem 3rem ;
         font-size: 1.2rem;
+    }
+    .PostSidebar__relatedPost{
+        display: none;
     }
 }

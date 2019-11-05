@@ -34,7 +34,7 @@ function BlogPage(props) {
     if(props.post && props.post.image){
         const bg = require('./../../media/blog/'+props.post.image.path);
         styleDiv.backgroundImage = "url("+bg+")";
-        styleDiv.backgroundPosition = props.post.image.position;
+        // styleDiv.backgroundPosition = props.post.image.position;
     }
     // console.log(likes.arr)
     return(
