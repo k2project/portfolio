@@ -84,6 +84,9 @@
 }
 .BlogPostLink__img{
     background-position: 60% center;
+    background-image: url('./../media/blog/noImage.png');
+    background-size: cover;
+    background-position: center top;
 }
 .BlogPostLink__stickers{
     display: grid;
