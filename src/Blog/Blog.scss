@@ -84,7 +84,7 @@
 }
 .BlogPostLink__img{
     background-position: 60% center;
-    background-image: url('./../media/blog/noImage.png');
+    background-image: url('./../media/imgs/noImage.png');
     background-size: cover;
     background-position: center top;
 }
@@ -208,18 +208,18 @@
         font-size: 1.8rem;
     }
 
-    .BlogPostsList__liked,
-    .BlogPostsList__featured{
-        a:nth-last-child(-n+3){
-            display: none;
-        }
-    }
-    .BlogPostsList__liked.all,
-    .BlogPostsList__featured.all{
-        a:nth-last-child(-n+3){
-            display: inline-block;
-        }
-    }
+    // .BlogPostsList__liked,
+    // .BlogPostsList__featured{
+    //     a:nth-last-child(-n+3){
+    //         display: none;
+    //     }
+    // }
+    // .BlogPostsList__liked.all,
+    // .BlogPostsList__featured.all{
+    //     a:nth-last-child(-n+3){
+    //         display: inline-block;
+    //     }
+    // }
     .BlogPostsList__liked,
     .BlogPostsList__featured,
     .BlogPostsList__selected{

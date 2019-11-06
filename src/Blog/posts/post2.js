@@ -45,6 +45,8 @@ const post2={
             </p>
         </div>
 
+        <p className="Post_subtitle">Variable declarations hosting in JS.</p>
+
         <p>The variable <i>b</i> was printed with <i>undefined</i> value above because of the way variable hoisting works in JavaScript. The variable declarations are processed before code execution takes place. In other words, <b className="color_themed_primary"><i>variable and function declarations are moved to the top of their scope</i></b>. </p>
 
     </div>),

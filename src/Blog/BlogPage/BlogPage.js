@@ -3,7 +3,7 @@ import './BlogPage.scss';
 import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
 
-import {postFeatured,formatDate} from './../posts/posts';
+import {postFeatured,formatDate, updateLikedPosts} from './../posts/posts';
 import LikesContext, {LikesProvider} from './../posts/LikesContext';
 
 // localStorage.removeItem("k2BlogLikes");
@@ -14,7 +14,7 @@ function BlogPage(props) {
     //Likes context
     const savedPosts = {}
     const [likes, setLikes] = useState(savedPosts);
-    savedPosts.arr =  JSON.parse(localStorage.getItem("k2BlogLikes")) || [];
+    savedPosts.arr =  updateLikedPosts() || [];
     savedPosts.add = function(id){
         if(!this.arr.includes(+id)){
             this.arr.push(+id)

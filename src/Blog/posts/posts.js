@@ -1,6 +1,13 @@
 import post1 from './post1';
 import post2 from './post2';
+import post3 from './post3';
 
+// &#123; &#125; //{}
+//&lsaquo; &rsaquo; // <>
+// function foo( )&#123; <br/>
+// <span className="tab"> console.log(b);</span><br/>
+// <span className="tab"> let b = 5;</span><br/>
+// &#125;<br/>
 // const postId={
 //     id:'',
 //     title:'',
@@ -19,7 +26,7 @@ import post2 from './post2';
 let posts=[
     post1,
     post2,
-
+    post3,
 
 ]
 
@@ -81,4 +88,18 @@ export function getRelatedPosts(post){
 function getRandom(min, max) {
     //When the parameter is only one. The "min" becomes the max and "min" is 0
     return (Math.random() * ((max ? max : min) - (max ? min : 0) + 1) + (max ? min : 0)) | 0;
+}
+//updates saved posts in case of change of post title and id
+export function updateLikedPosts(){
+    let saved = JSON.parse(localStorage.getItem("k2BlogLikes"));
+    const ids = [];
+    posts.forEach(post=>ids.push(+post.id));
+    if(saved.length>0){
+        saved.forEach(el=>{
+            if(!ids.includes(+el)){
+                saved.splice(saved.indexOf(+el), 1)
+            }
+        })
+    }
+    return saved;
 }

@@ -10,7 +10,7 @@
             margin-bottom: 4rem;
         }
         .Post_subtitle{
-            font-size: 3rem;
+            font-size: 2.4rem;
             font-weight: bold;
             margin-bottom: 2rem;
             line-height: 1.4;
@@ -69,10 +69,18 @@
             span.tab{
                 padding-left: 2rem;
             }
+            span.tab2{
+                padding-left: 4rem;
+            }
 
         }
     }
 
+}
+.Post_card_imgSmall{
+    height: 2rem;
+    padding-right: .5rem;
+    top: .5rem;
 }
 .Post_body{
     a{
