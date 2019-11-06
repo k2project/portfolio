@@ -89,7 +89,9 @@ p{
     text-align: left;
     margin: auto;
 }
-
+.color_themed_primary{
+    color: $color_primary;
+}
 .color_themed_secondary{
     color: $color_secondary_light;
 }

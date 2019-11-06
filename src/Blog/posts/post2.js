@@ -3,7 +3,7 @@ import React from 'react';
 const post2={
     id:'2',
     featured:false,
-    title:' Event Delagation, Event Bubbling and Event Capturing in JS',
+    title:'UNDEFINED vs NOT DEFINED in JS?',
     subtitle:'JavaScript\'s Interview Q&A.',
     date:'2019-11-05',
     image:{
@@ -12,17 +12,34 @@ const post2={
     },
     tags:['JavaScript', 'Q&A'],
     body:(<div className="Post_body">
-        <p className="Post_subtitle">Q: Explain Event Delagation (ED) , Event Bubbling (EB) and Event Capturing(EC) in JavaScript.</p>
+        <p className="Post_subtitle">Q: What's the diffrence between UNDEFINED and NOT DEFINED in JavaScript?</p>
 
-        <p><b>A: Event Delagation is a technique, Event Bubbling is what the event does itself and Event Capturing is a way of using ED on events that don’t bubble. </b> </p>
+        <p>Something easy but confusing for a begginers to start with. </p>
 
-        <p>Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.</p>
+        <p><b>A: <i>UNDEFINED</i> is a variable that has been declared but not assigned any value. While <i>NOT DEFINED </i> variable hasn't been declared at all. </b> </p>
 
-        <p>Bubbling is what the event itself does. The event starts are the element that triggered it. Then, it bubbles up to each of it’s parent elements until it reaches the html element. Any listeners on any of those parent elements would get triggered as it bubbles up.</p>
+        <p>Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.</p>
 
-        <p>Most events bubble. But some, like the focus event, do not. There’s a trick you can use to capture the event, though. The last argument in addEventListener() is called useCapture. We almost always set it to false. For events that don’t bubble, set it to true to capture the event anyways.</p>
+        <div className="Post_card">
+            <p>
+                let a; <br/>
+                console.log( a )  //<b>undefined</b> <br/>
+                let arr = [ 1, 2, 3 ]; <br/>
+                console.log( arr[ 5 ] ); //<b>undefined</b> <br/>
+                let obj =&#123; &#125; <br/>
+                console.log( obj.id ); //<b>undefined</b>
+            </p>
+            <p>
+                console.log(x); //<b> ReferenceError: x is not defined</b>
+            </p>
+            <p className="Post_card_important">
+                <span>IMPORTANT</span>
+                console.log( b ); //<b>undefined</b> <br/>
+                let b = 5;
+            </p>
+        </div>
 
-        <p> There are two types of event delegation; bubbling and capturing. Using bubbling the developer can send a signal from the child element to the parent element. The signal flows upstream, bubbling up. Using capturing the developer can send a signal from the parent element to the child element. The signal flows down stream.</p>
+        <p>The variable <i>b</i> was printed with <i>undefined</i> value above because of the way variable hoisting works in JavaScript. The variable declarations are processed before code execution takes place. In other words, <b className="color_themed_primary"><i>variable and function declarations are moved to the top of their scope</i></b>. </p>
 
     </div>),
 

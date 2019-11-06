@@ -1,5 +1,5 @@
 import post1 from './post1';
-// import post2 from './post2';
+import post2 from './post2';
 
 // const postId={
 //     id:'',
@@ -18,7 +18,7 @@ import post1 from './post1';
 
 let posts=[
     post1,
-    // post2,
+    post2,
 
 
 ]
