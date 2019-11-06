@@ -1,6 +1,5 @@
 import post1 from './post1';
-import post2 from './post2';
-import post3 from './post3';
+// import post2 from './post2';
 
 // const postId={
 //     id:'',
@@ -19,25 +18,16 @@ import post3 from './post3';
 
 let posts=[
     post1,
-    post1,
-    post2,
-    post3,
-    post1,
-    post2,
-    post3,
-    post1,
-    post2,
-    post2,
-    post3,
+    // post2,
 
 
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);
+
 posts = posts.sort(function(a,b){
   return new Date(b.date) - new Date(a.date);
 });
-
 export default posts;
 
 

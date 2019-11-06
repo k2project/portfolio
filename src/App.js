@@ -13,7 +13,7 @@ function App() {
         <Router basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path={`/`} component={Portfolio}/>
-                <Route  exact path={`/blog/`} component={Blog}/>
+                <Route  exact path={`/blog`} component={Blog}/>
                 <Route  exact path={`/blog/:post`} component={Post}/>
                 <Redirect from='*' to='/' />
             </Switch>

@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, {useState, useContext} from 'react';
 import { NavLink } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 
@@ -9,7 +9,6 @@ import posts, { postFeatured, getPostLink, formatDate} from './posts/posts';
 import LikesContext from './posts/LikesContext';
 import og from './../media/blog/og.png';
 
-console.log(posts.length, posts.length/5,posts.length%5)
 function Blog() {
     const [postsSelected, setPostsSelected] = useState(false);
 

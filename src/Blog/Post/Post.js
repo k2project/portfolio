@@ -6,7 +6,7 @@ import {Helmet} from "react-helmet";
 import './Post.scss';
 
 import BlogPage from './../BlogPage/BlogPage';
-import Button from './../../components/Button/Button';
+// import Button from './../../components/Button/Button';
 import {getPostViaURL, getPostLink, getRelatedPosts} from './../posts/posts';
 import LikesContext from './../posts/LikesContext';
 
@@ -14,7 +14,6 @@ function Post() {
     useEffect(()=>{
         window.scrollTo(0,0);
     })
-    // console.log(window.location.pathname)
     const post = getPostViaURL(window.location);
     let history = useHistory();
     if(!post){
@@ -25,6 +24,7 @@ function Post() {
     //first condition for production
     //second condition for development
     if((window.location.pathname !== '/portfolio'+getPostLink(post))&& (window.location.pathname !== getPostLink(post))){
+        console.log(window.location.pathname)
         history.push('/blog')
         return (null);
     }

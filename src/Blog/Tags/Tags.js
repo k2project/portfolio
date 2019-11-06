@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Tags.scss';
 import Button from './../../components/Button/Button';
 import posts from './../posts/posts';
@@ -60,7 +60,7 @@ function Tags(props) {
                 props.setPostsSelected(selectedPostsArr)
                 setTimeout(()=>{
                     document.querySelector('.BlogPostsList__selected').scrollIntoView({behavior:'smooth'})
-                },600)
+                },700)
 
 
             }else{

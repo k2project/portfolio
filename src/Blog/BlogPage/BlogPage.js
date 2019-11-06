@@ -1,10 +1,10 @@
-import React, {useState, useContext, useEffect } from 'react';
+import React, {useState, useContext } from 'react';
 import './BlogPage.scss';
 import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
 
 import {postFeatured,formatDate} from './../posts/posts';
-import LikesContext, {LikesProvider, LikesConsumer} from './../posts/LikesContext';
+import LikesContext, {LikesProvider} from './../posts/LikesContext';
 
 // localStorage.removeItem("k2BlogLikes");
 // localStorage.setItem("k2BlogLikes", JSON.stringify([1,2]))
