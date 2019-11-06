@@ -5,7 +5,7 @@ const post2={
     featured:false,
     title:'UNDEFINED vs NOT DEFINED in JS?',
     subtitle:'JavaScript\'s Interview Q&A.',
-    date:'2019-11-05',
+    date:'2019-10-05',
     image:{
         path:'js.png',
         position:'right center '
@@ -33,9 +33,15 @@ const post2={
                 console.log(x); //<b> ReferenceError: x is not defined</b>
             </p>
             <p className="Post_card_important">
-                <span>IMPORTANT</span>
+                <span className="important">IMPORTANT</span>
                 console.log( b ); //<b>undefined</b> <br/>
-                let b = 5;
+                let b = 5; <br/><br/>
+                function foo( )&#123; <br/>
+                <span className="tab"> console.log(b);</span><br/>
+                <span className="tab"> let b = 5;</span><br/>
+                &#125;<br/>
+                foo( ); //<b>undefined</b>
+
             </p>
         </div>
 

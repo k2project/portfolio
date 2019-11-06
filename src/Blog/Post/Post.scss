@@ -55,7 +55,7 @@
             border: solid .1rem $color_primary;
             padding: 2rem;
             margin-top: 4rem;
-            span{
+            span.important{
                 display: inline-block;
                 position: absolute;
                 left: 2rem;
@@ -66,6 +66,10 @@
                 font-weight: bold;
 
             }
+            span.tab{
+                padding-left: 2rem;
+            }
+
         }
     }
 
