@@ -1,6 +1,7 @@
 import React from 'react';
 
 import file from './../../media/blog/file.png';
+import {Fun, Tab, CurlyBrackets, Brackets, Tags} from './editor/editor';
 
 const post3={
     id:'3',
@@ -24,7 +25,7 @@ const post3={
         <div className="Post_card">
             <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>UserContext.js</i></p>
             <p>
-                const UserContext = <span className="color_themed_primary">React.createContext( &#123; &#125; )</span>; <br/>
+                const UserContext = <span className="color_themed_primary">React.createContext<Brackets><CurlyBrackets></CurlyBrackets></Brackets></span>; <br/>
                 export const UserProvider = UserContext<span className="color_themed_secondary">.Provider</span>; <br/>
                 export const UserConsumer = UserContext<span className="color_themed_secondary">.Consumer</span>; <br/>
                 export default UserContext; <br/>
@@ -33,14 +34,17 @@ const post3={
         </div>
         <div className="Post_card">
             <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>App.js</i></p>
-            <p>import &#123; UserProvider &#125; from '/.UserContext';</p>
+            <p>import <CurlyBrackets> UserProvider </CurlyBrackets> from './UserContext';</p>
             <p>
-                function App( )&#123; <br/>
-                <span className="tab"> const user = &#123; ... &#125;</span><br/>
-                <span className="tab"> return(</span><br/>
-                {/* <span className="tab2">&lsaquo;UserProvider value=&#123; user &#125;&rsaquo;</span><br/>
-                <span className="tab">)</span><br/> */}
-                &#125;<br/>
+                <Fun name="App">
+                    <Tab> const user = <CurlyBrackets>...</CurlyBrackets></Tab><br/>
+                    <Tab>return <Brackets><br/>
+                            <Tab><Tags> UserProvider value=<CurlyBrackets>user</CurlyBrackets></Tags>
+                            ...
+                            <Tags>/ UserProvider</Tags></Tab>
+                        <br/></Brackets>
+                    </Tab>
+                </Fun>
             </p>
 
         </div>
