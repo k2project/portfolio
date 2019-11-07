@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 import './Blog.scss';
 import BlogPage from './BlogPage/BlogPage';
 import Tags from './Tags/Tags';
-import posts, { postFeatured, getPostLink, formatDate} from './posts/posts';
+import posts, { postFeatured, getPostLink, formatDate, updateLikedPosts} from './posts/posts';
 import LikesContext from './posts/LikesContext';
 import og from './../media/blog/og.png';
 
@@ -54,7 +54,7 @@ function BlogNoPosts(){
     </div>
 }
 function BlogPostsList(){
-    const likes =  JSON.parse(localStorage.getItem("k2BlogLikes")) || [];
+    const likes =  updateLikedPosts();
     return(
         <div className="BlogPage__postsLists">
             <div className="wrapper">

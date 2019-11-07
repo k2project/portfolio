@@ -32,11 +32,7 @@
         font-size: 1rem;
 
     }
-    // .BlogPage__tags .Button_toggle{
-    //     right: .2rem;
-    //     top: -.3rem;
-    //     font-size: 2rem;
-    // }
+
 }
 @include mobile-sm{
     .BlogPage__tags{
@@ -48,9 +44,17 @@
     }
     .BlogPage__tags .Button,
     .BlogPage__tags .Button_content{
-        width: 9rem;
+        width: 9.5rem;
         font-size: .9rem;
-        margin: .2rem .3rem;
+        // text-align: center;
 
+    }
+    .BlogPage__tags .Button{
+        margin: .3rem;
+    }
+    .BlogPage__tags .Button_toggle{
+        right: .5rem;
+        top: .1rem;
+        font-size: 1.4rem;
     }
 }

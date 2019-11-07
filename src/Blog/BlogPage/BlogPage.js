@@ -14,7 +14,7 @@ function BlogPage(props) {
     //Likes context
     const savedPosts = {}
     const [likes, setLikes] = useState(savedPosts);
-    savedPosts.arr =  updateLikedPosts() || [];
+    savedPosts.arr =  updateLikedPosts();
     savedPosts.add = function(id){
         if(!this.arr.includes(+id)){
             this.arr.push(+id)

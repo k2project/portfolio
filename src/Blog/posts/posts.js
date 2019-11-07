@@ -101,5 +101,7 @@ export function updateLikedPosts(){
             }
         })
     }
+    saved = saved || [];
+    localStorage.setItem("k2BlogLikes", JSON.stringify(saved));
     return saved;
 }
