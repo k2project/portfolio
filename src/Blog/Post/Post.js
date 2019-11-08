@@ -64,7 +64,7 @@ export default Post;
 function PostSidebar(props){
     const likes = useContext(LikesContext);
     const [saved, setSaved] = useState(likes.arr.includes(+props.post.id))
-    console.log(props.post.id, likes.arr,likes.arr.includes(+props.post.id), saved)
+    // console.log(props.post.id, likes.arr,likes.arr.includes(+props.post.id), saved)
     function handleClick(e){
         if(e.target.closest('button')){
             if(saved){

@@ -28,19 +28,21 @@ function Brackets(props){
 
 function Fun(props){
     return(
-        <div>
+        <span>
             function {props.name}<Brackets></Brackets><CurlyBrackets>
-                <div>
+                <br/>
+                <span>
                     {props.children}
-                </div>
+                </span>
+                <br/>
             </CurlyBrackets>;
-        </div>
+        </span>
 
     )
 
 }
 function Tab(props){
-    return <div className="editor__tab">{props.children}</div>
+    return <span className="editor__tab">{props.children}</span>
 }
 
  export {

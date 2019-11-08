@@ -77,8 +77,10 @@
     }
 
 }
-.Post__img{
-    max-width: 100%;
+.Post__imgContainer{
+    img{
+        width: 100%;
+    }
 }
 .Post_card_imgSmall{
     height: 2rem;

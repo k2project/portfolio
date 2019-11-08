@@ -1,6 +1,7 @@
 import React from 'react';
-
+import LinkNewTab from './../../components/LinkNewTab';
 import file from './../../media/blog/file.png';
+import reactContextVid from './../../media/blog/reactContextVid.gif';
 import {Fun, Tab, CurlyBrackets, SqrBrackets, Brackets, Tags, Div} from './editor/editor';
 
 const post3={
@@ -8,7 +9,7 @@ const post3={
     featured:false,
     title:'React Context Cheat Sheet',
     subtitle:'What\'s new in React?',
-    date:'2019-10-06',
+    date:'2019-10-08',
     image:{
         path:'react.png',
         position:'right center '
@@ -120,7 +121,14 @@ const post3={
 
         </div>
 
-        <p>*Context object accepts a <b>displayName</b> string property. React DevTools uses this string to determine what to display for the context. <i><small> Eg. UserContext.displayName = 'UserContext' in DevTools will print "UserContext.Provider" or "UserContext.Consumer"</small></i>.</p>
+        <p>*Context object accepts a <b>displayName</b> string property. React DevTools uses this string to determine what to display for the context. <i><small> Egzample above will print in DevTools "UserContext.Provider" accordingly.</small></i>.</p>
+
+
+        <p className="Post_subtitle">Context in a working example.</p>
+        <p>A demo of a very simplified version of login page using React's Context . The code is available at <LinkNewTab link={{href:'https://github.com/k2project',text:'my GitHub account'}}/>.</p>
+        <div className="Post__imgContainer">
+            <img src={reactContextVid} alt="react context in working example gif"/>
+        </div>
 
 
     </div>),
