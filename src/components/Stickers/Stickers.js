@@ -9,7 +9,6 @@ function Stickers(props) {
     const gitLink = {
         href:git,
         icon:gitHub,
-        ariaHidden:true,
     }
     return (
         <div className="Stickers">
@@ -17,7 +16,10 @@ function Stickers(props) {
                 <LinkNewTab link={gitLink}/>
             </span>}
             {cml && <span className="Stickers__cml">cml.</span>}
-            {featured && <span className="Stickers__featured"></span>}
+            {featured && <span className="Stickers__featured">
+                <span className="star" aria-hidden="true">&#x2605;</span>
+                <span className="sr-only">featured post</span>
+            </span>}
             {liked && <span className="Stickers__liked"></span>}
 
         </div>

@@ -6,9 +6,10 @@ import {Helmet} from "react-helmet";
 import './Post.scss';
 
 import BlogPage from './../BlogPage/BlogPage';
-// import Button from './../../components/Button/Button';
 import {getPostViaURL, getPostLink, getRelatedPosts} from './../posts/posts';
 import LikesContext from './../posts/LikesContext';
+import Stickers from './../../components/Stickers/Stickers';
+
 
 function Post() {
     useEffect(()=>{
@@ -86,10 +87,7 @@ function PostSidebar(props){
     return(
         <div className="PostSidebar">
             <div className="PostSidebar__stickersBox" onClick={handleClick}>
-                {props.post.featured && <div>
-                    <span className="star" aria-hidden="true">&#x2605;</span>
-                    <span className="sr-only">featured post</span>
-                </div>}
+                {props.post.featured && <Stickers data={{featured:true}}/>}
                 {saved && <button className="saved">
                     <span aria-hidden="true" className="heart">&#9825;</span>
                     <span className="tooltip">Remove From Saved</span>

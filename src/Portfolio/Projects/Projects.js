@@ -49,7 +49,7 @@ function Project(props){
     const projectStyle={
         backgroundImage: "url("+bg+")",
     }
-    // const cmlCls = !git ? 'toTop': '';
+
     const stickersData={}
     stickersData.git = git;
     if(cml){
@@ -58,7 +58,6 @@ function Project(props){
     return(
         <div className="Project" style={projectStyle} >
 
-            {/* {cml && <div className={"Project_cml "+cmlCls}>cml.</div>} */}
             <div className="Project_desc">
                 <div className="Project_title">
                     <b>{name}</b>
@@ -69,12 +68,6 @@ function Project(props){
             </div>
             <LinkNewTab link={{href:web,cls:'Project_web fill'}}/>
             <Stickers data={stickersData}/>
-            {/* {git && <div className="Project_git">
-                <a href={git} target="_blank" rel="noopener noreferrer" aria-hidden="true" >
-                    <img src={gitHub} alt="" className="Project_img"/>
-                </a>
-            </div>} */}
-
         </div>
     )
 }

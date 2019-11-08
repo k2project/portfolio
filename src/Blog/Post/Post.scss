@@ -83,8 +83,8 @@
     }
     .Stickers{
         position: absolute;
-        right: 1rem;
-        top: 1rem;
+        right: 1vw;
+        top: 1vw;
     }
 }
 .Post_card_imgSmall{
@@ -258,5 +258,10 @@
 
     .PostSidebar__relatedPost{
         display: none;
+    }
+    .Post__imgContainer{
+        .Stickers{
+            display: none;
+        }
     }
 }
