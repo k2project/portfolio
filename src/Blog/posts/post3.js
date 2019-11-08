@@ -1,7 +1,7 @@
 import React from 'react';
 
 import file from './../../media/blog/file.png';
-import {Fun, Tab, CurlyBrackets, Brackets, Tags} from './editor/editor';
+import {Fun, Tab, CurlyBrackets, SqrBrackets, Brackets, Tags, Div} from './editor/editor';
 
 const post3={
     id:'3',
@@ -26,6 +26,7 @@ const post3={
             <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>UserContext.js</i></p>
             <p>
                 const UserContext = <span className="color_themed_primary">React.createContext<Brackets><CurlyBrackets></CurlyBrackets></Brackets></span>; <br/>
+                UserContext.displayName = 'UserContext'; * <br/>
                 export const UserProvider = UserContext<span className="color_themed_secondary">.Provider</span>; <br/>
                 export const UserConsumer = UserContext<span className="color_themed_secondary">.Consumer</span>; <br/>
                 export default UserContext; <br/>
@@ -34,12 +35,16 @@ const post3={
         </div>
         <div className="Post_card">
             <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>App.js</i></p>
-            <p>import <CurlyBrackets> UserProvider </CurlyBrackets> from './UserContext';</p>
+            <p>
+                import React, <CurlyBrackets>useState</CurlyBrackets> from 'react';<br/>
+                import <CurlyBrackets> UserProvider </CurlyBrackets> from './UserContext';
+            </p>
             <p>
                 <Fun name="App">
                     <Tab> const user = <CurlyBrackets>...</CurlyBrackets></Tab><br/>
+                    <Tab> const <SqrBrackets> currentUser, setCurrentUser</SqrBrackets> = useState<Brackets> user </Brackets></Tab><br/>
                     <Tab>return <Brackets><br/>
-                            <Tab><Tags> UserProvider value=<CurlyBrackets>user</CurlyBrackets></Tags>
+                            <Tab><Tags> UserProvider value=<CurlyBrackets>currentUser</CurlyBrackets></Tags>
                             ...
                             <Tags>/ UserProvider</Tags></Tab>
                         <br/></Brackets>
@@ -48,6 +53,74 @@ const post3={
             </p>
 
         </div>
+        <div className="Post_card">
+            <p><b>SUBSCRIBE TO CONTEXT WITHIN A FUNCTIONAL COMPONENT</b></p>
+            <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>Page.js</i></p>
+            <p>
+                import React, <CurlyBrackets>useContext</CurlyBrackets> from 'react';<br/>
+                import <CurlyBrackets> UserConsumer </CurlyBrackets> from './UserContext';
+            </p>
+            <p className="Post_card_divider"></p>
+            <p>
+                <Fun name="Page">
+                    <Tab>return <Brackets><br/>
+                            <Tab><Tags> UserConsumer</Tags><br/>
+                            <Tab><CurlyBrackets> currentUser => <Div> <CurlyBrackets>currentUser.name</CurlyBrackets> </Div></CurlyBrackets></Tab><br/>
+                            <Tags>/ UserConsumer</Tags></Tab>
+                        <br/></Brackets>
+                    </Tab>
+                </Fun>
+            </p>
+            <p className="Post_card_divider"></p>
+            <p>
+                <Fun name="Page">
+                    <Tab>
+                        <b className="color_themed_primary">const currentUser = useContext<Brackets>UserContext</Brackets></b>
+                    </Tab><br/>
+                    <Tab>return <Brackets><br/>
+                        <Tab><Div> <CurlyBrackets>currentUser.name</CurlyBrackets> </Div></Tab><br/>
+                    </Brackets>
+                    </Tab>
+                </Fun>
+            </p>
+
+        </div>
+        <div className="Post_card">
+            <p><b>SUBSCRIBE TO CONTEXT WITHIN A CLASS COMPONENT</b></p>
+            <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>Page.js</i></p>
+            <p>
+                import React, <CurlyBrackets>Component</CurlyBrackets> from 'react';<br/>
+            </p>
+            <p className="Post_card_divider"></p>
+            <p>
+                class Page extends Component<CurlyBrackets><br/>
+                    <Tab>render<Brackets></Brackets><CurlyBrackets><br/>
+                    <Tab>return<Brackets><br/>
+                        <Tab><Tags>UserConsumer</Tags></Tab><br/>
+                            <Tab>
+                                <Tab><CurlyBrackets> props => <Div> <CurlyBrackets>props.name</CurlyBrackets> </Div>
+                                </CurlyBrackets>
+                                </Tab><br/>
+                            </Tab><br/>
+                        <Tab><Tags>/UserConsumer</Tags></Tab>
+                    <br/></Brackets></Tab>
+                    <br/></CurlyBrackets></Tab>
+                <br/></CurlyBrackets>
+            </p>
+            <p className="Post_card_divider"></p>
+            <p>
+                class Page extends Component<CurlyBrackets><br/>
+                    <Tab>componentDidMount<Brackets></Brackets><CurlyBrackets><br/>
+                        <Tab>const currentUser = this.context; </Tab>
+                    <br/></CurlyBrackets></Tab>
+                <br/></CurlyBrackets>
+
+            </p>
+            <p><b className="color_themed_primary">Page.contextType = UserContext;</b></p>
+
+        </div>
+
+        <p>*Context object accepts a <b>displayName</b> string property. React DevTools uses this string to determine what to display for the context. <i><small> Eg. UserContext.displayName = 'UserContext' in DevTools will print "UserContext.Provider" or "UserContext.Consumer"</small></i>.</p>
 
 
     </div>),

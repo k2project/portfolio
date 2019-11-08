@@ -90,6 +90,14 @@
         text-decoration: underline;
     }
 }
+.Post_card_divider{
+    border-bottom: solid .1rem $color_grey_darker;
+    span{
+        padding: 0 2rem ;
+        background: $color_grey;
+        top: 1.1rem;
+    }
+}
 
 .PostSidebar{
     text-align: right;

@@ -64,8 +64,8 @@ export default BlogPage;
 function AccordionBlog(props){
 
     return <div className="BlogPage__accordion_blog">
-        <p className="accordion__blogTag"><b> &#10094; KrisBlog &#x2215;&#10095; </b></p>
-        <p className="p_larger">Bits and pieces on my journey to become a better web developer.</p>
+        <p className="accordion__blogTag"><b> &#10094; MyNotes &#x2215;&#10095; </b></p>
+        <p className="p_larger">Bits and pieces on my journey to become a professional web developer.</p>
         <p>Feel free to comment on my post via <a href="https://twitter.com/_k2project" target="_blank" rel="noopener noreferrer">
                 <b>my twitter</b>
                 <span className="sr-only">external link</span>
