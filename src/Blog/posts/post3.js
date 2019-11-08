@@ -1,5 +1,6 @@
 import React from 'react';
 import LinkNewTab from './../../components/LinkNewTab';
+import Stickers from './../../components/Stickers/Stickers';
 import file from './../../media/blog/file.png';
 import reactContextVid from './../../media/blog/reactContextVid.gif';
 import {Fun, Tab, CurlyBrackets, SqrBrackets, Brackets, Tags, Div} from './editor/editor';
@@ -128,6 +129,7 @@ const post3={
         <p>A demo of a very simplified version of login page using React's Context . The code is available at <LinkNewTab link={{href:'https://github.com/k2project',text:'my GitHub account'}}/>.</p>
         <div className="Post__imgContainer">
             <img src={reactContextVid} alt="react context in working example gif"/>
+            <Stickers data={{git:'https://github.com/k2project/react_context_example'}}/>
         </div>
 
 
