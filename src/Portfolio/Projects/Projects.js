@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import './Projects.scss';
 import gitHub from './../../media/icons/gitHub.png';
+import LinkNewTab from './../../components/LinkNewTab';
+import Stickers from './../../components/Stickers/Stickers';
 
 
 
@@ -47,11 +49,16 @@ function Project(props){
     const projectStyle={
         backgroundImage: "url("+bg+")",
     }
-    const cmlCls = !git ? 'toTop': '';
+    // const cmlCls = !git ? 'toTop': '';
+    const stickersData={}
+    stickersData.git = git;
+    if(cml){
+        stickersData.cml = true;
+    }
     return(
         <div className="Project" style={projectStyle} >
 
-            {cml && <div className={"Project_cml "+cmlCls}>cml.</div>}
+            {/* {cml && <div className={"Project_cml "+cmlCls}>cml.</div>} */}
             <div className="Project_desc">
                 <div className="Project_title">
                     <b>{name}</b>
@@ -60,23 +67,19 @@ function Project(props){
                     {desc}
                 </div>
             </div>
-            <a href={web} target="_blank" rel="noopener noreferrer"  className="Project_web fill">
-                <span className="sr-only">project's external link</span>
-            </a>
-            {git && <div className="Project_git">
+            <LinkNewTab link={{href:web,cls:'Project_web fill'}}/>
+            <Stickers data={stickersData}/>
+            {/* {git && <div className="Project_git">
                 <a href={git} target="_blank" rel="noopener noreferrer" aria-hidden="true" >
                     <img src={gitHub} alt="" className="Project_img"/>
                 </a>
-            </div>}
+            </div>} */}
 
         </div>
     )
 }
 function ProjectNull(){
     return(
-        <a href="https://github.com/k2project" target="_blank" rel="noopener noreferrer" className="Project ProjectNull">
-            <img src={gitHub} alt="" className="ProjectNull_img"/>
-            <span className="sr-only">github account opens up in an external link</span>
-        </a>
+        <LinkNewTab link={{href:'https://github.com/k2project',cls:'Project ProjectNull', icon:gitHub}}/>
     )
 }

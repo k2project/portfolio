@@ -1,0 +1,25 @@
+@import './../../App.scss';
+
+.Stickers{
+    display: grid;
+    grid-template-columns: 5rem;
+    grid-auto-rows: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+    color: #fff;
+    justify-content: end;
+}
+.Stickers__git{
+    background: #fff;
+    img{
+        width: 5rem;
+        padding: 1rem;
+    }
+}
+.Stickers__cml{
+    background: $color_secondary_light;
+
+}
+.Stickers__featured{}
+.Stickers__liked{}
