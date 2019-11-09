@@ -87,7 +87,7 @@ function PostSidebar(props){
     return(
         <div className="PostSidebar">
             <div className="PostSidebar__stickersBox" onClick={handleClick}>
-                {props.post.featured && <Stickers data={{featured:true}}/>}
+                {props.post.featured && <Stickers featured/>}
                 {saved && <button className="saved">
                     <span aria-hidden="true" className="heart">&#9825;</span>
                     <span className="tooltip">Remove From Saved</span>

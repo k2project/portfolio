@@ -94,7 +94,7 @@ export function updateLikedPosts(){
     let saved = JSON.parse(localStorage.getItem("k2BlogLikes"));
     const ids = [];
     posts.forEach(post=>ids.push(+post.id));
-    if(saved.length>0){
+    if(saved && saved.length>0){
         saved.forEach(el=>{
             if(!ids.includes(+el)){
                 saved.splice(saved.indexOf(+el), 1)

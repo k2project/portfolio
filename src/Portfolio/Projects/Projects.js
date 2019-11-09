@@ -49,12 +49,6 @@ function Project(props){
     const projectStyle={
         backgroundImage: "url("+bg+")",
     }
-
-    const stickersData={}
-    stickersData.git = git;
-    if(cml){
-        stickersData.cml = true;
-    }
     return(
         <div className="Project" style={projectStyle} >
 
@@ -67,7 +61,7 @@ function Project(props){
                 </div>
             </div>
             <LinkNewTab link={{href:web,cls:'Project_web fill'}}/>
-            <Stickers data={stickersData}/>
+            <Stickers git={git} cml={cml?true:null}/>
         </div>
     )
 }

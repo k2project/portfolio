@@ -5,6 +5,7 @@ import {Helmet} from "react-helmet";
 import './Blog.scss';
 import BlogPage from './BlogPage/BlogPage';
 import Tags from './Tags/Tags';
+import Stickers from './../components/Stickers/Stickers';
 import posts, { postFeatured, getPostLink, formatDate, updateLikedPosts} from './posts/posts';
 import LikesContext from './posts/LikesContext';
 import og from './../media/blog/og.png';
@@ -178,10 +179,7 @@ function BlogPostLink(props){
     const likes = useContext(LikesContext);
     return <NavLink to={getPostLink(props.post)} key={'props.post_'+id} className="BlogPostLink">
         <div className="BlogPostLink__img" style={{backgroundImage:"url("+bg+")"}}>
-            <div className="BlogPostLink__stickers">
-                {featured && <span className="star">&#x2605;</span>}
-                {likes.arr.includes(+id) && <span className="heart">&#9825;</span>}
-            </div>
+            <Stickers sm featured={featured? true :null} liked={likes.arr.includes(+id)? true :null}/>
         </div>
         <div className="BlogPostLink__desc">
             <p className="BlogPostLink__title"><b>{title}</b></p>

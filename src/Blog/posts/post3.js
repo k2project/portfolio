@@ -129,7 +129,7 @@ const post3={
         <p>A demo of a very simplified version of login page using React's Context . The code is available at <LinkNewTab link={{href:'https://github.com/k2project',text:'my GitHub account'}}/>.</p>
         <div className="Post__imgContainer">
             <img src={reactContextVid} alt="react context in working example gif"/>
-            <Stickers data={{git:'https://github.com/k2project/react_context_example'}}/>
+            <Stickers git={'https://github.com/k2project/react_context_example'}/>
         </div>
 
 
