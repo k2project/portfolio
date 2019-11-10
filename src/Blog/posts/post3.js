@@ -27,6 +27,11 @@ const post3={
         <div className="Post_card">
             <p><img src={file} alt="" className="Post_card_imgSmall"/> <i>UserContext.js</i></p>
             <p>
+                {/* <code>
+                    <pre>
+                        const UserContext = <span className="color_themed_primary">React.createContext({})</span>;
+                    </pre>
+                </code> */}
                 const UserContext = <span className="color_themed_primary">React.createContext<Brackets><CurlyBrackets></CurlyBrackets></Brackets></span>; <br/>
                 UserContext.displayName = 'UserContext'; * <br/>
                 export const UserProvider = UserContext<span className="color_themed_secondary">.Provider</span>; <br/>
