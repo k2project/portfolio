@@ -8,8 +8,8 @@ import {Fun, Tab, CurlyBrackets, SqrBrackets, Brackets, Tags, Div} from './edito
 const post3={
     id:'3',
     featured:false,
-    title:'React Context Cheat Sheet',
-    subtitle:'What\'s new in React?',
+    title:'React Context',
+    subtitle:'Cheat Sheet',
     date:'2019-10-08',
     image:{
         path:'react.png',

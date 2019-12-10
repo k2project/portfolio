@@ -24,8 +24,8 @@ function Post() {
     // post exist (id) but link is wrong
     //first condition for production
     //second condition for development
+    console.log(window.location.pathname)
     if((window.location.pathname !== '/portfolio'+getPostLink(post))&& (window.location.pathname !== getPostLink(post))){
-        console.log(window.location.pathname)
         history.push('/blog')
         return (null);
     }

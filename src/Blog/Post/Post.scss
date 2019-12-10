@@ -200,7 +200,36 @@
     line-height: 1.2;
     color: $color_grey_darker;
 }
+.Post__references{
+    font-size: 1rem;
+    padding-top: 3rem;
+    a{
+        text-decoration: none;
+    }
+    ol{
+        padding-left: 1rem;
+    }
 
+}
+.Post__references li{
+    color: $color_grey_darker;
+    list-style: decimal;
+    padding-left: 1rem;
+}
+.Post__references_title{
+    color: $color_grey_darker;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: solid .1rem $color_grey_darker;
+    font-size: 1.4rem;
+}
+.Post__list{
+    padding-left: 5rem;
+    padding-bottom: 4rem;
+    li{
+        list-style:disc;
+    }
+}
 @include tablet{
     .Post{
         font-size: 1.6rem;
@@ -243,6 +272,12 @@
         padding: 0 0 0 2rem;
         font-size: 1.2rem;
     }
+}
+@include mobile{
+    .Post__list{
+        padding-left: 1rem;
+    }
+
 }
 @include mobile-sm{
     .Post{

@@ -7,10 +7,16 @@
     align-content: center;
     padding: 4rem 8rem 0;
     font-size: 3.6rem;
+    p{
+        font-size: 5rem;
+    }
 }
 @include mobile-sm{
     .Resume{
         padding: 0 4rem;
         font-size: 3rem;
+        p{
+            font-size: 4rem;
+        }
     }
 }
