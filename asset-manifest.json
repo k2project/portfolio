@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0986b05b.chunk.css",
-    "main.js": "/portfolio/static/js/main.46577a21.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.46577a21.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.92fb0427.chunk.css",
+    "main.js": "/portfolio/static/js/main.4c239504.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4c239504.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.2d267d31.chunk.js": "/portfolio/static/js/2.2d267d31.chunk.js",
-    "static/js/2.2d267d31.chunk.js.map": "/portfolio/static/js/2.2d267d31.chunk.js.map",
+    "static/js/2.9ef31e6c.chunk.js": "/portfolio/static/js/2.9ef31e6c.chunk.js",
+    "static/js/2.9ef31e6c.chunk.js.map": "/portfolio/static/js/2.9ef31e6c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.505f86f389ae5e6c1a2f62b2d7476362.js": "/portfolio/precache-manifest.505f86f389ae5e6c1a2f62b2d7476362.js",
+    "precache-manifest.c500386e4669e26cc110040cddcb7eea.js": "/portfolio/precache-manifest.c500386e4669e26cc110040cddcb7eea.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.0986b05b.chunk.css.map": "/portfolio/static/css/main.0986b05b.chunk.css.map",
+    "static/css/main.92fb0427.chunk.css.map": "/portfolio/static/css/main.92fb0427.chunk.css.map",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.a3b08511.pdf",
     "static/media/amb_1.png": "/portfolio/static/media/amb_1.3305f814.png",
     "static/media/calvocoressi_1.png": "/portfolio/static/media/calvocoressi_1.0edee3ae.png",
     "static/media/cards.gif": "/portfolio/static/media/cards.7ba465aa.gif",
     "static/media/cards_1.png": "/portfolio/static/media/cards_1.b0988055.png",
+    "static/media/code.jpg": "/portfolio/static/media/code.f8b23142.jpg",
     "static/media/donutChart.gif": "/portfolio/static/media/donutChart.ea46b7e2.gif",
     "static/media/gameOn.gif": "/portfolio/static/media/gameOn.54c0c7ba.gif",
     "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.2118bef5.png",
@@ -33,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
-    "static/js/2.2d267d31.chunk.js",
-    "static/css/main.0986b05b.chunk.css",
-    "static/js/main.46577a21.chunk.js"
+    "static/js/2.9ef31e6c.chunk.js",
+    "static/css/main.92fb0427.chunk.css",
+    "static/js/main.4c239504.chunk.js"
   ]
 }
