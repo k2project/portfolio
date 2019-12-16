@@ -46,7 +46,7 @@ const post5={
             <div className="Post__codeImg_desc">Image by Ben Marshall</div>
         </div>
 
-        <p className="Post_subtitle">OOCSS Pros and Cons.</p>
+        {/* <p className="Post_subtitle">OOCSS Pros and Cons.</p>
         <div className="Post__table_2clms">
             <div>
                 <ul className="Post__table_list">
@@ -68,7 +68,7 @@ const post5={
                 </ul>
 
             </div>
-        </div>
+        </div> */}
 
 
 
