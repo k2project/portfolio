@@ -30,7 +30,7 @@ let posts=[
     post2,
     post3,
     post4,
-    // post5,
+    post5,
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);

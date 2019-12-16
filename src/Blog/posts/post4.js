@@ -1,9 +1,4 @@
 import React from 'react';
-import LinkNewTab from './../../components/LinkNewTab';
-import Stickers from './../../components/Stickers/Stickers';
-import file from './../../media/blog/file.png';
-import reactContextVid from './../../media/blog/reactContextVid.gif';
-import {Fun, Tab, CurlyBrackets, SqrBrackets, Brackets, Tags, Div} from './editor/editor';
 
 const post4={
     id:'4',
@@ -37,12 +32,9 @@ const post4={
 
         </ul>
 
-        <p>In the next post, I'm gonna talk about naming classes in programming, focusing mainly on the three most popular CSS methodologies:  OOCSS, BEM and SMACSS. </p>
 
-        {/* <p className="Post_subtitle">CSS Methodology.</p>
-        <p>Now let’s talk about CSS methodology. Naming classes in programming is as much important as naming variables. I'm gonna look at the three most popular conventions: OOCSS, BEM and SMACSS</p>
-
-        <p>CSS methodologies give you a system to manage and optimize your CSS codes. They can be combined together, like OOCSS-SMACSS, or OOCSS-BEM, or BEM-SAMCSS to suit your needs. However, which ever you chose it is important to stick to that convention throughout (at least) the entire project.</p> */}
+        <p className="Post_subtitle">CSS Methodology.</p>
+        <p>Naming classes in programming is as much important as naming variables.  CSS methodologies give you a system to manage and optimize your CSS codes. It can improve not only the code maintainability but also increase efficiency in terms of building up and performance. In the next few posts, I'm gonna talk about the three most popular ones:  OOCSS, BEM and SMACSS. However, which ever you chose it is important to stick to that convention throughout (at least) the entire project.</p>
 
         <div className="Post__references">
             <div className="Post__references_title"><b>References:</b></div>
@@ -65,6 +57,7 @@ const post4={
             </ol>
 
         </div>
+
 
     </div>),
 

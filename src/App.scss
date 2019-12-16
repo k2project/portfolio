@@ -8,6 +8,8 @@ $color_black:             #282C34;
 $color_primary:           #F23168;
 $color_secondary_dark:    #043464;
 $color_secondary_light:   #51CEFA;
+$color_green:             #4CBB17;
+$color_red:               #FE0002;
 
 // ==============
 //    mixins
@@ -94,6 +96,12 @@ p{
 }
 .color_themed_secondary{
     color: $color_secondary_light;
+}
+.color_green{
+    color: $color_green;
+}
+.color_red{
+    color: $color_red;
 }
 .txt_right{
     text-align: right;
