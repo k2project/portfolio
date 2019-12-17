@@ -23,21 +23,21 @@ const post6={
                 2. <b>LAYOUT</b>— The page's major sections with <b><i>l- or layout- prefixes</i></b>.  <br/>
                 3. <b>MODULE</b>— The reusable modular components of a design. <br/>
                 4. <b>STATE</b>— These describe how things look when in a particular state with <b><i>is- prefix </i></b>as in is-active or is-hidden.<br/>
-                5. <b>THEME</b>— These define things like a color scheme or typographic treatment across a site. <br/>
+                5. <b>THEME</b>— These define things like a colour scheme or typographic treatment across a site. <br/>
 
             </span>
         </p>
 
 
-        <p><b>Base rules</b> are applied directly to elements through element selectors, descendent selectors, child selectors, pseudo-classes, however not specific class or ID selectors.</p>
+        <p><b>Base rules</b> are applied directly to elements through element selectors, descendent selectors, child selectors, pseudo-classes, however not the specific class or ID selectors.</p>
 
-        <p>There are major and minor layout components in every design. The <b>layout rules</b> of SMACSS apply to major components (eg.header, sidebar, etc.). Minor components (eg. img, logo, etc.) fall under the <b> module rules</b>. Use ID selectors for major components or classes also where the convention is to prefix the classname with l- or layout-</p>
+        <p>There are major and minor layout components in every design. The <b>layout rules</b> of SMACSS apply to major components (eg.header, sidebar, etc.). Minor components (eg. img, logo, etc.) fall under the<b> module rules</b>. Use ID selectors for major components or classes also where the convention is to prefix the class name with l- or layout-</p>
 
         <p><b>Module rules</b> are used to style modules which are basically components from BEM or objects from OOCSS. They should be able to be easily moved around and still look the same. Modules just use module name ( .message ) instead of trying to prefix each. Related modules receive a consistent prefix to help organize them with the following class naming convention for children : 'message-alert'.</p>
 
-        <p>To affect the visual appearance of a module or layouts use <b>state rules</b> (eg.'.is-msg-hidden'). In many cases they are used to overide styles from their base module or layout.</p>
+        <p>To affect the visual appearance of a module or layouts use <b>state rules</b> (eg.'.is-msg-hidden'). In many cases, they are used to override styles from their base module or layout.</p>
 
-        <p><b>Theme rules</b> are similar to state rules in that they describe how layout and modules might look. They would mostly define colors or typography across a site. </p>
+        <p><b>Theme rules</b> are similar to state rules in that they describe how layout and modules might look. They would mostly define colours or typography across a site. </p>
 
 
         {/* <p className="Post_subtitle">SMACSS best practise.</p>
