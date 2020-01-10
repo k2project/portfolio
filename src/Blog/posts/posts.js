@@ -4,6 +4,7 @@ import post3 from './post3';
 import post4 from './post4';
 import post5 from './post5';
 import post6 from './post6';
+import post7 from './post7';
 
 // &#123; &#125; //{}
 //&lsaquo; &rsaquo; // <>
@@ -27,6 +28,7 @@ import post6 from './post6';
 //export default postId;
 
 let posts=[
+    post7, //bootcamp
     post1,
     post2,
     post3,
@@ -36,10 +38,10 @@ let posts=[
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);
-
 posts = posts.sort(function(a,b){
-  return new Date(b.date) - new Date(a.date);
+    return new Date(b.date) - new Date(a.date);
 });
+
 export default posts;
 
 
