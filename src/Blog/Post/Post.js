@@ -35,7 +35,7 @@ function Post() {
     let path = 'https://k2project.github.io/portfolio'+getPostLink(post);
 
     return(
-        <BlogPage cls="Post" post={post}>
+        <BlogPage cls={post.cls? "Post "+post.cls :"Post"} post={post}>
             <Helmet>
                <title>Kris Kopczynski Portfolio | Blog</title>
                <link rel="canonical" href={path} />

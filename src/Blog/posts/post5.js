@@ -4,12 +4,13 @@ import oocss from './../../media/blog/oocss.png';
 
 const post5={
     id:'5',
+    cls:'methodology',
     featured:false,
-    title:'Coding: CSS Methodologies. OOCSS.',
-    subtitle:'Common Practices for Writing Clean, Good Quality Code.',
+    title:'OOCSS.',
+    subtitle:'CSS Methodologies.',
     date:'2019-11-13',
     image:{
-        path:'code.jpg',
+        path:'css_methodology.png',
         position:'right center '
     },
     tags:['Coding'],

@@ -4,12 +4,13 @@ import smacss from './../../media/blog/smacss.png';
 
 const post6={
     id:'6',
+    cls:'methodology',
     featured:false,
-    title:'Coding: CSS Methodologies. SMACSS.',
-    subtitle:'Common Practices for Writing Clean, Good Quality Code.',
+    title:'SMACSS.',
+    subtitle:'CSS Methodologies.',
     date:'2019-11-15',
     image:{
-        path:'code.jpg',
+        path:'css_methodology.png',
         position:'right center '
     },
     tags:['Coding'],
