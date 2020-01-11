@@ -28,7 +28,7 @@ import post7 from './post7';
 //export default postId;
 
 let posts=[
-    // post7, //bootcamp
+    post7, //bootcamp
     post1,
     post2,
     post3,
