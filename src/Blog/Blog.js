@@ -130,7 +130,9 @@ function RecentPostList(){
         <div className="BlogPostsList__recent">
             <div className="Blog__divider"> Most Recent Posts </div>
             {posts.length>5 && <div className="Blog__range">{range}</div>}
-            {postRecentDisplay}
+            <div className="wrapper">
+                {postRecentDisplay}
+            </div>
             {posts.length>5 && <div className="Blog__pagination" onClick={getPage}>
                 {pagesBtns}
             </div>}
