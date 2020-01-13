@@ -5,7 +5,7 @@ const post1={
     featured:true,
     title:'Web development with accessibility in mind...',
     subtitle:'Why it is important to make sure that everyone is included!',
-    date:'2019-09-28',
+    date:'2019-10-28',
     image:{
         path:'post1.jpg',
         position:'right center '

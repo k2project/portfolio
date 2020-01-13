@@ -5,7 +5,7 @@ const post4={
     featured:false,
     title:'Coding: Naming Conventions',
     subtitle:'Common Practices for Writing Clean, Good Quality Code.',
-    date:'2019-11-10',
+    date:'2019-12-10',
     image:{
         path:'code.jpg',
         position:'right center '

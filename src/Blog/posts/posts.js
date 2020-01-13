@@ -69,7 +69,7 @@ export function getPostViaURL(location){
 export function formatDate(date){
     let _date = new Date(date);
     const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "Novemebr", "December"];
-    return  months[(_date.getMonth() + 1)]+" " +_date.getDate() + ", " + _date.getFullYear()
+    return  months[(_date.getMonth())]+" " +_date.getDate() + ", " + _date.getFullYear()
 
 }
 

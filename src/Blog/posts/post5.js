@@ -8,7 +8,7 @@ const post5={
     featured:false,
     title:'OOCSS.',
     subtitle:'CSS Methodologies.',
-    date:'2019-11-13',
+    date:'2019-12-13',
     image:{
         path:'css_methodology.png',
         position:'right center '

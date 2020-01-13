@@ -10,7 +10,7 @@ const post3={
     featured:false,
     title:'React Context',
     subtitle:'Cheat Sheet',
-    date:'2019-10-08',
+    date:'2019-11-08',
     image:{
         path:'react.png',
         position:'right center '

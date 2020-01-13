@@ -5,7 +5,7 @@ const post2={
     featured:false,
     title:'UNDEFINED vs NOT DEFINED in JS?',
     subtitle:'JavaScript\'s Interview Q&A.',
-    date:'2019-10-05',
+    date:'2019-11-05',
     image:{
         path:'js.png',
         position:'right center '

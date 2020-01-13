@@ -375,7 +375,20 @@
     .Post__list{
         padding-left: 1rem;
     }
-
+    .module,
+    .module__content{
+        padding-left: 2rem;
+    }
+    .module__title{
+        font-size: 1.8rem;
+    }
+    .module__content_title{
+        font-size: 1.2rem;
+    }
+    .module__tickBox,
+    .module__tickBox_sml{
+        top: .2rem;
+    }
 }
 @include mobile-sm{
     .Post{
@@ -400,5 +413,11 @@
     .Post__table_2clms{
         padding: 4rem 2rem;
     }
-    
+    .module{
+        padding-left: 0;
+    }
+    .module__content{
+        padding-left: 1.2rem;
+    }
+
 }

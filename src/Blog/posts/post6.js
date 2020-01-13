@@ -8,7 +8,7 @@ const post6={
     featured:false,
     title:'SMACSS.',
     subtitle:'CSS Methodologies.',
-    date:'2019-11-15',
+    date:'2019-12-15',
     image:{
         path:'css_methodology.png',
         position:'right center '

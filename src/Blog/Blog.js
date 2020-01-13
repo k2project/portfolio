@@ -129,7 +129,7 @@ function RecentPostList(){
     return(
         <div className="BlogPostsList__recent">
             <div className="Blog__divider"> Most Recent Posts </div>
-            {posts.length>5 && <div className="Blog__range">{range}</div>}
+            {posts.length>5 && <div className="Blog__range">{range} / {posts.length}</div>}
             <div className="wrapper">
                 {postRecentDisplay}
             </div>

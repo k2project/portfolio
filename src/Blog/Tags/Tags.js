@@ -39,12 +39,12 @@ function Tags(props) {
             //check if buttons selected
             //hide other posts list on selected
             if(tagsSelected()){
-                document.querySelector('.BlogPage__postsLists').classList.add('hidden');
+                document.querySelector('.BlogPage__postsLists').style.display = 'none';
                 document.querySelector('.BlogPage__tags').scrollIntoView({behavior:'smooth'});
                 document.querySelector('.BlogPage__tags').classList.add('selected');
 
             }else{
-                document.querySelector('.BlogPage__postsLists').classList.remove('hidden');
+                document.querySelector('.BlogPage__postsLists').style.display='block';
                 document.querySelector('.BlogPage__tags').classList.remove('selected');
             }
 
@@ -59,13 +59,15 @@ function Tags(props) {
                 //display slected posts
                 props.setPostsSelected(selectedPostsArr)
                 setTimeout(()=>{
-                    document.querySelector('.BlogPostsList__selected').scrollIntoView({behavior:'smooth'})
-                },700)
-
+                    document.querySelector('.BlogPage__tags').scrollIntoView({behavior:'smooth'})
+                },0)
 
             }else{
                 //hide all selcted posts
                 props.setPostsSelected(false);
+                setTimeout(()=>{
+                    document.querySelector('.BlogPage__tags').scrollIntoView({behavior:'auto'})
+                },0)
             }
 
 

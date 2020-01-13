@@ -4,30 +4,36 @@ const jobHunting_module={
     title:'Job Hunting',
     completed:false,
     content:[
+
         {
-            title:'Interview preperation with JS Q&A posts',
+            title:'Create a LinkedIn account',
             completed:false,
             reference:[]
         },
         {
-            title:'Create LinkedIn account',
+            title:'Create cover letter for FED position',
             completed:false,
             reference:[]
         },
         {
-            title:'Create covering letter for FED position',
+            title:'Create cover letter for internship',
             completed:false,
             reference:[]
         },
         {
-            title:'Create covering letter for internship',
+            title:'Update Resume and Portfolio',
             completed:false,
             reference:[]
         },
         {
-            title:'Enquire about the internship experience (preferably to expand on web accesibilty knowledge)',
+            title:'Enquire about the internship experience (preferably to expand on web accessibility knowledge)',
             completed:false,
             bold:true,
+            reference:[]
+        },
+        {
+            title:'Coding interview preparation',
+            completed:false,
             reference:[]
         },
     ]
@@ -43,23 +49,30 @@ const coding_module={
     content:[
         {
             title:'BEM as my prefered CSS methodology',
-            completed:true,
+            completed:false,
+            reference:[]
+        },
+
+        {
+            title:'Applied Visual Design',
+            completed:false,
             reference:[]
         },
         {
-            title:'Data structuring and algorythms',
-            completed:true,
-            reference:[]
-        },
-        {
-            title:'Web accesibility best practise',
-            completed:true,
+            title:'Applied Accessibility',
+            completed:false,
             bold: true,
             reference:[]
         },
         {
-            title:'Designing accessable and reusable React components',
+            title:'Designing accessible and reusable React components',
             completed:false,
+            reference:[]
+        },
+        {
+            title:'Data Structuring and Algorithms',
+            completed:false,
+            bold:true,
             reference:[]
         },
         {
@@ -71,7 +84,7 @@ const coding_module={
 };
 const mern_module={
     title:'MERN Application with Authorisation',
-    completed:true,
+    completed:false,
     content:[
         {
             title:'Building an extensive backend API with Node.js & Express',
@@ -81,6 +94,7 @@ const mern_module={
         {
             title:'Using Stateless JWT authentication practices',
             completed:false,
+            bold:true,
             reference:[]
         },
         {
@@ -96,6 +110,7 @@ const mern_module={
         {
             title:'RESTfull API and/or GraphQL modern practices ',
             completed:false,
+            bold:true,
             reference:[]
         },
 
@@ -105,12 +120,13 @@ const mern_module={
             reference:[]
         },
         {
-            title:'Security best practices',
+            title:'Information Security and Quality Assurance',
             completed:false,
+            bold:true,
             reference:[]
         },
         {
-            title:'Deploy to Heroku with a postbuild script',
+            title:'Deploy to Heroku with a post-build script',
             completed:false,
             reference:[]
         },
@@ -127,7 +143,7 @@ const mern_module={
     ]
 };
 const testing_module={
-    title:'Testing best practise',
+    title:'Testing best practice',
     completed:false,
     content:[]
 };
@@ -157,7 +173,7 @@ const Module = props =>{
             <span>&#10004;</span>
         </div>
         <div className={bold? "module__title bold" :"module__title"}>{title}</div>
-        { content.length>0 && content.map(content=><ModuleContent content={content}/>)}
+        { content.length>0 && content.map(content=><ModuleContent content={content} key={content.title}/>)}
     </div>
 }
 
@@ -166,7 +182,7 @@ const post7={
     featured:true,
     title:'My Tailored Web Developer Bootcamp',
     subtitle:'Working on interviews fedback.',
-    date:'2020-01-01',
+    date:'2020-01-14',
     image:{
         path:'bootcamp.png',
         position:'center '
@@ -175,14 +191,14 @@ const post7={
     body:(<div className="Post_body">
 
         <p className="Post_subtitle">Each interview will bring you one-stop closer to your dream job if you are willing to learn from the experience.</p>
-        <p>I have recently started job hunting for the position of the front end web developer. Being able to secure a few interviews was a great experience for someone who is just about to start their career. Even though I didn’t get the position, it presented me with the chance of reaching out and proactively ask for feedback. I am grateful to everyone, who has been willing to help me out as I am always looking for ways to develop, learn, and grow. On that note, I have come up with my personalised bootcamp plan to improve my skills and to show my potential employer how capable I am of handling a constructive assessment.</p>
+        <p>I have recently started job hunting for the position of the front end web developer. Being able to secure a few interviews was a great experience for someone who is just about to start their career. Even though I didn’t get the position, it presented me with the chance of reaching out and proactively asking for feedback. I am grateful to everyone, who has been willing to help me out as I am always looking for ways to develop, learn, and grow. On that note, I have come up with my personalised bootcamp plan to improve my skills and to show my potential employer how capable I am of handling a constructive assessment.</p>
 
         <p className="Post_subtitle">Feedback: the positive and constructive ones.</p>
 
         <p>Overall I have received a great number of positive comments on my commercial experience and design capabilities. On the other hand, me - being a self-taught developer, it raised a few concerns about the quality of my code. I believe that they can be fairly justified. It's easy to fall into bad habits, without realising it, when learning from different sources. Therefore, the first part of my challenge would be to address these issues along with getting to know better the WCAG standards. I want to be able to create semantically clean websites that are an inclusive and friendly experience to all users. Also, I will be looking for an internship to gain experience within a developers team and preferable agile environment.</p>
 
-        <p className="Post_subtitle">My Bootcamp Moduls.</p>
-        {bootcamp_moduls.map(module=><Module module={module}/>)}
+        <p className="Post_subtitle">My Bootcamp Modules.</p>
+        {bootcamp_moduls.map(module=><Module module={module} key={module.title}/>)}
 
     </div>),
 
