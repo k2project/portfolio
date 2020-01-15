@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.58b9107c.chunk.css",
-    "main.js": "/portfolio/static/js/main.72985743.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.72985743.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.18435129.chunk.js": "/portfolio/static/js/2.18435129.chunk.js",
-    "static/js/2.18435129.chunk.js.map": "/portfolio/static/js/2.18435129.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.b9fc1248.chunk.css",
+    "main.js": "/portfolio/static/js/main.aaac7a92.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.aaac7a92.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
+    "static/js/2.6c3a2799.chunk.js": "/portfolio/static/js/2.6c3a2799.chunk.js",
+    "static/js/2.6c3a2799.chunk.js.map": "/portfolio/static/js/2.6c3a2799.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a9bc0b2c365425ab076f1756bf6cb445.js": "/portfolio/precache-manifest.a9bc0b2c365425ab076f1756bf6cb445.js",
+    "precache-manifest.867dd0ee461a8edb7f637a834550d4db.js": "/portfolio/precache-manifest.867dd0ee461a8edb7f637a834550d4db.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.58b9107c.chunk.css.map": "/portfolio/static/css/main.58b9107c.chunk.css.map",
+    "static/css/main.b9fc1248.chunk.css.map": "/portfolio/static/css/main.b9fc1248.chunk.css.map",
+    "static/js/2.6c3a2799.chunk.js.LICENSE": "/portfolio/static/js/2.6c3a2799.chunk.js.LICENSE",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.704f4c83.pdf",
     "static/media/amb_1.png": "/portfolio/static/media/amb_1.3305f814.png",
+    "static/media/bemEg.png": "/portfolio/static/media/bemEg.825a9eee.png",
     "static/media/bootcamp.png": "/portfolio/static/media/bootcamp.adc2c9c0.png",
     "static/media/calvocoressi_1.png": "/portfolio/static/media/calvocoressi_1.0edee3ae.png",
     "static/media/cards.gif": "/portfolio/static/media/cards.7ba465aa.gif",
@@ -35,9 +37,9 @@
     "static/media/spm_1.png": "/portfolio/static/media/spm_1.07bd298c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e92c632a.js",
-    "static/js/2.18435129.chunk.js",
-    "static/css/main.58b9107c.chunk.css",
-    "static/js/main.72985743.chunk.js"
+    "static/js/runtime-main.44087e9b.js",
+    "static/js/2.6c3a2799.chunk.js",
+    "static/css/main.b9fc1248.chunk.css",
+    "static/js/main.aaac7a92.chunk.js"
   ]
 }
