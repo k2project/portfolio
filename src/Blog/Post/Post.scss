@@ -77,6 +77,14 @@
     }
 
 }
+.Post__card--sml{
+    background: $color_grey;
+    padding: 1.5rem 3rem;
+    margin: 2rem auto 3rem;
+    display: block;
+    width: 100%;
+    max-width: 60rem;
+}
 .Post__imgContainer{
     img{
         width: 100%;
@@ -401,7 +409,9 @@
 
         }
     }
-
+    .Post__tab{
+        padding-left: 1rem;
+    }
     .PostSidebar__relatedPost{
         display: none;
     }

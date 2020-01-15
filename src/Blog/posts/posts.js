@@ -5,6 +5,7 @@ import post4 from './post4';
 import post5 from './post5';
 import post6 from './post6';
 import post7 from './post7';
+import post8 from './post8';
 
 // &#123; &#125; //{}
 //&lsaquo; &rsaquo; // <>
@@ -35,6 +36,7 @@ let posts=[
     post4,
     post5,
     post6,
+    post8,
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);

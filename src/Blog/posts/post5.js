@@ -13,7 +13,7 @@ const post5={
         path:'css_methodology.png',
         position:'right center '
     },
-    tags:['Coding'],
+    tags:['Coding','CSS Methodology'],
     body:(<div className="Post_body">
 
         <p className="Post_subtitle">OOCSS (Object Oriented CSS)</p>

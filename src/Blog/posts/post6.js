@@ -13,7 +13,7 @@ const post6={
         path:'css_methodology.png',
         position:'right center '
     },
-    tags:['Coding'],
+    tags:['Coding','CSS Methodology'],
     body:(<div className="Post_body">
 
         <p className="Post_subtitle">SMACSS ( Scalable and Modular Architecture for CSS )</p>
