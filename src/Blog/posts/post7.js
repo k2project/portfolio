@@ -12,12 +12,12 @@ const jobHunting_module={
         },
         {
             title:'Create cover letter for FED position',
-            completed:false,
+            completed:true,
             reference:[]
         },
         {
             title:'Create cover letter for internship',
-            completed:false,
+            completed:true,
             reference:[]
         },
         {
@@ -27,7 +27,7 @@ const jobHunting_module={
         },
         {
             title:'Enquire about the internship experience (preferably to expand on web accessibility knowledge)',
-            completed:false,
+            completed:true,
             bold:true,
             reference:[]
         },
@@ -48,14 +48,14 @@ const coding_module={
     completed:false,
     content:[
         {
-            title:'BEM as my prefered CSS methodology',
-            completed:false,
+            title:'Naming conventions and CSS methodology',
+            completed:true,
             reference:[]
         },
 
         {
             title:'Applied Visual Design',
-            completed:false,
+            completed:true,
             reference:[]
         },
         {
