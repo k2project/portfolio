@@ -4,6 +4,7 @@ import { useHistory} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 import './Post.scss';
+import './Post-BEM.scss';
 
 import BlogPage from './../BlogPage/BlogPage';
 import {getPostViaURL, getPostLink, getRelatedPosts} from './../posts/posts';

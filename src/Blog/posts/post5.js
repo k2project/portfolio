@@ -6,8 +6,8 @@ const post5={
     id:'5',
     cls:'methodology',
     featured:false,
-    title:'OOCSS.',
-    subtitle:'CSS Methodologies.',
+    title:'OOCSS',
+    subtitle:'CSS Methodologies',
     date:'2019-12-13',
     image:{
         path:'css_methodology.png',

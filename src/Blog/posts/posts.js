@@ -6,6 +6,7 @@ import post5 from './post5';
 import post6 from './post6';
 import post7 from './post7';
 import post8 from './post8';
+import accessibility_links from './accessibility_links'; //id 9
 
 // &#123; &#125; //{}
 //&lsaquo; &rsaquo; // <>
@@ -37,6 +38,7 @@ let posts=[
     post5,
     post6,
     post8,
+    accessibility_links,
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);

@@ -7,8 +7,8 @@ const post8={
     id:'8',
     cls:'methodology',
     featured:false,
-    title:'BEM.',
-    subtitle:'CSS Methodologies.',
+    title:'BEM',
+    subtitle:'CSS Methodologies',
     date:'2020-01-15',
     image:{
         path:'css_methodology.png',
@@ -24,17 +24,17 @@ const post8={
             <span className="Post__tab">
                 1. <b>BLOCK</b>— a standalone entity that is meaningful on its own (header, container, menu, checkbox, etc). While blocks can be nested and interact with each other, semantically they remain equal - there is no precedence or hierarchy.
                 <div className="Post__card--sml">  <b>.block </b> <br/>
-                    class = "button" 
+                    class = "button"
                 </div>
                 2. <b>ELEMENT</b>— a part of a block that has no standalone meaning and is semantically tied to its block (menu title, header logo,etc).
                 <div className="Post__card--sml">
                     <b>.block__element </b> <br/>
-                    class = "button__icon" 
+                    class = "button__icon"
                 </div>
-                3. <b>MODIFIER</b>— a flag on a block or element. Use them to change appearance or behavior ( disabled, highlighted, checked, fixed, greeen, etc). 
+                3. <b>MODIFIER</b>— a flag on a block or element. Use them to change appearance or behavior ( disabled, highlighted, checked, fixed, greeen, etc).
                 <div className="Post__card--sml">
                     <b>.block--mofifier or .block__element--modifire </b> <br/>
-                class = "button button--state-success" 
+                class = "button button--state-success"
                 </div>
 
             </span>
@@ -43,7 +43,7 @@ const post8={
         <ul className="Post__list">
             <li>In BEM everything is a class and nothing is nested, which makes CSS specificity very flat and low.</li>
             <li>
-            The primary purpose of BEM methodology is to make the names of CSS selectors as informative and transparent as possible. 
+            The primary purpose of BEM methodology is to make the names of CSS selectors as informative and transparent as possible.
             </li>
             <li>BEM names intentionally use double underscores and double hyphens instead of single to separate Block-Element-Modifier. The reason is so that single hyphens can be used as word separators.</li>
             <li>A modifier cannot be used outside of the context of its owner(eg: <s>class="navigation--is-open"</s>).</li>
@@ -105,7 +105,7 @@ const post8={
                     Nathan Rambeck - <b>BEM by Example</b>
                     </a>
                 </li>
-                
+
 
             </ol>
 

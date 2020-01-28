@@ -1,0 +1,36 @@
+@import './../../App.scss';
+
+.post__section{
+    margin-bottom: 2rem;
+}
+.post__heading{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+.post__list{
+    padding-left: 5rem;
+    li{
+        list-style:disc;
+    }
+}
+.post__card{
+    display: block;
+    padding: 2rem 5rem;
+    margin: 1rem 0;
+    background: $color_grey;
+    font-size:1.4rem;
+    line-height: 1.4;
+}
+
+@include mobile{
+    .post__list{
+        padding-left: 1rem;
+    }
+}
+@include mobile-sm{
+    .post__card{
+        padding: 2rem 3rem;
+    }
+}
