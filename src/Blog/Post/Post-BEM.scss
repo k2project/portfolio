@@ -1,7 +1,7 @@
 @import './../../App.scss';
 
 .post__section{
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 .post__heading{
     font-size: 2.4rem;
@@ -24,8 +24,11 @@
     line-height: 1.4;
 }
 .post__table{
+    background: $color_grey;
     width: 100%;
-    padding: 2rem 0;
+    padding: 4rem;
+    border-spacing: 2rem;
+    border-collapse: separate;
     th,td{
         padding: 1rem;
         margin-right: .5rem;
@@ -41,9 +44,15 @@
     .post__list{
         padding-left: 1rem;
     }
+    .post__table{
+        font-size: 1.2rem;
+        padding: 3rem 2rem;
+        border-spacing: .5rem;
+    }
 }
 @include mobile-sm{
     .post__card{
         padding: 2rem 3rem;
     }
+
 }
