@@ -23,7 +23,20 @@
     font-size:1.4rem;
     line-height: 1.4;
 }
-
+.post__table{
+    width: 100%;
+    padding: 2rem 0;
+    th,td{
+        padding: 1rem;
+        margin-right: .5rem;
+    }
+    th{
+        border-bottom: solid 1px #111;
+    }
+    td{
+        border-bottom: solid 1px #ccc;
+    }
+}
 @include mobile{
     .post__list{
         padding-left: 1rem;
