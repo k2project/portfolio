@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64a094fb3c4162ef41e932a1bedb9e10",
+    "revision": "fec7ca5dc56eb43add1f55d909937bc7",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "baf5057d5544675adae4",
-    "url": "/portfolio/static/css/main.b9fc1248.chunk.css"
+    "revision": "c50b40b0385bc3faa9d1",
+    "url": "/portfolio/static/css/main.24463504.chunk.css"
   },
   {
-    "revision": "60ae5bde0d098cb7a599",
-    "url": "/portfolio/static/js/2.6c3a2799.chunk.js"
+    "revision": "285cd1f38736a920ee2a",
+    "url": "/portfolio/static/js/2.d1badcb0.chunk.js"
   },
   {
-    "revision": "d0cb0a244b3563727e54b0f5d5982212",
-    "url": "/portfolio/static/js/2.6c3a2799.chunk.js.LICENSE"
+    "revision": "c50b40b0385bc3faa9d1",
+    "url": "/portfolio/static/js/main.6254cd78.chunk.js"
   },
   {
-    "revision": "baf5057d5544675adae4",
-    "url": "/portfolio/static/js/main.aaac7a92.chunk.js"
-  },
-  {
-    "revision": "0d98471f6c3b69ca4251",
-    "url": "/portfolio/static/js/runtime-main.44087e9b.js"
+    "revision": "76aa8cbd67b5c937ec2c",
+    "url": "/portfolio/static/js/runtime-main.e92c632a.js"
   },
   {
     "revision": "704f4c839968c05a7f27acf26d157ad2",
     "url": "/portfolio/static/media/KrisKopczynskiResume.704f4c83.pdf"
+  },
+  {
+    "revision": "33f7e5132c86f9e4fe6dc0c57f217d70",
+    "url": "/portfolio/static/media/accessibility.33f7e513.jpg"
   },
   {
     "revision": "3305f8147c8b016d28b0eefd6ed7f681",
