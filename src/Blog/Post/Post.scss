@@ -397,6 +397,7 @@
     .module__tickBox_sml{
         top: .2rem;
     }
+
 }
 @include mobile-sm{
     .Post{
@@ -430,4 +431,7 @@
         padding-left: 1.2rem;
     }
 
+    .Post .BlogPage_body .wrapper{
+        width: 85%;
+    }
 }

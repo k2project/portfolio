@@ -31,7 +31,6 @@
     border-collapse: separate;
     th,td{
         padding: 1rem;
-        margin-right: .5rem;
     }
     th{
         border-bottom: solid 1px #111;
@@ -39,6 +38,19 @@
     td{
         border-bottom: solid 1px #ccc;
     }
+}
+.post__ref{
+    font-size: 1rem;
+    color: $color_grey_darker;
+}
+.post__ref-title{
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    border-bottom: solid .1rem $color_grey_darker;
+    font-size: 1.4rem;
+}
+.post__ref-list li{
+    list-style: decimal;
 }
 @include mobile{
     .post__list{
@@ -53,6 +65,13 @@
 @include mobile-sm{
     .post__card{
         padding: 2rem 3rem;
+    }
+    .post__table{
+        font-size: 1rem;
+        border-spacing: 0rem;
+        th,td{
+            padding: 1rem .5rem;
+        }
     }
 
 }

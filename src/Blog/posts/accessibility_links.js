@@ -123,9 +123,37 @@ const accessibility_links={
 
                 </ul>
             </section>
-            <section className="post__section"></section>
+            {/* <section className="post__section">
+                <p className="post__header">Buttons Do Things, Links Go Places</p>
+            </section> */}
+            <References/>
         </article>
     ),
 
 }
 export default accessibility_links;
+
+function References(){
+    return(
+        <section className="post__ref">
+            <p className="post__ref-title">References:</p>
+            <ol className="post__ref-list">
+                <li>
+                    <a href="https://webaim.org/techniques/hypertext/"> WebAIM - <b>Links and Hypertext</b></a>
+                </li>
+                <li>
+                    <a href="http://web-accessibility.carnegiemuseums.org/content/buttons/"> Studio - <b>Links, Buttons, & Other Clickable Elements</b></a>
+                </li>
+                <li>
+                    <a href="http://www.webaxe.org/proper-use-buttons-links/"> Dennis on WebAxe - <b>Proper Use of Buttons and Links</b></a>
+                </li>
+                <li>
+                    <a href="https://marcysutton.com/links-vs-buttons-in-modern-web-applications"> Marcy Sutton - <b>Links vs. Buttons in Modern Web Applications</b></a>
+                </li>
+                <li>
+                    <a href="https://medium.com/simple-human/but-sometimes-links-look-like-buttons-and-buttons-look-like-links-9b371c57b3d2"> Adam Silver - <b>But sometimes links look like buttons (and buttons look like links)</b></a>
+                </li>
+            </ol>
+        </section>
+    )
+}
