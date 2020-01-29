@@ -61,6 +61,29 @@ function PerceivableChecklist(){
                 <TextAlternative/>
                 <AudioAndMedia/>
                 <Adaptable/>
+                <Distinguishable/>
+            </Accordion>
+        </section>
+    )
+}
+function Distinguishable(){
+    const headingInfo={
+        heading:5,
+        title:'DISTINGUISHABLE.',
+        subtitle:'Make it easier for users to see and hear content including separating foreground from background.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                  <li><strong>Use of color. </strong>Color is not used as the sole method of conveying content or distinguishing visual elements. Color alone is not used to distinguish links from surrounding text unless the contrast ratio between the link and the surrounding text is at least 3:1 and an additional distinction (e.g., it becomes underlined) is provided when the link is hovered over and receives focus.</li> 
+                  <li>Text and images of text have a contrast ratio of at least 4.5:1. Large text - at least 18 point (typically 24px) or 14 point (typically 18.66px) and bold - has a contrast ratio of at least 3:1.</li>
+                  <li>If the same visual presentation can be made using text alone, an image is not used to present that text.</li>
+                  <li>The page is readable and functional when the page is zoomed to 200%.</li>
+                  <li>Text is used within an image only for decoration (image does not convey content) OR when the information cannot be presented with text alone.</li>
+                  <li>Text is NOT fully justified,has adequate line spacing (at least 1/2 the height of the text) and paragraph spacing (1.5 times line spacing) and has a specified foreground and background color.</li>
+                </ul>
             </Accordion>
         </section>
     )
@@ -76,7 +99,7 @@ function Adaptable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                   <li>Semantic markup is used to designate headings (h1-h6), regions/landmarks, lists (ul,ol,dl), emphasized text ( <strong>strong</strong> and <strong>em</strong> used instead ofb and i), etc. </li>
+                   <li><strong>Semantic markup</strong>is used to designate headings (h1-h6), regions/landmarks, lists (ul,ol,dl), emphasized text ( <strong>strong</strong> and <strong>em</strong> used instead ofb and i), etc. </li>
                    <li>Tables are used for tabular data and data cells are associated with their headers. Data table captions, if present, are associated to data tables.</li>
                    <li>Text labels are associated with form input elements. Related form elements are grouped with fieldset/legend. ARIA labelling may be used when standard HTML is insufficient.</li>
                    <li><strong>Meaningful Sequence</strong>. The reading and navigation order (determined by code order) is logical and intuitive.</li>
@@ -133,6 +156,8 @@ function AudioAndMedia(){
                    <li>When audio description cannot be added to video due to audio timing (e.g., insufficient pauses in the audio), an alternative version of the video with pauses that allow audio descriptions is provided.</li>
                    <li>A transcript is provided for pre-recorded media that has a video track. For optimal accessibility, WebAIM strongly recommends transcripts for all multimedia.</li>
                    <li>A descriptive text transcript (e.g., the script of the live audio) is provided for live content that has audio.</li>
+                   <li>A mechanism is provided to stop, pause, mute, or adjust volume for audio that automatically plays on a page for more than 3 seconds.</li>
+                   <li>Audio with speech has no or very low background noise so the speech is easily distinguished.</li>
                 </ul>
             </Accordion>
         </section>
@@ -178,7 +203,12 @@ function RobustChecklist(){
     return(
         <section>
             <Accordion data={headingInfo}>
-                test
+            <ul className="post__list">
+                <li>Maximize compatibility with current and future user agents, including assistive technologies.</li>
+                <li>Markup is used in a way that facilitates accessibility. This includes following the HTML/XHTML specifications and using forms, form labels, frame titles, etc. appropriately.</li>
+                <li>ARIA is used appropriately to enhance accessibility when HTML is not sufficient.</li>
+                <li>f an important status message is presented and focus is not set to that message, the message must be announced to screen reader users, typically via an ARIA alert or live region.</li>
+            </ul>
             </Accordion>
         </section>
     )
