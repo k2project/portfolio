@@ -1,0 +1,49 @@
+@import './../../App.scss';
+.accordion__head{
+  display: block;
+  padding: 2rem 5rem;
+  margin: 1rem 0;
+  background: $color_grey;
+  font-size:1.4rem;
+  line-height: 1.4;
+}
+.accordion__head--red{
+  background: $color_primary;
+  color: #fff;
+}
+.accordion__head--blue{
+  background: $color_secondary_light;
+  color:#fff;
+}
+.accordion__title{
+    font-size: 2rem;
+}
+.accordion__arrow{
+  position: absolute;
+  right: 3rem;
+  top:55%;
+  font-size: 1.6rem;
+  transform: scaleX(1.5)translateY(-50%)rotate(0deg);
+  transition: .5s;
+}
+.accordion__arrow--is-rotated{
+  transform: scaleX(1.5)translateY(-50%)rotate(180deg);
+}
+.accordion__body{
+  display: none;
+}
+.accordion__body--is-shown{
+  display: block;
+}
+@include mobile-sm{
+  .accordion__head{
+      padding: 2rem 3rem;
+  }
+  .accordion__arrow{
+    right: 2rem;
+    top:25%;
+    font-size: 1rem;
+  }
+
+
+}

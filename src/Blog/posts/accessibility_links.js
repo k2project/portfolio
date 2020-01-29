@@ -115,7 +115,7 @@ const accessibility_links={
                      <li><span className="color--red">LINKS WITH IMAGES.</span> <b>Images that are the only thing within a link MUST have alternative text.</b> Otherwise a screen reader may read the image file name or the URL being linked to. The alternative text should convey the content of the image and the function of the link, which in most cases are the same. However, sometimes it may require more text (eg., alt="Chart showing 10% sales increase over the last decade with link to more sales data.").</li>
                      <li><span className="color--red">LINKS APPEARANCE.</span> <b>Links should look like links, and nothing else should.</b> Browsers underline hypertext links by default. Without underlining, the links should be designed so it is apparent that the user can click on them to perform an action. According to WCAG 2.0 <i>the link text must have a 3:1 contrast ratio from the surrounding non-link text and must present a "non-color designator" (typically the introduction of the underline) on both mouse hover and keyboard focus. To ansure the same visual presentation of link for both keyboard and mouse user always use a:hover and a:focus.</i></li>
                     <li>Steer clear of creating links that go nowhere, such as dropdown menu on mouse action.
-                        <span className="post__card">
+                        <span className="card">
                             <code>&lt;a href="#" onmouseover="dropdownmenu()" &gt; Submenu &lt;/a&gt;</code>
                         </span>
                      </li>

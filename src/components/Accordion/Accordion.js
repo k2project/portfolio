@@ -1,0 +1,32 @@
+import React from 'react';
+import './Accordion.scss';
+
+function Accordion(props){
+  let {heading,title,subtitle,color}=props.data;
+  let CustomHeading = 'h4';
+  if(!isNaN(heading) && heading>1 && heading<7){
+    CustomHeading = 'h'+ heading;
+  }
+  color = color? color : null;
+
+  function toggleContent(e){
+    const target = e.target.closest('.accordion__head');
+    target.nextElementSibling.classList.toggle("accordion__body--is-shown");
+    target.lastElementChild.classList.toggle("accordion__arrow--is-rotated");
+  }
+    return(
+        <div className="accordion">
+          <div className={"accordion__head accordion__head--"+color} 
+            role="button" 
+            onClick={toggleContent}>
+            <CustomHeading className="accordion__title">{title}</CustomHeading>
+            {subtitle}
+            <span className="accordion__arrow">&#9660;</span>
+          </div>
+          <div className="accordion__body">
+            {props.children}
+          </div>
+        </div>
+    )
+}
+export default Accordion;

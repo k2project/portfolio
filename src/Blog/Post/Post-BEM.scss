@@ -15,7 +15,8 @@
         list-style:disc;
     }
 }
-.post__card{
+
+.card{
     display: block;
     padding: 2rem 5rem;
     margin: 1rem 0;
@@ -23,6 +24,20 @@
     font-size:1.4rem;
     line-height: 1.4;
 }
+
+.card--red{
+    background: $color_primary;
+    color: #fff;
+
+}
+.card--blue{
+    background: $color_secondary_light;
+    color:#fff;
+}
+.card__title{
+    font-size: 2rem;
+}
+
 .post__table{
     background: $color_grey;
     width: 100%;
@@ -63,7 +78,7 @@
     }
 }
 @include mobile-sm{
-    .post__card{
+    .card{
         padding: 2rem 3rem;
     }
     .post__table{
