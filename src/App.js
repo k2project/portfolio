@@ -11,6 +11,7 @@ import Post from './Blog/Post/Post';
 function App() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
+          
             <Switch>
                 <Route exact path={`/`} component={Portfolio}/>
                 <Route  exact path={`/blog`} component={Blog}/>
