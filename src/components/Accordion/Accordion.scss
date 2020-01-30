@@ -1,7 +1,7 @@
 @import './../../App.scss';
 .accordion__head{
   display: block;
-  padding: 2rem 5rem;
+  padding: 2rem 3rem 2rem 6rem;
   margin: 1rem 0;
   background: $color_grey;
   font-size:1.4rem;
@@ -19,15 +19,16 @@
     font-size: 2rem;
 }
 .accordion__arrow{
+  color: #fff;
   position: absolute;
-  right: 3rem;
-  top:55%;
-  font-size: 1.6rem;
-  transform: scaleX(1.5)translateY(-50%)rotate(0deg);
+  left: 2rem;
+  top:50%;
+  font-size: 2rem;
+  transform: translateY(-50%)rotate(0deg);
   transition: .5s;
 }
 .accordion__arrow--is-rotated{
-  transform: scaleX(1.5)translateY(-50%)rotate(180deg);
+  transform: translateY(-50%)rotate(90deg);
 }
 .accordion__body{
   display: none;
@@ -35,15 +36,27 @@
 .accordion__body--is-shown{
   display: block;
 }
+@include mobile{
+  .accordion__body .post__list{
+    padding-left: 4rem;
+  }
+}
 @include mobile-sm{
   .accordion__head{
-      padding: 2rem 3rem;
+      padding: 2rem;
+  }
+  .accordion__body .post__list{
+    padding-left: 3rem;
+  }
+  .accordion__title{
+    padding-left: 2.5rem;
   }
   .accordion__arrow{
-    right: 2rem;
-    top:25%;
-    font-size: 1rem;
+    top: 2.1rem;
+    transform: translateY(0%)rotate(0deg);
   }
-
+  .accordion__arrow--is-rotated{
+    transform: translateY(0%)rotate(90deg);
+  }
 
 }

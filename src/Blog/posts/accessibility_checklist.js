@@ -41,7 +41,13 @@ function References(){
             <p className="post__ref-title">References:</p>
             <ol className="post__ref-list">
                 <li>
+                    <a href="https://www.w3.org/TR/WCAG21/"> W3C - <b>Web Content Accessibility Guidelines (WCAG) 2.1</b></a>
+                </li>
+                <li>
                     <a href="https://webaim.org/standards/wcag/checklist"> WebAIM - <b>WebAIM's WCAG 2 Checklist</b></a>
+                </li>
+                <li>
+                    <a href="https://a11yproject.com/checklist/"> The A11Y Project- <b>Checklist</b></a>
                 </li>
                
             </ol>
@@ -173,7 +179,52 @@ function OperableChecklist(){
     return(
         <section>
             <Accordion data={headingInfo}>
-                test
+                <KeyboardAccessible/>
+                <Timing/>
+            </Accordion>
+        </section>
+    )
+}
+function KeyboardAccessible(){
+    const headingInfo={
+        heading:5,
+        title:'KEYBOARD ACCESSIBLE.',
+        subtitle:'Make all functionality available from a keyboard.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                   <li>All page functionality is available using the keyboard, unless the functionality cannot be accomplished in any known way using a keyboard (e.g., free hand drawing).</li>
+                   <li>Page-specified shortcut keys and accesskeys (accesskey should typically be avoided) do not conflict with existing browser and screen reader shortcuts.</li>
+                   <li>Keyboard focus is never locked or trapped at one particular page element. The user can navigate to and from all navigable page elements using only a keyboard.</li>
+                   <li><strong>All page functionality is available using the keyboard.</strong></li>
+                   <li>If a keyboard shortcut uses printable character keys, then the user must be able to disable the key command, change the defined key to a non-printable key (Ctrl, Alt, etc.), or only activate the shortcut when an associated interface component or button is focused.</li>
+                </ul>
+            </Accordion>
+        </section>
+    )
+}
+function Timing(){
+    const headingInfo={
+        heading:5,
+        title:'TIMING.',
+        subtitle:'Provide users enough time to read and use content.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                 <li>If a page or application has a time limit, the user is given options to turn off, adjust, or extend that time limit. This is not a requirement for real-time events (e.g., an auction), where the time limit is absolutely required, or if the time limit is longer than 20 hours.</li>
+                 <li>Automatically moving, blinking, or scrolling content (such as carousels, marquees, or animations) that lasts longer than 5 seconds can be paused, stopped, or hidden by the user.</li>
+                 <li>Automatically updating content (e.g., a dynamically-updating news ticker, chat messages, etc.) can be paused, stopped, or hidden by the user or the user can manually control the timing of the updates.</li>
+                 <li>The content and functionality have no time limits or constraints.</li>
+                 <li>Interruptions (alerts, page updates, etc.) can be postponed or suppressed by the user.</li>
+                 <li>If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.</li>
+                 <li>Users must be warned of any timeout that could result in data loss, unless the data is preserved for longer than 20 hours of user inactivity.</li>
+                </ul>
             </Accordion>
         </section>
     )

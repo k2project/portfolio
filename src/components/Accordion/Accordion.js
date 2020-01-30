@@ -10,18 +10,18 @@ function Accordion(props){
   color = color? color : null;
 
   function toggleContent(e){
-    const target = e.target.closest('.accordion__head');
+    let target = e.target.closest('.accordion__head');
     target.nextElementSibling.classList.toggle("accordion__body--is-shown");
-    target.lastElementChild.classList.toggle("accordion__arrow--is-rotated");
+    target.firstElementChild.classList.toggle("accordion__arrow--is-rotated");
   }
     return(
         <div className="accordion">
-          <div className={"accordion__head accordion__head--"+color} 
-            role="button" 
+          <div className={"accordion__head accordion__head--"+color}
             onClick={toggleContent}>
+            <button className="accordion__arrow">
+            &#10148;</button>
             <CustomHeading className="accordion__title">{title}</CustomHeading>
             {subtitle}
-            <span className="accordion__arrow">&#9660;</span>
           </div>
           <div className="accordion__body">
             {props.children}
