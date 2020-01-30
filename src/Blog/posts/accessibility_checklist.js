@@ -21,7 +21,7 @@ const accessibility_checklist={
 
             </section>
             <section className="post__section">
-                <h3 className="post__heading"> WCAG 2.0 Checklist</h3>
+                <h3 className="post__heading"> WCAG 2.0 Checklist (Levels A - AAA)</h3>
                 <PerceivableChecklist/>
                 <OperableChecklist/>
                 <UnderstandableChecklist/>
@@ -48,6 +48,9 @@ function References(){
                 </li>
                 <li>
                     <a href="https://a11yproject.com/checklist/"> The A11Y Project- <b>Checklist</b></a>
+                </li>
+                <li>
+                    <a href="https://romeo.elsevier.com/accessibility_checklist/"> Elsevier - <b>Accessibility Checklist</b></a>
                 </li>
                
             </ol>
@@ -239,7 +242,37 @@ function UnderstandableChecklist(){
     return(
         <section>
             <Accordion data={headingInfo}>
-                test
+                <Readable/>
+            </Accordion>
+        </section>
+    )
+}
+function Readable(){
+    const headingInfo={
+        heading:5,
+        title:'READABLE.',
+        subtitle:'Provide users enough time to read and use content.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                    <li>Specify the language (e.g. English) of the Web page. This allows screen reader software (used by blind users) to use the correct pronounciation when speaking the text on the page aloud.
+                        <span className="card">
+                            &lt;html lang="en"&gt;
+                        </span>
+                    </li>
+                    <li>Specify the language (e.g. English) of each text phrase or passage that is in a language other than the default language specified for the entire Web page.
+                        <span className="card">
+                            &lt;blockquote lang="esp"&gt; Hola! &lt;/blockquote&gt;
+                        </span>
+                    </li>
+                    <li>Provide definitions of idioms, jargon, and unusual terms and phrases.</li>
+                    <li>Provide the expanded form of abbreviations.</li>
+                    <li>Provide a simplified version of text that requires an advanced level of understanding.</li>
+                    <li>Provide the pronunciation of words where the meaning is unclear without knowing the correct pronunciation.</li>
+                </ul>
             </Accordion>
         </section>
     )
@@ -248,17 +281,21 @@ function RobustChecklist(){
     const headingInfo={
         heading:4,
         title:'ROBUST.',
-        subtitle:'Content should be interpreted by a wide variety of user agents, including assistive technologies.',
+        subtitle:'Maximize compatibility with assistive technologies (such as screen readers) and future browsers',
         color:'red',
     }
     return(
         <section>
             <Accordion data={headingInfo}>
             <ul className="post__list">
-                <li>Maximize compatibility with current and future user agents, including assistive technologies.</li>
-                <li>Markup is used in a way that facilitates accessibility. This includes following the HTML/XHTML specifications and using forms, form labels, frame titles, etc. appropriately.</li>
-                <li>ARIA is used appropriately to enhance accessibility when HTML is not sufficient.</li>
-                <li>f an important status message is presented and focus is not set to that message, the message must be announced to screen reader users, typically via an ARIA alert or live region.</li>
+                <li>Markup is used in a way that facilitates accessibility. Use valid, error-free HTML, including unique (non-duplicate) element IDs.</li>
+                <li>For all UI components, the name, value and role can be programmatically determined. The name and state of all form elements, links and other UI components can be determined and the state can be changed. <strong>Avoid using non-standard controls.</strong> When using non-standard controls, make sure that it is keyboard accessible - it can receive focus and its state can be changed using the keyboard.</li>
+                <li>Status Messages (a visual message that provides information to the user on the success or results of an action, on the waiting state of an application, on the progress of a process, or on the existence of errors) must be available to AT such as screen readers vis ARIAs.
+                    <span className="card">
+                    role="status / marquee / progressbar / timer /alertdialog"
+                    </span>
+
+                </li>
             </ul>
             </Accordion>
         </section>
