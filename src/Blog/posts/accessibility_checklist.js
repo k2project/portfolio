@@ -184,6 +184,9 @@ function OperableChecklist(){
             <Accordion data={headingInfo}>
                 <KeyboardAccessible/>
                 <Timing/>
+                <Seizures/>
+                <Navigable/>
+                <nputModalities/>
             </Accordion>
         </section>
     )
@@ -232,6 +235,67 @@ function Timing(){
         </section>
     )
 }
+function Seizures(){
+    const headingInfo={
+        heading:5,
+        title:'SEIZURES.',
+        subtitle:'Do not design content in a way that is known to cause seizures or physical reactions.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                </ul>
+            </Accordion>
+        </section>
+    )
+}
+function Navigable(){
+    const headingInfo={
+        heading:5,
+        title:'NAVIGABLE.',
+        subtitle:'Provide ways to help users navigate, find content, and determine where they are.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                </ul>
+            </Accordion>
+        </section>
+    )
+}
+function InputModalities(){
+    const headingInfo={
+        heading:5,
+        title:'IMPUT MODALITIES.',
+        subtitle:'Make it easier for users to operate functionality through various inputs beyond keyboard.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                </ul>
+            </Accordion>
+        </section>
+    )
+}
+
+
+
+
 function UnderstandableChecklist(){
     const headingInfo={
         heading:4,
@@ -244,6 +308,29 @@ function UnderstandableChecklist(){
             <Accordion data={headingInfo}>
                 <Readable/>
                 <Predictable/>
+                <InputAssistance/>
+            </Accordion>
+        </section>
+    )
+}
+function InputAssistance(){
+    const headingInfo={
+        heading:5,
+        title:'INPUT ASSISTANCE.',
+        subtitle:'Help users avoid and correct mistakes.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                <li><strong>Error Identification.</strong> Input errors are clearly marked and described to the user. Display an error message with text alerting the user to the specific fields (or other form elements) containing errors and describing the specific errors in the input. Color or images can be used in addition to the text to mark the form elements containing errors.</li>
+                <li><strong>Labels or Instructions.</strong> Items requiring user input are clearly labeled or have clear instructions. Label all form elements. Use clear, unambiguous labels. Identify required (mandatory) fields with a text label. Do not use color or images only to identify required fields. Display the label for an element in close proximity to that element. Provide examples of correct input, such as the correct date format.
+                <span className="card">&lt;label for="[ID]"&gt;</span>
+                </li>
+                <li><strong>Error Suggestion.</strong> When the user makes an input error, give suggestions for valid input.</li>
+                <li><strong>Error Prevention.</strong> Input can be reviewed and corrected before final submission, and submissions can be reverted, especially in case of Web pages causes legal or financial commitments.</li>
+                </ul>
             </Accordion>
         </section>
     )
@@ -259,11 +346,42 @@ function Predictable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li>When a UI component receives focus, this does not trigger unexpected actions such as automatically submitting a form, opening a new window or switching focus to another element.</li>
-                    <li>Changing the setting of a checkbox, radio button or other UI component does not trigger unexpected changes in context, such as causing significant changes to the page content or opening a new window. <strong>Provide a submit button. Do not perform any actions until this button is clicked by the user.</strong></li>
-                    <li><strong>Consistent Navigation.</strong>Navigation menus, search box, login/logout buttons and a "Skip to content" link are in the same location and order on every Web page.</li>
-                    <li><strong>Consistent Identification.</strong>UI components used across the Web site are identified consistently on every page. </li>
-                    <li><strong>Change on Request.</strong>All unexpected changes in context, such as causing significant changes to the page content or opening a new window, are triggered by the user, or such unexpected changes in context can be turned off by the user.</li>
+                <li><strong>On Focus.</strong>When a UI component receives focus, this does not trigger unexpected actions such as automatically submitting a form, opening a new window or switching focus to another element.</li>
+                  <li><strong>On Input.</strong>Changing the setting of a checkbox, radio button or other UI component does not trigger unexpected changes in context, such as causing significant changes to the page content or opening a new window. <em>Provide a submit button. Do not perform any actions until this button is clicked by the user.</em></li>
+                  <li><strong>Consistent Navigation.</strong>Navigation menus, search box, login/logout buttons and a "Skip to content" link are in the same location and order on every Web page.</li>
+                  <li><strong>Consistent Identification</strong>UI components used across the Web site are identified consistently on every page. </li>
+                  <li><strong>Change on Request.</strong>All unexpected changes in context, such as causing significant changes to the page content or opening a new window, are triggered by the user, or such unexpected changes in context can be turned off by the user. 
+                  </li>
+                </ul>
+            </Accordion>
+        </section>
+    )
+}
+function Readable(){
+    const headingInfo={
+        heading:5,
+        title:'READABLE.',
+        subtitle:'Make text content readable and understandable.',
+        color:'blue',
+    }
+    return(
+        <section>
+            <Accordion data={headingInfo}>
+                <ul className="post__list">
+                    <li><strong>Language of Page.</strong>Specify the language (e.g. English) of the Web page. This allows screen reader software (used by blind users) to use the correct pronounciation when speaking the text on the page aloud.
+                        <span className="card">
+                            &lt;html lang="en"&gt;
+                        </span>
+                    </li>
+                    <li><strong>Language of Partial Text.</strong>Specify the language (e.g. English) of each text phrase or passage that is in a language other than the default language specified for the entire Web page.
+                        <span className="card">
+                            &lt;blockquote lang="esp"&gt; Hola! &lt;/blockquote&gt;
+                        </span>
+                    </li>
+                    <li><strong>Unusual Words.</strong>Provide definitions of idioms, jargon, and unusual terms and phrases.</li>
+                    <li><storng>Abbreviations.</storng>Provide the expanded form of abbreviations.</li>
+                    <li><strong>Reading Level.</strong>Provide a simplified version of text that requires an advanced level of understanding.</li>
+                    <li><strong>Pronunciation.</strong>Provide the pronunciation of words where the meaning is unclear without knowing the correct pronunciation.</li>
                 </ul>
             </Accordion>
         </section>
