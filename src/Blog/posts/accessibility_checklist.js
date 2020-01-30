@@ -86,12 +86,14 @@ function Distinguishable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                  <li><strong>Use of color. </strong>Color is not used as the sole method of conveying content or distinguishing visual elements. Color alone is not used to distinguish links from surrounding text unless the contrast ratio between the link and the surrounding text is at least 3:1 and an additional distinction (e.g., it becomes underlined) is provided when the link is hovered over and receives focus.</li> 
-                  <li>Text and images of text have a contrast ratio of at least 4.5:1. Large text - at least 18 point (typically 24px) or 14 point (typically 18.66px) and bold - has a contrast ratio of at least 3:1.</li>
-                  <li>If the same visual presentation can be made using text alone, an image is not used to present that text.</li>
-                  <li>The page is readable and functional when the page is zoomed to 200%.</li>
+                  <li><strong>Use of color. </strong>Color is not used as the sole method of conveying content or distinguishing visual elements. Do not rely solely on color to identify links. Distinguish links from regular text by underlining them, bolding them, showing an icon next to each link, or some other means other than color. In forms, use not just color but also text labels to identify required fields or fields with errors</li> 
+                  <li><strong>Contrast. </strong>Text and images of text have a contrast ratio of at least 4.5:1. Large text - at least 18 point (typically 24px) or 14 point (typically 18.66px) and bold - has a contrast ratio of at least 3:1. Text has enough contrast with the background.</li>
+                  <li><strong>Images of Text. </strong>If the same visual presentation can be made using text alone, an image is not used to present that text (exceptions: logos,etc.).</li>
+                  <li><strong>Resize text. </strong>The page is readable and functional when the page is zoomed to 200%. When content is zoomed in to a large degree, the site will adapt to ensure that scrolling only occurs in one direction.</li>
                   <li>Text is used within an image only for decoration (image does not convey content) OR when the information cannot be presented with text alone.</li>
-                  <li>Text is NOT fully justified,has adequate line spacing (at least 1/2 the height of the text) and paragraph spacing (1.5 times line spacing) and has a specified foreground and background color.</li>
+                  <li><strong>Text Spacing.</strong> Text is NOT fully justified. Line height (line spacing) to at least 1.5 times the font size. Spacing following paragraphs to at least 2 times the font size. Letter spacing (tracking) to at least 0.12 times the font size. Word spacing to at least 0.16 times the font size.</li>
+                  <li><strong>Audio Control. </strong>For audio that plays longer than 3 seconds, users should be able to pause or stop the audio, or change the volume of the audio. Low or no background audio, or background audio can be turned off. </li>
+                  <li><strong>Content on Hover or Focus.</strong> Content that appears on mouse hover or keyboard focus must be dismissable (the user can close the content without moving the pointer or focus - Esc Key), hoverable (the pointer can move over the additional content without it disappearing), and persistent (the content remains until closed by the user, or if hover/focus is moved away).</li>
                 </ul>
             </Accordion>
         </section>
@@ -108,14 +110,14 @@ function Adaptable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                   <li><strong>Semantic markup</strong>is used to designate headings (h1-h6), regions/landmarks, lists (ul,ol,dl), emphasized text ( <strong>strong</strong> and <strong>em</strong> used instead ofb and i), etc. </li>
+                   <li><strong>Information and Relationships. </strong>Information, structure, and relationships can be programmatically determined. The structure and meaning of the page can still be understood when all CSS styling is removed. <strong>Semantic markup</strong> is used to define the structure and meaning of the elements on the page: headings (h1-h6), regions/landmarks, lists (ul,ol,dl), emphasized text ( <strong>strong</strong> and <strong>em</strong> used instead ofb and i), etc. </li>
                    <li>Tables are used for tabular data and data cells are associated with their headers. Data table captions, if present, are associated to data tables.</li>
                    <li>Text labels are associated with form input elements. Related form elements are grouped with fieldset/legend. ARIA labelling may be used when standard HTML is insufficient.</li>
-                   <li><strong>Meaningful Sequence</strong>. The reading and navigation order (determined by code order) is logical and intuitive.</li>
+                   <li><strong>Meaningful Sequence</strong>. The reading and navigation order (determined by code order) is logical and intuitive. When all CSS styling of the page is removed, the elements on the page are still in a logical reading order in the HTML code. Make sure the tabbing order of the page elements is logical. If necessary, use the tabIndex property to enforce the correct tabbing order.</li>
                    <li>Instructions do not rely upon shape, size, sound or visual location (e.g., "Click the square icon to continue").</li>
-                   <li>Orientation of web content is not restricted to only portrait or landscape, unless a specific orientation is necessary.</li>
+                   <li><strong>Orientation</strong> of web content is not restricted to only portrait or landscape, unless a specific orientation is necessary.</li>
                    <li>Input fields that collect certain types of user information have an appropriate autocomplete attribute defined.</li>
-                   <li>HTML5 regions or ARIA landmarks are used to identify page regions. ARIA is used, where appropriate, to enhance HTML semantics to better identify the purpose of interface components.</li>
+                   <li><strong>Identify Purpose. </strong>HTML5 regions or ARIA landmarks are used to identify page regions. ARIA is used, where appropriate, to enhance HTML semantics to better identify the purpose of interface components.</li>
                 </ul>
             </Accordion>
         </section>
@@ -139,6 +141,8 @@ function TextAlternative(){
                     <li>Form inputs have associated text labels.</li>
                     <li>Embedded multimedia is identified via accessible text.</li>
                     <li>Frames and iframes are appropriately titled.</li>
+                    <li>Provide a descriptive TITLE attribute for all embedded audio/video, non-image charts, Flash, form elements and other items that require textual explanation in order to be understood.</li>
+                    <li>Do not use CAPTCHA that relies on visual identification.</li>
                 </ul>
             </Accordion>
         </section>
@@ -155,8 +159,8 @@ function AudioAndMedia(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                   <li>A transcript of relevant content is provided for <strong>non-live audio-only</strong> (audio podcasts, MP3 files, etc.).</li>
-                   <li>A transcript or audio description of relevant content is provided for <strong>non-live video-only</strong>, unless the video is decorative.</li>
+                   <li>A transcript of relevant content is provided for non-live audio-only (audio podcasts, MP3 files, etc.).</li>
+                   <li>A transcript or audio description of relevant content is provided for non-live video-only, unless the video is decorative.</li>
                    <li>Synchronized captions are provided for non-live video.</li>
                    <li>A transcript or audio description is provided for non-live video. NOTE: Only required if there is relevant visual content that is not presented in the audio.</li>
                    <li>Synchronized captions are provided for live media that contains audio (audio-only broadcasts, web casts, video conferences, etc.)</li>
