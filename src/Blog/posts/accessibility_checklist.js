@@ -289,9 +289,13 @@ function InputModalities(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li><strong></strong></li>
-                    <li><strong></strong></li>
-                    <li><strong></strong></li>
+                    <li><strong>Pointer Gestures.</strong> All operations must use simple gestures that need only a single touch or click. If more complex operations exist, a single touch or click alternative must be given (exceptions: signature,tec.).</li>
+                    <li><strong>Pointer Gestures. </strong>All operations must use simple gestures that need only a single touch or click. If more complex operations exist, a single touch or click alternative must be given. NO DOWN EVENT: The down-event of the pointer is not used to execute any part of the function. ABORT/UNDO: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion. UP EVENT: The up-event reverses any outcome of the preceding down-event. </li>
+                    <li><strong>Label in Name. </strong> For user interface components with visible text, ensure that the accessible name includes the visible text.</li>
+                    <li><strong>Motion Actuation. </strong>Motion input (shaking, orientation change, tilting, etc.) must be accompanied by another means of input (such as a button). The motion actuation or responding to the motion can be disabled to prevent accidental actuation, unless the motion is essential for the function and doing so would invalidate the activity.</li>
+                    <li><strong>Target Size. </strong>The size of the target for pointer inputs (mouse, touchscreen) is at least 44 by 44 pixels. </li>
+                    <li><strong>Concurrent Input Mechanisms. </strong>
+                    Web content does not restrict use of different input types (keyboard, mouse, touch screen, speech input, etc.) except where the restriction is essential.</li>
                 </ul>
             </Accordion>
         </section>
