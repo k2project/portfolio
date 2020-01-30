@@ -67,6 +67,16 @@
 .post__ref-list li{
     list-style: decimal;
 }
+.post__link{
+    text-decoration-line: underline;
+}
+.post__link:hover{
+    color: $color_secondary_light;
+    text-decoration-line: underline;
+}
+.post__link{
+    text-decoration-line: underline;
+}
 @include mobile{
     .post__list{
         padding-left: 1rem;

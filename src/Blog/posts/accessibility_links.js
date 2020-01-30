@@ -5,7 +5,7 @@ const accessibility_links={
     id:'9',
     featured:false,
     title:'Links',
-    subtitle:'Web Accesibility Best Practices',
+    subtitle:'Web Accessibility Best Practices',
     date:'2020-01-28',
     image:{
         path:'accessibility.jpg',

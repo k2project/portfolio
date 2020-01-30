@@ -107,6 +107,8 @@ p{
 .txt_right{
     text-align: right;
 }
+
+
 @include desktop-sm{
     .wrapper{
         width: 100%;

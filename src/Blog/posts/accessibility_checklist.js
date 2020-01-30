@@ -5,7 +5,7 @@ const accessibility_checklist={
     id:'11',
     featured:true,
     title:'Checklist',
-    subtitle:'Web Accesibility Best Practices',
+    subtitle:'Web Accessibility Best Practices',
     date:'2020-01-29',
     image:{
         path:'accessibility.jpg',
@@ -21,11 +21,18 @@ const accessibility_checklist={
 
             </section>
             <section className="post__section">
-                <h3 className="post__heading"> WCAG 2.0 Checklist (Levels A - AAA)</h3>
+                <h3 className="post__heading"> WCAG 2.0 Checklist (Levels A - AAA).</h3>
                 <PerceivableChecklist/>
                 <OperableChecklist/>
                 <UnderstandableChecklist/>
                 <RobustChecklist/>
+            </section>
+            <section className="post__section">
+            <h3 className="post__heading"> Links To Handy Accessibility Tools.</h3>
+                <a href="http://wave.webaim.org" className="post__link">WAVE - Web Accessibility Evaluation Tool</a> <br/>
+                <a href="http://validator.w3.org" className="post__link">Markup Validation Service</a> <br/>
+                
+                <a href="https://webaim.org/resources/contrastchecker/" className="post__link">Web AIM Colour Contrast Checker</a>
             </section>
             
             <References/>
