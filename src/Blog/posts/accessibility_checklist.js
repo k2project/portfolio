@@ -4,9 +4,9 @@ import Accordion from './../../components/Accordion/Accordion';
 const accessibility_checklist={
     id:'11',
     featured:true,
-    title:'Checklist',
+    title:'Accessibility Checklist',
     subtitle:'Web Accessibility Best Practices',
-    date:'2020-01-29',
+    date:'2020-01-30',
     image:{
         path:'accessibility.jpg',
         position:'right center '

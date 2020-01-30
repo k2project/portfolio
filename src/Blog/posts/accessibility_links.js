@@ -21,7 +21,7 @@ const accessibility_links={
                 </p>
             </section>
             <section className="post__section">
-                <h3 className="post__heading">Links Attributes</h3>
+                <h3 className="post__heading">Links Attributes.</h3>
                 <table className="post__table">
                     <tr>
                         <th>Attribute</th>
@@ -105,7 +105,7 @@ const accessibility_links={
                 </p>
             </section>
             <section className="post__section">
-                <h3 className="post__heading">Links Accessibility Best Practices</h3>
+                <h3 className="post__heading">Links Accessibility Best Practices.</h3>
                 <ul className="post__list">
                     <li><b>Use good link's text.</b> Links should make sense when reading out of context. Avoid phrases such as "click here", "more", "click for details".</li>
                     <li><b>Links should never be empty! </b> Their text should be as concise as possible without sacrificing the meaning.</li>
@@ -120,12 +120,14 @@ const accessibility_links={
                         </span>
                      </li>
                       <li><b>Avoid using JavaScript event handlers that do not permit keyboard access.</b> <br/> <i>In most browsers, the "TAB" key allows users to jump from link to link, and the "ENTER" key allows users to select a link. </i></li>
+                      <li><span className="color--red">LINKS ON FOCUS.</span> Use CSS styling for keyboard users to clearly mark the links when in focus ( a::focus ).</li>
 
                 </ul>
             </section>
-            {/* <section className="post__section">
-                <p className="post__header">Buttons Do Things, Links Go Places</p>
-            </section> */}
+            <section className="post__section">
+                <p className="post__heading">"Skip Navigation" Links.</p>
+                <p>Most of the time the main content is not usually the first thing on a web page. Keyboard and screen reader users must navigate a long list of elements before ever arriving at the main content. Without some sort of system for bypassing the long list of links, some users are at a huge disadvantage. </p>
+            </section>
             <References/>
         </article>
     ),
