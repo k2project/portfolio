@@ -243,35 +243,27 @@ function UnderstandableChecklist(){
         <section>
             <Accordion data={headingInfo}>
                 <Readable/>
+                <Predictable/>
             </Accordion>
         </section>
     )
 }
-function Readable(){
+function Predictable(){
     const headingInfo={
         heading:5,
-        title:'READABLE.',
-        subtitle:'Provide users enough time to read and use content.',
+        title:'PREDICTABLE.',
+        subtitle:'Make Web pages appear and operate in predictable ways.',
         color:'blue',
     }
     return(
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li>Specify the language (e.g. English) of the Web page. This allows screen reader software (used by blind users) to use the correct pronounciation when speaking the text on the page aloud.
-                        <span className="card">
-                            &lt;html lang="en"&gt;
-                        </span>
-                    </li>
-                    <li>Specify the language (e.g. English) of each text phrase or passage that is in a language other than the default language specified for the entire Web page.
-                        <span className="card">
-                            &lt;blockquote lang="esp"&gt; Hola! &lt;/blockquote&gt;
-                        </span>
-                    </li>
-                    <li>Provide definitions of idioms, jargon, and unusual terms and phrases.</li>
-                    <li>Provide the expanded form of abbreviations.</li>
-                    <li>Provide a simplified version of text that requires an advanced level of understanding.</li>
-                    <li>Provide the pronunciation of words where the meaning is unclear without knowing the correct pronunciation.</li>
+                    <li>When a UI component receives focus, this does not trigger unexpected actions such as automatically submitting a form, opening a new window or switching focus to another element.</li>
+                    <li>Changing the setting of a checkbox, radio button or other UI component does not trigger unexpected changes in context, such as causing significant changes to the page content or opening a new window. <strong>Provide a submit button. Do not perform any actions until this button is clicked by the user.</strong></li>
+                    <li><strong>Consistent Navigation.</strong>Navigation menus, search box, login/logout buttons and a "Skip to content" link are in the same location and order on every Web page.</li>
+                    <li><strong>Consistent Identification.</strong>UI components used across the Web site are identified consistently on every page. </li>
+                    <li><strong>Change on Request.</strong>All unexpected changes in context, such as causing significant changes to the page content or opening a new window, are triggered by the user, or such unexpected changes in context can be turned off by the user.</li>
                 </ul>
             </Accordion>
         </section>
