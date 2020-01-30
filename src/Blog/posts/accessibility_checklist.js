@@ -186,7 +186,7 @@ function OperableChecklist(){
                 <Timing/>
                 <Seizures/>
                 <Navigable/>
-                <nputModalities/>
+                <InputModalities/>
             </Accordion>
         </section>
     )
@@ -202,11 +202,9 @@ function KeyboardAccessible(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                   <li>All page functionality is available using the keyboard, unless the functionality cannot be accomplished in any known way using a keyboard (e.g., free hand drawing).</li>
-                   <li>Page-specified shortcut keys and accesskeys (accesskey should typically be avoided) do not conflict with existing browser and screen reader shortcuts.</li>
-                   <li>Keyboard focus is never locked or trapped at one particular page element. The user can navigate to and from all navigable page elements using only a keyboard.</li>
-                   <li><strong>All page functionality is available using the keyboard.</strong></li>
-                   <li>If a keyboard shortcut uses printable character keys, then the user must be able to disable the key command, change the defined key to a non-printable key (Ctrl, Alt, etc.), or only activate the shortcut when an associated interface component or button is focused.</li>
+                   <li><strong>Keyboard.</strong> All page functionality is available using the keyboard, unless the functionality cannot be accomplished in any known way using a keyboard (e.g., free hand drawing). <strong>All clickable items should also be selectable using the keyboard. </strong>Where "drag and drop" functionality is used, a keyboard-based "cut and paste" alternative should be offered. Do not use non-standard interface elements that are not keyboard-accessible but can be controlled with a mouse only.</li>
+                   <li><strong>No Keyboard Trap.</strong> Keyboard focus is never locked or trapped at one particular page element. The user can navigate to and from all navigable page elements using only a keyboard.</li>
+                   <li><strong>Keyboard Shortcuts.</strong> Page-specified shortcut keys and accesskeys (accesskey should typically be avoided) do not conflict with existing browser and screen reader shortcuts. If a keyboard shortcut uses printable character keys, then the user must be able to disable the key command, change the defined key to a non-printable key (Ctrl, Alt, etc.), or only activate the shortcut when an associated interface component or button is focused.</li>
                 </ul>
             </Accordion>
         </section>
@@ -223,13 +221,13 @@ function Timing(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                 <li>If a page or application has a time limit, the user is given options to turn off, adjust, or extend that time limit. This is not a requirement for real-time events (e.g., an auction), where the time limit is absolutely required, or if the time limit is longer than 20 hours.</li>
+                 <li><strong>Timing Adjustable. </strong>If a page or application has a time limit, the user is given options to turn off, adjust, or extend that time limit. This is not a requirement for real-time events (e.g., an auction), where the time limit is absolutely required, or if the time limit is longer than 20 hours.</li>
                  <li>Automatically moving, blinking, or scrolling content (such as carousels, marquees, or animations) that lasts longer than 5 seconds can be paused, stopped, or hidden by the user.</li>
                  <li>Automatically updating content (e.g., a dynamically-updating news ticker, chat messages, etc.) can be paused, stopped, or hidden by the user or the user can manually control the timing of the updates.</li>
-                 <li>The content and functionality have no time limits or constraints.</li>
-                 <li>Interruptions (alerts, page updates, etc.) can be postponed or suppressed by the user.</li>
-                 <li>If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.</li>
-                 <li>Users must be warned of any timeout that could result in data loss, unless the data is preserved for longer than 20 hours of user inactivity.</li>
+                 <li><strong>No Time Limits. </strong>The content and functionality have no time limits or constraints, except for real-time events and non-interactive synchronized audio/video.</li>
+                 <li><strong>Interruptions </strong> (alerts, page updates, etc.) can be postponed or suppressed by the user.</li>
+                 <li><strong>Re-authenticating. </strong>If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.</li>
+                 <li><strong>Timeouts. </strong>Users must be warned of any timeout that could result in data loss, unless the data is preserved for longer than 20 hours of user inactivity.</li>
                 </ul>
             </Accordion>
         </section>
