@@ -244,9 +244,8 @@ function Seizures(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li><strong></strong></li>
-                    <li><strong></strong></li>
-                    <li><strong></strong></li>
+                    <li><strong>Three Flashes or Below Threshold. </strong> Tho ensure that users with epilepsy and other who have photosensitive seizure disorders do not get seizures from content that flashes onscreen, the content should not flash more than 3 times per second, and flashes fall below the general flash thresholds.</li>
+                    <li><strong>Animation from Interactions . </strong>Motion animation instigated by user interaction be disabled, unless the animation is essential to the functionality or information being conveyed, eg. parallax scrolling, where a site includes extra animations when the user scrolls or page transitions such as a page flipping animation.</li>
                 </ul>
             </Accordion>
         </section>
@@ -263,9 +262,17 @@ function Navigable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li><strong></strong></li>
-                    <li><strong></strong></li>
-                    <li><strong></strong></li>
+                    <li><strong>Bypass Blocks with "Skip to main content" link at the top of page.</strong>
+                    Users can bypass blocks of content that are repeated on multiple Web pages, such as navigation menus.</li>
+                    <li><strong>Page Titled.</strong>Each page should have a title clearly describing the topic or purpose of that page.
+                    <span className="card">&lt;title&gt; PAGE TITLE - WEB TITLE &lt;/title&gt;</span>
+                    </li>
+                    <li><strong>Focus Order.</strong> Users can tab through the elements of a page in a logical order. The <strong>tabIndex </strong>property can be used to enforce a certain tabbing order. When the user leaves a modal dialog box on the page, they should not lose their focus on the page and have to start from the top of the page again. Instead, the element that had the focus when the modal dialog opened should get the focus again.</li>
+                    <li><strong>Links.</strong> The purpose of each link can be determined from the link text or context. </li>
+                    <li>More than one way is available to navigate to other Web pages, such as a sitemap.</li>
+                    <li><strong>Headings and Labels</strong> The headings and labels are clear and consistent, accurately describing the topic or purpose. Section headings are used to organize the content.</li>
+                    <li><strong>Focus Visible. </strong>The page element with the current keyboard focus has a visible focus indicator.</li>
+                    <li><strong>Location. </strong>Show the user's location within a set of Web pages, for instance by using a breadcrumb.</li>
                 </ul>
             </Accordion>
         </section>
