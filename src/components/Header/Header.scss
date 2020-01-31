@@ -27,10 +27,12 @@ nav{
     a{
         padding-left: 1.5rem;
     }
+    a:focus,
     a:hover{
         color: $color_primary;
         transition: .25s;
     }
+
 }
 .Nav_name{
     font-size: 3rem;

@@ -56,7 +56,9 @@ function Post() {
            </Helmet>
             <div className="wrapper">
                 <PostSidebar post={post}/>
-                {post.body}
+                <div id="main-content">
+                    {post.body} 
+                </div>
             </div>
         </BlogPage>
     )

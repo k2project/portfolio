@@ -66,10 +66,16 @@
 }
 .post__ref-list li{
     list-style: decimal;
+    a:hover,
+    a:focus{
+        color: $color_secondary_light;
+        text-decoration-line: underline;
+    }
 }
 .post__link{
     text-decoration-line: underline;
 }
+.post__link:focus,
 .post__link:hover{
     color: $color_secondary_light;
     text-decoration-line: underline;

@@ -16,11 +16,12 @@ function Blog() {
     return(
         <BlogPage>
             <OpenGraph/>
-            <div id="main"></div>
-            {posts.length===0 && <BlogNoPosts/>}
-            {posts.length>0 && <BlogPostsList/>}
-            {posts.length>0 && <Tags setPostsSelected ={setPostsSelected}/>}
-            {postsSelected && <BlogPostSelected postsSelected = {postsSelected}/>}
+            <div id="main-content">
+                {posts.length===0 && <BlogNoPosts/>}
+                {posts.length>0 && <BlogPostsList/>}
+                {posts.length>0 && <Tags setPostsSelected ={setPostsSelected}/>}
+                {postsSelected && <BlogPostSelected postsSelected = {postsSelected}/>}
+            </div>
         </BlogPage>
     )
 }

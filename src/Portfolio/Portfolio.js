@@ -77,10 +77,12 @@ function Portfolio() {
     <div className="Portfolio">
         <OpenGraph/>
         <Header/>
-        <About/>
-        <Skills setSkills={setSkills}/>
-        <Projects projects={projectsList}/>
-        <Resume/>
+        <div id="main-content">
+            <About/>
+            <Skills setSkills={setSkills}/>
+            <Projects projects={projectsList}/>
+            <Resume/>
+        </div>
         <Footer/>
     </div>
   );

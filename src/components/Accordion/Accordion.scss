@@ -28,6 +28,9 @@
   transform: rotate(0deg);
   transition: .5s;
 }
+.accordion__arrow:focus{
+  border: #111 .05rem dashed;
+}
 .accordion__arrow--is-rotated{
   transform: rotate(90deg);
 }

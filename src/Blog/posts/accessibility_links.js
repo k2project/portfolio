@@ -127,6 +127,51 @@ const accessibility_links={
             <section className="post__section">
                 <p className="post__heading">"Skip Navigation" Links.</p>
                 <p>Most of the time the main content is not usually the first thing on a web page. Keyboard and screen reader users must navigate a long list of elements before ever arriving at the main content. Without some sort of system for bypassing the long list of links, some users are at a huge disadvantage. </p>
+                <p>By providing a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content, we give screen reader and keyboard users the same capability of going directly to the main content that sighted mouse users take for granted. </p>
+            </section>
+            <section className="post__section">
+                <p className="post__heading">"Skip Navigation" Links.</p>
+                <p>Most of the time the main content is not usually the first thing on a web page. Keyboard and screen reader users must navigate a long list of elements before ever arriving at the main content. Without some sort of system for bypassing the long list of links, some users are at a huge disadvantage. </p>
+                <p>By providing a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content, we give screen reader and keyboard users the same capability of going directly to the main content that sighted mouse users take for granted. </p>
+            </section>
+            <section className="post__section">
+                <p className="post__heading">Text For Screen Readers Only.</p>
+                <div className="card">
+                    <p>TEXT ONLY FOR SCREEN READERS STYLING:</p>
+                    <code>
+                        border: 0; <br/>
+                        clip: rect(1px, 1px, 1px, 1px); <br/>
+                        clip: rect(1px 1px 1px 1px); //IE6 and IE7 <br/>
+                        clip-path: inset(50%); <br/>
+                        height: 1px; <br/>
+                        margin: -1px; <br/>
+                        overflow: hidden; <br/>
+                        padding: 0; <br/>
+                        position: absolute; <br/>
+                        width: 1px; <br/>
+                        word-wrap: normal !important; 
+                    </code>
+                </div>
+                <div className="card">
+                    <p>TEXT ONLY FOR SCREEN READERS STYLING <span className="color-themed--primary">ON FOCUS</span>:</p>
+                    <code>
+                        position: static; <br/>
+                        clip: auto !important; <br/>
+                        clip-path: none; <br/>
+                        display: block; <br/>
+                        height: auto; <br/>
+                        line-height: normal; <br/>
+                        width: auto; <br/>
+                        z-index: 100000; <br/>
+                        and customised properties for left, right, padding, color, etc.
+                    </code>
+                </div>
+                <ul className="post__list">
+                    <li><b>display: none;</b> and <b>visibility: hidden; </b>hide text from screen, but also for a screen reader, so they can’t be used to give extra information to screen reader users.</li>
+                    <li>Set width and height to 1 pixel, because some screen readers don’t announce an element with a size of 0 pixels.</li>
+                    <li><i>clip</i> is deprecated, but is added to support older browsers that don’t support clip-path yet.</li>
+                    <li><i>word-wrap: normal;</i> to avoid screen readers reading the text letter for letter, as the text is placed in a 1 pixel wide space. Many screen reader and browser combinations announce broken words as they would appear visually.</li>
+                </ul>
             </section>
             <References/>
         </article>

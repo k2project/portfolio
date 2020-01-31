@@ -52,14 +52,41 @@ $color_red:               #FE0002;
 //  global app styling
 //======================
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
+    border: 0; 
+    clip: rect(1px, 1px, 1px, 1px); 
+    clip: rect(1px 1px 1px 1px); //IE6 and IE7 
+    clip-path: inset(50%); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+    // word-wrap: normal !important;
+
+}
+.sr-only--is-focusable:focus{
+    position: static;
+    clip: auto !important; 
+    clip-path: none; 
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    line-height: normal; 
+    width: auto; 
+    padding:3rem 5rem;
+    left: 0;
+    right: 0;
+    background: orange;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    z-index: 1000;
+    display: block;
+ 
+}
+.sr-only--is-focusable:hover{
+    text-decoration-line: underline;
 }
 p{
     margin-top: 1rem;
@@ -100,12 +127,21 @@ p{
 .color_green{
     color: $color_green;
 }
+.color-themed--primary,
 .color--red,
 .color_red{
     color: $color_red;
 }
 .txt_right{
     text-align: right;
+}
+// ACCESSIBILITY
+button:focus,
+a:focus{
+    outline: none;
+}
+a:focus{
+    text-decoration-line: underline;
 }
 
 
