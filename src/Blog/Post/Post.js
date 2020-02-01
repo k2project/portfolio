@@ -10,6 +10,7 @@ import BlogPage from './../BlogPage/BlogPage';
 import {getPostViaURL, getPostLink, getRelatedPosts} from './../posts/posts';
 import LikesContext from './../posts/LikesContext';
 import Stickers from './../../components/Stickers/Stickers';
+import SkipToMainContent from './../../components/SkipToMainContent';
 
 
 function Post() {
@@ -37,6 +38,7 @@ function Post() {
 
     return(
         <BlogPage cls={post.cls? "Post "+post.cls :"Post"} post={post}>
+            <SkipToMainContent/>
             <Helmet>
                <title>Kris Kopczynski Portfolio | Blog</title>
                <link rel="canonical" href={path} />
@@ -57,7 +59,7 @@ function Post() {
             <div className="wrapper">
                 <PostSidebar post={post}/>
                 <div id="main-content">
-                    {post.body} 
+                    {post.body}
                 </div>
             </div>
         </BlogPage>
