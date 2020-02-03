@@ -8,6 +8,7 @@ import post7 from './post7';
 import post8 from './post8';
 import accessibility_links from './accessibility_links'; //id 9
 import accessibility_checklist from './accessibility_checklist'; //id 11
+import accessibility_semantic from './accessibility_semantic'; //id 12
 
 // &#123; &#125; //{}
 //&lsaquo; &rsaquo; // <>
@@ -41,6 +42,7 @@ let posts=[
     post8,
     accessibility_links,
     accessibility_checklist,
+    accessibility_semantic,
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);

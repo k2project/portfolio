@@ -18,7 +18,7 @@ function Accordion(props){
         <div className="accordion">
           <div className={"accordion__head accordion__head--"+color}
             onClick={toggleContent}>
-            <button className="accordion__arrow">
+            <button className="accordion__arrow" title="Open content">
             &#10148;</button>
             <CustomHeading className="accordion__title">{title}</CustomHeading>
             {subtitle}
