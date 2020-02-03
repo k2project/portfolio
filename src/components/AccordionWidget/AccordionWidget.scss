@@ -1,0 +1,35 @@
+@import './../../App.scss';
+
+.accordion-widget__head{
+  margin-bottom: 2rem;
+  padding:1rem 0;
+}
+.accordion-widget__title{
+    font-size: 2.4rem;
+    display: inline-block;
+}
+summary:focus{
+  outline:.1rem dashed #111;
+}
+summary::-webkit-details-marker{
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  position: relative;
+  top: -.3rem;
+}
+
+@include mobile{
+  
+}
+@include mobile-sm{
+  .accordion-widget__title{
+    padding-left: 2rem;
+  }
+  summary::-webkit-details-marker{
+    margin:0;
+    position: absolute;
+    top: 2.7rem;
+  }
+
+}
+
