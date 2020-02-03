@@ -19,8 +19,17 @@ const accessibility_semantic={
                 <h3 className="post__heading">What are the Semantic Elements?</h3>
                 <p>A semantic element clearly describes its meaning to both the browser and the developer. There are commonly used <b>non-semantic elements</b> that tell nothing about their content, such as <i>div</i> and <i>span</i>. However, HTML5 offers a great range of <b>semantic elements</b> to define different parts of a web page, which should be used in order to help users using AT to navigate easily around the page. Also, search engines will consider its contents as important keywords to influence the page's search rankings (SEO).</p>
 
+                <DocumentTags/>
+                <ContentSectioning/>
+                <TextContent/>
+                <InlineTextSemantics/>
+                <MediaContent/>
+                <TableContent/>
+                <FormContent/>
+                <InteractiveElements/>
+                <DeprecatedElements/>
+
             </section>
-            <ContentSectioning/>
             
            <section className="post__section">
            <h3 className="post__heading">Semantic Code Best Practices.</h3>
@@ -75,13 +84,12 @@ function References(){
 function ContentSectioning(){
     const headingInfo={
         heading:5,
-        title:'Content Sectioning',
+        title:'Content Sectioning Tags',
         subtitle:null,
-        color:null,
+        styling:'bg-secondary',
     }
     return (
-        <section className="post__section">
-            <AccordionWidget data={headingInfo}>
+        <AccordionWidget data={headingInfo}>
                 <p>Content sectioning elements allow you to organize the document content into logical pieces. Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content.</p>
             <table className="post__table">
                     <tr>
@@ -89,7 +97,7 @@ function ContentSectioning(){
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td>aaddress</td>
+                        <td>address</td>
                         <td>Element that  indicates that the enclosed HTML provides contact information for a person or people, or for an organization. Takes whatever form is appropriate for the context, and may include any type of contact information that is needed. No nested <i>address</i> elements, no heading and sectioning content within allowed.</td>
                     </tr>
                     <tr>
@@ -158,9 +166,206 @@ function ContentSectioning(){
 
                    */}
                 </table>
-            
-            
-            </AccordionWidget>
-        </section>      
+        </AccordionWidget>     
+    )
+}
+
+function DocumentTags(){
+    const headingInfo={
+        heading:5,
+        title:'Document\'s Main Tags',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function TextContent(){
+    const headingInfo={
+        heading:5,
+        title:'Text Content Tags',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function InlineTextSemantics(){
+    const headingInfo={
+        heading:5,
+        title:'Inline Text Semantics',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function MediaContent(){
+    const headingInfo={
+        heading:5,
+        title:'Media And Embedded Content',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function TableContent(){
+    const headingInfo={
+        heading:5,
+        title:'Table Content Tags',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function FormContent(){
+    const headingInfo={
+        heading:5,
+        title:'Forms Content Tags',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function InteractiveElements(){
+    const headingInfo={
+        heading:5,
+        title:'Interactive Elements',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+             <table className="post__table">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </AccordionWidget>
+    )
+}
+function DeprecatedElements(){
+    const headingInfo={
+        heading:5,
+        title:'Obsolete And Deprecated Elements',
+        subtitle:null,
+        styling:'bg-secondary',
+    }
+    return (
+        <AccordionWidget data={headingInfo}>
+            <p>The old HTML elements which are deprecated and should not be used.</p>
+            <ul className="post__list post__list--tags">
+                <li>acronym</li>
+                <li>applet</li>
+                <li>basefont</li>
+                <li>bgsound</li>
+                <li>big</li>
+                <li>blink</li>
+                <li>center</li>
+                <li>command</li>
+                <li>content</li>
+                <li>dir</li>
+                <li>element</li>
+                <li>font</li>
+                <li>frame</li>
+                <li>frameset</li>
+                <li>image</li>
+                <li>isindex</li>
+                <li>keygen</li>
+                <li>listing</li>
+                <li>marquee</li>
+                <li>menuitem</li>
+                <li>multicol</li>
+                <li>nextid</li>
+                <li>nobr</li>
+                <li>noembed</li>
+                <li>noframes</li>
+                <li>shdow</li>
+                <li>spacer</li>
+                <li>strike</li>
+                <li>tt</li>
+                <li>xmp</li>
+            </ul>
+        </AccordionWidget>
     )
 }

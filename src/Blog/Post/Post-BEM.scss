@@ -15,7 +15,19 @@
         list-style:disc;
     }
 }
+.post__list--tags{
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+.post__list--tags li{
+    min-width: 9.5rem;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem;
+    margin: .5rem;
+    background-color:$color-grey;
 
+}
 .card{
     display: block;
     padding: 2rem 5rem;
