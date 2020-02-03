@@ -129,11 +129,7 @@ const accessibility_links={
                 <p>Most of the time the main content is not usually the first thing on a web page. Keyboard and screen reader users must navigate a long list of elements before ever arriving at the main content. Without some sort of system for bypassing the long list of links, some users are at a huge disadvantage. </p>
                 <p>By providing a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content, we give screen reader and keyboard users the same capability of going directly to the main content that sighted mouse users take for granted. </p>
             </section>
-            <section className="post__section">
-                <p className="post__heading">"Skip Navigation" Links.</p>
-                <p>Most of the time the main content is not usually the first thing on a web page. Keyboard and screen reader users must navigate a long list of elements before ever arriving at the main content. Without some sort of system for bypassing the long list of links, some users are at a huge disadvantage. </p>
-                <p>By providing a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content, we give screen reader and keyboard users the same capability of going directly to the main content that sighted mouse users take for granted. </p>
-            </section>
+           
             <section className="post__section">
                 <p className="post__heading">Text For Screen Readers Only.</p>
                 <div className="card">
