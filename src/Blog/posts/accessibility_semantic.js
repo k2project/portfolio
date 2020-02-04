@@ -453,57 +453,77 @@ function MediaContent(){
                     <th>Element</th>
                     <th>Description</th>
                 </tr>
-                <tr>
-                    <td>area</td>
-                    <td></td>
-                </tr>
+                
                 <tr>
                     <td>audio</td>
-                    <td></td>
+                    <td>Used to embed sound content in documents. It may contain one or more audio sources, represented using the <i>src</i> attribute or the SOURCE element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a <i>MediaStream</i>. Used together with FIGURE and FIGCAPTION.</td>
                 </tr>
                 <tr>
                     <td>canvas</td>
-                    <td></td>
+                    <td>Used to draw graphics and animations. <br/> Canvas content is not exposed to accessibility tools as semantic HTML is. In general, you should avoid using canvas in an accessible website or app. <br/>
+                    <small>
+
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility" className="post__link">MDN Hit regions and accessability</a> <br/>
+                        <a class="external" href="https://www.w3.org/WAI/PF/HTML/wiki/Canvas_Accessibility_Use_Cases"  className="post__link" rel="noopener">Canvas accessibility use cases</a> <br/>
+                        <a class="external" href="https://www.w3.org/html/wg/wiki/AddedElementCanvas"  className="post__link"rel="noopener">Canvas element accessibility issues</a> <br/>
+                        <a class="external" href="https://developer.paciellogroup.com/blog/2012/06/html5-canvas-accessibility-in-firefox-13/" className="post__link" rel="noopener">HTML5 Canvas Accessibility in Firefox 13 – by Steve Faulkner</a> <br/>
+                        <a class="external" href="https://html.spec.whatwg.org/multipage/scripting.html#best-practices" className="post__link" rel="noopener">Best practices for interactive canvas elements</a>
+                    </small>
+                    </td>
                 </tr>
                 <tr>
                     <td>embed</td>
-                    <td></td>
+                    <td>Embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in. <br/>Use the <i>title</i> attribute to label its content so that people navigating with <abbr title="Assistive Technology">AT</abbr> can understand what it contains.</td>
                 </tr>
                 <tr>
                     <td>iframe</td>
-                    <td></td>
+                    <td>Represents a nested browsing context, embedding another HTML page into the current one.
+                    <br/>Use the <i>title</i> attribute to label its content so that people navigating with <abbr title="Assistive Technology">AT</abbr> can understand what it contains.
+                    </td>
                 </tr>
                 <tr>
                     <td>img</td>
-                    <td></td>
+                    <td>Embeds an image into the document. If an image needs a caption, use the FIGURE and FIGCAPTION elements.</td>
                 </tr>
                 <tr>
-                    <td>map</td>
-                    <td></td>
+                    <td>map, <br/>area</td>
+                    <td>
+                        MAP element is used with AREA elements to define an image map (a clickable link area).
+                        <Code>
+                            <code>&lt;map <b className="color-themed--primary">name="infographic"</b> &gt;</code>
+                            <code className="code__indent">&lt;area shape="" coords="" href="" target="" /&gt;</code>
+                            <code>&lt;/map&gt;</code>
+                            <code>&lt;img <b className="color-themed--primary">usemap="#infographic"</b> src="" alt="" /&gt;</code>
+                        </Code>
+                    </td>
                 </tr>
                 <tr>
                     <td>noscript</td>
-                    <td></td>
+                    <td>Defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.</td>
                 </tr>
                 <tr>
-                    <td>object</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>param</td>
-                    <td></td>
+                    <td>object, <br/>param </td>
+                    <td>OBJECT represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin. PARAM defines parameters for an OBJECT element.</td>
                 </tr>
                 <tr>
                     <td>picture</td>
-                    <td></td>
+                    <td>
+                        Contains zero or more SOURCE elements and one IMG element to offer alternative versions of an image for different display/device scenarios. <br/>
+                        <Code>
+                            <code>&lt;picture&gt;</code>
+                            <code className="code__indent">&lt; source srcset="" media="" type="" &gt;</code>
+                            <code className="code__indent">&lt;img src="" alt="" /&gt;</code>
+                            <code>&lt;/picture&gt;</code>
+                        </Code> 
+                    </td>
                 </tr>
                 <tr>
                     <td>script</td>
-                    <td></td>
+                    <td>Used to embed or reference executable code; this is typically used to embed or refer to JavaScript code.</td>
                 </tr>
                 <tr>
                     <td>source</td>
-                    <td></td>
+                    <td>Specifies multiple media resources for the PICTURE, the AUDIO element, or the VIDEO element.</td>
                 </tr>
                 <tr>
                     <td>track</td>
