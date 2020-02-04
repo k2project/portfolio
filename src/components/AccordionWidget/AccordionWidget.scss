@@ -19,27 +19,30 @@
 .accordion-widget__title{
     font-size: 2.4rem;
     display: inline-block;
+    padding-left: 4rem;
+    line-height: 1.2;
 }
 summary:focus{
   outline:.1rem dashed #111;
 }
 summary::-webkit-details-marker{
-  margin-left: 2rem;
-  margin-right: 1.5rem;
-  position: relative;
-  top: -.3rem;
+  margin:0;
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
 }
+
 @include mobile{
   
 }
 @include mobile-sm{
   .accordion-widget__title{
-    padding-left: 2rem;
+    font-size: 2rem;
+    padding-left: 2.8rem;
   }
   summary::-webkit-details-marker{
-    margin:0;
-    position: absolute;
-    top: 2.7rem;
+    left: 1rem;
   }
 
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const post1={
     id:'1',
-    featured:true,
+    featured:false,
     title:'Web development with accessibility in mind...',
     subtitle:'Why it is important to make sure that everyone is included!',
     date:'2019-10-28',

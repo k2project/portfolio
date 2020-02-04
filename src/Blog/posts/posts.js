@@ -33,6 +33,8 @@ import accessibility_semantic from './accessibility_semantic'; //id 12
 
 let posts=[
     post7, //bootcamp
+    accessibility_checklist,
+    accessibility_semantic,
     post1,
     post2,
     post3,
@@ -41,8 +43,6 @@ let posts=[
     post6,
     post8,
     accessibility_links,
-    accessibility_checklist,
-    accessibility_semantic,
 ]
 
 export const postFeatured = posts.filter(post=>post.featured);
