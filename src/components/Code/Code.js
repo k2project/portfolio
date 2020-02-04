@@ -5,7 +5,7 @@ function Code(props) {
     
   return (
     <figure className="code"> 
-      {props.figcaption && <figcaption>{props.figcaption}</figcaption>}
+      {props.figcaption && <figcaption className="code__caption">{props.figcaption}</figcaption>}
       <pre>
         {props.children}
       </pre>

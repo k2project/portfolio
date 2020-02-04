@@ -86,16 +86,14 @@
     }
 }
 .post__link{
-    text-decoration-line: underline;
+    text-decoration-line: underline !important;
 }
 .post__link:focus,
 .post__link:hover{
     color: $color_secondary_light;
     text-decoration-line: underline;
 }
-.post__link{
-    text-decoration-line: underline;
-}
+
 @include mobile{
     .post__list{
         padding-left: 1rem;

@@ -40,7 +40,7 @@ const accessibility_semantic={
                <li><b>Lang Tag.</b> Provide a language tag (&lt;html lang="en"&gt;) on every page. Wrap text in the same tag when referring to a language different to the page language.</li>
                <li><b>Page Title.</b> Provide a descriptive page title that distinguishes it from other pages in format <span className="color-themed--primary">PAGE NAME -SITE NAME</span>.</li>
                <li><b>Headings.</b> Break up content into logical chunks and precede each area of content with a descriptive heading. There should be only one h1 heading. Heading must be hierarchically ordered. Provide designs that use labels, controls, status indicators, and other UI elements consistently across all pages. Ensure that the HTML content in the DOM is in a logical order (visually from left-to-right and top-to-bottom).</li>
-               <li><b>Emphasized Text.</b> Use <i>em </i>to indicate stress emphasis. Use <i>strong</i> to indicate stronger importance. Use <i>mark</i> to indicate relevance. Use  <i>cite</i> to mark the name of a work, such as a book, play, or song. Use <i>dfn</i> to mark the defining instance of a term. Use <i>i</i> for technical terms, foreign language phrases, or fictional character thoughts, etc. </li>
+               <li><b>Emphasized Text.</b> Use <i>em </i>to indicate stress emphasis. Use <i>strong</i> to indicate stronger importance. Use <i>mark</i> to indicate relevance. Use  <i>cite</i> to mark the name of a work, such as a book, play, or song. Use <i>dfn</i> to mark the defining instance of a term. Use <i>i</i> for technical terms, foreign language phrases, or fictional character thoughts, etc. Use <i>b</i> to draw attention to the text. </li>
                <li>For lists, use list tags <i>ul, ol</i> and <i>li</i>. The menu items are structured in HTML as an unordered list. In hierarchical menus (menus within menus), use unordered lists within unordered lists.</li>
                <li><strong className="color-themed--primary">Use BUTTON for elements that perform a within-page function and LINKS for elements that load a new page.</strong> </li>
                <li><b>Links.</b> Ensure that link text accurately describes the destination of the link. Link text must not be empty. Avoid using ambiguous link names, such as "Click Here" or "More". Ensure links are underlined. Otherwise, provide high contrast (3:1 contrast ratio) between link and non-linked text. Provide a method to skip the page header and navigation menus and go straight to the content, through a hidden "skip to main content" or "skip navigation" link at the top of the page.</li> 
@@ -385,44 +385,55 @@ function InlineTextSemantics(){
                 </tr>
                 <tr>
                     <td>s</td>
-                    <td></td>
+                    <td>Renders text with a strikethrough, or a line through it. Use the this element to represent things that are no longer relevant or no longer accurate. However, it is not appropriate when indicating document edits; for that, use the DEL and INS elements, as appropriate. <br/><em>The presence of the s element is not announced by most screen reading technology in its default configuration.</em></td>
                 </tr>
                 <tr>
                     <td>samp</td>
-                    <td></td>
+                    <td>Used to enclose inline text which represents sample (or quoted) output from a computer program.</td>
                 </tr>
                 <tr>
                     <td>small</td>
-                    <td></td>
+                    <td>Represents side-comments and small print, like copyright and legal text, independent of its styled presentation.</td>
                 </tr>
                 <tr>
                     <td>span</td>
-                    <td></td>
+                    <td>A generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purpose.</td>
                 </tr>
                
                 <tr>
-                    <td>sub</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>sup</td>
-                    <td></td>
+                    <td>sub, <br/>sup</td>
+                    <td>Specifies inline text which should be displayed as subscript/superscript for solely typographical reasons.</td>
                 </tr>
                 <tr>
                     <td>time</td>
-                    <td></td>
+                    <td>
+                        Defines a date/time/time duration. Comes with <b>datetime</b> attribute, that indicates the time and/or date of the element and must be in a correct format. <br/>
+                        If the element does not have a datetime attribute, it must not have any element descendants, and the datetime value is the element’s child text content. <br/>
+                        <Code figcaption ={<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" className="post__link">MDN web docs accepted formats of datetime attribute.</a>}>
+                            <code>
+                                TIME: &lt;time datetime="20:00"&gt;20:00&lt;/time&gt;
+                            </code>
+                            <code>
+                                DATE: &lt;time datetime="2011-11-18"&gt;18th Nove,2011&lt;/time&gt;
+                            </code>
+                            <code>
+                                DURATION: &lt;time datetime="PT2H30M"&gt;2h 30m&lt;/time&gt;
+                            </code>
+                        </Code>
+
+                    </td>
                 </tr>
                 <tr>
                     <td>u</td>
-                    <td></td>
+                    <td>Mark text as having some form of non-textual annotation applied, eg. to mark spelling mistakes in text. Most of the time, you actually don't want to use it ( avoid it for styling ).</td>
                 </tr>
                 <tr>
                     <td>var</td>
-                    <td></td>
+                    <td>Represents the name of a variable in a mathematical expression or a programming context.</td>
                 </tr>
                 <tr>
                     <td>wbr</td>
-                    <td></td>
+                    <td>Represents a word break opportunity for browser when dealing with long words.</td>
                 </tr>
             </table>
         </AccordionWidget>
