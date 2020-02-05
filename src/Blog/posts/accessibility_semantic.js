@@ -550,6 +550,7 @@ function TableContent(){
     return (
         <AccordionWidget data={headingInfo}>
             <figure className="accordion-widget__img-container">
+                <figcaption className="accordion-widget__img-caption">Example of HTML semantic and accessable TABLE.</figcaption>
                 <img src={tableCode} alt="HTML table element code egzample" className="accordion-widget__img"/>
                 <img src={tableEgz} alt="HTML table element visual egzample" className="accordion-widget__img"/>
             </figure>
@@ -560,43 +561,34 @@ function TableContent(){
                 </tr>
                 <tr>
                     <td>caption</td>
-                    <td></td>
+                    <td>
+                        Specifies the title of a table. <br/>
+                        This element should be the first child of its parent TABLE element. <br/> When the TABLE element that contains the CAPTION is the only descendant of a FIGURE element, you should use the FIGCAPTION element instead.</td>
                 </tr>
                 <tr>
-                    <td>col</td>
-                    <td></td>
+                    <td>col, <br/>colgroup, <br/>span</td>
+                    <td>COL element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a COLGROUP element. <br/>
+                    COL element comes with <em>span</em> attribute, that contains a positive integer indicating the number of consecutive columns the COL element spans. If not present, its default value is 1.</td>
                 </tr>
                 <tr>
-                    <td>colgroup</td>
-                    <td></td>
+                    <td>table, <br/>scope</td>
+                    <td>Represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. <br/>
+                    In complex tables, <em>scope</em> can be specified so as to provide necessary information about the cells related to a header.Providing a declaration of <em>scope="col"</em> on a TH element will help describe that the cell is at the top of a column. Providing a declaration of <em>scope="row"</em> on a TH element will help describe that the cell is the first in a row.
+                    <br/>
+                    <abbr title="Assistive Technologies">AT</abbr> may have difficulty parsing tables that are complex. This is typically indicated by the presence of the <em>colspan</em> and <em>rowspan</em> attributes. Consider alternate ways to present the table's content, including breaking it apart into a collection of smaller, related tables.</td>
                 </tr>
                 <tr>
-                    <td>table</td>
-                    <td></td>
+                    <td>tbody, <br/> thead, <br/>tfoot</td>
+                    <td>
+                        THEAD element defines a set of rows defining the head of the columns of the table. All non-header and non-footer rows must be inside this element if one is used.<br/>
+                        You can create multiple sections within a table by using multiple TBODY elements. Each may potentially have its own header row or rows; however, there can be only one THEAD per table! Because of that, you need to use a TR filled with TH elements to create headers within each TBODY. <br/>
+                        TBODY element encapsulates a set of table rows (TR elements), indicating that they comprise the body of the table. <br/>
+                        TFOOT element defines a set of rows summarizing the columns of the table.
+                    </td>
                 </tr>
                 <tr>
-                    <td>tbody</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>td</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>tfoot</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>th</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>thead</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>tr</td>
-                    <td></td>
+                    <td>tr, <br/>th, <br/>td</td>
+                    <td>TR element defines a row of cells in a table. The row's cells can then be established using a mix of TD (data cell) and TH (header cell) elements (TH comes with the <em>scope </em> attribute).</td>
                 </tr>
             </table>
            
