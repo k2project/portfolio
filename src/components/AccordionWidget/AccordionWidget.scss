@@ -51,7 +51,7 @@ summary::-webkit-details-marker{
   margin: auto;
 }
 .accordion-widget__img--50{
-  height: 15rem;
+  max-height: 15rem;
   width: auto;
 }
 @include mobile{

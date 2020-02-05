@@ -7,6 +7,8 @@ import datalistCode from './../../media/blog/datalist-code.png';
 import datalistEgz from './../../media/blog/datalist-egz.png';
 import optgroupCode from './../../media/blog/optgroup-code.png';
 import optgroupEgz from './../../media/blog/optgroup-egz.png';
+import meterCode from './../../media/blog/meter-code.png';
+import meterEgz from './../../media/blog/meter-egz.png';
 
 
 const accessibility_semantic={
@@ -157,21 +159,7 @@ function ContentSectioning(){
                         <small>Permitted ARIA roles: alert, alertdialog, application, banner, complementary, contentinfo, dialog, document, feed, log, main, marquee, navigation, search,status, tabpanel.</small>
                         </td>
                     </tr>
-                   
-                    {/* <tr>
-                        <td>time</td>
-                        <td>Defines a date/time/time duration. Comes with <b>datetime</b> attribute, that indicates the time and/or date of the element and must be in a correct format. <br/>
-                        <code>
-                        TIME: &lt;time datetime="20:00"&gt;20:00&lt;/time&gt; <br/>
-                        DATE: &lt;time datetime="2011-11-18"&gt;18th Nove,2011&lt;/time&gt; <br/>
-                        DURATION: &lt;time datetime="PT2H30M"&gt;2h 30m&lt;/time&gt;.
-                        </code> <br/>
-                        If the element does not have a datetime attribute, it must not have any element descendants, and the datetime value is the element’s child text content. <br/>
-                        <small> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" className="post__link">MDN web docs accepted formats of datetime attribute.</a></small>
-                        </td>
-                    </tr>
 
-                   */}
                 </table>
         </AccordionWidget>     
     )
@@ -619,34 +607,65 @@ function FormContent(){
                     It's <em>type</em> attribute defines default behavior of the button. Possible values are: <b>submit:</b> the button submits the form data to the server. This is the default if the attribute is not specified for buttons associated with a FORM,  or if the attribute is an empty or invalid value; <b>reset:</b> the button resets all the controls to their initial values; <b>button:</b> the button has no default behavior, and does nothing when pressed by default.</td>
                 </tr>
                 <tr>
-                    <td>fieldset</td>
-                    <td></td>
+                    <td>fieldset, <br/>legend</td>
+                    <td>Used to group several controls as well as LABEL elements within a web form. It comes with a nested LEGEND element, that provids a caption.</td>
                 </tr>
                 <tr>
                     <td>form</td>
-                    <td></td>
+                    <td>Represents a document section containing interactive controls for submitting information. <br/> FORM's most common attributes include: <b>action</b> - the URL that processes the form submission, <b>autocomplete</b> - indicates whether input elements can by default have their values automatically completed by the browser, <b>method</b> - the HTTP method to submit the form with ( GET, POST, DIALOG) and <b>target</b> - indicates where to display the response after submitting the form (_self/_blank/_parent/_top).</td>
                 </tr>
                 <tr>
                     <td>input</td>
-                    <td></td>
+                    <td>Used to create interactive controls for web-based forms in order to accept data from the user. <br/> Labels are needed to associate assistive text with an INPUT and TEXTAREA. By pairing them using the <em>for</em> attribute, you bond the label to the input in a way that lets screen readers describe inputs to users more precisely. <br/> The <em>placeholder</em> attribute lets you specify a text that appears within the INPUT element's content area itself when empty. <strong>Placeholders are not accessible.</strong> <br/>
+                    
+                    INPUT's type attributes: <br/>
+                    <b>button</b> - a push button with no default behavior displaying the value of the value attribute, empty by default, <br/>
+                    <b>checkbox</b> - allowing single values to be selected/deselected, <br/>
+                    <b>color</b> - a control for specifying a color; opening a color picker when active in supporting browsers, <br/>
+                    <b>date</b> - a control for entering a date (year, month, and day, with no time) opening a date picker or numeric  wheels for month, hour, etc.,  when active in supporting browsers, <br/>
+                    <b>datetime-local</b> - a control for entering a date and time, with no time zone; opening a date picker or numeric wheels for month, day, and year,  when active in supporting browsers, <br/>
+                    <b>email</b> - a field for editing an e-mail address, <br/>
+                    <b>file</b> - a control that lets the user select a file; use the accept attribute to define the types of files that the control can select, <br/>
+                    <b>hidden</b> - a control that is not displayed but whose value is submitted to the server, <br/>
+                    <b>image</b> - a graphical submit button -- displaying an image defined with the src attribute, <br/>
+                    <b>month</b> - a control for entering a month and year, with no time zone, <br/>
+                    <b>passsword</b> - a single-line text field whose value is obscured. Will alert user if site is not secure, <br/>
+                    <b>radio</b> - allowing a single value to be selected out of multiple choices with the same name value, <br/>
+                    <b>range</b> - a control for entering a number whose exact value is not important; displays as a range widget defaulting to the middle value; used in conjunction min  and max to define the range of acceptable values, <br/>
+                    <b>search</b> - a single-line text field for entering search strings, <br/>
+                    <b>submit</b> - to submit the form, <br/>
+                    <b>tel</b> - a control for entering a telephone number; displays a telephone keypad in some devices with dynamic keypads, <br/>
+                    <b>text</b> - a default value, <br/>
+                    <b>time</b> - a control for entering a time value with no time zone, <br/>
+                    <b>url</b> - a field for entering a URL; looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards, <br/>
+                    <b>week</b> - a control for entering a date consisting of a week-year number and a week number with no time zone, <br/>
+                    <small><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="noopener" className="post__link">Input element's list of attributes.</a></small>
+                    <Code>
+                        <code>&lt;label for="surname" &gt;Surname (4 to 8 characters):&lt;/lable&gt;</code>
+                        <code>&lt;input type="text" id="surname" name="surname" required minlength="4" maxlength="8" size="10" /&gt;</code>
+                    </Code>
+                    </td>
                 </tr>
                 <tr>
                     <td>label</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>legend</td>
-                    <td></td>
+                    <td>Represents a caption for an item in a user interface. <br/> To associate the LABEL with an INPUT element, you need to give the INPUT an <i>id</i> attribute. The LABEL then needs a <i>for</i> attribute whose value is the same as the input's id. You can click the associated label to focus/activate the input, as well as the input itself. <br/><strong>Don't place interactive elements such as anchors or buttons inside a label. Doing so makes it difficult for people to activate the form input associated with the label.</strong></td>
                 </tr>
                 <tr>
                     <td>meter</td>
-                    <td></td>
+                    <td>Represents either a scalar value within a known range or a fractional value.
+                    <figure className="accordion-widget__img-container">
+                        <img src={meterCode} alt="HTML meter element code egzample" className="accordion-widget__img accordion-widget__img--50"/>
+                        <img src={meterEgz} alt="HTML meter element visual egzample" className="accordion-widget__img accordion-widget__img--50"/>
+                    </figure>
+                    </td>
                 </tr>
                 <tr>
                     <td>option, <br/>select, <br/>datalist, <br/>optgroup</td>
                     <td>
                         SELECT element represents a control that provides a menu of options. <br/>
-                        OPTION element is used to define an item contained in a SELECT, an OPTGROUP, or a DATALIST element.
+                        OPTION element is used to define an item contained in a SELECT, an OPTGROUP, or a DATALIST element. <br/>
+                        The <em>multiple</em> attribute allows user to to select multiple options. <br/>
+                        <small><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" rel="noopenner" className="post__link">Selecting multiple options with keyboard.</a></small>
                         <figure className="accordion-widget__img-container">
                             <img src={datalistCode} alt="HTML datalist element code egzample" className="accordion-widget__img"/>
                             <img src={optgroupCode} alt="HTML optgroup element code egzample" className="accordion-widget__img"/>
