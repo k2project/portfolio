@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a529eace.chunk.css",
-    "main.js": "/portfolio/static/js/main.21237011.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.21237011.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.a4fb4510.chunk.css",
+    "main.js": "/portfolio/static/js/main.bb4125ed.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bb4125ed.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
-    "static/js/2.6c3a2799.chunk.js": "/portfolio/static/js/2.6c3a2799.chunk.js",
-    "static/js/2.6c3a2799.chunk.js.map": "/portfolio/static/js/2.6c3a2799.chunk.js.map",
+    "static/js/2.d36cb986.chunk.js": "/portfolio/static/js/2.d36cb986.chunk.js",
+    "static/js/2.d36cb986.chunk.js.map": "/portfolio/static/js/2.d36cb986.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.5987292c12154a7b60358c4fd7e11ef9.js": "/portfolio/precache-manifest.5987292c12154a7b60358c4fd7e11ef9.js",
+    "precache-manifest.948b49c066f82b39320dac6c7556cf8c.js": "/portfolio/precache-manifest.948b49c066f82b39320dac6c7556cf8c.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.a529eace.chunk.css.map": "/portfolio/static/css/main.a529eace.chunk.css.map",
-    "static/js/2.6c3a2799.chunk.js.LICENSE": "/portfolio/static/js/2.6c3a2799.chunk.js.LICENSE",
+    "static/css/main.a4fb4510.chunk.css.map": "/portfolio/static/css/main.a4fb4510.chunk.css.map",
+    "static/js/2.d36cb986.chunk.js.LICENSE": "/portfolio/static/js/2.d36cb986.chunk.js.LICENSE",
     "static/media/KrisKopczynskiResume.pdf": "/portfolio/static/media/KrisKopczynskiResume.704f4c83.pdf",
     "static/media/accessibility.jpg": "/portfolio/static/media/accessibility.33f7e513.jpg",
     "static/media/amb_1.png": "/portfolio/static/media/amb_1.3305f814.png",
@@ -21,6 +21,7 @@
     "static/media/cards.gif": "/portfolio/static/media/cards.7ba465aa.gif",
     "static/media/cards_1.png": "/portfolio/static/media/cards_1.b0988055.png",
     "static/media/code.jpg": "/portfolio/static/media/code.f8b23142.jpg",
+    "static/media/datalist-code.png": "/portfolio/static/media/datalist-code.b059fd70.png",
     "static/media/donutChart.gif": "/portfolio/static/media/donutChart.ea46b7e2.gif",
     "static/media/gameOn.gif": "/portfolio/static/media/gameOn.54c0c7ba.gif",
     "static/media/gameOn_1.png": "/portfolio/static/media/gameOn_1.2118bef5.png",
@@ -29,18 +30,22 @@
     "static/media/js.png": "/portfolio/static/media/js.09479e89.png",
     "static/media/laptop.jpeg": "/portfolio/static/media/laptop.c838cbd0.jpeg",
     "static/media/mcBride_1.png": "/portfolio/static/media/mcBride_1.ade5ee57.png",
+    "static/media/meter-code.png": "/portfolio/static/media/meter-code.6d66873c.png",
     "static/media/og.png": "/portfolio/static/media/og.101a675f.png",
     "static/media/oocss.png": "/portfolio/static/media/oocss.05e0bc1f.png",
+    "static/media/optgroup-code.png": "/portfolio/static/media/optgroup-code.4d4f70ba.png",
+    "static/media/optgroup-egz.png": "/portfolio/static/media/optgroup-egz.5c52cf99.png",
     "static/media/post1.jpg": "/portfolio/static/media/post1.b74603ac.jpg",
     "static/media/react.png": "/portfolio/static/media/react.294a4b87.png",
     "static/media/reactContextVid.gif": "/portfolio/static/media/reactContextVid.b32613a6.gif",
     "static/media/rte_1.png": "/portfolio/static/media/rte_1.28bf9d99.png",
-    "static/media/spm_1.png": "/portfolio/static/media/spm_1.07bd298c.png"
+    "static/media/spm_1.png": "/portfolio/static/media/spm_1.07bd298c.png",
+    "static/media/table-code.png": "/portfolio/static/media/table-code.32e2b6d0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.44087e9b.js",
-    "static/js/2.6c3a2799.chunk.js",
-    "static/css/main.a529eace.chunk.css",
-    "static/js/main.21237011.chunk.js"
+    "static/js/2.d36cb986.chunk.js",
+    "static/css/main.a4fb4510.chunk.css",
+    "static/js/main.bb4125ed.chunk.js"
   ]
 }
