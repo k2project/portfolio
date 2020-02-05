@@ -1,6 +1,8 @@
 import React from 'react';
 import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 import Code from './../../components/Code/Code';
+import tableCode from './../../media/blog/table-code.png';
+import tableEgz from './../../media/blog/table-eg.png';
 
 
 const accessibility_semantic={
@@ -527,11 +529,12 @@ function MediaContent(){
                 </tr>
                 <tr>
                     <td>track</td>
-                    <td></td>
+                    <td>Used as a child of the media elements AUDIO and VIDEO. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks or Timed Text Markup Language (TTML).</td>
                 </tr>
                 <tr>
                     <td>video</td>
-                    <td></td>
+                    <td>Embeds a media player which supports video playback into the document. <br/>
+                    Videos should provide both captions and transcripts that accurately describe its content.Captions allow people who are experiencing hearing loss to understand a video's audio content as the video is being played, while transcripts allow people who need additional time to be able to review audio content at a pace and format that is comfortable for them. In addition to spoken dialog, subtitles and transcripts should also identify music and sound effects that communicate important information. This includes emotion and tone. </td>
                 </tr>
             </table>
         </AccordionWidget>
@@ -546,6 +549,10 @@ function TableContent(){
     }
     return (
         <AccordionWidget data={headingInfo}>
+            <figure className="accordion-widget__img-container">
+                <img src={tableCode} alt="HTML table element code egzample" className="accordion-widget__img"/>
+                <img src={tableEgz} alt="HTML table element visual egzample" className="accordion-widget__img"/>
+            </figure>
              <table className="post__table">
                 <tr>
                     <th>Element</th>
@@ -592,6 +599,7 @@ function TableContent(){
                     <td></td>
                 </tr>
             </table>
+           
         </AccordionWidget>
     )
 }

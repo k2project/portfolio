@@ -32,7 +32,16 @@ summary::-webkit-details-marker{
   left: 1.5rem;
   transform: translateY(-50%);
 }
-
+.accordion-widget__img-container{
+  border: solid .2rem $color-grey;
+  margin: 2rem 0;
+  text-align: center;
+}
+.accordion-widget__img{
+  max-height: 25rem;
+  max-width: 100%;
+  margin: auto;
+}
 @include mobile{
   
 }
