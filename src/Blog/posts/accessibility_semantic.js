@@ -678,15 +678,32 @@ function FormContent(){
                 
                 <tr>
                     <td>output</td>
-                    <td></td>
+                    <td>A container element into which a site or app can inject the results of a calculation or the outcome of a user action<br/>Many browsers implement this element as if it had an <i>aria-live</i> attribute by default. Assistive technology will thereby announce the results of UI interactions posted inside it without requiring that focus is switched away from the controls that produce those results, although this behavior goes beyond (and is not mentioned) in current specs.
+                    <Code>
+                        <code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)" &gt;</code>
+                        <code className="code__indent">&lt;input type="range" id="b" name="b" value="50" /&gt;+</code>
+                        <code className="code__indent">&lt;input type="number" id="a" name="a" value="10" /&gt;=</code>
+                        <code>&lt;/form&gt;</code>
+                    </Code>
+                    </td>
                 </tr>
                 <tr>
                     <td>progress</td>
-                    <td></td>
+                    <td>Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
+                        <Code>
+                        <code>&lt;label for="file" &gt;File progress:&lt;/lable&gt;</code>
+                        <code>&lt;progress id="file" max="100" value="70" &gt; 70% &lt;/&gt;</code>
+                        </Code>
+                    </td>
                 </tr>
                 <tr>
                     <td>textarea</td>
-                    <td></td>
+                    <td>Represents a multi-line plain-text editing control.
+                    <Code>
+                        <code>&lt;label for="message" &gt; Your message&lt;/lable&gt;</code>
+                        <code>&lt;textarea id="message" name="message" rows="5" cols="33" placeholder="Type your message here..." maxlength="200" minlength="50" spellcheck required &gt; &lt;/&gt;</code>
+                        </Code>
+                    </td>
                 </tr>
             </table>
         </AccordionWidget>
