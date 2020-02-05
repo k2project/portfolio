@@ -59,6 +59,9 @@ function References(){
                 <li>
                     <a href="https://romeo.elsevier.com/accessibility_checklist/"> Elsevier - <b>Accessibility Checklist</b></a>
                 </li>
+                <li>
+                    <a href="https://www.w3.org/WAI/tutorials/">W3C - <b>Web Accessibility Tutorials</b></a>
+                </li>
                
             </ol>
         </section>

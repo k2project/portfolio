@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Portfolio from './Portfolio/Portfolio';
 import Blog from './Blog/Blog';
 import Post from './Blog/Post/Post';
+import Checklist from './Checklist/Checklist';
 
 
 
@@ -17,6 +18,7 @@ function App() {
                 <Route exact path={`/`} component={Portfolio}/>
                 <Route  exact path={`/blog`} component={Blog}/>
                 <Route  exact path={`/blog/:post`} component={Post}/>
+                <Route  exact path={`/checklist`} component={Checklist}/>
                 <Redirect from='*' to='/' />
             </Switch>
 

@@ -1,0 +1,52 @@
+@import './../App.scss';
+.checklist{
+  padding: 5rem;
+  font-size: 1.6rem;
+}
+.checklist__caption{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2rem 4rem;
+  background-color: #f0f0f0;
+} 
+.checklist__list{
+  padding: 1rem 1rem 1rem 4rem;
+}
+.checklist__list-caption{
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+} 
+.checklist__item{
+  padding: .3rem 0 .3rem 3rem;
+}
+.checklist__button{
+  border: solid .1rem #111;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  margin-right: 1rem;
+  top: .2rem;
+
+}
+.checklist__item--selected{
+  color: #c5c5c5;
+  
+
+  .checklist__button{
+    border: none;
+  }
+  .checklist__button:after{
+    content: "\2714";
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: .9;
+    color: $color_green;
+
+  }
+}
+
+.checklist__text{
+
+}
