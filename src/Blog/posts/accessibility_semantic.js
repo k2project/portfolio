@@ -724,21 +724,22 @@ function InteractiveElements(){
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td>details</td>
-                    <td></td>
+                    <td>details, <br/>summary</td>
+                    <td>
+                        DETAILS element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A disclosure widget is typically presented onscreen using a small triangle which rotates (or twists) to indicate open/closed status, with a label next to the triangle.<br/>
+                        SUMMARY element specifies a caption for a DETAILS element's disclosure box.
+                    </td>
                 </tr>
                 <tr>
                     <td>dialog</td>
-                    <td></td>
+                    <td>Represents a dialog box or other interactive component, such as an inspector or window. <br/>The <i>tabindex</i> attribute must not be used on the DIALOG element.</td>
                 </tr>
                 <tr>
                     <td>menu</td>
-                    <td></td>
+                    <td>Represents a group of commands that a user can perform or activate. This includes both list menus, which might appear across the top of a screen, as well as context menus, such as those that might appear underneath a button after it has been clicked. <br/>
+                    <em>The MENU and UL elements both represent an unordered list of items. The key difference is that UL primarily contains items for display, whilst MENU is intended for interactive items, to act on.</em></td>
                 </tr>
-                <tr>
-                    <td>summary</td>
-                    <td></td>
-                </tr>
+                
             </table>
         </AccordionWidget>
     )
