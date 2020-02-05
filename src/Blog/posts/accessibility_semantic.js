@@ -3,6 +3,10 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 import Code from './../../components/Code/Code';
 import tableCode from './../../media/blog/table-code.png';
 import tableEgz from './../../media/blog/table-eg.png';
+import datalistCode from './../../media/blog/datalist-code.png';
+import datalistEgz from './../../media/blog/datalist-egz.png';
+import optgroupCode from './../../media/blog/optgroup-code.png';
+import optgroupEgz from './../../media/blog/optgroup-egz.png';
 
 
 const accessibility_semantic={
@@ -606,16 +610,13 @@ function FormContent(){
         <AccordionWidget data={headingInfo}>
              <table className="post__table">
                 <tr>
-                    <th>Element</th>
+                    <th >Element</th>
                     <th>Description</th>
                 </tr>
                 <tr>
                     <td>button</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>datalist</td>
-                    <td></td>
+                    <td>Used to submit forms or anywhere in a document for accessible, standard button functionality. <br/>
+                    It's <em>type</em> attribute defines default behavior of the button. Possible values are: <b>submit:</b> the button submits the form data to the server. This is the default if the attribute is not specified for buttons associated with a FORM,  or if the attribute is an empty or invalid value; <b>reset:</b> the button resets all the controls to their initial values; <b>button:</b> the button has no default behavior, and does nothing when pressed by default.</td>
                 </tr>
                 <tr>
                     <td>fieldset</td>
@@ -642,23 +643,26 @@ function FormContent(){
                     <td></td>
                 </tr>
                 <tr>
-                    <td>optgroup</td>
-                    <td></td>
+                    <td>option, <br/>select, <br/>datalist, <br/>optgroup</td>
+                    <td>
+                        SELECT element represents a control that provides a menu of options. <br/>
+                        OPTION element is used to define an item contained in a SELECT, an OPTGROUP, or a DATALIST element.
+                        <figure className="accordion-widget__img-container">
+                            <img src={datalistCode} alt="HTML datalist element code egzample" className="accordion-widget__img"/>
+                            <img src={optgroupCode} alt="HTML optgroup element code egzample" className="accordion-widget__img"/>
+                            <img src={datalistEgz} alt="HTML datalist element visual egzample" className="accordion-widget__img accordion-widget__img--50"/>
+                            <img src={optgroupEgz} alt="HTML optgroup element visual egzample" className="accordion-widget__img accordion-widget__img--50"/>
+                            <p><small>Imgages of DATALIST (left) and OUTGROUP (right) elemnts.</small></p>
+                        </figure>
+                    </td>
                 </tr>
-                <tr>
-                    <td>option</td>
-                    <td></td>
-                </tr>
+                
                 <tr>
                     <td>output</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>progress</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>select</td>
                     <td></td>
                 </tr>
                 <tr>
