@@ -1,0 +1,14 @@
+{
+  "css.trace.server": "messages",
+  "emmet.triggerExpansionOnTab": true,
+  "html.format.endWithNewline": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.trace.server": "messages",
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+"editor.detectIndentation": false,
+"editor.tabSize": 5,
+"editor.fontSize": 11,
+"editor.acceptSuggestionOnEnter": "smart"
+}
