@@ -59,14 +59,23 @@ function SemanticStructure() {
                     </ul>
                </section>
                <section>
-                    <h4 className="checklist__list-caption">Headings</h4>
-                    <ul className="checklist__list">
-
-                    </ul>
-               </section>
-               <section>
                     <h4 className="checklist__list-caption">Content Structure</h4>
                     <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Headings:</h5>
+                         <ChecklistLiEl id="headings-1">
+                              Use headings to communicate the organization of the content on the page. </ChecklistLiEl>
+                         <ChecklistLiEl id="headings-2">
+                              Headings are useful for labeling page regions. Use <em>aria-labelledby</em> to associate headings with their page region.</ChecklistLiEl>
+                         <ChecklistLiEl id="headings-4">
+                              There should be only one &lt;h1&gt; element on the page and it doesn't have to be placed in the top region of the web page if its used in main section.</ChecklistLiEl>
+                         <ChecklistLiEl id="headings-3">
+                              <strong>Nest headings by their rank (or level h1-h6).</strong> Avoid skipping heading ranks.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="headings-5">
+                              HEADINGS AND SECTIONS. Headings with an equal or higher rank start a new section. Headings with a lower rank start new subsections that are part of the higher ranked section.</ChecklistLiEl>
+                         <ChecklistLiEl id="headings-6">
+                              In fixed, complementary sections of the page (sidebars) the heading ranks should not change depending on the ranks in the content area. In those cases, consistency across pages is more important.
+                         </ChecklistLiEl>
                     </ul>
                </section>
           </AccordionWidget>
