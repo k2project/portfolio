@@ -9,7 +9,7 @@ function DynamicContent() {
           heading: 3,
           title: 'Interactive Elements',
           subtitle: null,
-          styling: 'bg-grey',
+          styling: 'bg-dark',
      }
      return (
           <AccordionWidget data={accordionData}>

@@ -9,7 +9,7 @@ function SemanticStructure() {
           heading: 3,
           title: 'Page Semantic Structure',
           subtitle: null,
-          styling: 'bg-grey',
+          styling: 'bg-dark',
      }
      return (
           <AccordionWidget data={accordionData}>
@@ -109,6 +109,53 @@ function SemanticStructure() {
                          <ChecklistLiEl id="headings-6">
                               In fixed, complementary sections of the page (sidebars) the heading ranks should not change depending on the ranks in the content area. In those cases, consistency across pages is more important.
                          </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Articles :</h5>
+                         <ChecklistLiEl id="articles-1">
+                              Ensure that this element specifies independent, self-contained content. It should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="articles-2">
+                              Should be identified, typically by including a heading.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="articles-3">
+                              Author information can be provided through the <i>address</i> element.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="articles-4">
+                              The publication date and time can be described using the <i>datetime </i> attribute of a <i>time </i>element.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Sections :</h5>
+                         <ChecklistLiEl id="sections-1">
+                              Ensure that it is a thematic grouping of content, typically with a heading and should logically appear in the outline of a document.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="sections-2">
+                              Do not use the section element as a generic container; this is what div is for, especially when the sectioning is only for styling purposes.
+                         </ChecklistLiEl>
+
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Lists :</h5>
+                         <ChecklistLiEl id="lists-1">
+                              Use different types of lists to group information according to its nature to provide orientation for users.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="lists-1.1">
+                              List can be nested into another list, including a different types of lists.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="lists-2">
+                              Unordered lists are used when the order of the items is not relevant.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="lists-3">
+                              Ordered lists are used for sequential information and are enumerated for readability.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="lists-4">
+                              Description lists are groups of related terms and descriptions which are connected programmatically, that includes: one term (dt- authors), multiple descriptions (dd - Kafka, dd-Rowlling), multiple terms (dt/lng="en-US"-dfn - color, dt/lng="en-BG"-dfn - colour ), one description (dd) and ultiple terms (dt - author, dt - editor), multiple descriptions (dd - John, dd - Adam) list.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="lists-5">
+                              Individual list items can contain a variety of HTML elements, including paragraphs, headings, form elements, and other (nested) lists.
+                         </ChecklistLiEl>
+
                     </ul>
                </section>
           </AccordionWidget>

@@ -16,8 +16,9 @@
   background-color: $color-primary;
   color: #fff;
 }
-.accordion-widget--bg-grey .accordion-widget__head{
-  background-color: #f0f0f0;
+.accordion-widget--bg-dark .accordion-widget__head{
+  background-color: #111;
+  color: #fff;
 }
 .accordion-widget__title{
     font-size: 2.2rem;
@@ -25,7 +26,7 @@
     padding-left: 4rem;
     line-height: 1.2;
 }
-.accordion-widget--bg-grey .accordion-widget__title{
+.accordion-widget--bg-dark .accordion-widget__title{
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: bold;
