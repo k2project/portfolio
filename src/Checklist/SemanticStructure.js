@@ -17,13 +17,13 @@ function SemanticStructure() {
                     <ul className="checklist__list">
                          <ChecklistLiEl id="regions-1"><strong className="color-themed--primary">Mark up different regions of applications, so that they can be identified by web browsers and assistive technologies.</strong></ChecklistLiEl>
                          <ChecklistLiEl id="regions-2">Provide designs that use labels, controls, status indicators, and other UI elements consistently across all pages.</ChecklistLiEl>
-                         <h5 className="checklist__list-subcaption">HTML  Validity :</h5>
+                         <h5 className="checklist__subcaption">HTML  Validity :</h5>
                          <ChecklistLiEl id="regions-3">Elements have complete start and end tags.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-4">Elements are nested according to their specifications.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-5">Elements do not contain duplicate attributes.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-6">All IDs are unique.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-7">If HTML5 cannot be used, to improve accessibility, add WAI-ARIA code (<b>role=""</b>) to div elements that function as their HTML5 counterparts, egz. &lt;id="main" role="main"&gt;</ChecklistLiEl>
-                         <h5 className="checklist__list-subcaption">HTML meta-related elements :</h5>
+                         <h5 className="checklist__subcaption">HTML meta-related elements :</h5>
                          <ChecklistLiEl id="meta-1">
                               Providing a <i>lang=""</i> attribute on the root <i>html</i> element with a valid IETF identifying language tag to help <abbr title="Assistive Technologies">AT</abbr> determine the proper language to announce.
                          </ChecklistLiEl>
@@ -48,21 +48,21 @@ function SemanticStructure() {
                     </ul>
                </section>
                <section>
-                    <h4 className="checklist__list-caption">Page Regions</h4>
+                    <h4 className="checklist__caption">Page Regions</h4>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Page Header :</h5>
+                         <h5 className="checklist__subcaption">Page Header :</h5>
                          <ChecklistLiEl id="regions-8"><i>&lt;header&gt;</i> element present at the top of every page for the website logo, search function, and navigation options. </ChecklistLiEl>
                          <ChecklistLiEl id="regions-9"><i>&lt;header&gt;</i> used inside <i>&lt;article&gt;</i> and <i>&lt;section&gt;</i> elements, not to be associated with the whole page, but only with that specific element.</ChecklistLiEl>
-                         <h5 className="checklist__list-subcaption">Page Footer :</h5>
+                         <h5 className="checklist__subcaption">Page Footer :</h5>
                          <ChecklistLiEl id="regions-10"><i>&lt;footer&gt;</i> element present at the bottom of every page that contains site-wide information, such as copyright information, privacy statements, or disclaimers.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-11"><i>&lt;footer&gt;</i> used inside <i>&lt;article&gt;</i> and <i>&lt;section&gt;</i> elements, not to be associated with the whole page, but only with that specific element.</ChecklistLiEl>
-                         <h5 className="checklist__list-subcaption">Navigation:</h5>
+                         <h5 className="checklist__subcaption">Navigation:</h5>
                          <ChecklistLiEl id="regions-12">Use &lt;nav&gt; element to identify a navigation menu.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-13">If a web page has a number of navigation menus, use labels to identify each one.</ChecklistLiEl>
-                         <h5 className="checklist__list-subcaption">Main content:</h5>
+                         <h5 className="checklist__subcaption">Main content:</h5>
                          <ChecklistLiEl id="regions-14">Use &lt;main&gt; element to identify the main content region of a web page.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-15">Use <q>Skip to main content</q> link at very top of appliction.</ChecklistLiEl>
-                         <h5 className="checklist__list-subcaption">Complementary content:</h5>
+                         <h5 className="checklist__subcaption">Complementary content:</h5>
                          <ChecklistLiEl id="regions-16">Use &lt;aside&gt; element to identify regions that support the main content, yet are separate and meaningful sections on their own.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-17">Often represented as sidebars. It can be used for advertising, for groups of nav elements, etc.</ChecklistLiEl>
                          <ChecklistLiEl id="regions-18">Is &lt;aside&gt; element used in realation to page structure while &lt;section&gt; and &lt;article&gt; elements are used in context of the content structure?</ChecklistLiEl>
@@ -71,7 +71,7 @@ function SemanticStructure() {
 
                </section>
                <section>
-                    <h4 className="checklist__list-caption">Labeling Regions (aria-label/aria-labelledby)</h4>
+                    <h4 className="checklist__caption">Labeling Regions (aria-label/aria-labelledby)</h4>
                     <ul className="checklist__list">
                          <ChecklistLiEl id="labeling-1">
                               Provide labels to distinguish two page regions of the same type (same HTML element) when used on the same page.
@@ -92,9 +92,9 @@ function SemanticStructure() {
                     </ul>
                </section>
                <section>
-                    <h4 className="checklist__list-caption">Content Structure</h4>
+                    <h4 className="checklist__caption">Content Structure</h4>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Headings:</h5>
+                         <h5 className="checklist__subcaption">Headings:</h5>
                          <ChecklistLiEl id="headings-1">
                               Break up content into logical chunks and precede each area of content with a descriptive heading. </ChecklistLiEl>
                          <ChecklistLiEl id="headings-2">
@@ -114,7 +114,7 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Articles :</h5>
+                         <h5 className="checklist__subcaption">Articles :</h5>
                          <ChecklistLiEl id="articles-1">
                               Ensure that this element specifies independent, self-contained content. It should make sense on its own, and it should be possible to read it independently from the rest of the web site.
                          </ChecklistLiEl>
@@ -129,7 +129,7 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Sections :</h5>
+                         <h5 className="checklist__subcaption">Sections :</h5>
                          <ChecklistLiEl id="sections-1">
                               Ensure that it is a thematic grouping of content, typically with a heading and should logically appear in the outline of a document.
                          </ChecklistLiEl>
@@ -139,7 +139,7 @@ function SemanticStructure() {
 
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Lists :</h5>
+                         <h5 className="checklist__subcaption">Lists :</h5>
                          <ChecklistLiEl id="lists-1">
                               Use different types of lists to group information according to its nature to provide orientation for users.
                          </ChecklistLiEl>
@@ -161,7 +161,7 @@ function SemanticStructure() {
 
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Quotes :</h5>
+                         <h5 className="checklist__subcaption">Quotes :</h5>
                          <ChecklistLiEl id="quotes-1">
                               Use the <i>q</i> element for shorter quotes, that are usually embedded in another sentence.
                          </ChecklistLiEl>
@@ -174,13 +174,13 @@ function SemanticStructure() {
 
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Figures :</h5>
+                         <h5 className="checklist__subcaption">Figures :</h5>
                          <ChecklistLiEl id="figures-1">
                               Use <i>figure</i> element with <i>figcaption</i> as label for blocks with additional information set off from the main content of the page – sometimes referenced from the main text (lists, images, tables, diagrams, code snipets etc.)
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Contact information :</h5>
+                         <h5 className="checklist__subcaption">Contact information :</h5>
                          <ChecklistLiEl id="address-1">
                               Use <i>address</i> element that indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
                          </ChecklistLiEl>
@@ -190,14 +190,14 @@ function SemanticStructure() {
                     </ul>
                </section>
                <section>
-                    <h4 className="checklist__list-caption">Inline text Semantics</h4>
+                    <h4 className="checklist__caption">Inline text Semantics</h4>
                     <ul className="checklist__list">
                          <ChecklistLiEl id="text-1">
                               Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Emphasized Text :</h5>
+                         <h5 className="checklist__subcaption">Emphasized Text :</h5>
                          <ChecklistLiEl id="text-3">
                               Use <b><i>em</i></b> element to indicate stress emphasis and <b><i>strong </i></b> element to mark the text of greater importance.
                          </ChecklistLiEl>
@@ -215,7 +215,7 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption"> Edited text :</h5>
+                         <h5 className="checklist__subcaption"> Edited text :</h5>
                          <ChecklistLiEl id="edit-1">
                               Use <i>del</i> elemnt to represent a range of text that has been deleted from a document.
                          </ChecklistLiEl>
@@ -227,13 +227,13 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption"> Abbreviations and acronyms :</h5>
+                         <h5 className="checklist__subcaption"> Abbreviations and acronyms :</h5>
                          <ChecklistLiEl id="text-2">
                               Use <i>abbr</i> element with the optional title attribute that can provide an expansion or description for the abbreviation.
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Definitions :</h5>
+                         <h5 className="checklist__subcaption">Definitions :</h5>
                          <ChecklistLiEl id="dfn-1">
                               Use <i>dfn</i> element to indicates the term being defined within the context of a definition phrase or sentence.
                          </ChecklistLiEl>
@@ -242,19 +242,19 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Long words:</h5>
+                         <h5 className="checklist__subcaption">Long words:</h5>
                          <ChecklistLiEl id="wbr-1">
                               Use <i>wbr</i> to represents a word break opportunity for browser when dealing with long words or phrases.
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Small print and side comments :</h5>
+                         <h5 className="checklist__subcaption">Small print and side comments :</h5>
                          <ChecklistLiEl id="small-1">
                               Use <i>small</i> to represents side-comments and small print, like copyright and legal text, independent of its styled presentation.
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Lamguages :</h5>
+                         <h5 className="checklist__subcaption">Lamguages :</h5>
                          <ChecklistLiEl id="lng-1">
                               Use <b><i>lng=""</i> attribute </b> when referring to a language different to the page language.
                          </ChecklistLiEl>
@@ -263,13 +263,13 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">cited creative work :</h5>
+                         <h5 className="checklist__subcaption">cited creative work :</h5>
                          <ChecklistLiEl id="cite-1">
                               Use <i>cite</i> element when reffering to a cited creative work (book, article, show, etc.), <em>It must include the title of that work.</em>
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Computing Terms :</h5>
+                         <h5 className="checklist__subcaption">Computing Terms :</h5>
                          <ChecklistLiEl id="comp-0">
                               Use <i>code</i> element to display text styled in a fashion indicating that the text is a short fragment of computer code. To represent multiple lines of code, wrap the <i>code</i> element within a <i>pre</i>element.
                          </ChecklistLiEl>
@@ -285,7 +285,7 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
-                         <h5 className="checklist__list-subcaption">Times and Dates :</h5>
+                         <h5 className="checklist__subcaption">Times and Dates :</h5>
                          <ChecklistLiEl id="time-1">
                               Use <i>time</i> element to definea date, time and time duration.
                          </ChecklistLiEl>

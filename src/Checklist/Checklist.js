@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Checklist.scss';
 
 import SemanticStructure from './SemanticStructure';
+import Menus from './Menus';
 import DynamicContent from './DynamicContent';
 
 function Checklist() {
@@ -32,6 +33,7 @@ function Checklist() {
           <article className="checklist">
                <h2 className="checklist__title">Web Accesibilty Checklist</h2>
                <SemanticStructure />
+               <Menus />
                <DynamicContent />
           </article>
      )
