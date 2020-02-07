@@ -14,8 +14,7 @@ function DynamicContent() {
      return (
           <AccordionWidget data={accordionData}>
                <section>
-                    <h4 className="checklist__caption" id="#interactive-elms-functinality ">Interactive Elements Functinality :</h4>
-                    <ul className="checklist__list" aria-labelledby="interactive-elms-functinality">
+                    <ul className="checklist__list" aria-label="interactive element functionality">
                          <ChecklistLiEl id="dynamic-1">
                               If an element creates or shows new custom content, ensure that the content directly follows the activating element in the DOM (such as a hide/show dropdown).
                          </ChecklistLiEl>

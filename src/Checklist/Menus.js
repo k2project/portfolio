@@ -14,8 +14,7 @@ function Menus() {
      return (
           <AccordionWidget data={accordionData}>
                <section>
-                    <h4 className="checklist__caption" id="#menus-functionality">Menus Functinality :</h4>
-                    <ul className="checklist__list" aria-labelledby="menus-functinality">
+                    <ul className="checklist__list" aria-label="menus functinality">
                          <ChecklistLiEl id="menus-1">
                               Menus are used for navigation and to provide functionality for the web page operability.
                          </ChecklistLiEl>
