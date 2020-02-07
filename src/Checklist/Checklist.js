@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Checklist.scss';
 
 import SemanticStructure from './SemanticStructure';
-import AccordionWidget from './../components/AccordionWidget/AccordionWidget';
+import DynamicContent from './DynamicContent';
 
 function Checklist() {
      useEffect(() => {
@@ -32,6 +32,7 @@ function Checklist() {
           <article className="checklist">
                <h2 className="checklist__title">Web Accesibilty Checklist</h2>
                <SemanticStructure />
+               <DynamicContent />
           </article>
      )
 }

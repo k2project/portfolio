@@ -42,7 +42,7 @@ function SemanticStructure() {
                          <ChecklistLiEl id="meta-6">
                               Meta tag <i>name="viewport"</i> with <i>content="width=device-width, initial-scale=1"</i> present.
                          </ChecklistLiEl>
-                         <ChecklistLiEl id="meta-6">
+                         <ChecklistLiEl id="meta-7">
                               Check for presence and content of other meta tag's names: author, description, robots, googlebot, slurp. If present validate Open Graph (og:) meta property and content.
                          </ChecklistLiEl>
                     </ul>
