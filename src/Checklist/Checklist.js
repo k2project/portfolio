@@ -16,6 +16,17 @@ function Checklist() {
                     }
                })
           }
+
+          //check for duplicte ids
+          const elWithIds = document.querySelectorAll('[id]');
+          const idsArr = [];
+          Array.prototype.forEach.call(elWithIds, function (el, i) {
+               if (!idsArr.includes(el.id)) {
+                    idsArr.push(el.id)
+               } else {
+                    console.log('WARNING! DUPLICATED [ID]:', '@@@--->' + el.id + '<---@@@', el)
+               }
+          });
      })
      return (
           <article className="checklist">
