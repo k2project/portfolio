@@ -109,6 +109,9 @@ function SemanticStructure() {
                          <ChecklistLiEl id="headings-6">
                               In fixed, complementary sections of the page (sidebars) the heading ranks should not change depending on the ranks in the content area. In those cases, consistency across pages is more important.
                          </ChecklistLiEl>
+                         <ChecklistLiEl id="headings-7">
+                              Use <i>hgroup</i> to create multi-level heading that allows the primary heading for a document section to be grouped with any secondary headings to prevent the later from creating separate sections as it normally would.
+                         </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
                          <h5 className="checklist__list-subcaption">Articles :</h5>
@@ -150,15 +153,102 @@ function SemanticStructure() {
                               Ordered lists are used for sequential information and are enumerated for readability.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="lists-4">
-                              Description lists are groups of related terms and descriptions which are connected programmatically, that includes: one term (dt- authors), multiple descriptions (dd - Kafka, dd-Rowlling), multiple terms (dt/lng="en-US"-dfn - color, dt/lng="en-BG"-dfn - colour ), one description (dd) and ultiple terms (dt - author, dt - editor), multiple descriptions (dd - John, dd - Adam) list.
+                              Description lists are groups of related terms and descriptions which are connected programmatically, that includes: one term (dt) - multiple descriptions (dd), multiple terms - one description and multiple terms - multiple descriptions list.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="lists-5">
                               Individual list items can contain a variety of HTML elements, including paragraphs, headings, form elements, and other (nested) lists.
                          </ChecklistLiEl>
 
                     </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Quotes :</h5>
+                         <ChecklistLiEl id="quotes-1">
+                              Use the <i>q</i> element for shorter quotes, that are usually embedded in another sentence.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="quotes-2">
+                              Use the <i>blockquote</i> element for longer and more complex quotes. It can contain paragraphs, headings, and other text structure elements. Those should reflect the structure of the cited document. The <i>cite</i> element is used to refer to the source of the quote.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="quotes-3">
+                              The <i>cite</i> element is used to refer to the source of the quote.
+                         </ChecklistLiEl>
+
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Figures :</h5>
+                         <ChecklistLiEl id="figures-1">
+                              Use <i>figure</i> element with <i>figcaption</i> as label for blocks with additional information set off from the main content of the page – sometimes referenced from the main text (lists, images, tables, diagrams, code snipets etc.)
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Contact information :</h5>
+                         <ChecklistLiEl id="address-1">
+                              Use <i>address</i> element that indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="address-2">
+                              Ensure that <i>address</i> contains no nested address elements, no heading and sectioning content.
+                         </ChecklistLiEl>
+                    </ul>
                </section>
-          </AccordionWidget>
+               <section>
+                    <h4 className="checklist__list-caption">Inline text Semantics</h4>
+                    <ul className="checklist__list">
+                         <ChecklistLiEl id="text-1">
+                              Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Emphasized Text :</h5>
+                         <ChecklistLiEl id="text-3">
+                              Use <b><i>em</i> element to indicate stress emphasis</b> and <b><i>strong </i></b> element to mark the text of greater importance.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="text-4">
+                              Use <b><i>b</i></b> to draw the reader's attention to the element's contents, which are not otherwise granted special importance.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="text-5">
+                              Use <b><i>i</i></b> element to indicate text with different semantic meaning than the surrounding text, egz.technical terms, foreign language phrases, or fictional character thoughts, etc.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="text-6">
+                              Use <b><i>mark</i></b> element to indicate relevance. It represents text which is marked or highlighted for reference or notation purposes. IMPORTANT! <em>The presence of the mark element is not announced by most screen reading technology in its default configuration.</em>
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption"> Abbreviations and acronyms :</h5>
+                         <ChecklistLiEl id="text-2">
+                              Use <i>abbr</i> element with the optional title attribute that can provide an expansion or description for the abbreviation.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Definitions :</h5>
+                         <ChecklistLiEl id="dfn-1">
+                              Use <i>dfn</i> element to indicates the term being defined within the context of a definition phrase or sentence.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="dfn-2">
+                              The paragraph element, the dt/dd pairing of description list, or the section element - the nearest ancestor of the dfn element is considered to be the definition of the term.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Small print and side comments :</h5>
+                         <ChecklistLiEl id="small-1">
+                              Use <i>small</i> to represents side-comments and small print, like copyright and legal text, independent of its styled presentation.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Lamguages :</h5>
+                         <ChecklistLiEl id="lng-1">
+                              Use <b><i>lng-=""</i></b> attribute when referring to a language different to the page language.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="lng-2">
+                              Use <b><i>ruby</i></b> annotations are for showing pronunciation of East Asian characters.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">cited creative work :</h5>
+                         <ChecklistLiEl id="cite-1">
+                              Use <b><i>cite</i></b> element when reffering to a cited creative work (book, article, show, etc.), <em>It must include the title of that work.</em>
+                         </ChecklistLiEl>
+                    </ul>
+               </section>
+          </AccordionWidget >
      )
 }
 export default SemanticStructure;
