@@ -415,7 +415,7 @@ function InlineTextSemantics() {
                     </tr>
                     <tr>
                          <td>s</td>
-                         <td>Renders text with a strikethrough, or a line through it. Use the this element to represent things that are no longer relevant or no longer accurate. However, it is not appropriate when indicating document edits; for that, use the DEL and INS elements, as appropriate. <br /><em>The presence of the s element is not announced by most screen reading technology in its default configuration.</em></td>
+                         <td>Renders text with a strikethrough, or a line through it. Use this element to represent things that are no longer relevant or no longer accurate. However, it is not appropriate when indicating document edits; for that, use the DEL and INS elements, as appropriate. <br /><em>The presence of the s element is not announced by most screen reading technology in its default configuration.</em></td>
                     </tr>
                     <tr>
                          <td>samp</td>

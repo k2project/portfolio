@@ -199,7 +199,7 @@ function SemanticStructure() {
                     <ul className="checklist__list">
                          <h5 className="checklist__list-subcaption">Emphasized Text :</h5>
                          <ChecklistLiEl id="text-3">
-                              Use <b><i>em</i> element to indicate stress emphasis</b> and <b><i>strong </i></b> element to mark the text of greater importance.
+                              Use <b><i>em</i></b> element to indicate stress emphasis and <b><i>strong </i></b> element to mark the text of greater importance.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="text-4">
                               Use <b><i>b</i></b> to draw the reader's attention to the element's contents, which are not otherwise granted special importance.
@@ -209,6 +209,21 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                          <ChecklistLiEl id="text-6">
                               Use <b><i>mark</i></b> element to indicate relevance. It represents text which is marked or highlighted for reference or notation purposes. IMPORTANT! <em>The presence of the mark element is not announced by most screen reading technology in its default configuration.</em>
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="text-7">
+                              Use <b><i>s</i></b> element (strikethrough) only to represent things that are no longer relevant or no longer accurate. IMPORTANT! <em>The presence of the mark element is not announced by most screen reading technology in its default configuration.</em>
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption"> Edited text :</h5>
+                         <ChecklistLiEl id="edit-1">
+                              Use <i>del</i> elemnt to represent a range of text that has been deleted from a document.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="edit-2">
+                              Use <i>ins</i> elemnt to indicate text that has been added to the document.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="edit-3">
+                              Do not use <i>s</i> elemnt to indicate document's edits.
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
@@ -227,6 +242,12 @@ function SemanticStructure() {
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Long words:</h5>
+                         <ChecklistLiEl id="wbr-1">
+                              Use <i>wbr</i> to represents a word break opportunity for browser when dealing with long words or phrases.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
                          <h5 className="checklist__list-subcaption">Small print and side comments :</h5>
                          <ChecklistLiEl id="small-1">
                               Use <i>small</i> to represents side-comments and small print, like copyright and legal text, independent of its styled presentation.
@@ -235,17 +256,50 @@ function SemanticStructure() {
                     <ul className="checklist__list">
                          <h5 className="checklist__list-subcaption">Lamguages :</h5>
                          <ChecklistLiEl id="lng-1">
-                              Use <b><i>lng-=""</i></b> attribute when referring to a language different to the page language.
+                              Use <b><i>lng=""</i> attribute </b> when referring to a language different to the page language.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="lng-2">
-                              Use <b><i>ruby</i></b> annotations are for showing pronunciation of East Asian characters.
+                              Use <i>ruby</i> annotations are for showing pronunciation of East Asian characters.
                          </ChecklistLiEl>
                     </ul>
                     <ul className="checklist__list">
                          <h5 className="checklist__list-subcaption">cited creative work :</h5>
                          <ChecklistLiEl id="cite-1">
-                              Use <b><i>cite</i></b> element when reffering to a cited creative work (book, article, show, etc.), <em>It must include the title of that work.</em>
+                              Use <i>cite</i> element when reffering to a cited creative work (book, article, show, etc.), <em>It must include the title of that work.</em>
                          </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Computing Terms :</h5>
+                         <ChecklistLiEl id="comp-0">
+                              Use <i>code</i> element to display text styled in a fashion indicating that the text is a short fragment of computer code. To represent multiple lines of code, wrap the <i>code</i> element within a <i>pre</i>element.
+                         </ChecklistLiEl>
+
+                         <ChecklistLiEl id="comp-1">
+                              Use <i>kbd</i> element represent an inline text denoting textual user input from a keyboard, voice input, or any other text entry device.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="comp-2">
+                              Use <i>samp</i> element to enclose inline text which represents sample (or quoted) output from a computer program.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="comp-3">
+                              Use <i>var</i> element to represent the name of a variable in a mathematical expression or a programming context.
+                         </ChecklistLiEl>
+                    </ul>
+                    <ul className="checklist__list">
+                         <h5 className="checklist__list-subcaption">Times and Dates :</h5>
+                         <ChecklistLiEl id="time-1">
+                              Use <i>time</i> element to definea date, time and time duration.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="time-2">
+                              When used with <i>datetime</i> attribute ensure the correct format.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="time-4">
+                              Valid <i>datetime</i> attribute's date and time formats: YYYY, YYYY-MM, YYYY-MM-DD, MM-DD, YYYY-W(number), HH-MM, HH-MM-SS, HH-MM-SS.MsMsMs. A a valid duration string: PT4H18M3S.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="time-3">
+                              If the element does not have a <i>datetime</i> attribute, it must not have any element descendants, and the datetime value is the element’s child text content.
+                         </ChecklistLiEl>
+
+
                     </ul>
                </section>
           </AccordionWidget >
