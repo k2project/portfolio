@@ -34,7 +34,7 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="meta-related-el">HTML meta-related elements :</h5>
-                         <ul class="checklist__list" aria-labelledby="semantic-mark-up meta-related-el">
+                         <ul className="checklist__list" aria-labelledby="semantic-mark-up meta-related-el">
                               <ChecklistLiEl id="meta-1">
                                    Providing a <i>lang=""</i> attribute on the root <i>html</i> element with a valid IETF identifying language tag to help <abbr title="Assistive Technologies">AT</abbr> determine the proper language to announce.
                               </ChecklistLiEl>
@@ -85,14 +85,14 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="semantic-main-content">Main content:</h5>
-                         <ul class="checklist__list" aria-labelledby="page-regions semantic-main-content">
+                         <ul className="checklist__list" aria-labelledby="page-regions semantic-main-content">
                               <ChecklistLiEl id="regions-14">Use &lt;main&gt; element to identify the main content region of a web page.</ChecklistLiEl>
                               <ChecklistLiEl id="regions-15">Use <q>Skip to main content</q> link at very top of appliction.</ChecklistLiEl>
                          </ul>
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="complementary-content">Complementary content:</h5>
-                         <ul class="checklist__list" aria-labelledby="page-regions complementary-content">
+                         <ul className="checklist__list" aria-labelledby="page-regions complementary-content">
                               <ChecklistLiEl id="regions-16">Use &lt;aside&gt; element to identify regions that support the main content, yet are separate and meaningful sections on their own.</ChecklistLiEl>
                               <ChecklistLiEl id="regions-17">Often represented as sidebars. It can be used for advertising, for groups of nav elements, etc.</ChecklistLiEl>
                               <ChecklistLiEl id="regions-18">Is &lt;aside&gt; element used in realation to page structure while &lt;section&gt; and &lt;article&gt; elements are used in context of the content structure?</ChecklistLiEl>
@@ -125,7 +125,7 @@ function SemanticStructure() {
                     <h4 className="checklist__caption" id="content-structuring">Content Structure</h4>
                     <section>
                          <h5 className="checklist__subcaption" id="headings">Headings:</h5>
-                         <ul className="checklist__list" aria-labelledy="content-structuring headings">
+                         <ul className="checklist__list" aria-labelledby="content-structuring headings">
                               <ChecklistLiEl id="headings-1">
                                    Break up content into logical chunks and precede each area of content with a descriptive heading.
                               </ChecklistLiEl>
@@ -151,7 +151,7 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="articles">Articles :</h5>
-                         <ul className="checklist__list" aria-labelledy="content-structuring articles">
+                         <ul className="checklist__list" aria-labelledby="content-structuring articles">
                               <ChecklistLiEl id="articles-1">
                                    Ensure that this element specifies independent, self-contained content. It should make sense on its own, and it should be possible to read it independently from the rest of the web site.
                               </ChecklistLiEl>
@@ -168,7 +168,7 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="sections">Sections :</h5>
-                         <ul className="checklist__list" aria-labelledy="content-structuring sections">
+                         <ul className="checklist__list" aria-labelledby="content-structuring sections">
                               <ChecklistLiEl id="sections-1">
                                    Ensure that it is a thematic grouping of content, typically with a heading and should logically appear in the outline of a document.
                               </ChecklistLiEl>
@@ -180,7 +180,7 @@ function SemanticStructure() {
                     <section>
                          <h5 className="checklist__subcaption" id="lists">Lists :</h5>
 
-                         <ul className="checklist__list" aria-labelledy="content-structuring lists">
+                         <ul className="checklist__list" aria-labelledby="content-structuring lists">
                               <ChecklistLiEl id="lists-1">
                                    Use different types of lists to group information according to its nature to provide orientation for users.
                               </ChecklistLiEl>
@@ -203,7 +203,7 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="quotes">Quotes :</h5>
-                         <ul className="checklist__list" aria-labelledy="content-structuring quotes">
+                         <ul className="checklist__list" aria-labelledby="content-structuring quotes">
                               <ChecklistLiEl id="quotes-1">
                                    Use the <i>q</i> element for shorter quotes, that are usually embedded in another sentence.
                          </ChecklistLiEl>
@@ -218,7 +218,7 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="figures">Figures :</h5>
-                         <ul className="checklist__list" aria-labelledy="content-structuring figures">
+                         <ul className="checklist__list" aria-labelledby="content-structuring figures">
                               <ChecklistLiEl id="figures-1">
                                    Use <i>figure</i> element with <i>figcaption</i> as label for blocks with additional information set off from the main content of the page – sometimes referenced from the main text (lists, images, tables, diagrams, code snipets etc.)
                               </ChecklistLiEl>
@@ -226,7 +226,7 @@ function SemanticStructure() {
                     </section>
                     <section>
                          <h5 className="checklist__subcaption" id="info">Contact information :</h5>
-                         <ul className="checklist__list" aria-labelledy="content-structuring info">
+                         <ul className="checklist__list" aria-labelledby="content-structuring info">
                               <ChecklistLiEl id="address-1">
                                    Use <i>address</i> element that indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
                               </ChecklistLiEl>
