@@ -16,8 +16,12 @@ function Images() {
                <section>
                     <ul className="checklist__list" aria-label="accessable images">
                          <ChecklistLiEl id="images-1">
+                              To display decorative or non-meaningful images, such as icons and backgrounds, use CSS methods.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="images-2">
+
                               <b className="color-themed--primary">
-                                   Images must have text alternatives alt="" that describe the information or function represented by them.
+                                   Images used with <i>img</i> tag must have text alternatives alt="" that describe the information or function represented by them at all time.
                               </b>
                          </ChecklistLiEl>
                     </ul>
@@ -113,22 +117,34 @@ function Images() {
                     <h4 className="checklist__subcaption" id="#complex-img">Complex Images</h4>
                     <ul className="checklist__list" aria-labelledby="complex-img">
                          <ChecklistLiEl id="complex-img-1">
-
+                              Complex images contain substantial information – more than can be conveyed in a short phrase or sentence (graphs, maps, charts, diagrams and illustrations where the page text relies on the user being able to understand the image).
                          </ChecklistLiEl>
                          <ChecklistLiEl id="complex-img-2">
-
+                              A two-part text alternative used for complex images: short description to identify the image and, where appropriate, indicate the location of the long description and a long description – a textual representation of the essential information conveyed by the image.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="complex-img-3">
-
+                              For the long description use a text link to the long description adjacent to the image or describe the location of the long description in the alt attribute.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="complex-img-4">
-
+                              The HTML5 <i>figure</i> and <i>figcaption</i> elements can be used to group image and link semantically. Adding role="group" to the figure maintains backward compatibility with web browsers that don’t support the native semantics.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="complex-img-5">
-
+                              For long descriptions that are text-only and without needing structural information use the WAI-ARIA <i>aria-describedby="[ID]"</i> attribute to link to a description of the image that is provided anywhere on the same web page.
                          </ChecklistLiEl>
-                         <ChecklistLiEl id="complex-img-6">
 
+                    </ul>
+               </section>
+               <section>
+                    <h4 className="checklist__subcaption" id="#group-img">Groups of Images</h4>
+                    <ul className="checklist__list" aria-labelledby="group-img">
+                         <ChecklistLiEl id="group-img-1">
+                              For multiple images conveying a single piece of information (stars for rating) use alt attribute with description only on one of the images (rest - alt-"");
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="group-img-2">
+                              For a collection of images wrap each image in <i>figure</i> and <i>figcaption</i> elements to provide the information for each one individually.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="group-img-3">
+                              The WAI-ARIA attribute <i>role="group"</i> is used to indicate grouping of images in collection to assistive technologies. Aria-labelledby on <i>figure</i> elemnt makes sure that the figcaption element with an ID is used as a label for the individual group/image.
                          </ChecklistLiEl>
                     </ul>
                </section>
