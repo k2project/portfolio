@@ -3,6 +3,7 @@ import './Checklist.scss';
 
 import SemanticStructure from './accordions/SemanticStructure';
 import Menus from './accordions/Menus';
+import Images from './accordions/Images';
 import DynamicContent from './accordions/DynamicContent';
 
 function Checklist() {
@@ -35,6 +36,7 @@ function Checklist() {
                <h2 className="checklist__title">Web Accesibilty Checklist</h2>
                <SemanticStructure />
                <Menus />
+               <Images />
                <DynamicContent />
           </article>
      )
