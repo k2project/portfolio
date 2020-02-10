@@ -24,6 +24,15 @@ function Images() {
                                    Images used with <i>img</i> tag must have text alternatives alt="" that describe the information or function represented by them at all time.
                               </b>
                          </ChecklistLiEl>
+                         <ChecklistLiEl id="images-3">
+                              Choose appropriate text alternatives - the most concise description possible of the image’s purpose. Aim to put the most important information at the beginning.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="images-4">
+                              There must be no space character in between the quotes in null alt="" to effectively hidde the image from assistive technologies.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="images-5">
+                              Avoid including words like “image”, “icon”, or “picture” in the alt text.
+                         </ChecklistLiEl>
                     </ul>
                </section>
                <section>
@@ -33,9 +42,9 @@ function Images() {
                               Informative images graphically represent concepts and information (pictures,photos, and illustrations).
                          </ChecklistLiEl>
                          <ChecklistLiEl id="i-img-2">
-                              <span className="color-themed--primary">
+                              <strong className="color-themed--primary">
                                    The text alternative conveys the meaning or content that is displayed visually and isn’t a literal description of the image.
-                              </span>
+                              </strong>
                          </ChecklistLiEl>
                          <ChecklistLiEl id="i-img-3">
                               Applies to all images used to label and/or supplement other information, images conveying succinct information or impressions and emotions or files format.
@@ -49,7 +58,7 @@ function Images() {
                               Decorative images don’t add information to the content of a page: image used as part of page design or as part of a text link, image with adjacent text alternative or used for ambiance.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="d-img-2">
-                              <strong> A null (empty) alt text must be provided (alt="") with decorative images</strong> so that they can be ignored by assistive technologies, such as screen readers.
+                              <strong className="color-themed--primary"> A null (empty) alt text must be provided (alt="") with decorative images</strong> so that they can be ignored by assistive technologies, such as screen readers.
                          </ChecklistLiEl>
                     </ul>
                </section>
@@ -60,7 +69,9 @@ function Images() {
                               Functional images are used to initiate actions rather than to convey information. They are used in buttons, links, and other interactive elements.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="f-img-2">
-                              The text alternative for the image should convey the action that will be initiated.
+                              <strong className="color-themed--primary">
+                                   The text alternative for the image should convey the action that will be initiated.
+                              </strong>
                          </ChecklistLiEl>
                          <ChecklistLiEl id="f-img-3">
                               Using image alone as logo in a link contains alt attribute describing the website name and page it likns to (egz,. W3C home).
@@ -148,7 +159,25 @@ function Images() {
                          </ChecklistLiEl>
                     </ul>
                </section>
-
+               <section>
+                    <h4 className="checklist__subcaption" id="#map-img">Image Maps</h4>
+                    <ul className="checklist__list" aria-labelledby="map-img">
+                         <ChecklistLiEl id="map-img-1">
+                              Use <i>map</i> and <i>area</i> elements for image maps.
+                         </ChecklistLiEl>
+                    </ul>
+               </section>
+               <section>
+                    <h4 className="checklist__subcaption" id="#svg-img">SVG Graphics</h4>
+                    <ul className="checklist__list" aria-labelledby="svg-img">
+                         <ChecklistLiEl id="svg-img-1">
+                              Use <i>title</i> element within the SVG image to provide alternative text.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="svg-img-2">
+                              To improve accessibility support, the <i>title</i> element should be referenced from an <i>aria-labelledby</i> attribute of the <i>svg</i> element.
+                         </ChecklistLiEl>
+                    </ul>
+               </section>
           </AccordionWidget >
      )
 }
