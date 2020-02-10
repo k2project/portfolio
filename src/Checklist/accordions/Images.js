@@ -73,18 +73,61 @@ function Images() {
                     <h4 className="checklist__subcaption" id="#text-img">Images Of Text</h4>
                     <ul className="checklist__list" aria-labelledby="text-img">
                          <ChecklistLiEl id="txt-img-1">
-
+                              Images of text display text that is intended to be read.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="txt-img-2">
-
+                              Use actual text that is styled with CSS rather than image-based text presentation.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="txt-img-3">
+                              If images of text must be used, the text alternative must contain the same text presented in the image.
+                         </ChecklistLiEl>
+                    </ul>
+               </section>
+               <section>
+                    <h4 className="checklist__subcaption" id="#logo-img">Images Of Logos</h4>
+                    <ul className="checklist__list" aria-labelledby="logo-img">
+                         <ChecklistLiEl id="logo-img-1">
+                              Images used as logos are exempt from some of the accessibility requirements that apply to other images of text. For example, there are no minimum color contrast and text size requirements.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="logo-img-2">
+                              Images of logo that are not linked should contain alt attribute with company name (without a word 'logo').
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="logo-img-3">
+                              Images of logo that are linked become a functional images.
+                         </ChecklistLiEl>
+                    </ul>
+               </section>
+               <section>
+                    <h4 className="checklist__subcaption" id="#math-img">Images of Math Expressions</h4>
+                    <ul className="checklist__list" aria-labelledby="math-img">
+                         <ChecklistLiEl id="math-img-1">
+                              Images of math expressions only used in exceptional circumstances –  when the expression is an exception to the regular content of the page or website.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="math-img-2">
+                              When math forms are a substantial part of the content (for example, for online maths courses), <i>MathML</i> should be used.
+                         </ChecklistLiEl>
+
+                    </ul>
+               </section>
+               <section>
+                    <h4 className="checklist__subcaption" id="#complex-img">Complex Images</h4>
+                    <ul className="checklist__list" aria-labelledby="complex-img">
+                         <ChecklistLiEl id="complex-img-1">
 
                          </ChecklistLiEl>
-                         <ChecklistLiEl id="txt-img-4">
+                         <ChecklistLiEl id="complex-img-2">
 
                          </ChecklistLiEl>
-                         <ChecklistLiEl id="txt-img-5">
+                         <ChecklistLiEl id="complex-img-3">
+
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="complex-img-4">
+
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="complex-img-5">
+
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="complex-img-6">
 
                          </ChecklistLiEl>
                     </ul>
