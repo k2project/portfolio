@@ -1,7 +1,7 @@
 import React from 'react';
-import './Checklist.scss';
-import ChecklistLiEl from './ChecklistLiEl';
-import AccordionWidget from '../components/AccordionWidget/AccordionWidget';
+import '../Checklist.scss';
+import ChecklistLiEl from '../ChecklistLiEl';
+import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 
 function DynamicContent() {
 

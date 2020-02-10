@@ -1,7 +1,7 @@
 import React from 'react';
-import './Checklist.scss';
-import ChecklistLiEl from './ChecklistLiEl';
-import AccordionWidget from './../components/AccordionWidget/AccordionWidget';
+import '../Checklist.scss';
+import ChecklistLiEl from '../ChecklistLiEl';
+import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 
 function SemanticStructure() {
 
@@ -116,7 +116,7 @@ function SemanticStructure() {
                               Use the WAI-ARIA <i>aria-label</i> attribute to label the region if the label should not appear visually on the page.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="labeling-5">
-                              Use <i>aria-labelledby="[ID]" </i> to point to an existing element by its id - consider using heading with that id.
+                              Use <i>aria-labelledby="[ID ID]" </i> to point to an existing element/elements by its/their  id/ids - consider using heading with that id.
                          </ChecklistLiEl>
 
                     </ul>

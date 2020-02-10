@@ -1,7 +1,7 @@
 import React from 'react';
-import './Checklist.scss';
-import ChecklistLiEl from './ChecklistLiEl';
-import AccordionWidget from '../components/AccordionWidget/AccordionWidget';
+import '../Checklist.scss';
+import ChecklistLiEl from '../ChecklistLiEl';
+import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 
 function Menus() {
 
@@ -37,9 +37,6 @@ function Menus() {
                          </ChecklistLiEl>
                          <ChecklistLiEl id="menus-6">
                               Identify the menu, by using the HTML5 elements for page structuring and content to allow users access to the menu directly (egz. nav) or by labeling them ARIAs to allow users to distinguish between multiple menus on a web page.
-                         </ChecklistLiEl>
-                         <ChecklistLiEl id="menus-7">
-                              To indicate the current item use visually hidden text if the item's functionality can be disabled (eg,not clickable). Otherwise use <b><i>aria-current=""</i></b> attribute to improve orientation in the menu.
                          </ChecklistLiEl>
 
                     </ul>
@@ -102,6 +99,9 @@ function Menus() {
                          <ChecklistLiEl id="menus-22">
                               For some types of menus, such as instructional steps, it may be useful to indicate menu items that a user had already visited. However, most menus are not expected to change based on the visited state.
                          </ChecklistLiEl>
+                         <ChecklistLiEl id="menus-7">
+                              To indicate the current item use visually hidden text if the item's functionality can be disabled (eg,not clickable). Otherwise use <b><i>aria-current=""</i></b> attribute to improve orientation in the menu.
+                         </ChecklistLiEl>
                     </ul>
                </section>
                <section>
@@ -115,9 +115,16 @@ function Menus() {
                          </ChecklistLiEl>
                          <ChecklistLiEl id="menus-25">
                               <b>On keyboard use.</b> Submenus should not open when using the tab key to navigate through the menu, as keyboard users would then have to step through all submenu items to get to the next top-level item.
+                              Use parent or a button as toggle.
                          </ChecklistLiEl>
                          <ChecklistLiEl id="menus-26">
-
+                              Use parent as toggle in situations where the parent menu item only summarizes the submenu and doesn’t have to carry out a function, such as linking to a web page.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="menus-27">
+                              Use parent as toggle in situations where the parent menu item only summarizes the submenu and doesn’t have to carry out a function, such as linking to a web page. The <i>aria-expanded</i> attribute is set to true while the submenu is open, and to false otherwise.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="menus-28">
+                              When the parent menu item needs to carry out a function, add a separate button to the parent item, to open and close the submenu. If possible, include the name of the parent menu item in the button label.
                          </ChecklistLiEl>
 
                     </ul>
@@ -125,13 +132,24 @@ function Menus() {
                <section>
                     <h4 className="checklist__caption" id="#app-menu">Application Menus</h4>
                     <ul className="checklist__list" aria-labelledby="app-menu">
-                         <ChecklistLiEl id="menus-">
-
+                         <ChecklistLiEl id="menus-29">
+                              In addition to the <i>aria-expanded</i> and <i>aria-haspopup</i> attributes, the following WAI-ARIA roles are used to provide the necessary semantics of an application menu:
+                              <b>menubar</b> - to represent a (usually horizontal) menu bar, <b>menu</b> - for a set of links or commands in a menu bar (fly-out menus), <b>menuitem</b> - an individual menu item and <b>separator</b> to seperate two groups of menu items in a menu.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="menus-30">
+                              Enable the menu’s functionality and keyboard behavior with scripting. <br />
+                              <small><a href="https://www.w3.org/WAI/tutorials/menus/application-menus/" className="post__link">Key mapping for application menu items.</a></small>
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="menus-31">
+                              Left and right keys are used to iterate through the top-level items,and the up and down arrows are used to navigate submenus.
+                         </ChecklistLiEl>
+                         <ChecklistLiEl id="menus-32">
+                              Pressing the tab key focuses the next item after the menu instead of the next menu item. To allow focus to be set to menu items by keyboard,the items are given a tabindex attribute with the value -1 and the first main menu item is assigned a tabindex value of 0.
                          </ChecklistLiEl>
 
                     </ul>
                </section>
-          </AccordionWidget>
+          </AccordionWidget >
      )
 }
 export default Menus;
