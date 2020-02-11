@@ -600,7 +600,8 @@ function TableContent() {
                     </tr>
                     <tr>
                          <td>table, <br />scope</td>
-                         <td>Represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. <br />
+                         <td>
+                              Represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. <br />
                               In complex tables, <em>scope</em> can be specified so as to provide necessary information about the cells related to a header.Providing a declaration of <em>scope="col"</em> on a TH element will help describe that the cell is at the top of a column. Providing a declaration of <em>scope="row"</em> on a TH element will help describe that the cell is the first in a row.
                     <br />
                               <abbr title="Assistive Technologies">AT</abbr> may have difficulty parsing tables that are complex. This is typically indicated by the presence of the <em>colspan</em> and <em>rowspan</em> attributes. Consider alternate ways to present the table's content, including breaking it apart into a collection of smaller, related tables.</td>
@@ -608,9 +609,9 @@ function TableContent() {
                     <tr>
                          <td>tbody, <br /> thead, <br />tfoot</td>
                          <td>
-                              THEAD element defines a set of rows defining the head of the columns of the table. All non-header and non-footer rows must be inside this element if one is used.<br />
+                              THEAD element defines a set of rows defining the head of the columns of the table. <br />
+                              TBODY element encapsulates a set of table rows (TR elements), indicating that they comprise the body of the table. All non-header and non-footer rows must be inside this element if one is used.<br />
                               You can create multiple sections within a table by using multiple TBODY elements. Each may potentially have its own header row or rows; however, there can be only one THEAD per table! Because of that, you need to use a TR filled with TH elements to create headers within each TBODY. <br />
-                              TBODY element encapsulates a set of table rows (TR elements), indicating that they comprise the body of the table. <br />
                               TFOOT element defines a set of rows summarizing the columns of the table.
                     </td>
                     </tr>
