@@ -21,7 +21,7 @@ function Tables() {
                         Accessible tables need HTML markup that indicates header
                         cells and data cells and defines their relationship.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='tables-1.1'>
+                    <ChecklistLiEl id='tables-2'>
                         Tables should not be used for layout purposes.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='tables-3'>
@@ -29,15 +29,15 @@ function Tables() {
                         each containing the data for one sub-topic if possible.
                         Start a new <i>table</i> when the topic changes.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='tables-3.1'>
+                    <ChecklistLiEl id='tables-4'>
                         Make sure that each separate piece of data has its cell.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='tables-4'>
+                    <ChecklistLiEl id='tables-5'>
                         Don't use line breaks <i>br</i> element to create table
                         rows as the data in the pseudo-rows may no longer align
                         correctly when text is resized.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='tables-5'>
+                    <ChecklistLiEl id='tables-6'>
                         Align text to the left and numeric data to the right.
                     </ChecklistLiEl>
                 </ul>
@@ -51,36 +51,27 @@ function Tables() {
                         There is only one <i>thead</i> and <i>tfoot</i> element
                         per <i>table</i>.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-1.1'>
+                    <ChecklistLiEl id='t-semantic-2'>
                         All non-header and non-footer rows must be inside{' '}
                         <i>tbody</i> element.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-1.2'>
+                    <ChecklistLiEl id='t-semantic-2'>
+                        A table can have any number of <i>tbody</i> elements
+                        that each defines a row group.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-semantic-3'>
                         Multiple sections within a table can be created within{' '}
                         <i>tbody</i> with <i>tr</i> filled with <i>th</i>{' '}
                         elements to create headers if the table can not be
                         broken up into a less complex tables.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-2'>
+                    <ChecklistLiEl id='t-semantic-4'>
                         <i>tr</i> element defines a row of cells in a table.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-2.1'>
+                    <ChecklistLiEl id='t-semantic-5'>
                         Header cells within <i>tr</i> must be marked up with{' '}
                         <i>th</i>, and data cells with <i>td</i> to make tables
                         accessible.
-                    </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-3'>
-                        Use <i>th</i> element with <i>scope="col/row'</i>
-                        attribute for tables with ambiguous data.
-                    </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-4'>
-                        Provide a <i>scope="row"</i> attribute on a <i>th</i>{' '}
-                        element to help describe that the cell is the first in a
-                        row.
-                    </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-5'>
-                        Provide a <i>scope="col"</i> on a <i>th</i> element to
-                        help describe that the cell is at the top of a column.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='t-semantic-6'>
                         Use <i>caption</i> as the first child of its parent{' '}
@@ -91,11 +82,6 @@ function Tables() {
                         <i>caption</i> is the only descendant of a <i>figure</i>{' '}
                         element, you should use the <i>figcaption</i> element
                         instead.
-                    </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-8'>
-                        To define common semantics on all common cells use{' '}
-                        <i>col</i> element with <i>span</i> element encapsulated
-                        in <i>colgroup</i>.
                     </ChecklistLiEl>
                 </ul>
             </section>
@@ -126,53 +112,48 @@ function Tables() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__caption' id='#t-structure'>
-                    Tables Structure
+                <h4 className='checklist__caption' id='#t-complex'>
+                    Complex Tables
                 </h4>
-                <section>
-                    <h5 className='checklist__subcaption' id='#t-one-h'>
-                        Tables with one header
-                    </h5>
-                    <ul
-                        className='checklist__list'
-                        aria-labelledby='t-structure t-one-h'
-                    >
-                        <ChecklistLiEl id='t-one-h-1'></ChecklistLiEl>
-                    </ul>
-                </section>
-                <section>
-                    <h5 className='checklist__subcaption' id='#t-two-h'>
-                        Tables with two headers
-                    </h5>
-                    <ul
-                        className='checklist__list'
-                        aria-labelledby='t-structure t-two-h'
-                    >
-                        <ChecklistLiEl id='t-two-h-1'></ChecklistLiEl>
-                    </ul>
-                </section>
-                <section>
-                    <h5 className='checklist__subcaption' id='#t-irr-h'>
-                        Tables with irregular headers
-                    </h5>
-                    <ul
-                        className='checklist__list'
-                        aria-labelledby='t-structure t-irr-h'
-                    >
-                        <ChecklistLiEl id='t-irr-h-1'></ChecklistLiEl>
-                    </ul>
-                </section>
-                <section>
-                    <h5 className='checklist__subcaption' id='#t-multi-h'>
-                        Tables with multi-level headers
-                    </h5>
-                    <ul
-                        className='checklist__list'
-                        aria-labelledby='t-structure t-multi-h'
-                    >
-                        <ChecklistLiEl id='t-multi-h-1'></ChecklistLiEl>
-                    </ul>
-                </section>
+                <ul className='checklist__list' aria-labelledby='t-complex'>
+                    <ChecklistLiEl id='t-complex-1'>
+                        Use <i>th</i> element with <i>scope="col/row'</i>
+                        attribute for tables with ambiguous data.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-complex-2'>
+                        Provide a <i>scope="row"</i> attribute on a <i>th</i>{' '}
+                        element to help describe that the cell is the header in
+                        a row ( not necessarily the first cell).
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-complex-3'>
+                        Provide a <i>scope="col"</i> on a <i>th</i> element to
+                        help describe that the cell is at the top of a column.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-complex-4'>
+                        To define common semantics on all common cells use{' '}
+                        <i>col</i> element with <i>span</i> element encapsulated
+                        in <i>colgroup</i> or <i>rowgroup</i> correspondingly.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-complex-5'>
+                        Break up complex tables into simple individual tables if
+                        possible.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-complex-6'>
+                        For complex tables use <i>caption</i> and summary to
+                        help user understand and navigate the content. If both
+                        caption and summary are provided for one table, the
+                        summary should not duplicate information present in the
+                        caption.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='t-complex-7'>
+                        A summary conveys information about the organization of
+                        the data in a table and helps users navigate it. Neste
+                        summary inside the <i>caption</i> or <i>figcaption</i>{' '}
+                        element with <i>span</i> or <i>p</i> element or use{' '}
+                        <i>aria-describedby="[ID]"</i> to provide a summary for
+                        table with [ID].
+                    </ChecklistLiEl>
+                </ul>
             </section>
         </AccordionWidget>
     );
