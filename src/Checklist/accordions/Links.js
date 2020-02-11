@@ -22,7 +22,7 @@ function Links() {
                         within-page function and links <i>a</i> for elements
                         that load a new page.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-1'>
+                    <ChecklistLiEl id='links-2'>
                         Use "skip navigation" link at the top of the page to
                         jump the user down to an anchor or target at the
                         beginning of the main content to allow user to skip the
@@ -55,8 +55,8 @@ function Links() {
                         "link" in the link text.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='links-txt-5'>
-                        Avoid phrases such as "click here", "more", "click for
-                        details" in link's text.
+                        Avoid ambiguous phrases such as "click here", "more",
+                        "click for details" in link's text.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='links-txt-6'>
                         Use human-readable text instead of the URL.
@@ -84,11 +84,10 @@ function Links() {
                     <ChecklistLiEl id='links-style-1'>
                         Links should look like links, and nothing else should.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-style-3'>
-                        The link text must have a 3:1 contrast ratio from the
-                        surrounding non-link text and must present a "non-color
-                        designator" (typically the introduction of the
-                        underline) on both mouse hover and keyboard focus.
+                    <ChecklistLiEl id='links-style-2'>
+                        Ensure links are underlined. Otherwise provide high
+                        contrast (3:1 contrast ratio) between link and
+                        non-linked text.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='links-style-3'>
                         Ensure the same visual presentation of link for both
@@ -126,25 +125,25 @@ function Links() {
                         Use <i>hreflang=""</i> to specify the language of the
                         linked resource.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-attr-1'>
+                    <ChecklistLiEl id='links-attr-2'>
                         Use <i>download</i> attribute for downloading the linked
                         resource.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-attr-1'>
+                    <ChecklistLiEl id='links-attr-3'>
                         Define the title of a link (which appears to the user as
                         a tooltip) with <i>title=""</i> attribute when the
                         link's text inforamtion is not sufficient.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-attr-1'>
+                    <ChecklistLiEl id='links-attr-4'>
                         Use <i>target=""</i> attribute to specify the context in
                         which the linked resource will open.{' '}
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-attr-1'>
+                    <ChecklistLiEl id='links-attr-5'>
                         When using <i>target="_blank"</i> attribute inform user
                         that the link will open in a new tab/window: "Products
                         (opens in a new window)".
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-attr-1'>
+                    <ChecklistLiEl id='links-attr-6'>
                         Define an explicit tab order of links with{' '}
                         <i>tabindex="[-1,0,...]"</i> attribute.
                     </ChecklistLiEl>
