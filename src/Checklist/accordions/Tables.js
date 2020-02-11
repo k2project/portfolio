@@ -47,11 +47,11 @@ function Tables() {
                     Tables Semantics
                 </h4>
                 <ul className='checklist__list' aria-labelledby='t-semantic'>
-                    <ChecklistLiEl id='t-semantic-1'>
+                    <ChecklistLiEl id='t-semantic-0'>
                         There is only one <i>thead</i> and <i>tfoot</i> element
                         per <i>table</i>.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='t-semantic-2'>
+                    <ChecklistLiEl id='t-semantic-1'>
                         All non-header and non-footer rows must be inside{' '}
                         <i>tbody</i> element.
                     </ChecklistLiEl>
