@@ -92,6 +92,41 @@ function PerceivableInformation() {
                     </ChecklistLiEl>
                 </ul>
             </section>
+            <section>
+                <h4 className='checklist__subcaption' id='#content-vis'>
+                    Content is easier to see and hear
+                </h4>
+                <ul className='checklist__list' aria-labelledby='content-vis'>
+                    <ChecklistLiEl id='content-vis-1'>
+                        Color is not used as the only way of conveying
+                        information or identifying content.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='content-vis-2'>
+                        Default foreground and background color combinations
+                        provide sufficient contrast.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='content-vis-3'>
+                        When users resize text up to 200% or change text
+                        spacing, no information is lost.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='content-vis-4'>
+                        Text reflows in small viewports and when users make the
+                        text larger.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='content-vis-5'>
+                        Images of text are resizable, replaced with actual text,
+                        or avoided where possible.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='content-vis-6'>
+                        Users can pause, stop, or adjust the volume of audio
+                        that is played on a website.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='content-vis-7'>
+                        Background audio is low or can be turned off, to avoid
+                        interference or distraction.
+                    </ChecklistLiEl>
+                </ul>
+            </section>
         </AccordionWidget>
     );
 }
