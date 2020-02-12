@@ -22,12 +22,6 @@ function Links() {
                         within-page function and links <i>a</i> for elements
                         that load a new page.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-2'>
-                        Use "skip navigation" link at the top of the page to
-                        jump the user down to an anchor or target at the
-                        beginning of the main content to allow user to skip the
-                        navigation.
-                    </ChecklistLiEl>
                 </ul>
             </section>
             <section>
@@ -146,6 +140,24 @@ function Links() {
                     <ChecklistLiEl id='links-attr-6'>
                         Define an explicit tab order of links with{' '}
                         <i>tabindex="[-1,0,...]"</i> attribute.
+                    </ChecklistLiEl>
+                </ul>
+            </section>
+            <section>
+                <h4 className='checklist__subcaption' id='#links-skip'>
+                    <q>Skip To Main Content</q> Link
+                </h4>
+                <ul className='checklist__list' aria-labelledby='links-skip'>
+                    <ChecklistLiEl id='links-skip-1'>
+                        Use "skip navigation" link at the top of the page to
+                        jump the user down to an anchor or target at the
+                        beginning of the main content to allow user to skip the
+                        navigation.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='links-skip-1'>
+                        To support mouse event (clickable) along keyboard
+                        functionality (<kbd>TAB</kbd>) add <i>tabindex="0"</i>{' '}
+                        to the link.
                     </ChecklistLiEl>
                 </ul>
             </section>
