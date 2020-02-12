@@ -144,13 +144,11 @@ function TextAlternative(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li>Images, buttons images, and all linked images have descriptive alternative text. </li>
-                    <li>Images that do not convey content, are decorative, contain content that is already conveyed, or implemented as CSS backgrounds in text are given null alt text (alt="")</li>
-                    <li>Equivalent alternatives to complex images are provided in context or on a separate linked page.</li>
-                    <li>Form buttons have a descriptive value.</li>
-                    <li>Form inputs have associated text labels.</li>
-                    <li>Embedded multimedia is identified via accessible text.</li>
-                    <li>Frames and iframes are appropriately titled.</li>
+                    <li>Text alternatives are present for non-text content.</li>
+                    <li> All functional and informative images, buttons' images, and links' images have descriptive alternative text.</li>
+                    <li> Decorative images are given null alt text (alt="").</li>
+                    <li>Complex images are provided with equivalent alternatives in context or on a separate linked page.</li>
+                    <li>Form's buttons have a descriptive value and form's inputs have associated text labels.</li>
                     <li>Provide a descriptive TITLE attribute for all embedded audio/video, non-image charts, Flash, form elements and other items that require textual explanation in order to be understood.</li>
                     <li>Do not use CAPTCHA that relies on visual identification.</li>
                 </ul>

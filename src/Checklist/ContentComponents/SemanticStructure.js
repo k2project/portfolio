@@ -7,7 +7,7 @@ function SemanticStructure() {
 
      const accordionData = {
           heading: 3,
-          title: 'Page Semantic Structure And Content',
+          title: 'Page Semantic Structure',
           subtitle: null,
           styling: 'bg-dark',
      }

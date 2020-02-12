@@ -1,60 +1,62 @@
 @import './../App.scss';
-.checklist{
-  padding: 5rem;
-  font-size: 1.6rem;
-}
-.checklist__title{
-  margin-bottom: 2rem;
-}
-
-.checklist__list{
-  padding: 1rem 0 1rem 4rem;
-  line-height: 1.4;
-}
-.checklist__caption{
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin:1rem 0 0;
-  padding: 2rem 2rem 2rem 4rem;
-  background-color: #f5f5f5;
-} 
-.checklist__subcaption{
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  padding: .5rem 0 1rem 4rem;
-  margin: 1rem 0 .5rem; 
-  border-bottom: solid .1rem #e5e5e5;
-}
-.checklist__item{
-  padding: .5rem 0;
-}
-.checklist__button{
-  position: absolute;
-  top: .8rem;
-  border: solid .1rem #111;
-  width: 1.4rem;
-  height: 1.4rem;
-  display: inline-block;
-  margin-right: 1rem;
-
-}
-.checklist__item--selected{
-  color: #c5c5c5;
-  
-
-  .checklist__button{
-    border: none;
-  }
-  .checklist__button:after{
-    content: "\2714";
-    font-weight: bold;
+.checklist {
+    padding: 5rem;
     font-size: 1.6rem;
-    line-height: .9;
-    color: $color_green;
-
-  }
+}
+.checklist__title {
+    margin: 4rem 0 2rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.checklist__title--lg {
+    font-size: 3rem;
 }
 
-.checklist__text{
-  left: 2.5rem;
+.checklist__list {
+    padding: 1rem 0 1rem 4rem;
+    line-height: 1.4;
+}
+.checklist__caption {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 1rem 0 0;
+    padding: 2rem 2rem 2rem 4rem;
+    background-color: #f5f5f5;
+}
+.checklist__subcaption {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 0.5rem 0 1rem 4rem;
+    margin: 1rem 0 0.5rem;
+    border-bottom: solid 0.1rem #e5e5e5;
+}
+.checklist__item {
+    padding: 0.5rem 0;
+}
+.checklist__button {
+    position: absolute;
+    top: 0.8rem;
+    border: solid 0.1rem #111;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.checklist__item--selected {
+    color: #c5c5c5;
+
+    .checklist__button {
+        border: none;
+    }
+    .checklist__button:after {
+        content: '\2714';
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 0.9;
+        color: $color_green;
+    }
+}
+
+.checklist__text {
+    left: 2.5rem;
 }

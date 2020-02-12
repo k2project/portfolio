@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import './Checklist.scss';
 
-import SemanticStructure from './accordions/SemanticStructure';
-import Menus from './accordions/Menus';
-import Images from './accordions/Images';
-import Links from './accordions/Links';
-import Tables from './accordions/Tables';
-import DynamicContent from './accordions/DynamicContent';
+import PerceivableInformation from './PrinciplesComponents/PerceivableInformation';
+import SemanticStructure from './ContentComponents/SemanticStructure';
+import Menus from './ContentComponents/Menus';
+import Images from './ContentComponents/Images';
+import Links from './ContentComponents/Links';
+import Tables from './ContentComponents/Tables';
+import DynamicContent from './ContentComponents/DynamicContent';
 
 function Checklist() {
     useEffect(() => {
@@ -38,13 +39,43 @@ function Checklist() {
     });
     return (
         <article className='checklist'>
-            <h2 className='checklist__title'>Web Accesibilty Checklist</h2>
-            <SemanticStructure />
-            <Menus />
-            <Images />
-            <Links />
-            <Tables />
-            <DynamicContent />
+            <section>
+                <h1 className='checklist__title checklist__title--lg'>
+                    Accessibility, Usability, and Inclusion
+                </h1>
+                <p>
+                    <b>Accessibility</b> addresses discriminatory aspects
+                    related to equivalent user experience for people with
+                    disabilities.{' '}
+                </p>
+                <p>
+                    <b>Usability</b> is about designing products to be
+                    effective, efficient, and satisfying. Usability includes{' '}
+                    <abbr title='user experience design'>UX</abbr>.
+                </p>
+                <p>
+                    <b>Inclusion</b> is about diversity, and ensuring
+                    involvement of everyone to the greatest extent possible,
+                    regardless to computer literacy and skills, economic
+                    situation, education, geographic location, culture, age, and
+                    language...{' '}
+                </p>
+            </section>
+            <section>
+                <h2 className='checklist__title'>Web Accesibilty Principles</h2>
+                <PerceivableInformation />
+            </section>
+            <section>
+                <h2 className='checklist__title'>
+                    Web Content Accesibilty Checklist
+                </h2>
+                <SemanticStructure />
+                <Menus />
+                <Images />
+                <Links />
+                <Tables />
+                <DynamicContent />
+            </section>
         </article>
     );
 }
