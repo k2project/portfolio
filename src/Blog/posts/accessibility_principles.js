@@ -1,10 +1,10 @@
 import React from 'react';
-import Accordion from './../../components/Accordion/Accordion';
+import Accordion from '../../components/Accordion/Accordion';
 
-const accessibility_checklist={
+const accessibility_principles={
     id:'11',
     featured:true,
-    title:'Accessibility Checklist',
+    title:'Accessibility Principles',
     subtitle:'Web Accessibility Best Practices',
     date:'2020-01-30',
     image:{
@@ -21,7 +21,7 @@ const accessibility_checklist={
 
             </section>
             <section className="post__section">
-                <h3 className="post__heading"> WCAG 2.0 Checklist (Levels A - AAA).</h3>
+                <h3 className="post__heading"> WCAG 2.0 Principles (Levels A - AAA).</h3>
                 <PerceivableChecklist/>
                 <OperableChecklist/>
                 <UnderstandableChecklist/>
@@ -40,7 +40,7 @@ const accessibility_checklist={
     ),
 
 }
-export default accessibility_checklist;
+export default accessibility_principles;
 
 function References(){
     return(
