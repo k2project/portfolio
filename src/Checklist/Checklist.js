@@ -12,6 +12,15 @@ import Links from './ContentComponents/Links';
 import Tables from './ContentComponents/Tables';
 import DynamicContent from './ContentComponents/DynamicContent';
 import Title from './EasyCheckComponents/Title';
+import Headings from './EasyCheckComponents/Headings';
+import ImgsWithAlt from './EasyCheckComponents/ImgsWithAlt';
+import ColorContrast from './EasyCheckComponents/ColorContrast';
+import TextZooming from './EasyCheckComponents/TextZooming';
+import KeyboardAccess from './EasyCheckComponents/KeyboardAccess';
+import Interaction from './EasyCheckComponents/Interaction';
+import Multimedia from './EasyCheckComponents/Multimedia';
+import AnimatedContent from './EasyCheckComponents/AnimatedContent';
+import Structure from './EasyCheckComponents/Structure';
 
 function Checklist() {
     useEffect(() => {
@@ -90,6 +99,15 @@ function Checklist() {
                     Accessibilty Easy Checklist
                 </h2>
                 <Title />
+                <Headings />
+                <ImgsWithAlt />
+                <ColorContrast />
+                <TextZooming />
+                <KeyboardAccess />
+                <Interaction />
+                <Multimedia />
+                <AnimatedContent />
+                <Structure />
             </section>
         </article>
     );
