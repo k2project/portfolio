@@ -129,8 +129,14 @@ function SemanticStructure() {
                               <ChecklistLiEl id="headings-1">
                                    Break up content into logical chunks and precede each area of content with a descriptive heading.
                               </ChecklistLiEl>
+                              <ChecklistLiEl id="headings-1.1">
+                              All text that looks like a heading is marked up as a heading.
+                              </ChecklistLiEl>
+                              <ChecklistLiEl id="headings-1.2">
+                              All text that is marked up as a heading is really a conceptual section heading.
+                              </ChecklistLiEl>
                               <ChecklistLiEl id="headings-2">
-                                   Headings are useful for labeling page regions. Use <i>aria-labelledby</i> to associate headings with their page region.
+                                   Use heading to label page regions. Use <i>aria-labelledby</i> to associate headings with their page region.
                               </ChecklistLiEl>
                               <ChecklistLiEl id="headings-4">
                                    There should be only one &lt;h1&gt; element on the page and it doesn't have to be placed in the top region of the web page if its used in main section.

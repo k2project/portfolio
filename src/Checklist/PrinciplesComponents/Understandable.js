@@ -24,8 +24,8 @@ function Understandable() {
                         text-to-speech.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='txt-readable-2'>
-                        Identify the primary language of a web page (
-                        <i>title</i> element with <b>lang=""</b> attribute).
+                        Identify the primary language of a web page (<i>html</i>{' '}
+                        element with <b>lang=""</b> attribute).
                     </ChecklistLiEl>
                     <ChecklistLiEl id='txt-readable-3'>
                         Identifying the language of text passages, phrases, or

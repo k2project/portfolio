@@ -11,6 +11,7 @@ import Images from './ContentComponents/Images';
 import Links from './ContentComponents/Links';
 import Tables from './ContentComponents/Tables';
 import DynamicContent from './ContentComponents/DynamicContent';
+import Title from './EasyCheckComponents/Title';
 
 function Checklist() {
     useEffect(() => {
@@ -83,6 +84,12 @@ function Checklist() {
                 <Links />
                 <Tables />
                 <DynamicContent />
+            </section>
+            <section>
+                <h2 className='checklist__title'>
+                    Accessibilty Easy Checklist
+                </h2>
+                <Title />
             </section>
         </article>
     );
