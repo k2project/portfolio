@@ -43,7 +43,7 @@ function Tables() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__caption' id='#t-semantic'>
+                <h4 className='checklist__caption' id='t-semantic'>
                     Tables Semantics
                 </h4>
                 <ul className='checklist__list' aria-labelledby='t-semantic'>
@@ -86,7 +86,7 @@ function Tables() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__caption' id='#t-style'>
+                <h4 className='checklist__caption' id='t-style'>
                     Tables Styling
                 </h4>
                 <ul className='checklist__list' aria-labelledby='t-style'>
@@ -112,7 +112,7 @@ function Tables() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__caption' id='#t-complex'>
+                <h4 className='checklist__caption' id='t-complex'>
                     Complex Tables
                 </h4>
                 <ul className='checklist__list' aria-labelledby='t-complex'>

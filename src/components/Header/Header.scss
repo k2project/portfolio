@@ -1,80 +1,75 @@
 @import './../../App.scss';
-.Header{
+.Header {
     padding: 5rem 10rem 3rem;
-
 }
-.Portfolio .Header{
-    nav a:first-child{
+.Portfolio .Header {
+    nav a:first-child {
         display: none;
     }
 }
 
-.BlogPage{
+.BlogPage {
     nav a {
         display: none;
     }
     nav a.link_portfolio,
-    nav a.link_twitter{
+    nav a.link_twitter {
         display: inline;
     }
 }
-.BlogPage.Post nav a.link_blog{
+.BlogPage.Post nav a.link_blog {
     display: inline;
 }
-nav{
+nav {
     text-align: right;
     font-size: 1.8rem;
-    a{
+    a {
         padding-left: 1.5rem;
     }
     a:focus,
-    a:hover{
+    a:hover {
         color: $color_primary;
-        transition: .25s;
+        transition: 0.25s;
+        text-decoration: underline;
     }
-
 }
-.Nav_name{
+.Nav_name {
     font-size: 3rem;
     font-weight: bold;
 }
- @include desktop-sm{}
- @include tablet{
-     .Header{
-         padding: 4rem 4rem 3rem;
-     }
- }
- @include mobile{
-
-
-     nav{
-         font-size: 1.4rem;
-         a{
-             padding: 0 .5rem;
-         }
-     }
-
- }
- @include mobile-sm{
-     .Header{
-         background: $color_secondary_dark;
-         color: #fff;
-         padding-right: 0;
-         padding-left: 0;
-     }
-     nav{
-         text-align: center;
-         font-size: 1.1rem;
-         // display: grid;
-         // grid-template-columns: repeat(5, 1fr);
-         // justify-items:center;
-         a{
-             padding: 0 .8rem;
-         }
-         a.link_resume{
-             display: none;
-         }
-
-     }
-
- }
+@include desktop-sm {
+}
+@include tablet {
+    .Header {
+        padding: 4rem 4rem 3rem;
+    }
+}
+@include mobile {
+    nav {
+        font-size: 1.4rem;
+        a {
+            padding: 0 0.5rem;
+        }
+    }
+}
+@include mobile-sm {
+    .Header {
+        background: $color_secondary_dark;
+        color: #fff;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    nav {
+        text-align: center;
+        font-size: 1.1rem;
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // justify-items:center;
+        a {
+            padding: 0 0.8rem;
+        }
+        a.link_resume {
+            display: none;
+        }
+    }
+}

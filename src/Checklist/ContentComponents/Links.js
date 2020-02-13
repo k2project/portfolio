@@ -25,7 +25,7 @@ function Links() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#links-txt'>
+                <h4 className='checklist__subcaption' id='links-txt'>
                     Informative Link's Text
                 </h4>
                 <ul className='checklist__list' aria-labelledby='links-txt'>
@@ -71,7 +71,7 @@ function Links() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#links-style'>
+                <h4 className='checklist__subcaption' id='links-style'>
                     LINKS APPEARANCE
                 </h4>
                 <ul className='checklist__list' aria-labelledby='links-style'>
@@ -91,7 +91,7 @@ function Links() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#links-kbd'>
+                <h4 className='checklist__subcaption' id='links-kbd'>
                     Keyborad Accessable
                 </h4>
                 <ul className='checklist__list' aria-labelledby='links-kbd'>
@@ -111,7 +111,7 @@ function Links() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#links-attr'>
+                <h4 className='checklist__subcaption' id='links-attr'>
                     Link's Attributes
                 </h4>
                 <ul className='checklist__list' aria-labelledby='links-attr'>
@@ -144,7 +144,7 @@ function Links() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#links-skip'>
+                <h4 className='checklist__subcaption' id='links-skip'>
                     <q>Skip To Main Content</q> Link
                 </h4>
                 <ul className='checklist__list' aria-labelledby='links-skip'>

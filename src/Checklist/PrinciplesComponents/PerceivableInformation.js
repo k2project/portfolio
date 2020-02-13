@@ -13,7 +13,7 @@ function PerceivableInformation() {
     return (
         <AccordionWidget data={accordionData}>
             <section>
-                <h4 className='checklist__subcaption' id='#txt-alt'>
+                <h4 className='checklist__subcaption' id='txt-alt'>
                     Text alternatives for non-text content
                 </h4>
                 <ul className='checklist__list' aria-labelledby='txt-alt'>
@@ -47,7 +47,7 @@ function PerceivableInformation() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#multimedia-alt'>
+                <h4 className='checklist__subcaption' id='multimedia-alt'>
                     Captions and other alternatives for multimedia
                 </h4>
                 <ul
@@ -69,7 +69,7 @@ function PerceivableInformation() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#content-alt'>
+                <h4 className='checklist__subcaption' id='content-alt'>
                     Content can be presented in different ways (simpler layout)
                     without losing information or structure
                 </h4>
@@ -80,7 +80,7 @@ function PerceivableInformation() {
                     </ChecklistLiEl>
                     <ChecklistLiEl id='content-alt-2'>
                         Sequences of information or instructions are independent
-                        of any presentation.
+                        of any presentation (css styling).
                     </ChecklistLiEl>
                     <ChecklistLiEl id='content-alt-3'>
                         The reading and navigation order (determined by code
@@ -93,7 +93,7 @@ function PerceivableInformation() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#content-vis'>
+                <h4 className='checklist__subcaption' id='content-vis'>
                     Content is easier to see and hear
                 </h4>
                 <ul className='checklist__list' aria-labelledby='content-vis'>

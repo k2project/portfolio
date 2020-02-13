@@ -45,7 +45,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#informative-img'>
+                <h4 className='checklist__subcaption' id='informative-img'>
                     Informative Images
                 </h4>
                 <ul
@@ -71,7 +71,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#decorative-img'>
+                <h4 className='checklist__subcaption' id='decorative-img'>
                     Decorative Images
                 </h4>
                 <ul
@@ -96,7 +96,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#functional-img'>
+                <h4 className='checklist__subcaption' id='functional-img'>
                     Functional Images
                 </h4>
                 <ul
@@ -132,7 +132,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#text-img'>
+                <h4 className='checklist__subcaption' id='text-img'>
                     Images Of Text
                 </h4>
                 <ul className='checklist__list' aria-labelledby='text-img'>
@@ -150,7 +150,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#logo-img'>
+                <h4 className='checklist__subcaption' id='logo-img'>
                     Images Of Logos
                 </h4>
                 <ul className='checklist__list' aria-labelledby='logo-img'>
@@ -171,7 +171,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#math-img'>
+                <h4 className='checklist__subcaption' id='math-img'>
                     Images of Math Expressions
                 </h4>
                 <ul className='checklist__list' aria-labelledby='math-img'>
@@ -188,7 +188,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#complex-img'>
+                <h4 className='checklist__subcaption' id='complex-img'>
                     Complex Images
                 </h4>
                 <ul className='checklist__list' aria-labelledby='complex-img'>
@@ -229,7 +229,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#group-img'>
+                <h4 className='checklist__subcaption' id='group-img'>
                     Groups of Images
                 </h4>
                 <ul className='checklist__list' aria-labelledby='group-img'>
@@ -253,7 +253,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#map-img'>
+                <h4 className='checklist__subcaption' id='map-img'>
                     Image Maps
                 </h4>
                 <ul className='checklist__list' aria-labelledby='map-img'>
@@ -263,7 +263,7 @@ function Images() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__subcaption' id='#svg-img'>
+                <h4 className='checklist__subcaption' id='svg-img'>
                     SVG Graphics
                 </h4>
                 <ul className='checklist__list' aria-labelledby='svg-img'>

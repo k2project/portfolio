@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Checklist.scss';
 
 import PerceivableInformation from './PrinciplesComponents/PerceivableInformation';
+import Operable from './PrinciplesComponents/Operable';
 import SemanticStructure from './ContentComponents/SemanticStructure';
 import Menus from './ContentComponents/Menus';
 import Images from './ContentComponents/Images';
@@ -62,12 +63,15 @@ function Checklist() {
                 </p>
             </section>
             <section>
-                <h2 className='checklist__title'>Web Accesibilty Principles</h2>
+                <h2 className='checklist__title'>
+                    Web Accessibilty Principles
+                </h2>
                 <PerceivableInformation />
+                <Operable />
             </section>
             <section>
                 <h2 className='checklist__title'>
-                    Web Content Accesibilty Checklist
+                    Web Content Accessibilty (WCAG)
                 </h2>
                 <SemanticStructure />
                 <Menus />
