@@ -4,6 +4,7 @@ import './Checklist.scss';
 import PerceivableInformation from './PrinciplesComponents/PerceivableInformation';
 import Operable from './PrinciplesComponents/Operable';
 import Understandable from './PrinciplesComponents/Understandable';
+import RobustContent from './PrinciplesComponents/RobustContent';
 import SemanticStructure from './ContentComponents/SemanticStructure';
 import Menus from './ContentComponents/Menus';
 import Images from './ContentComponents/Images';
@@ -70,6 +71,7 @@ function Checklist() {
                 <PerceivableInformation />
                 <Operable />
                 <Understandable />
+                <RobustContent />
             </section>
             <section>
                 <h2 className='checklist__title'>
