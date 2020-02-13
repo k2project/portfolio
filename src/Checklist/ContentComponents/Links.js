@@ -154,7 +154,7 @@ function Links() {
                         beginning of the main content to allow user to skip the
                         navigation.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='links-skip-1'>
+                    <ChecklistLiEl id='links-skip-2'>
                         To support mouse event (clickable) along keyboard
                         functionality (<kbd>TAB</kbd>) add <i>tabindex="0"</i>{' '}
                         to the link.
