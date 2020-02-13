@@ -367,11 +367,11 @@ function Predictable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                <li><strong>On Focus.</strong>When a UI component receives focus, this does not trigger unexpected actions such as automatically submitting a form, opening a new window or switching focus to another element.</li>
-                  <li><strong>On Input.</strong>Changing the setting of a checkbox, radio button or other UI component does not trigger unexpected changes in context, such as causing significant changes to the page content or opening a new window. <em>Provide a submit button. Do not perform any actions until this button is clicked by the user.</em></li>
-                  <li><strong>Consistent Navigation.</strong>Navigation menus, search box, login/logout buttons and a "Skip to content" link are in the same location and order on every Web page.</li>
-                  <li><strong>Consistent Identification</strong>UI components used across the Web site are identified consistently on every page. </li>
-                  <li><strong>Change on Request.</strong>All unexpected changes in context, such as causing significant changes to the page content or opening a new window, are triggered by the user, or such unexpected changes in context can be turned off by the user. 
+                <li><strong>On Focus.</strong> When a UI component receives focus, this does not trigger unexpected actions such as automatically submitting a form, opening a new window or switching focus to another element.</li>
+                  <li><strong>On Input.</strong> Changing the setting of a checkbox, radio button or other UI component does not trigger unexpected changes in context, such as causing significant changes to the page content or opening a new window. <em>Provide a submit button. Do not perform any actions until this button is clicked by the user.</em></li>
+                  <li><strong> Consistent Navigation.</strong>Navigation menus, search box, login/logout buttons and a "Skip to content" link are in the same location and order on every Web page.</li>
+                  <li><strong> Consistent Identification</strong>UI components used across the Web site are identified consistently on every page. </li>
+                  <li><strong>Change on Request.</strong> All unexpected changes in context, such as causing significant changes to the page content or opening a new window, are triggered by the user, or such unexpected changes in context can be turned off by the user. 
                   </li>
                 </ul>
             </Accordion>
@@ -389,20 +389,20 @@ function Readable(){
         <section>
             <Accordion data={headingInfo}>
                 <ul className="post__list">
-                    <li><strong>Language of Page.</strong>Specify the language (e.g. English) of the Web page. This allows screen reader software (used by blind users) to use the correct pronounciation when speaking the text on the page aloud.
+                    <li><strong>Language of Page.</strong> Specify the language (e.g. English) of the Web page. This allows screen reader software (used by blind users) to use the correct pronounciation when speaking the text on the page aloud.
                         <span className="card">
                             &lt;html lang="en"&gt;
                         </span>
                     </li>
-                    <li><strong>Language of Partial Text.</strong>Specify the language (e.g. English) of each text phrase or passage that is in a language other than the default language specified for the entire Web page.
+                    <li><strong>Language of Partial Text.</strong> Specify the language (e.g. English) of each text phrase or passage that is in a language other than the default language specified for the entire Web page.
                         <span className="card">
                             &lt;blockquote lang="esp"&gt; Hola! &lt;/blockquote&gt;
                         </span>
                     </li>
-                    <li><strong>Unusual Words.</strong>Provide definitions of idioms, jargon, and unusual terms and phrases.</li>
-                    <li><storng>Abbreviations.</storng>Provide the expanded form of abbreviations.</li>
-                    <li><strong>Reading Level.</strong>Provide a simplified version of text that requires an advanced level of understanding.</li>
-                    <li><strong>Pronunciation.</strong>Provide the pronunciation of words where the meaning is unclear without knowing the correct pronunciation.</li>
+                    <li><strong>Unusual Words.</strong> Provide definitions of idioms, jargon, and unusual terms and phrases.</li>
+                    <li><storng>Abbreviations.</storng> Provide the expanded form of abbreviations.</li>
+                    <li><strong>Reading Level.</strong> Provide a simplified version of text that requires an advanced level of understanding.</li>
+                    <li><strong>Pronunciation.</strong> Provide the pronunciation of words where the meaning is unclear without knowing the correct pronunciation.</li>
                 </ul>
             </Accordion>
         </section>
