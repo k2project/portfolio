@@ -96,7 +96,7 @@ function Checklist() {
             </section>
             <section>
                 <h2 className='checklist__title'>
-                    Accessibilty Easy Checklist
+                    Accessibilty Quick Checklist
                 </h2>
                 <Title />
                 <Headings />
