@@ -29,6 +29,15 @@ function Forms() {
                         or a game, or if the time to complete the form is
                         essential for a valid submission.
                     </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-3'>
+                        <strong>
+                            Screen readers often switch to “Forms Mode” when
+                            they are processing content within a <i>form</i>{' '}
+                            element and usually only read aloud form elements
+                            such as <i>input</i>, <i>select</i>, <i>textarea</i>
+                            , <i>legend</i>, and <i>label</i>.
+                        </strong>
+                    </ChecklistLiEl>
                 </ul>
             </section>
             <section>
@@ -148,6 +157,29 @@ function Forms() {
                     Description, Validation And Notifications
                 </h4>
                 <ul className='checklist__list' aria-labelledby='form-valid'>
+                    <ChecklistLiEl id='form-valid-1'>
+                        Provide instructions to help users understand how to
+                        complete the form and use individual form controls.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'>
+                        {' '}
+                        Providing instructions before the <i>form</i> element
+                        ensures that it is read aloud by screen readers before
+                        it enters into <q>Forms mode</q>.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'>
+                        Provide relevant instructions within the labels of the
+                        form controls or with <i>aria-labelledby</i> or/and{' '}
+                        <i>aria-describedby</i> attributes.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'>
+                        Do not use <i>placeholder</i> as an alternative to
+                        labels.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
                     <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
                 </ul>
             </section>
