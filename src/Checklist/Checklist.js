@@ -20,6 +20,7 @@ import KeyboardAccess from './EasyCheckComponents/KeyboardAccess';
 import Interaction from './EasyCheckComponents/Interaction';
 import Multimedia from './EasyCheckComponents/Multimedia';
 import AnimatedContent from './EasyCheckComponents/AnimatedContent';
+import WebTechnologies from './EasyCheckComponents/WebTechnologies';
 import Structure from './EasyCheckComponents/Structure';
 
 function Checklist() {
@@ -107,6 +108,7 @@ function Checklist() {
                 <Interaction />
                 <Multimedia />
                 <AnimatedContent />
+                <WebTechnologies />
                 <Structure />
             </section>
         </article>
