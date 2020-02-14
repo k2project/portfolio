@@ -10,6 +10,7 @@ import Menus from './ContentComponents/Menus';
 import Images from './ContentComponents/Images';
 import Links from './ContentComponents/Links';
 import Tables from './ContentComponents/Tables';
+import Forms from './ContentComponents/Forms';
 import DynamicContent from './ContentComponents/DynamicContent';
 import Title from './EasyCheckComponents/Title';
 import Headings from './EasyCheckComponents/Headings';
@@ -93,6 +94,7 @@ function Checklist() {
                 <Images />
                 <Links />
                 <Tables />
+                <Forms />
                 <DynamicContent />
             </section>
             <section>
