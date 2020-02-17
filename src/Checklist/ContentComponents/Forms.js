@@ -38,6 +38,12 @@ function Forms() {
                             , <i>legend</i>, and <i>label</i>.
                         </strong>
                     </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-4'>
+                        For components where there is no adequate HTML element
+                        to build on, WAI-ARIA attributes can be useful to convey
+                        the functionality for people using assistive
+                        technologies.
+                    </ChecklistLiEl>
                 </ul>
             </section>
             <section>
@@ -239,7 +245,65 @@ function Forms() {
                     className='checklist__list'
                     aria-labelledby='form-dvn form-notify'
                 >
-                    <ChecklistLiEl id='form-notify-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-1'>
+                        Provide feedback to users about the results of their
+                        form submission, whether successful or not (in-line
+                        feedback at or near the form controls and overall
+                        feedback that is typically provided after form
+                        submission).
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-2'>
+                        Notifications have to be concise and clear.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-3'>
+                        Provide feedback by using the main heading of the web
+                        page, or updating <i>title</i> element, or using
+                        dialogs.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-4'>
+                        Error messages should be easy to understand and should
+                        provide simple instructions on how they can be resolved,
+                        including a reminder of any format requirements.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-5'>
+                        {' '}
+                        List errors at the top of the page, before the form with
+                        a distinctive heading so that it is easy to identify.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-6'>
+                        In listed errors reference the label of the
+                        corresponding form control, to help the user recognize
+                        the control.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-7'>
+                        Include an in-page link to the corresponding form
+                        control to make access easier for the users to correct
+                        errors.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-8'>
+                        Dinamically handled errors should be inserted into a
+                        prominent container on the top of the web page with{' '}
+                        <i>role="alert"</i> attribute to make assistive
+                        technology users aware of this change.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-9'>
+                        Form fields can be associated with the corresponding
+                        error message using <i>aria-describedby</i>.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-10'>
+                        Combination of messages and visual cues are used to
+                        provide in-line feedback.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-notify-11'>
+                        {' '}
+                        To display error messages use <i>aria-live</i> with
+                        appropriate value. The value <q>assertive</q> (oppposite
+                        to <q>polite</q>) emphasizes the importance of the
+                        message and causes screen readers to interrupt their
+                        current tasks to read aloud this message. Thus the
+                        message is read aloud before the next element that
+                        received the focus is announced to the user.
+                    </ChecklistLiEl>
                 </ul>
             </section>
 
@@ -248,7 +312,34 @@ function Forms() {
                     Multi-Page Forms
                 </h4>
                 <ul className='checklist__list' aria-labelledby='forms-multi'>
-                    <ChecklistLiEl id='forms-multi-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='forms-multi-1'>
+                        Divide long forms into multiple smaller forms that
+                        constitute a series of logical steps or stages.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-multi-2'>
+                        Repeat overall instructions on every page.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-multi-3'>
+                        Split the form up according to its logical groups of
+                        controls.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-multi-4'>
+                        Make it easy to recognize and to skip optional stages.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-multi-5'>
+                        If possible, don’t set a time limit to fill out the
+                        form. If a time limit is required, provide a feature
+                        that allows the user to adjust or extend the time limit.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-multi-6'>
+                        {' '}
+                        Each step should inform the user about the progress they
+                        are making by using the page title or the HTML5{' '}
+                        <i>progress</i> element or step-by-step indicator (with
+                        visually hidden text used to indicate the current and
+                        completed steps and links to steps already completed, so
+                        the user can review them).
+                    </ChecklistLiEl>
                 </ul>
             </section>
         </AccordionWidget>
