@@ -153,34 +153,93 @@ function Forms() {
                 </ul>
             </section>
             <section>
-                <h4 className='checklist__caption' id='form-valid'>
+                <h4 className='checklist__caption' id='form-dvn'>
                     Description, Validation And Notifications
                 </h4>
-                <ul className='checklist__list' aria-labelledby='form-valid'>
-                    <ChecklistLiEl id='form-valid-1'>
+                <h5 className='checklist__subcaption' id='forms-desc'>
+                    Description (Instructions)
+                </h5>
+                <ul
+                    className='checklist__list'
+                    aria-labelledby='form-dvn form-desc'
+                >
+                    <ChecklistLiEl id='form-desc-1'>
                         Provide instructions to help users understand how to
                         complete the form and use individual form controls.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-2'>
+                    <ChecklistLiEl id='form-desc-2'>
                         {' '}
                         Providing instructions before the <i>form</i> element
                         ensures that it is read aloud by screen readers before
                         it enters into <q>Forms mode</q>.{' '}
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-3'>
+                    <ChecklistLiEl id='form-desc-3'>
                         Provide relevant instructions within the labels of the
                         form controls or with <i>aria-labelledby</i> or/and{' '}
                         <i>aria-describedby</i> attributes.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-4'>
+                    <ChecklistLiEl id='form-desc-4'>
                         Do not use <i>placeholder</i> as an alternative to
                         labels.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'></ChecklistLiEl>
+                </ul>
+                <h5 className='checklist__subcaption' id='forms-valid'>
+                    Validation
+                </h5>
+                <ul
+                    className='checklist__list'
+                    aria-labelledby='form-dvn form-valid'
+                >
+                    <ChecklistLiEl id='form-valid-1'>
+                        Custom validation needs to notify users in an accessible
+                        way.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-2'>
+                        {' '}
+                        Client-side validation alone does not ensure security;
+                        therefore data needs to be validated on the server-side
+                        as well.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-3'>
+                        Where possible, users should be able to check their
+                        input and correct it if necessary.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-4'>
+                        Require user confirmation for irreversible actions, such
+                        as permanent deletion of data.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-5'>
+                        Provide mechanisms to undo reversible actions.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-6'>
+                        <i>required</i> attribute along with{' '}
+                        <i>aria-required="true"</i> can be added to form
+                        controls, to programmatically indicate that they are
+                        required.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-7'>
+                        HTML5 also provides input types for other data,
+                        including <i>email, url, number, range, date,</i> or{' '}
+                        <i>time</i>. Several of these HTML5 input types have
+                        additional parameters to help limit and validate the
+                        input (<i>steps</i> for <i>range</i>, <i>min, max</i>{' '}
+                        for <i>range/number</i> and <i>maxlength</i> for text
+                        input).
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='form-valid-8'>
+                        HTML5 pattern attribute allows the use of regular
+                        expressions to specify custom formats for the input.
+                    </ChecklistLiEl>
+                </ul>
+
+                <h5 className='checklist__subcaption' id='forms-notify'>
+                    Notifications
+                </h5>
+                <ul
+                    className='checklist__list'
+                    aria-labelledby='form-dvn form-notify'
+                >
+                    <ChecklistLiEl id='form-notify-1'></ChecklistLiEl>
                 </ul>
             </section>
 
