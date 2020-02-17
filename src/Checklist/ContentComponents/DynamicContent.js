@@ -104,7 +104,35 @@ function DynamicContent() {
                         className='checklist__list'
                         aria-labelledby='dynamic-carousel carousel-func'
                     ></ul>
-                    <ChecklistLiEl id='carousel-func-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-1'>
+                        Provide functionality to select carousel items and to
+                        inform users about the change of carousel items.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-2'>
+                        Provide buttons to allow users to switch back and forth
+                        between items using <i>button</i> element.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-3'>
+                        Use a WAI-ARIA live region to inform screen reader users
+                        what item is currently shown.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-4'>
+                        Allow the user to maintain control of the keyboard
+                        focus.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-5'>
+                        When the carousel advances automatically, users should
+                        not be drawn away from their current place in the page.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-6'>
+                        Do not move keyboard focus when the previous or next
+                        buttons are used. By default, carousel's elements cannot
+                        receive focus (tabindex="-1").
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-func-7'>
+                        Display buttons for each item in the carousel and
+                        highlight the current item.{' '}
+                    </ChecklistLiEl>
                 </section>
                 <section>
                     <h5 className='checklist__subcaption' id='carousel-anim'>
@@ -114,7 +142,25 @@ function DynamicContent() {
                         className='checklist__list'
                         aria-labelledby='dynamic-carousel carousel-anim'
                     ></ul>
-                    <ChecklistLiEl id='carousel-anim-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-anim-1'>
+                        Provide users with control over animations in the
+                        carousel.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-anim-2'>
+                        Provide a button to allow users to stop and resume
+                        animation.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-anim-3'>
+                        Pause the carousel animation when the mouse pointer is
+                        hovering over the carousel or when it receives keyboard
+                        focus.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-anim-4'>
+                        During transitions, the current and next items are
+                        visible to assistive technologies. Add
+                        <i>aria-hidden="true" </i> to transitioning item and
+                        remove it when it becomes past item.
+                    </ChecklistLiEl>
                 </section>
                 <section>
                     <h5 className='checklist__subcaption' id='carousel-style'>
