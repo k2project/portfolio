@@ -170,7 +170,19 @@ function DynamicContent() {
                         className='checklist__list'
                         aria-labelledby='dynamic-carousel carousel-style'
                     ></ul>
-                    <ChecklistLiEl id='carousel-style-1'></ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-style-1'>
+                        Use appropriately sized buttons and links, and provide
+                        whitespace around them, to allow people with reduced
+                        dexterity to use the carousel more easily.{' '}
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-style-2'>
+                        Ensure sufficient contrast between the foreground and
+                        the background of text, links, and buttons.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='carousel-style-3'>
+                        Ensure that the navigation buttons status are indicated
+                        both in color and shape.
+                    </ChecklistLiEl>
                 </section>
             </section>
         </AccordionWidget>
