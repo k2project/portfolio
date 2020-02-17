@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function Title() {
     const accordionData = {
         heading: 3,
-        title: 'PAGE TITLE',
+        title: 'Page Title',
         subtitle: null,
         styling: 'bg-secondary'
     };

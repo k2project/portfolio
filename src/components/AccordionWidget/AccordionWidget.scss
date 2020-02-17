@@ -5,7 +5,7 @@
 }
 .accordion-widget__head {
     // margin-bottom: 2rem;
-    padding: 1.4rem 0;
+    padding: 1.4rem 2rem;
 }
 .accordion-widget--bg-secondary .accordion-widget__head {
     background-color: $color-secondary-light;
@@ -22,15 +22,9 @@
 .accordion-widget__title {
     font-size: 2rem;
     display: inline-block;
-    padding-left: 4rem;
-    padding-right: 2rem;
+    padding: 0.5rem 2rem;
     line-height: 1.2;
-}
-.accordion-widget--bg-dark .accordion-widget__title {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.5rem 4rem;
+    text-transform: capitalize;
 }
 summary:focus {
     outline: 0.1rem dashed #111;
@@ -68,10 +62,6 @@ summary::-webkit-details-marker {
 }
 @include mobile-sm {
     .accordion-widget__title {
-        font-size: 2rem;
-        padding-left: 4rem;
-    }
-    summary::-webkit-details-marker {
-        //    left: 1rem;
+        padding-right: 1rem;
     }
 }

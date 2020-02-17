@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function Interaction() {
     const accordionData = {
         heading: 3,
-        title: 'FORMS, LABELS AND ERRORS',
+        title: 'Forms, Labels, And Errors',
         subtitle: null,
         styling: 'bg-secondary'
     };

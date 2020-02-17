@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function Multimedia() {
     const accordionData = {
         heading: 3,
-        title: 'MULTIMEDIA',
+        title: 'Multimedia',
         subtitle: null,
         styling: 'bg-secondary'
     };

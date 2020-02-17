@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function ImgsWithAlt() {
     const accordionData = {
         heading: 3,
-        title: 'IMAGES WITH ALT',
+        title: 'Images With Alt',
         subtitle: null,
         styling: 'bg-secondary'
     };

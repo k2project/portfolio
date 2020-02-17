@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function KeyboardAccess() {
     const accordionData = {
         heading: 3,
-        title: 'KEYBOARD ACCESS',
+        title: 'Keyboard Access',
         subtitle: null,
         styling: 'bg-secondary'
     };

@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function Structure() {
     const accordionData = {
         heading: 3,
-        title: 'BASIC STRUCTURE CHECK',
+        title: 'Basic Structure',
         subtitle: null,
         styling: 'bg-secondary'
     };

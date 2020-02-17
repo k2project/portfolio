@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function AnimatedContent() {
     const accordionData = {
         heading: 3,
-        title: 'ANIMATED CONTENT',
+        title: 'Animated Content',
         subtitle: null,
         styling: 'bg-secondary'
     };

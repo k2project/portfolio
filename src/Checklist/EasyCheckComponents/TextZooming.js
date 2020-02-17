@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function TextZooming() {
     const accordionData = {
         heading: 3,
-        title: 'TEXT ZOOMING',
+        title: 'Text Zooming',
         subtitle: null,
         styling: 'bg-secondary'
     };

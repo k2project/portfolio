@@ -161,18 +161,18 @@ function Forms() {
                         Provide instructions to help users understand how to
                         complete the form and use individual form controls.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'>
+                    <ChecklistLiEl id='form-valid-2'>
                         {' '}
                         Providing instructions before the <i>form</i> element
                         ensures that it is read aloud by screen readers before
                         it enters into <q>Forms mode</q>.{' '}
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'>
+                    <ChecklistLiEl id='form-valid-3'>
                         Provide relevant instructions within the labels of the
                         form controls or with <i>aria-labelledby</i> or/and{' '}
                         <i>aria-describedby</i> attributes.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='form-valid-1'>
+                    <ChecklistLiEl id='form-valid-4'>
                         Do not use <i>placeholder</i> as an alternative to
                         labels.
                     </ChecklistLiEl>

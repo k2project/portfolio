@@ -6,7 +6,7 @@ import AccordionWidget from '../../components/AccordionWidget/AccordionWidget';
 function WebTechnologies() {
     const accordionData = {
         heading: 3,
-        title: 'WEB TECHNOLOGIES',
+        title: 'Web Technologies',
         subtitle: null,
         styling: 'bg-secondary'
     };
