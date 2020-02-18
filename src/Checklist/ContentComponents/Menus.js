@@ -8,7 +8,8 @@ function Menus() {
         heading: 3,
         title: 'Menus',
         subtitle: null,
-        styling: 'bg-dark'
+        styling: 'bg-dark',
+        id: 'menu-checklist'
     };
     return (
         <AccordionWidget data={accordionData}>
@@ -144,14 +145,25 @@ function Menus() {
                         already visited. However, most menus are not expected to
                         change based on the visited state.
                     </ChecklistLiEl>
-                    <ChecklistLiEl id='menus-7'>
-                        To indicate the current item use visually hidden text if
-                        the item's functionality can be disabled (eg,not
-                        clickable). Otherwise use{' '}
-                        <b>
-                            <i>aria-current=""</i>
-                        </b>{' '}
-                        attribute to improve orientation in the menu.
+                    <ChecklistLiEl id='menus-7.1'>
+                        Use markup to indicate the current item of a menu, such
+                        as the current page on a website, to improve orientation
+                        in the menu.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='menus-7.2'>
+                        Provide an invisible label that is read aloud to screen
+                        reader users and used by other assistive technologies to
+                        mark the current item which allows custom label text.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='menus-7.3'>
+                        Remove the anchor <i>a</i>, so users cannot interact
+                        with the current item.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='menus-7.4'>
+                        Use the <i>aria-current="page"</i> attribute to indicate
+                        the current page in the menu. This technique is
+                        particularly useful when the anchor <i>a</i> cannot be
+                        removed from the HTML.
                     </ChecklistLiEl>
                 </ul>
             </section>

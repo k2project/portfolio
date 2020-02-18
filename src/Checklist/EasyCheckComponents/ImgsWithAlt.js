@@ -58,7 +58,7 @@ function ImgsWithAlt() {
                         the information should be provided elsewhere.
                     </ChecklistLiEl>
                     <ChecklistLiEl id='aec-img-10'>
-                        he alternative text does not need to include the words
+                        The alternative text does not need to include the words
                         "button", "link", or "image of".
                     </ChecklistLiEl>
                 </ul>
