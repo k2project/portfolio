@@ -1,0 +1,61 @@
+@import '../../App.scss';
+
+.accessibility-settings {
+    background: $color-black;
+    color: #fff;
+    padding: 4rem 5rem;
+
+    p {
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+    }
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.btn-toggle {
+    color: #fff;
+    display: flex-inline;
+    align-items: center;
+}
+
+.btn-toggle__switch-container {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: $color-grey;
+    display: inline-block;
+    margin: 0 2rem;
+    text-align: left;
+}
+.btn-toggle__switch-btn {
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: $color-black;
+    border-radius: 100%;
+    top: 0.2rem;
+    left: 0.2rem;
+    display: inline-block;
+    transition: 0.25s;
+}
+.btn-toggle__text {
+    color: $color-black;
+    font-weight: bold;
+    line-height: 3rem;
+    width: 4rem;
+    display: inline-block;
+    left: 3rem;
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.btn-toggle--animation-is-on {
+    .btn-toggle__switch-btn {
+        left: 4.2rem;
+    }
+    .btn-toggle__text {
+        left: 0;
+    }
+}

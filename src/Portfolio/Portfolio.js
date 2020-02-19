@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './../App.scss';
-import SkipToMainContent from './../components/SkipToMainContent';
 import Header from './../components/Header/Header';
 import Footer from './../components/Footer/Footer';
 
@@ -55,7 +54,6 @@ function Portfolio() {
     });
     return (
         <div className='portfolio'>
-            <SkipToMainContent />
             <OpenGraph />
             <Header />
             <div id='main-content'>

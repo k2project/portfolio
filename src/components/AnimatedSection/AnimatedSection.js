@@ -14,10 +14,10 @@ function AnimatedSection({ title, subtitle, children }) {
             //animated-section__heading styling: transform: translateY(-50%);
             let top = offset - sectionScrollTop + 50;
             let opacity = 0;
-            if (top < 30) {
+            if (top < 34) {
                 opacity = top / 50 + 1;
             } else {
-                opacity = 1 - (top - 30) / 20;
+                opacity = 1 - (top - 40) / 20;
             }
             console.log(top, opacity);
 

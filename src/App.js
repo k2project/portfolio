@@ -6,6 +6,8 @@ import {
     Redirect
 } from 'react-router-dom';
 
+import SkipToMainContent from './components/SkipToMainContent';
+import AccessibilitySettings from './components/AccessibilitySettings/AccessibilitySettings';
 import Portfolio from './Portfolio/Portfolio';
 import Blog from './Blog/Blog';
 import Post from './Blog/Post/Post';
@@ -23,6 +25,8 @@ function App() {
                     might not be available. Please come back later.
                 </p>
             </div>
+            <SkipToMainContent />
+            <AccessibilitySettings />
             <Switch>
                 <Route exact path={`/`} component={Portfolio} />
                 <Route exact path={`/blog`} component={Blog} />

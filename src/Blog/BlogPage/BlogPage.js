@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import './BlogPage.scss';
-import SkipToMainContent from './../../components/SkipToMainContent';
 import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
 
@@ -38,7 +37,6 @@ function BlogPage(props) {
     return (
         <LikesProvider value={likes}>
             <div className={'BlogPage notes ' + cls}>
-                <SkipToMainContent />
                 <Header />
                 <div>
                     <div className='BlogPage__accordion' style={styleDiv}>
