@@ -85,8 +85,12 @@ function Links() {
                     </ChecklistLiEl>
                     <ChecklistLiEl id='links-style-3'>
                         Ensure the same visual presentation of link for both
-                        keyboard and mouse user. Always use a:hover and a:focus
-                        styling.
+                        keyboard and mouse user.
+                    </ChecklistLiEl>
+                    <ChecklistLiEl id='links-style-4'>
+                        Don't overide a:link, a:visited, a:hover, a:active,
+                        a:focus defult styling outline to none unless you are
+                        gonna replace it with visual custom styling.
                     </ChecklistLiEl>
                 </ul>
             </section>

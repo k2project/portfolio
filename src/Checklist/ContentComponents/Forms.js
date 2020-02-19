@@ -38,6 +38,11 @@ function Forms() {
                             , <i>legend</i>, and <i>label</i>.
                         </strong>
                     </ChecklistLiEl>
+                    <ChecklistLiEl id='forms-4.1'>
+                        Don't overide input:focus, textarea:focus, select:focus,
+                        button:focus default outline styling unless you are
+                        gonna replace it with custom style.
+                    </ChecklistLiEl>
                     <ChecklistLiEl id='forms-5'>
                         For components where there is no adequate HTML element
                         to build on, WAI-ARIA attributes can be useful to convey

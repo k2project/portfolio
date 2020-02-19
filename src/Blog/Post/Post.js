@@ -39,7 +39,7 @@ function Post() {
     return (
         <BlogPage cls={post.cls ? 'Post ' + post.cls : 'Post'} post={post}>
             <Helmet>
-                <title>Kris Kopczynski Portfolio | Blog</title>
+                <title>{post.title} | Kris Kopczynski Blog</title>
                 <link rel='canonical' href={path} />
                 <meta
                     name='description'

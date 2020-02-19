@@ -160,7 +160,7 @@ function SemanticStructure() {
                             elements, not to be associated with the whole page,
                             but only with that specific element.
                         </ChecklistLiEl>
-                        <ChecklistLiEl id='regions-11'>
+                        <ChecklistLiEl id='regions-11.1'>
                             Footer links don't have to be wrapped up in{' '}
                             <i>nav</i> element. Use <i>aria-label</i> or{' '}
                             <i>aria-labelledby</i> on enclosing <i>ul</i>.
@@ -183,15 +183,15 @@ function SemanticStructure() {
                             If a web page has a number of navigation menus, use
                             labels to identify each one.
                         </ChecklistLiEl>
-                        <ChecklistLiEl id='regions-14'>
+                        <ChecklistLiEl id='regions-13.1'>
                             Use <i>aria-label="Main Navigation"</i> on main{' '}
                             <i>nav</i> element and <i>aria-labelledby="[ID]"</i>{' '}
                             on others if there's a corresponding header with ID
                             .
                         </ChecklistLiEl>
-                        <ChecklistLiEl id='regions-14'>
+                        <ChecklistLiEl id='regions-13.2'>
                             <a href='#menu-checklist'>
-                                Check menu's accessibility
+                                Check menu's accessibility.
                             </a>
                         </ChecklistLiEl>
                     </ul>

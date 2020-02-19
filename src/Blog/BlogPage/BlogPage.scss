@@ -1,17 +1,15 @@
 @import './../../App.scss';
-.BlogPage{
+.BlogPage {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-
 }
-.Post{
-    .BlogPage__accordion{
+.Post {
+    .BlogPage__accordion {
         background-position: 70% center;
-
     }
 }
-.BlogPage__accordion{
+.BlogPage__accordion {
     height: 50rem;
     background: $color_grey;
     display: grid;
@@ -21,69 +19,66 @@
     background-size: cover;
     background-position: 80% top;
 
-    .fill{
-        background: rgba($color_grey,.75);
+    .fill {
+        background: rgba($color_grey, 0.75);
     }
 
-    h1{
+    h1 {
         line-height: 1.2;
         font-size: 4rem;
         margin-top: 2rem;
     }
-    h2{
+    h2 {
         font-weight: 400;
         line-height: 1.4;
         font-size: 2.4rem;
     }
-
-
 }
 
-.BlogPage__accordion_post{
+.BlogPage__accordion_post {
     height: 50rem;
     display: grid;
     align-content: center;
 }
-.BlogPage__accordion_blog{
+.BlogPage__accordion_blog {
     padding-right: 40%;
 }
 
-.BlogPage_body{
+.BlogPage_body {
     // padding: 10rem 0 0;
 }
-p.accordion__blogTag{
+p.accordion__blogTag {
     font-size: 3rem;
 }
-p.accordion__post_date{
+p.accordion__post_date {
     width: 20rem;
-    border-bottom: solid .1rem #111;
-    padding-bottom: .5rem;
+    border-bottom: solid 0.1rem #111;
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .PostsFeatured,
-.PostsLiked{
+.PostsLiked {
     top: 2rem;
-    font-family:Arial;
+    font-family: Arial;
     font-size: 2.2rem;
     line-height: 1;
     // font-weight: bold;
     text-align: right;
-    a{
+    a {
         color: $color_secondary_light;
         font-size: 3.3rem;
-        padding-right: .5rem;
-        top: .2rem;
+        padding-right: 0.5rem;
+        top: 0.2rem;
     }
-
 }
-.PostsLiked a{
+.PostsLiked a {
     color: $color_primary;
 }
-.PostsFeatured{
+.PostsFeatured {
     padding-left: 2rem;
 }
-.accordion__post_stickers{
+.accordion__post_stickers {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,45 +89,43 @@ p.accordion__post_date{
     line-height: 5rem;
     color: #fff;
     text-align: center;
-    .heart{
+    .heart {
         background: $color_primary;
     }
-    .star{
-        background:$color_secondary_light;
+    .star {
+        background: $color_secondary_light;
     }
 }
-@include tablet{
-    .BlogPage__accordion{
-        h1{
+@include tablet {
+    .BlogPage__accordion {
+        h1 {
             font-size: 3rem;
         }
-        h2{
+        h2 {
             font-size: 2rem;
         }
     }
-    .BlogPage__accordion_blog{
+    .BlogPage__accordion_blog {
         padding-right: 20%;
     }
-    p.accordion__blogTag{
+    p.accordion__blogTag {
         font-size: 2.5rem;
     }
-    .Post{
-        .BlogPage__accordion{
+    .Post {
+        .BlogPage__accordion {
             // background-position: 70% 50%;
-
         }
     }
-
 }
-@include mobile{
-    .BlogPage__accordion_blog{
+@include mobile {
+    .BlogPage__accordion_blog {
         padding-right: 0;
     }
-    p.accordion__blogTag{
+    p.accordion__blogTag {
         font-size: 2.2rem;
     }
-    .Post.methodology{
-        .BlogPage__accordion{
+    .Post.methodology {
+        .BlogPage__accordion {
             background-position: 50% center;
         }
     }
