@@ -63,20 +63,24 @@ function Skills(props) {
         </Button>
     ));
     return (
-        <div className='Skills' id='skills' onClick={handleClick}>
+        <div className='skills' id='skills' onClick={handleClick}>
             <div className='wrapper'>
-                <div className='Skills__desk'>
-                    <div className='Skills__desk_main'>{mainSkills}</div>
-                    <div className='Skills__desk_other'>{otherSkills}</div>
+                <p className='skills__instructions'>
+                    Select skills to reveal in the section below projects
+                    associated with them.
+                </p>
+                <div className='skills__desk'>
+                    <div className='skills__desk_main'>{mainSkills}</div>
+                    <div className='skills__desk_other'>{otherSkills}</div>
                 </div>
-                <div className='Skills__mob'>
-                    <div className='Skills__mob_main'>
+                <div className='skills__mob'>
+                    <div className='skills__mob_main'>
                         <img src={css3Icon} alt='skilled in css3' />
                         <img src={html5Icon} alt='skilled in html5' />
                         <img src={jsIcon} alt='skilled in javascript' />
                         <img src={reactIcon} alt='skilled in react' />
                     </div>
-                    <div className='Skills__mob_other'>
+                    <div className='skills__mob_other'>
                         <img src={sass} alt='skilled in sass' />
                         <img src={gitHub} alt='skilled in github' />
                         <img src={heroku} alt='skilled in heroku' />

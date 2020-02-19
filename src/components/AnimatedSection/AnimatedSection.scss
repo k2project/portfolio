@@ -1,0 +1,27 @@
+@import '../../App.scss';
+.animated-section__heading {
+    padding-left: 13rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+.animated-section__sqr {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border: solid 1.5rem $color_primary;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.animated-section__body {
+    //     opacity: 0;
+}
