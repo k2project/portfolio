@@ -1,6 +1,6 @@
 @import './../../App.scss';
 .header {
-    padding: 5rem 10rem 3rem;
+    padding: 6rem 10rem 4rem;
     font-size: 1.8rem;
     text-align: right;
     color: #111;
@@ -68,7 +68,7 @@
 }
 @include tablet {
     .header {
-        padding: 5rem 5rem 3rem;
+        padding: 6rem 5rem 4rem;
     }
 }
 @include mobile {
@@ -88,6 +88,7 @@
     .nav {
         padding-right: 4rem;
         background: $color_grey;
+        background: #fff;
         padding-bottom: 2rem;
     }
 }
