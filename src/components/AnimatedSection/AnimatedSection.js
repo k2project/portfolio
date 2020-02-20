@@ -20,7 +20,8 @@ function AnimatedSection({ title, subtitle, children }) {
             heading.style.top = top - 20 + '%';
             //heading fades in when top reaches 30
             //heading fades out when top > 60 after distance of 30
-            heading.style.opacity = top < 30 ? top / 30 : 1 - (top - 60) / 30;
+            heading.style.opacity =
+                top < 30 ? top  / 30 : 1 - (top - 60) / 30;
             //text fades in after top > 50
             body.style.opacity = top < 50 ? 0 : (top - 50) / 100;
             //text gets fixed when top > 100

@@ -26,7 +26,7 @@ function App() {
                 </p>
             </div>
             <SkipToMainContent />
-            {/* <AccessibilitySettings /> */}
+            <AccessibilitySettings />
             <Switch>
                 <Route exact path={`/`} component={Portfolio} />
                 <Route exact path={`/blog`} component={Blog} />

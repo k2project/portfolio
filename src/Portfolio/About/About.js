@@ -23,7 +23,7 @@ function About() {
             <div className='about__desc'>
                 <div className='wrapper'>
                     <AnimatedSection
-                        title='Find out more about me...'
+                        title='A little bit about me...'
                         subtitle='Keep scrolling down.'
                     >
                         <p>
@@ -31,14 +31,15 @@ function About() {
                             <b>Hello, I'm Kris! </b>
                         </p>
                         <p>
-                            I take proud in being self-taught developer. I enjoy
-                            turning complex problems into simple, beautiful and
-                            intuitive applications. Currrently learning how to
-                            make my work a better experience to every user!
+                            I take proud in being a self-taught developer. I
+                            enjoy turning complex problems into simple,
+                            beautiful and intuitive applications. Currently
+                            learning about Web Accessibility to be able to
+                            provide a better experience to every user!
                         </p>
                         <p>
                             <b>On the lookout for a team.</b> A team that I can
-                            learn from, grow with and contribute to it success.{' '}
+                            learn from, grow with and contribute to its success.{' '}
                         </p>
                     </AnimatedSection>
                 </div>
