@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AccessibilitySettings.scss';
 
 export default function AccessibilitySettings() {
@@ -8,6 +8,11 @@ export default function AccessibilitySettings() {
         const btn = e.target.closest('.btn-toggle');
         btn.classList.toggle('btn-toggle--animation-is-on');
     }
+    useEffect(() => {
+        on
+            ? localStorage.removeItem('anim-off')
+            : localStorage.setItem('anim-off', 'true');
+    });
     return (
         <div className='accessibility-settings'>
             <p id='web-access-settings'>ACCESSIBILITY SETTINGS.</p>

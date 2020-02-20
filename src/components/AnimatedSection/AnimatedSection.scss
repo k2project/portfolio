@@ -6,10 +6,12 @@
     transform: translateY(-50%);
     h2 {
         font-size: 3rem;
+        line-height: 1;
     }
     p {
-        margin: 0;
+        margin: 1rem 0 0;
         font-size: 2rem;
+        line-height: 1;
     }
 }
 .animated-section__sqr {
@@ -22,6 +24,33 @@
     transform: translateY(-50%);
     left: 0;
 }
-.animated-section__body {
-    //     opacity: 0;
+@include mobile {
+    .animated-section__heading {
+        padding-left: 13rem;
+        h2 {
+            font-size: 2.4rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+@include mobile-sm {
+    .animated-section__heading {
+        padding-left: 4rem;
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+    .animated-section__sqr {
+        opacity: 0.5;
+        //    display: block;
+        width: 15rem;
+        height: 15rem;
+        border: solid 1.7rem $color_primary;
+        //    position: absolute;
+        //    top: 0;
+        //    transform: translateY(0%);
+        //    left: 0;
+    }
 }

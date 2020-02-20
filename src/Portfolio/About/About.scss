@@ -5,7 +5,7 @@
 }
 .about__heading {
     background-color: $color-grey;
-    padding: 17rem 0 12rem;
+    padding: 17rem 0 15rem;
 
     h1 {
         line-height: 1.2;
@@ -15,7 +15,7 @@
 }
 .about__desc {
     overflow: hidden;
-    padding: 10rem 0 12rem;
+    padding: 12rem 0 12rem;
     p {
         font-size: 2.5rem;
         font-weight: normal;
@@ -37,6 +37,18 @@
     .about__desc {
         p {
             font-size: 2rem;
+        }
+    }
+}
+@include mobile-sm {
+    .about__heading {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    .about__desc {
+        p {
+            font-size: 1.8rem;
         }
     }
 }

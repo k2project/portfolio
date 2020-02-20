@@ -11,7 +11,7 @@ function About() {
                     <h1>
                         Edinburgh based front-end web developer passionate about
                         coding with{' '}
-                        <span className='color_themed_secondary'>React</span> .{' '}
+                        <span className='color_themed_secondary'>React</span>.{' '}
                         <br />
                         <span className='color_themed_secondary'>
                             Web Accessibility
