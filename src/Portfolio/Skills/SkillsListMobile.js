@@ -6,7 +6,7 @@ export default function SkillsListMobile() {
         <Fragment>
             <section className='skills-mob__primary'>
                 <h3 className='sr-only' id='mob-skills-main'>
-                    Main developer skills.
+                    Featured developer skills acquired.
                 </h3>
                 <ul aria-labelledby='mob-skills-main'>
                     {skills
@@ -24,7 +24,7 @@ export default function SkillsListMobile() {
             </section>
             <section className='skills-mob__secondary'>
                 <h3 className='sr-only' id='mob-skills-other'>
-                    Other developer skills.
+                    Other developer skills studied.
                 </h3>
                 <ul aria-labelledby='mob-skills-other'>
                     {skills

@@ -1,114 +1,122 @@
 @import './../../App.scss';
-// .Button and .Button_content must be the same width
-.Button {
-    margin: 1.2rem 2rem;
-    padding: 2.5rem 1rem;
-    width: 20rem;
-    overflow: hidden;
-}
-.Button_centered {
-    margin: 4rem auto;
-}
 
-.Button_content,
-.Button_hovered,
-.Button_unhovered {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    overflow: hidden;
-    transition: 0.25s;
-    left: 0;
-}
-.Button_content {
+.btn {
+    margin: 1.2rem 2rem;
+    height: 5rem;
     width: 20rem;
-    display: grid;
-    align-content: center;
-}
-.Button_unhovered {
     border: solid 0.1rem $color_black;
-    width: 100%;
+    overflow: hidden;
 }
-.Button_hovered {
-    color: #fff;
-    left: -0.2rem;
-    width: 0%;
-    background: $color_primary;
-    border: solid 0.1rem $color_primary;
-}
-.Button_span_top,
-.Button_span_bottom {
-    position: absolute;
-    left: 0;
-    width: 1rem;
-    background: $color_primary;
-    height: 0;
-}
-.Button_span_top {
-    top: 50%;
-}
-.Button_span_bottom {
-    bottom: 50%;
-}
-.Button:hover {
-    .Button_hovered {
-        width: 100%;
-        transition: 0.5s 0.25s ease-out;
-        left: 0;
-    }
-    .Button_span_top,
-    .Button_span_bottom {
-        height: 50%;
-        transition: 0.2s;
-    }
-}
-.Button.secondary {
-    .Button_unhovered {
-        border-color: #c0c0c0;
-        color: #c0c0c0;
-    }
-}
-.Button:active {
-    .Button_hovered {
-        width: 100%;
-        transition: 0.5s 0.25s ease-out;
-        left: 0;
-        background: $color-black;
-    }
-    .Button_span_top,
-    .Button_span_bottom {
-        height: 50%;
-        transition: 0.2s;
-        background-color: $color-black;
-    }
-}
-.Button.secondary {
-    .Button_unhovered {
-        border-color: #c0c0c0;
-        color: #c0c0c0;
-    }
-}
-.Button_toggle {
-    position: absolute;
-    right: 1rem;
-    top: 0;
-    color: #fff;
-    font-weight: bold;
-    font-size: 2.5rem;
-    transform: scale(0);
-    transition: 0.25s;
-}
-.Button.selected {
-    .Button_hovered {
-        width: 100%;
-        transition: 0.5s 0.25s ease-out;
-        left: 0;
-    }
-    .Button_toggle {
-        transform: scale(1);
-        transition: 0.25s 0.2s cubic-bezier(0.17, 0.67, 0.4, 0.88);
-    }
-}
-.ButtonsBox.center {
-    text-align: center;
-}
+// // .Button and .Button_content must be the same width
+// .Button {
+//     margin: 1.2rem 2rem;
+//     padding: 2.5rem 1rem;
+//     width: 20rem;
+//     overflow: hidden;
+// }
+// .Button_centered {
+//     margin: 4rem auto;
+// }
+
+// .Button_content,
+// .Button_hovered,
+// .Button_unhovered {
+//     position: absolute;
+//     top: 0;
+//     height: 100%;
+//     overflow: hidden;
+//     transition: 0.25s;
+//     left: 0;
+// }
+// .Button_content {
+//     width: 20rem;
+//     display: grid;
+//     align-content: center;
+// }
+// .Button_unhovered {
+//     border: solid 0.1rem $color_black;
+//     width: 100%;
+// }
+// .Button_hovered {
+//     color: #fff;
+//     left: -0.2rem;
+//     width: 0%;
+//     background: $color_primary;
+//     border: solid 0.1rem $color_primary;
+// }
+// .Button_span_top,
+// .Button_span_bottom {
+//     position: absolute;
+//     left: 0;
+//     width: 1rem;
+//     background: $color_primary;
+//     height: 0;
+// }
+// .Button_span_top {
+//     top: 50%;
+// }
+// .Button_span_bottom {
+//     bottom: 50%;
+// }
+// .Button:hover {
+//     .Button_hovered {
+//         width: 100%;
+//         transition: 0.5s 0.25s ease-out;
+//         left: 0;
+//     }
+//     .Button_span_top,
+//     .Button_span_bottom {
+//         height: 50%;
+//         transition: 0.2s;
+//     }
+// }
+// .Button.secondary {
+//     .Button_unhovered {
+//         border-color: #c0c0c0;
+//         color: #c0c0c0;
+//     }
+// }
+// .Button:active {
+//     .Button_hovered {
+//         width: 100%;
+//         transition: 0.5s 0.25s ease-out;
+//         left: 0;
+//         background: $color-black;
+//     }
+//     .Button_span_top,
+//     .Button_span_bottom {
+//         height: 50%;
+//         transition: 0.2s;
+//         background-color: $color-black;
+//     }
+// }
+// .Button.secondary {
+//     .Button_unhovered {
+//         border-color: #c0c0c0;
+//         color: #c0c0c0;
+//     }
+// }
+// .Button_toggle {
+//     position: absolute;
+//     right: 1rem;
+//     top: 0;
+//     color: #fff;
+//     font-weight: bold;
+//     font-size: 2.5rem;
+//     transform: scale(0);
+//     transition: 0.25s;
+// }
+// .Button.selected {
+//     .Button_hovered {
+//         width: 100%;
+//         transition: 0.5s 0.25s ease-out;
+//         left: 0;
+//     }
+//     .Button_toggle {
+//         transform: scale(1);
+//         transition: 0.25s 0.2s cubic-bezier(0.17, 0.67, 0.4, 0.88);
+//     }
+// }
+// .ButtonsBox.center {
+//     text-align: center;
+// }

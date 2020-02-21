@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Skills.scss';
 import skills from './SkillsList';
 import SkillsListMobile from './SkillsListMobile';
-import Button from './../../components/Button/Button';
+import SkillsListDesktop from './SkillsListDesktop';
 import AnimatedSection from '../../components/AnimatedSection/AnimatedSection';
 
 // let skillsArr = [];
@@ -105,14 +105,5 @@ export default function Skills() {
                 </AnimatedSection>
             </div>
         </section>
-    );
-}
-function SkillsListDesktop() {
-    return (
-        <ul>
-            {skills.map(skill => (
-                <li key={skill.name}>{skill.name}</li>
-            ))}
-        </ul>
     );
 }
