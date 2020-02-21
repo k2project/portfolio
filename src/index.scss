@@ -40,8 +40,10 @@ option {
 
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+button:active {
     outline: none;
+    border: none;
 }
 
 input,

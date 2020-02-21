@@ -4,17 +4,99 @@
     margin: 1.2rem 2rem;
     height: 5rem;
     width: 20rem;
-    border: solid 0.1rem $color_black;
     overflow: hidden;
     font-size: 1.3rem;
     font-weight: bold;
+    color: $color-black;
 }
 .skills-desktop__secondary .btn {
-    opacity: 0.4;
     font-weight: normal;
+    color: #999;
+    .btn__content-box {
+        border-color: #999;
+    }
 }
-.btn-inner {
+//==================
+//on hover animation
+//==================
+.btn__content-box,
+.btn__content-box--animated,
+.btn__content {
     position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+.btn__content-box {
+    width: 100%;
+    border: solid 0.1rem $color_black;
+    transition: 0.25s;
+}
+.btn__content-box--animated {
+    color: #fff;
+    left: -0.2rem;
+    width: 0%;
+    background: $color_primary;
+    border: solid 0.1rem $color_primary;
+    transition: 0.25s;
+}
+.btn__content {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn___anim-top,
+.btn___anim-btm {
+    position: absolute;
+    left: 0;
+    width: 1rem;
+    background: $color_primary;
+    height: 0;
+}
+.btn___anim-top {
+    top: 50%;
+}
+.btn___anim-btm {
+    bottom: 50%;
+}
+.btn:hover {
+    .btn__content-box--animated {
+        width: 100%;
+        transition: width 0.5s 0.25s ease-out;
+        left: 0;
+    }
+    .btn___anim-top,
+    .btn___anim-btm {
+        height: 50%;
+        transition: 0.2s;
+    }
+}
+//==================
+//on click / :active
+//==================
+.btn--is-active {
+    .btn__content {
+        background: $color-black;
+        color: #fff;
+    }
+    .btn__content-box--animated {
+        width: 0%;
+    }
+}
+.btn--is-active:hover {
+    .btn__content-box--animated,
+    .btn___anim-top,
+    .btn___anim-btm {
+        display: none;
+    }
+}
+//==================
+//on focus
+//==================
+.btn--in-focus {
+    @extend .in-focus;
 }
 // // .Button and .Button_content must be the same width
 // .Button {

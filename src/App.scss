@@ -49,6 +49,12 @@ $color_red: #fe0002;
 // @include mobile{}
 // @include mobile-sm{}
 // =====================
+//  on focus  styling
+//======================
+.in-focus {
+    border: solid 0.2rem orange;
+}
+// =====================
 //  global app styling
 //======================
 .sr-only {

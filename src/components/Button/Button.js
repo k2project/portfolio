@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Button.scss';
 
 // function Button(props) {
@@ -31,22 +31,52 @@ import './Button.scss';
 // export default Button;
 
 export default function Button({ data: { value, updateSelection } }) {
-    function handleClick() {
-        updateSelection(value);
+    let [clicked, toggleClickedState] = useState(false);
+    let [selectedArray, updateSelectedArray] = useState([]);
+    let active = '';
+    function handleClick(e) {
+        updateSelectedArray(updateSelection(value));
+        //    updateSelection(value);
+        e.target.closest('.btn').classList.toggle('btn--is-active');
+        toggleClickedState(!clicked);
     }
-    return (
-        <button className='btn' onClick={handleClick}>
-            <InnerBtnAnimated />
-            <span className='btn__name'>{value}</span>
-        </button>
-    );
-}
+    function handleOnFocus(e) {
+        e.target.closest('.btn').classList.add('btn--in-focus');
+    }
+    function handleOnBlur(e) {
+        e.target.closest('.btn').classList.remove('btn--in-focus');
+    }
 
-function InnerBtnAnimated() {
     return (
-        <span className='btn-inner'>
-            <span className='btn-inner__top'></span>
-            <span className='btn-inner__btm'></span>
-        </span>
+        <button
+            className='btn'
+            onClick={handleClick}
+            onFocus={handleOnFocus}
+            onBlur={handleOnBlur}
+        >
+            {/* main content */}
+            <span className='btn__content-box'>
+                <span className='btn__content'>
+                    <span className='sr-only'>
+                        {clicked ? 'Unselect:' : 'Select:'}
+                    </span>
+                    {value}
+                    <span className='sr-only'>
+                        . Other items selected:
+                        {selectedArray.length > 0
+                            ? selectedArray.toString()
+                            : 'none'}
+                    </span>
+                </span>
+            </span>
+            {/* animated elements */}
+            <span className='btn___anim-top'></span>
+            <span className='btn___anim-btm'></span>
+            <span className='btn__content-box--animated'>
+                <span className='btn__content' aria-hidden='true'>
+                    {value}
+                </span>
+            </span>
+        </button>
     );
 }

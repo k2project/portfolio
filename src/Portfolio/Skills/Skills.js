@@ -85,6 +85,7 @@ export default function Skills({ selectProjectsBySkills }) {
             //remove skill from the list
             setSelectedSkillsArr(selectedSkillsArr.filter(s => s !== skill));
         }
+        return selectedSkillsArr;
     }
     const [mobileViewPort, setMobileView] = useState(false);
     function changeSkillsDisplayOnResize() {
