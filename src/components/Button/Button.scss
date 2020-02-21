@@ -6,6 +6,15 @@
     width: 20rem;
     border: solid 0.1rem $color_black;
     overflow: hidden;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.skills-desktop__secondary .btn {
+    opacity: 0.4;
+    font-weight: normal;
+}
+.btn-inner {
+    position: absolute;
 }
 // // .Button and .Button_content must be the same width
 // .Button {

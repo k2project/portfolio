@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import skills from './SkillsList';
 import Button from './../../components/Button/Button';
 
-export default function SkillsListDesktop() {
+export default function SkillsListDesktop({ updateSelection }) {
     return (
         <Fragment>
             <section className='skills-desktop__primary'>
@@ -14,7 +14,12 @@ export default function SkillsListDesktop() {
                         .filter(skill => skill.featured)
                         .map(skill => (
                             <li>
-                                <Button data={{ value: skill.name }} />
+                                <Button
+                                    data={{
+                                        value: skill.name,
+                                        updateSelection
+                                    }}
+                                />
                             </li>
                         ))}
                 </ul>
@@ -28,7 +33,12 @@ export default function SkillsListDesktop() {
                         .filter(skill => !skill.featured)
                         .map(skill => (
                             <li>
-                                <Button data={{ value: skill.name }} />
+                                <Button
+                                    data={{
+                                        value: skill.name,
+                                        updateSelection
+                                    }}
+                                />
                             </li>
                         ))}
                 </ul>

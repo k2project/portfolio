@@ -30,11 +30,23 @@ import './Button.scss';
 
 // export default Button;
 
-export default function Button({ data: { value } }) {
+export default function Button({ data: { value, updateSelection } }) {
+    function handleClick() {
+        updateSelection(value);
+    }
     return (
-        <button className='btn'>
-            <span></span>
+        <button className='btn' onClick={handleClick}>
+            <InnerBtnAnimated />
             <span className='btn__name'>{value}</span>
         </button>
+    );
+}
+
+function InnerBtnAnimated() {
+    return (
+        <span className='btn-inner'>
+            <span className='btn-inner__top'></span>
+            <span className='btn-inner__btm'></span>
+        </span>
     );
 }

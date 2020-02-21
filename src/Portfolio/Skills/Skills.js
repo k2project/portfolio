@@ -75,7 +75,17 @@ import AnimatedSection from '../../components/AnimatedSection/AnimatedSection';
 
 // export default Skills;
 
-export default function Skills() {
+export default function Skills({ selectProjectsBySkills }) {
+    const [selectedSkillsArr, setSelectedSkillsArr] = useState([]);
+    function updateselectedSkillsArr(skill) {
+        if (!selectedSkillsArr.includes(skill)) {
+            //add skill to the list
+            setSelectedSkillsArr([...selectedSkillsArr, skill]);
+        } else {
+            //remove skill from the list
+            setSelectedSkillsArr(selectedSkillsArr.filter(s => s !== skill));
+        }
+    }
     const [mobileViewPort, setMobileView] = useState(false);
     function changeSkillsDisplayOnResize() {
         const mq = matchMedia('(max-width: 768px)');
@@ -86,13 +96,16 @@ export default function Skills() {
         setMobileView(false);
     }
     useEffect(() => {
+        //update selected project lists
+        selectProjectsBySkills(selectedSkillsArr);
+
         window.addEventListener('load', changeSkillsDisplayOnResize);
         window.addEventListener('resize', changeSkillsDisplayOnResize);
         return () => {
             window.removeEventListener('load', changeSkillsDisplayOnResize);
             window.removeEventListener('resize', changeSkillsDisplayOnResize);
         };
-    });
+    }, [selectedSkillsArr]);
     return (
         <section className='skills' id='skills'>
             <div className='wrapper'>
@@ -100,7 +113,11 @@ export default function Skills() {
                     title='Skills &amp; Projects.'
                     subtitle='Select skills to reveal associated projects.'
                 >
-                    {!mobileViewPort && <SkillsListDesktop />}
+                    {!mobileViewPort && (
+                        <SkillsListDesktop
+                            updateSelection={updateselectedSkillsArr}
+                        />
+                    )}
                     {mobileViewPort && <SkillsListMobile />}
                 </AnimatedSection>
             </div>
