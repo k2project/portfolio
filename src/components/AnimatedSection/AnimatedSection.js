@@ -8,8 +8,7 @@ function AnimatedSection({ title, subtitle, children }) {
             const heading = section.firstElementChild;
             const body = section.lastElementChild;
             const sectionScrollTop = section.getBoundingClientRect().top;
-            //offset for animation to start when elemnt appears half way through teh screen
-            //takes into account parent's padding
+            //animation to start when elemnt appears 1/3 way of teh screen
             const offset = document.documentElement.clientHeight / 3;
             let top = offset - sectionScrollTop;
 
@@ -30,7 +29,10 @@ function AnimatedSection({ title, subtitle, children }) {
             body.style.opacity =
                 top < 40 ? 0 : getNumBetweenRangeOnly((top - 40) / 100, 0, 1);
             //text gets fixed when top > 100
-            body.style.top = top < 100 ? (100 - top) * 2 + 'px' : '0px';
+            body.style.top =
+                top < 100
+                    ? getNumBetweenRangeOnly((100 - top) * 2, 0, 200) + 'px'
+                    : '0px';
         });
     }
     function getNumBetweenRangeOnly(value, min, max, offset = 0) {
