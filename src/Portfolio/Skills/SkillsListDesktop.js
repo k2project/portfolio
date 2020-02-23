@@ -13,7 +13,7 @@ export default function SkillsListDesktop({ updateSelection }) {
                     {skills
                         .filter(skill => skill.featured)
                         .map(skill => (
-                            <li>
+                            <li key={'desktop-' + skill.name}>
                                 <Button
                                     data={{
                                         value: skill.name,
@@ -32,7 +32,7 @@ export default function SkillsListDesktop({ updateSelection }) {
                     {skills
                         .filter(skill => !skill.featured)
                         .map(skill => (
-                            <li>
+                            <li key={'desktop-' + skill.name}>
                                 <Button
                                     data={{
                                         value: skill.name,

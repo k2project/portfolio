@@ -12,7 +12,7 @@ export default function SkillsListMobile() {
                     {skills
                         .filter(skill => skill.img && skill.featured)
                         .map(skill => (
-                            <li>
+                            <li key={'mob-' + skill.name}>
                                 <img
                                     src={skill.img}
                                     alt={skill.name}
@@ -30,7 +30,7 @@ export default function SkillsListMobile() {
                     {skills
                         .filter(skill => skill.img && !skill.featured)
                         .map(skill => (
-                            <li>
+                            <li key={'mob-' + skill.name}>
                                 <img
                                     src={skill.img}
                                     alt={skill.name}

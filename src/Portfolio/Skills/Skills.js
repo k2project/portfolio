@@ -85,7 +85,25 @@ export default function Skills({ selectProjectsBySkills }) {
             //remove skill from the list
             setSelectedSkillsArr(selectedSkillsArr.filter(s => s !== skill));
         }
-        return selectedSkillsArr;
+        return;
+    }
+    function updateBtnDynamicContentForAris(arr) {
+        const btnsDynamicAria = document.querySelectorAll(
+            '.skills .btn__content-dynamic'
+        );
+        Array.from(btnsDynamicAria).forEach(aria => {
+            let text = '. Currently selected items: ';
+            aria.textContent =
+                arr.length > 0
+                    ? text + toStringCustom(arr) + '.'
+                    : text + 'none.';
+        });
+    }
+    function toStringCustom(arr) {
+        if (arr.length > 1) {
+            return arr.slice(0, -1).join(', ') + ' and ' + arr.slice(-1);
+        }
+        return arr.toString();
     }
     const [mobileViewPort, setMobileView] = useState(false);
     function changeSkillsDisplayOnResize() {
@@ -99,6 +117,7 @@ export default function Skills({ selectProjectsBySkills }) {
     useEffect(() => {
         //update selected project lists
         selectProjectsBySkills(selectedSkillsArr);
+        updateBtnDynamicContentForAris(selectedSkillsArr);
 
         window.addEventListener('load', changeSkillsDisplayOnResize);
         window.addEventListener('resize', changeSkillsDisplayOnResize);

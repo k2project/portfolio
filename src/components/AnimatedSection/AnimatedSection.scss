@@ -1,4 +1,7 @@
 @import '../../App.scss';
+.animated-section {
+    padding: 14rem 0;
+}
 .animated-section__heading {
     padding-left: 13rem;
     position: absolute;
@@ -23,6 +26,8 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+}
+.animated-section__body {
 }
 @include mobile {
     .animated-section__heading {
