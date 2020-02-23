@@ -13,8 +13,18 @@ export default function AccessibilitySettings() {
             ? localStorage.removeItem('anim-off')
             : localStorage.setItem('anim-off', 'true');
     });
+    function handleOnFocus(e) {
+        e.target.classList.add('accessibility-settings--in-focus');
+    }
+    function handleOnBlur(e) {
+        e.target.classList.remove('accessibility-settings--in-focus');
+    }
     return (
-        <div className='accessibility-settings'>
+        <div
+            className='accessibility-settings'
+            onFocus={handleOnFocus}
+            onBlur={handleOnBlur}
+        >
             <p id='web-access-settings'>ACCESSIBILITY SETTINGS.</p>
             <ul aria-labelledby='web-access-settings'>
                 <li>

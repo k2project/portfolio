@@ -17,9 +17,14 @@
 }
 .nav {
     a:hover,
-    a:focus,
     a:active {
         color: $color_primary;
+        text-decoration: underline;
+    }
+}
+.nav {
+    a:focus {
+        border: dashed 0.1rem $color-black;
         text-decoration: underline;
     }
 }

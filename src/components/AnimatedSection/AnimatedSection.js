@@ -31,7 +31,7 @@ function AnimatedSection({ title, subtitle, children }) {
             //text gets fixed when top > 100
             body.style.top =
                 top < 100
-                    ? getNumBetweenRangeOnly((100 - top) * 2, 0, 200) + 'px'
+                    ? getNumBetweenRangeOnly((100 - top) * 2, 0, 100) + 'px'
                     : '0px';
         });
     }

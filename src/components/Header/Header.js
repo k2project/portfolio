@@ -7,42 +7,6 @@ function Header() {
     return (
         <header className='header'>
             <MainNav />
-            {/* <NavLink exact to={'/'} className='link_portfolio'>
-                    portfolio
-                </NavLink> */}
-            {/* <a href='#skills' onClick={scrollToHash}>
-                    skills
-                </a> */}
-            {/* <a href='#projects' onClick={scrollToHash}>
-                    projects
-                </a> */}
-            {/* <NavLink to={'/blog'} className='link_blog'>
-                    blog
-                </NavLink> */}
-            {/* <a
-                    href='#resume'
-                    className='link_resume'
-                    onClick={scrollToHash}
-                >
-                    resume
-                </a> */}
-            {/* <a
-                    href='https://github.com/k2project'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    gitHub
-                    <span className='sr-only'>external link</span>
-                </a> */}
-            {/* <a
-                    href='https://twitter.com/_k2project'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='link_twitter'
-                >
-                    twitter
-                    <span className='sr-only'>external link</span>
-                </a> */}
         </header>
     );
 }
@@ -52,7 +16,7 @@ export default Header;
 function MainNav() {
     function scrollToHash(e) {
         e.preventDefault();
-        const hash = e.target.getAttribute('href');
+        const hash = e.target.closest('a').getAttribute('href');
         document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
     }
     return (
@@ -98,7 +62,7 @@ function MainNav() {
                         rel='noopener noreferrer'
                     >
                         gitHub
-                        <span className='sr-only'>opens in a new tab</span>
+                        <span className='sr-only'> (opens in a new tab)</span>
                     </a>
                 </li>
                 <li>
@@ -109,7 +73,7 @@ function MainNav() {
                         rel='noopener noreferrer'
                     >
                         twitter
-                        <span className='sr-only'>opens in a new tab</span>
+                        <span className='sr-only'>(opens in a new tab)</span>
                     </a>
                 </li>
             </ul>

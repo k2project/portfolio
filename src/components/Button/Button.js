@@ -10,11 +10,11 @@ export default function Button({ data: { value, updateSelection } }) {
         toggleClickedState(!clicked);
     }
     function handleOnFocus(e) {
-        e.target.closest('.btn').classList.add('btn--in-focus');
+        e.target.classList.add('btn--in-focus');
         e.target.closest('.animated-section').scrollIntoView();
     }
     function handleOnBlur(e) {
-        e.target.closest('.btn').classList.remove('btn--in-focus');
+        e.target.classList.remove('btn--in-focus');
     }
 
     return (

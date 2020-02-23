@@ -48,12 +48,7 @@ $color_red: #fe0002;
 // @include tablet{}
 // @include mobile{}
 // @include mobile-sm{}
-// =====================
-//  on focus  styling
-//======================
-.in-focus {
-    border: solid 0.2rem orange;
-}
+
 // =====================
 //  global app styling
 //======================
@@ -70,7 +65,7 @@ $color_red: #fe0002;
     width: 1px;
     // word-wrap: normal !important;
 }
-.sr-only--is-focusable:focus {
+.sr-only--in-focus {
     position: static;
     clip: auto !important;
     clip-path: none;
@@ -89,7 +84,7 @@ $color_red: #fe0002;
     z-index: 1000;
     display: block;
 }
-.sr-only--is-focusable:hover {
+.sr-only--in-focus:hover {
     text-decoration-line: underline;
 }
 p {
@@ -157,7 +152,12 @@ a:focus {
 
     color: #fff;
 }
-
+// =====================
+//  on focus  styling
+//======================
+.in-focus {
+    border: dashed 0.1rem $color_black;
+}
 @include desktop-sm {
     .wrapper {
         width: 100%;
