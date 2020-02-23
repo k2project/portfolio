@@ -1,12 +1,23 @@
 @import './../../App.scss';
-.Projects{
+.projects {
     background: $color_grey;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 20vw;
-
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 22vw;
+    }
 }
-.Project{
+
+.project,
+.project a,
+.project__desc {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.project {
     background-image: url('./../../media/imgs/noImage.png');
     background-size: cover;
     background-position: center;
@@ -14,119 +25,106 @@
     overflow: hidden;
     opacity: 0;
     top: 5rem;
-
 }
-.Project_desc{
-    height: 100%;
-    width: 100%;
+.project a {
     position: absolute;
-    left: 0;
-    top: 0;
-    display: grid;
-    align-content: center;
-    background: rgba($color_secondary_light,1);
-    opacity: 0;
-    padding: 2rem 3rem 2rem 4rem;
-    color: #fff;
-    font-size: 1.4rem;
+    z-index: 2;
 }
-.Project_title{
+.project__desc {
+    position: absolute;
+    display: grid;
+    align-content: end;
+    background: rgba($color_secondary_light, 1);
+    opacity: 0;
+    padding: 2rem 4rem 6rem;
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+.project__name {
     opacity: 0;
     top: 10rem;
-
+    font-size: 1.6rem;
 }
-.Project_details{
+.project__info {
     opacity: 0;
     top: 5rem;
-
 }
-.Project:hover{
-    .Project_desc{
+.project:hover {
+    .project__desc {
         opacity: 1;
-        transition: .1s;
+        transition: 0.1s;
     }
-    .Project_title,
-    .Project_details{
+    .project__name,
+    .project__info {
         opacity: 1;
         top: 0;
-        transition: .4s .2s ease-in-out;
+        transition: 0.4s 0.2s ease-in-out;
     }
-    .Stickers__cml{
-        background:#111;
-        transition: .2s;
+    .Stickers__cml {
+        background: #111;
+        transition: 0.2s;
     }
 }
-.ProjectNull{
+.project__null {
     background: #eee;
     background-image: linear-gradient(to right, #eee, #ebebeb);
-    display: grid;
-    align-content: center;
-    text-align: center;
-    img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
         width: 8rem;
-        opacity: .1;
+        opacity: 0.1;
         margin: auto;
     }
-
 }
 
-@include desktop-sm{
-    .Projects{
+@include desktop-sm {
+    .Projects {
         grid-auto-rows: 22vw;
     }
-    .Project:nth-child(4){
+    .Project:nth-child(4) {
         background-size: contain;
     }
 }
-@include tablet{
-    .Projects{
+@include tablet {
+    .Projects {
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 30vw;
-
     }
-    .Project:nth-child(2){
+    .Project:nth-child(2) {
         grid-row: 1/3;
-
     }
-    .Project:nth-child(1){
+    .Project:nth-child(1) {
         grid-row: 3;
-
     }
-    .Project:nth-child(4){
+    .Project:nth-child(4) {
         background-size: cover;
     }
-
 }
-@include mobile{
-
-    .Projects{
+@include mobile {
+    .Projects {
         grid-auto-rows: 35vw;
-
     }
 
-    .Project_desc{
+    .Project_desc {
         font-size: 1rem;
         padding: 2rem 5vw;
         // padding-right: 12%;
     }
-
 }
-@include mobile-sm{
-    .Projects{
+@include mobile-sm {
+    .Projects {
         grid-template-columns: 1fr;
         grid-auto-rows: 60vw;
-
     }
-    .Project_desc{
+    .Project_desc {
         line-height: 1.4;
     }
-    .Project:nth-child(2){
+    .Project:nth-child(2) {
         grid-row: 2;
-
     }
-    .Project:nth-child(1){
+    .Project:nth-child(1) {
         grid-row: 1;
-
     }
-
 }

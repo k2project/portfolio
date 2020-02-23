@@ -59,7 +59,10 @@ function Portfolio() {
             <div id='main-content'>
                 <About />
                 <Skills selectProjectsBySkills={selectProjectsBySkills} />
-                <Projects projects={projectsDisplayed} />
+                <Projects
+                    projectsSelected={projectsDisplayed}
+                    totalProjects={projects.length}
+                />
                 <Resume />
             </div>
             <Footer />
