@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projects.scss';
 import gitHub from './../../media/icons/gitHub.png';
 import LinkNewTab from './../../components/LinkNewTab';
@@ -9,19 +9,54 @@ function Projects({ projectsSelected, totalProjects }) {
         projectsSelected.length === totalProjects
             ? 'List of all projects.'
             : 'List of projects based on selected skills.';
-    if (projectsSelected.length % 3 === 1) {
-        projectsSelected.push(null, null);
-    } else if (projectsSelected.length % 3 === 2) {
-        projectsSelected.push(null);
-    }
     const projectsToDisplay = projectsSelected.map((project, i) => {
         if (project !== null) {
             return <Project project={project} key={i + '_' + project.name} />;
         }
-        return <ProjectNull key={i + '_emptyProject'} />;
     });
+    //adding empty project display to make up the grid
+    const [emptyProjects, setEmptyProjectsNum] = useState(0);
+    let emptyProjectsDisplay = Array.from(
+        Array(Number(emptyProjects))
+    ).map((el, i) => <ProjectNull key={i + '_emptyProject'} />);
+
+    function addEpmtyProjectsToGrid() {
+        let mqMobile = matchMedia('(max-width: 768px)');
+        let mqTablet = matchMedia('(max-width: 1200px)');
+        const projectsEl = document.querySelector('.projects');
+        if (projectsSelected.length === totalProjects || mqMobile.matches) {
+            projectsEl.classList = 'projects';
+            setEmptyProjectsNum(0);
+            return;
+        } else {
+            if (mqTablet.matches) {
+                projectsEl.classList = 'projects projects--are-selected';
+                if (
+                    projectsSelected.length % 2 === 1 ||
+                    projectsSelected.length === 1
+                ) {
+                    setEmptyProjectsNum(1);
+                    return;
+                }
+                setEmptyProjectsNum(0);
+                return;
+            }
+            projectsEl.classList = 'projects';
+            if (projectsSelected.length % 3 === 1) {
+                setEmptyProjectsNum(2);
+                return;
+            } else if (projectsSelected.length % 3 === 2) {
+                setEmptyProjectsNum(1);
+                return;
+            }
+            setEmptyProjectsNum(0);
+        }
+    }
 
     useEffect(() => {
+        addEpmtyProjectsToGrid();
+        window.addEventListener('resize', addEpmtyProjectsToGrid);
+        //projects slide in anim on rendering
         const projectsList = document.querySelectorAll('.project');
         projectsList.forEach((project, index) => {
             project.style.opacity = 0;
@@ -33,10 +68,16 @@ function Projects({ projectsSelected, totalProjects }) {
                 project.style.transition = '.5s ease-in-out';
             }, index * 100 + 500);
         });
+        return () => {
+            window.removeEventListener('resize', addEpmtyProjectsToGrid);
+        };
     });
     return (
         <section className='projects' id='projects'>
-            <ul aria-label={projectsAriaLabel}>{projectsToDisplay}</ul>
+            <ul aria-label={projectsAriaLabel}>
+                {projectsToDisplay}
+                {emptyProjectsDisplay}
+            </ul>
         </section>
     );
 }
@@ -93,12 +134,11 @@ function ProjectNull() {
         e.target.classList.remove('project__null--in-focus');
     }
     return (
-        <li>
+        <li className='project project__null'>
             <a
                 href='https://github.com/k2project'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='project project__null'
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
                 aria-hidden='true'

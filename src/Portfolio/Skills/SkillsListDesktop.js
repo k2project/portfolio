@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import skills from './SkillsList';
 import Button from './../../components/Button/Button';
 
-export default function SkillsListDesktop({ updateSelection }) {
+export default function SkillsListDesktop({ updateSelection, selectionArr }) {
     return (
         <Fragment>
             <section className='skills-desktop__primary'>
@@ -12,12 +12,13 @@ export default function SkillsListDesktop({ updateSelection }) {
                 <ul aria-labelledby='desktop-skills-main'>
                     {skills
                         .filter(skill => skill.featured)
-                        .map(skill => (
-                            <li key={'desktop-' + skill.name}>
+                        .map(({ name }) => (
+                            <li key={'desktop-' + name}>
                                 <Button
                                     data={{
-                                        value: skill.name,
-                                        updateSelection
+                                        name,
+                                        updateSelection,
+                                        selectionArr
                                     }}
                                 />
                             </li>
@@ -31,12 +32,13 @@ export default function SkillsListDesktop({ updateSelection }) {
                 <ul aria-labelledby='desktop-skills-other'>
                     {skills
                         .filter(skill => !skill.featured)
-                        .map(skill => (
-                            <li key={'desktop-' + skill.name}>
+                        .map(({ name }) => (
+                            <li key={'desktop-' + name}>
                                 <Button
                                     data={{
-                                        value: skill.name,
-                                        updateSelection
+                                        name,
+                                        updateSelection,
+                                        selectionArr
                                     }}
                                 />
                             </li>

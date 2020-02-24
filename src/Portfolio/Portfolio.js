@@ -34,15 +34,17 @@ function Portfolio() {
     }
     function handleProjectsDisplayOnResize() {
         //display all projects on a smaller viewport
-        //display only selected projects on a viewport > 1024
-        if (document.documentElement.clientWidth > 1024) {
+        //display only selected projects on a viewport > 768
+        let mq = matchMedia('(max-width: 768px)');
+
+        if (mq.matches) {
+            setProjectsDisplayed(projects);
+        } else {
             if (projectsSelected.length > 0) {
                 setProjectsDisplayed(projectsSelected);
             } else {
                 setProjectsDisplayed(projects);
             }
-        } else {
-            setProjectsDisplayed(projects);
         }
     }
 

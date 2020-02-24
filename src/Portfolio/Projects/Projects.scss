@@ -66,7 +66,7 @@
     //         transition: 0.2s;
     //     }
 }
-.project__null {
+.project__null a {
     background: #eee;
     background-image: linear-gradient(to right, #eee, #ebebeb);
     display: flex;
@@ -104,51 +104,61 @@
     @extend .in-focus;
 }
 @include desktop-sm {
-    .Projects {
-        grid-auto-rows: 22vw;
+    .projects {
+        ul {
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 30vw;
+        }
     }
-    .Project:nth-child(4) {
-        background-size: contain;
+    .project:nth-child(2) {
+        grid-row: 1/3;
+    }
+    .project:nth-child(1) {
+        grid-row: 3;
+    }
+    .projects--are-selected {
+        .project:nth-child(2) {
+            grid-row: 1/2;
+        }
+        .project:nth-child(1) {
+            grid-row: 1;
+        }
     }
 }
 @include tablet {
-    .Projects {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 30vw;
-    }
-    .Project:nth-child(2) {
-        grid-row: 1/3;
-    }
-    .Project:nth-child(1) {
-        grid-row: 3;
-    }
-    .Project:nth-child(4) {
-        background-size: cover;
+    .projects {
+        ul {
+            grid-auto-rows: 35vw;
+        }
     }
 }
 @include mobile {
-    .Projects {
-        grid-auto-rows: 35vw;
+    .projects {
+        ul {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 60vw;
+        }
     }
 
-    .Project_desc {
-        font-size: 1rem;
-        padding: 2rem 5vw;
-        // padding-right: 12%;
+    .project:nth-child(2) {
+        grid-row: 2;
+    }
+    .project:nth-child(1) {
+        grid-row: 1;
+    }
+    .project__desc {
+        padding-right: 20%;
     }
 }
 @include mobile-sm {
-    .Projects {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 60vw;
+    .projects {
+        ul {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 75vw;
+        }
     }
-    .Project_desc {
-        line-height: 1.4;
-    }
-    .Project:nth-child(2) {
-        grid-row: 2;
-    }
-    .Project:nth-child(1) {
-        grid-row: 1;
+    .project__desc {
+        padding-right: 3rem;
+        font-size: 1.1rem;
     }
 }

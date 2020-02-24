@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Button.scss';
 
-export default function Button({ data: { value, updateSelection } }) {
+export default function Button({
+    data: { name, updateSelection, selectionArr }
+}) {
     let [clicked, toggleClickedState] = useState(false);
+    let [active, setActive] = useState('');
 
     function handleClick(e) {
-        updateSelection(value);
+        updateSelection(name);
         e.target.closest('.btn').classList.toggle('btn--is-active');
         toggleClickedState(!clicked);
     }
@@ -16,10 +19,16 @@ export default function Button({ data: { value, updateSelection } }) {
     function handleOnBlur(e) {
         e.target.classList.remove('btn--in-focus');
     }
+    useEffect(() => {
+        //to keep tab on active btns on resize
+        if (selectionArr.includes(name)) {
+            setActive('btn--is-active');
+        }
+    }, [active]);
 
     return (
         <button
-            className='btn'
+            className={'btn ' + active}
             onClick={handleClick}
             onFocus={handleOnFocus}
             onBlur={handleOnBlur}
@@ -30,7 +39,7 @@ export default function Button({ data: { value, updateSelection } }) {
                     <span className='sr-only'>
                         {clicked ? 'Unselect:' : 'Select:'}
                     </span>
-                    {value}
+                    {name}
                     {/* additional aria txt updated dynamically */}
                     <span className='sr-only btn__content-dynamic'></span>
                 </span>
@@ -40,7 +49,7 @@ export default function Button({ data: { value, updateSelection } }) {
             <span className='btn___anim-btm'></span>
             <span className='btn__content-box--animated'>
                 <span className='btn__content' aria-hidden='true'>
-                    {value}
+                    {name}
                 </span>
             </span>
         </button>

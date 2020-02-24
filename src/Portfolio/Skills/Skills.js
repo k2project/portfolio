@@ -136,6 +136,7 @@ export default function Skills({ selectProjectsBySkills }) {
                     {!mobileViewPort && (
                         <SkillsListDesktop
                             updateSelection={updateselectedSkillsArr}
+                            selectionArr={selectedSkillsArr}
                         />
                     )}
                     {mobileViewPort && <SkillsListMobile />}

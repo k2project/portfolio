@@ -66,9 +66,9 @@ const skills = [
     },
     {
         name: 'Responsive Design'
-    },
-    {
-        name: 'Accessibility'
     }
+    //     {
+    //         name: 'Accessibility'
+    //     }
 ];
 export default skills;
