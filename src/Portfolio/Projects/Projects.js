@@ -48,9 +48,21 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
     const projectStyle = {
         backgroundImage: 'url(' + bg + ')'
     };
+    function handleOnFocus(e) {
+        e.target.parentElement.classList.add('project--in-focus');
+    }
+    function handleOnBlur(e) {
+        e.target.parentElement.classList.remove('project--in-focus');
+    }
     return (
         <li className='project' style={projectStyle}>
-            <a href={web} target='_blank' rel='noopener noreferrer'>
+            <a
+                href={web}
+                target='_blank'
+                rel='noopener noreferrer'
+                onFocus={handleOnFocus}
+                onBlur={handleOnBlur}
+            >
                 <span className='sr-only'>{name} (opens in a new tab)</span>
             </a>
             <div className='project__desc'>
@@ -74,6 +86,12 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
     );
 }
 function ProjectNull() {
+    function handleOnFocus(e) {
+        e.target.classList.add('project__null--in-focus');
+    }
+    function handleOnBlur(e) {
+        e.target.classList.remove('project__null--in-focus');
+    }
     return (
         <li>
             <a
@@ -81,6 +99,9 @@ function ProjectNull() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='project project__null'
+                onFocus={handleOnFocus}
+                onBlur={handleOnBlur}
+                aria-hidden='true'
             >
                 <img src={gitHub} alt='gitHub account (opens in a new tab)' />
             </a>
