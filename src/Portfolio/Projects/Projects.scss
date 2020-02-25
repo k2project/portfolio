@@ -40,28 +40,34 @@
     color: #fff;
     font-size: 1.2rem;
     z-index: 1;
+    cursor: pointer;
 }
 .project__name {
     opacity: 0;
     top: 10rem;
     font-size: 1.6rem;
+    transition: 0.25s;
 }
 .project__info {
     opacity: 0;
     top: 5rem;
+    transition: 0.25s;
 }
-.project:hover {
-    .project__desc {
-        opacity: 1;
-        transition: 0.1s;
-    }
+
+.project__desc--on-hover {
+    opacity: 1;
+    //     transition: background-color 0.1s;
+    //styling for hover on stickers
+    background: $color-secondary-light;
+    color: #fff;
     .project__name,
     .project__info {
         opacity: 1;
         top: 0;
-        transition: 0.4s 0.2s ease-in-out;
+        transition: 0.4s 0.25s ease-in-out;
     }
 }
+
 .project__null .project__link {
     background: #eee;
     background-image: linear-gradient(to right, #eee, #ebebeb);

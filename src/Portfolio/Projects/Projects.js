@@ -95,6 +95,14 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
     function handleOnBlur(e) {
         e.target.parentElement.classList.remove('project--in-focus');
     }
+    function handleOnMouseEnter(e) {
+        const desc = e.target.nextElementSibling;
+        desc.classList.add('project__desc--on-hover');
+    }
+    function handleOnMouseLeave(e) {
+        const desc = e.target.nextElementSibling;
+        desc.classList.remove('project__desc--on-hover');
+    }
     return (
         <li className='project' style={projectStyle}>
             <a
@@ -103,6 +111,8 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
                 rel='noopener noreferrer'
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
+                onMouseEnter={handleOnMouseEnter}
+                onMouseLeave={handleOnMouseLeave}
                 className='project__link'
             >
                 <span className='sr-only'>{name} (opens in a new tab)</span>

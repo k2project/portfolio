@@ -45,8 +45,26 @@ export default function Stickers({ git, cml, name }) {
             project.classList.remove('project--out-of-focus');
         }
     }
+    function handleOnMouseEnter(e) {
+        const projectDesc = e.target.closest('.stickers').previousSibling;
+        if (projectDesc) {
+            projectDesc.style.backgroundColor = 'transparent';
+            projectDesc.style.color = 'transparent';
+        }
+    }
+    function handleOnMouseLeave(e) {
+        const projectDesc = e.target.closest('.stickers').previousSibling;
+        if (projectDesc) {
+            projectDesc.style.backgroundColor = '#51cefa';
+            projectDesc.style.color = '#fff';
+        }
+    }
     return (
-        <div className='stickers'>
+        <div
+            className='stickers'
+            onMouseEnter={handleOnMouseEnter}
+            onMouseLeave={handleOnMouseLeave}
+        >
             {git && (
                 <a
                     href={git}

@@ -22,7 +22,8 @@ function App() {
                 </p>
                 <p>
                     While I am improving its accessibility some of the features
-                    might not be available. Please come back later.
+                    might not be available. <br />
+                    Please bear with me and check for updates later.
                 </p>
             </div>
             <SkipToMainContent />
