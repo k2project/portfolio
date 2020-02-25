@@ -1,21 +1,88 @@
 @import './../../App.scss';
 
-.Resume{
+.resume {
     text-align: center;
     min-height: 55rem;
     display: grid;
     align-content: center;
-    padding: 4rem 8rem 0;
-    font-size: 3.6rem;
-    p{
+    padding: 15rem 8rem;
+    h2 {
         font-size: 5rem;
+        font-weight: normal;
     }
 }
-@include mobile-sm{
-    .Resume{
-        padding: 0 4rem;
-        font-size: 3rem;
-        p{
+.resume__link {
+    margin: 4rem auto 2rem;
+    height: 5rem;
+    width: 20rem;
+    overflow: hidden;
+    font-size: 1.2rem;
+    color: $color-black;
+}
+//==================
+//on hover animation
+//==================
+.link__content-box,
+.link__content-box--animated,
+.link__content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+.link__content-box {
+    width: 100%;
+    border: solid 0.1rem $color_black;
+    transition: 0.25s;
+}
+.link__content-box--animated {
+    color: #fff;
+    left: -0.2rem;
+    width: 0%;
+    background: $color_primary;
+    border: solid 0.1rem $color_primary;
+    transition: 0.25s;
+}
+.link__content {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link___anim-top,
+.link___anim-btm {
+    position: absolute;
+    left: 0;
+    width: 1rem;
+    background: $color_primary;
+    height: 0;
+}
+.link___anim-top {
+    top: 50%;
+}
+.link___anim-btm {
+    bottom: 50%;
+}
+.resume__link:hover {
+    .link__content-box--animated {
+        width: 100%;
+        transition: width 0.5s 0.25s ease-out;
+        left: 0;
+    }
+    .link___anim-top,
+    .link___anim-btm {
+        height: 50%;
+        transition: 0.2s;
+    }
+}
+.resume__link:focus {
+    @extend .in-focus;
+}
+@include mobile {
+    .resume {
+        padding: 15rem 5rem;
+        h2 {
             font-size: 4rem;
         }
     }

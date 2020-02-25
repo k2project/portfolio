@@ -3,10 +3,10 @@ const game = {
     name: '#game_On',
     desc: (
         <p>
-            A responsive SPA built with React.js. Online resume based on a
-            vintage game "Break Out". Features: HTML5 Canvas and SVG with touch
-            responsive controllers / 4 levels with 3 randomly generated layouts
-            each. Give it a go and have a ball!
+            A responsive SPA built with React.js. My first online resume built
+            as a "Break Out" game. 4 levels with 3 randomly generated layouts
+            each. Complete a level to unveil my skills. Give it a go and have a
+            ball!
         </p>
     ),
     skills: [
@@ -34,9 +34,9 @@ const rte = {
     ),
     desc: (
         <p>
-            Responsive SPA built with Meteor.j and React.js. End-to-end
-            commercial (cml.) project for a local theatre. Features: dynamically
-            created routes based on a show's name and a customised contact form.{' '}
+            A responsive SPA built with Meteor.js and React.js. End-to-end
+            commercial (cml.) project for an Edinburgh's local theatre. Content
+            managed on a regular bases.
         </p>
     ),
     skills: [
@@ -90,8 +90,8 @@ const calvocoressi = {
     desc: (
         <p>
             A responsive SPA built with React.js. and Node.js, hosted on Heroku.
-            End-to-end commercial (cml.) project. Features customised accordion
-            and contact form build with Nodemailer.
+            End-to-end commercial (cml.) project for a counselling and
+            psychotherapy.
         </p>
     ),
     skills: [
