@@ -30,7 +30,7 @@ import gitHub from './../../media/icons/gitHub.png';
 
 // export default Stickers;
 
-export default function Stickers({ git, cml }) {
+export default function Stickers({ git, cml, name }) {
     function handleOnFocus(e) {
         e.target.classList.add('sticker--in-focus');
         const project = e.target.closest('.project');
@@ -56,11 +56,10 @@ export default function Stickers({ git, cml }) {
                     onBlur={handleOnBlur}
                     classList='sticker sticker__git'
                 >
-                    <img
-                        src={gitHub}
-                        alt='source code  on gitHub (opens in a new tab)'
-                        className='sticker__img'
-                    />
+                    <span className='sr-only'>
+                        source code for {name} (opens gitHub page in a new tab)
+                    </span>
+                    <img src={gitHub} alt='' className='sticker__img' />
                 </a>
             )}
             {cml && <span className='sticker sticker__cml'>cml</span>}

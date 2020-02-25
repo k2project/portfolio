@@ -114,7 +114,7 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
                 <div className='project__info'>{desc}</div>
             </div>
 
-            <Stickers git={git} cml={cml} />
+            <Stickers git={git} cml={cml} name={name} />
         </li>
     );
 }
