@@ -50,10 +50,10 @@ function MainNav() {
                         </li>
                     </ul>
                 </li>
-                <li>
+                {/* <li>
                     {' '}
                     <NavLink to={'/notes'}>notePad</NavLink>
-                </li>
+                </li> */}
                 <li>
                     {' '}
                     <a

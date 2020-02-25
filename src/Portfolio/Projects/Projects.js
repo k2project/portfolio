@@ -103,6 +103,7 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
                 rel='noopener noreferrer'
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
+                className='project__link'
             >
                 <span className='sr-only'>{name} (opens in a new tab)</span>
             </a>
@@ -113,16 +114,7 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
                 <div className='project__info'>{desc}</div>
             </div>
 
-            {/* <div className='project' style={projectStyle}>
-            <div className='Project_desc'>
-                <div className='Project_title'>
-                    <b>{name}</b>
-                </div>
-                <div className='Project_details'>{desc}</div>
-            </div>
-            <LinkNewTab link={{ href: web, cls: 'Project_web fill' }} />
-            <Stickers git={git} cml={cml ? true : null} />
-        </div> */}
+            <Stickers git={git} cml={cml} />
         </li>
     );
 }
@@ -142,6 +134,7 @@ function ProjectNull() {
                 onFocus={handleOnFocus}
                 onBlur={handleOnBlur}
                 aria-hidden='true'
+                className='project__link'
             >
                 <img src={gitHub} alt='gitHub account (opens in a new tab)' />
             </a>

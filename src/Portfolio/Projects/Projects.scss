@@ -9,7 +9,7 @@
 }
 
 .project,
-.project a,
+.project__link,
 .project__desc {
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     opacity: 0;
     top: 5rem;
 }
-.project a {
+.project__link {
     position: absolute;
     z-index: 2;
 }
@@ -61,12 +61,8 @@
         top: 0;
         transition: 0.4s 0.2s ease-in-out;
     }
-    //     .Stickers__cml {
-    //         background: #111;
-    //         transition: 0.2s;
-    //     }
 }
-.project__null a {
+.project__null .project__link {
     background: #eee;
     background-image: linear-gradient(to right, #eee, #ebebeb);
     display: flex;
@@ -95,14 +91,11 @@
         top: 0;
         transition: 0.4s 0.2s ease-in-out;
     }
-    //     .Stickers__cml {
-    //         background: #111;
-    //         transition: 0.2s;
-    //     }
 }
 .project__null--in-focus {
     @extend .in-focus;
 }
+
 @include desktop-sm {
     .projects {
         ul {

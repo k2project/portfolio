@@ -1,6 +1,6 @@
 @import './../../App.scss';
 
-.Stickers{
+.stickers {
     display: grid;
     grid-template-columns: 5rem;
     grid-auto-rows: 5rem;
@@ -9,27 +9,58 @@
     font-weight: bold;
     color: #fff;
     justify-content: end;
-}
-.Stickers.small{
-    grid-template-columns: 4rem;
-    grid-auto-rows: 4rem;
-    font-size: 3rem;
-    line-height: 4rem;
-}
-.Stickers__git{
-    background: #fff;
-    img{
-        width: 5rem;
-        padding: 1rem;
+    z-index: 3;
+    a {
+        background: #fff;
     }
 }
-.Stickers__cml{
+.sticker {
+    display: block;
+}
+.sticker--in-focus {
+    @extend .in-focus;
+}
+.sticker__img {
+    width: 5rem;
+    padding: 0.9rem;
+}
+.sticker__cml {
     background: $color_secondary_light;
+}
+.project--in-focus,
+.project:hover {
+    .sticker__cml {
+        background-color: #111;
+        transition: 0.2s;
+    }
+}
+//=======================
+//  ON FOCUS
+//=======================
+//stickers link on focus
+.project--out-of-focus {
+    filter: grayscale(100%);
+    .stickers a {
+        filter: grayscale(0%);
+    }
+}
+// .Stickers.small{
+//     grid-template-columns: 4rem;
+//     grid-auto-rows: 4rem;
+//     font-size: 3rem;
+//     line-height: 4rem;
+// }
+// .Stickers__git{
+//     background: #fff;
+//     img{
+//         width: 5rem;
+//         padding: 1rem;
+//     }
+// }
 
-}
-.Stickers__featured{
-    background: $color_secondary_light;
-}
-.Stickers__liked{
-    background: $color_primary;
-}
+// .Stickers__featured{
+//     background: $color_secondary_light;
+// }
+// .Stickers__liked{
+//     background: $color_primary;
+// }
