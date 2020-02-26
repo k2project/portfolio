@@ -14,6 +14,14 @@ export default function Button({
         e.target.closest('.btn').classList.toggle('btn--is-active');
         toggleClickedState(!clicked);
     }
+    function onEnterClick(e) {
+        if (e.keyCode === 13) {
+            updateSelection(name);
+            e.target.classList.toggle('btn--is-active');
+            toggleClickedState(!clicked);
+        }
+        return;
+    }
     function handleOnFocus(e) {
         e.target.classList.add('btn--in-focus');
         e.target.closest('.animated-section').scrollIntoView();
@@ -32,6 +40,7 @@ export default function Button({
         <button
             className={'btn ' + active}
             onMouseDown={handleClick}
+            onKeyDown={onEnterClick}
             onFocus={handleOnFocus}
             onBlur={handleOnBlur}
         >

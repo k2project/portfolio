@@ -2,10 +2,11 @@
 .animated-section {
     padding: 18rem 0;
 }
-.skills .animated-section{
-    padding: 16rem 0 14rem
+.skills .animated-section {
+    padding: 16rem 0 14rem;
 }
 .animated-section__heading {
+    opacity: 0;
     padding-left: 13rem;
     position: absolute;
     top: 50%;
@@ -32,7 +33,7 @@
 }
 .animated-section__body {
 }
-@include desktop-sm{
+@include desktop-sm {
     .animated-section {
         // padding: 16rem 0;
     }
