@@ -8,6 +8,8 @@ export default function Button({
     let [active, setActive] = useState('');
 
     function handleClick(e) {
+        //onmousedown e stops focus e
+        e.preventDefault();
         updateSelection(name);
         e.target.closest('.btn').classList.toggle('btn--is-active');
         toggleClickedState(!clicked);
@@ -29,7 +31,7 @@ export default function Button({
     return (
         <button
             className={'btn ' + active}
-            onClick={handleClick}
+            onMouseDown={handleClick}
             onFocus={handleOnFocus}
             onBlur={handleOnBlur}
         >
