@@ -5,7 +5,7 @@
 }
 .about__heading {
     background-color: $color-grey;
-    padding: 17rem 0 15rem;
+    padding: 18rem 0 18rem;
 
     h1 {
         line-height: 1.2;
@@ -23,6 +23,9 @@
 }
 
 @include desktop-sm {
+    .about__heading {
+        // padding: 17rem 0 15rem;
+    }
 }
 @include tablet {
 }

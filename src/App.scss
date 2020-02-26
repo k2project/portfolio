@@ -143,7 +143,7 @@ a:focus {
     text-decoration-line: underline;
 }
 .alert {
-    padding: 4rem 5rem;
+    padding: 4rem 10rem;
     text-align: left;
     font-size: 1.4rem;
 }
@@ -167,6 +167,9 @@ a:focus {
 @include tablet {
     .p_larger {
         font-size: 2.5rem;
+    }
+    .alert {
+        padding: 4rem 4rem;
     }
 }
 @include mobile {

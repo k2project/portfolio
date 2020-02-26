@@ -1,6 +1,9 @@
 @import '../../App.scss';
 .animated-section {
-    padding: 14rem 0;
+    padding: 18rem 0;
+}
+.skills .animated-section{
+    padding: 16rem 0 14rem
 }
 .animated-section__heading {
     padding-left: 13rem;
@@ -28,6 +31,11 @@
     left: 0;
 }
 .animated-section__body {
+}
+@include desktop-sm{
+    .animated-section {
+        // padding: 16rem 0;
+    }
 }
 @include mobile {
     .animated-section__heading {
