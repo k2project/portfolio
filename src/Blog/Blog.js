@@ -24,9 +24,9 @@ function Blog() {
             <div id='main-content'>
                 {posts.length === 0 && <BlogNoPosts />}
                 {posts.length > 0 && <BlogPostsList />}
-                {posts.length > 0 && (
+                {/* {posts.length > 0 && (
                     <Tags setPostsSelected={setPostsSelected} />
-                )}
+                )} */}
                 {postsSelected && (
                     <BlogPostSelected postsSelected={postsSelected} />
                 )}

@@ -30,8 +30,8 @@ function App() {
             {/* <AccessibilitySettings /> */}
             <Switch>
                 <Route exact path={`/`} component={Portfolio} />
-                {/* <Route exact path={`/blog`} component={Blog} /> */}
-                <Route exact path={`/blog/:post`} component={Post} />
+                <Route exact path={`/notes`} component={Blog} />
+                <Route exact path={`/notes/:post`} component={Post} />
                 <Route exact path={`/checklist`} component={Checklist} />
                 <Redirect from='*' to='/' />
             </Switch>
