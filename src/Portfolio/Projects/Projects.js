@@ -84,7 +84,7 @@ function Projects({ projectsSelected, totalProjects }) {
 
 export default Projects;
 
-function Project({ project: { name, desc, img, web, git, cml } }) {
+function Project({ project: { name, desc, img, web, git, cml, skills } }) {
     const bg = require('./../../media/imgs/' + img);
     const projectStyle = {
         backgroundImage: 'url(' + bg + ')'
@@ -126,6 +126,7 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
                     <span className='project__arr' aria-hidden='true'>
                         &#8594;
                     </span>
+                    <ul className="project__skills-list" aria-label={`skills utilised within the ${name} project`}>{skills.map((skill,i)=><li key={`skillList-${name}-${i}`}><span aria-hidden="true">&#10004;</span> {skill}</li>)}</ul>
                 </div>
             </div>
 

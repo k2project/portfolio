@@ -72,7 +72,7 @@ export default function Stickers({ git, cml, name }) {
                     rel='noopener noreferrer'
                     onFocus={handleOnFocus}
                     onBlur={handleOnBlur}
-                    classList='sticker sticker__git'
+                    className='sticker sticker__git'
                 >
                     <span className='sr-only'>
                         source code for {name} (opens gitHub page in a new tab)
