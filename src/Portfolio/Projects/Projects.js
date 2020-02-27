@@ -123,9 +123,7 @@ function Project({ project: { name, desc, img, web, git, cml, skills } }) {
                 </div>
                 <div className='project__info'>
                     {desc}
-                    <span className='project__arr' aria-hidden='true'>
-                        &#8594;
-                    </span>
+                
                     <ul className="project__skills-list" aria-label={`skills utilised within the ${name} project`}>{skills.map((skill,i)=><li key={`skillList-${name}-${i}`}><span aria-hidden="true">&#10004;</span> {skill}</li>)}</ul>
                 </div>
             </div>
