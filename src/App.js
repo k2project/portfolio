@@ -12,10 +12,12 @@ import Portfolio from './Portfolio/Portfolio';
 import Blog from './Blog/Blog';
 import Post from './Blog/Post/Post';
 import Checklist from './Checklist/Checklist';
+import Cookies from './components/Cookies/Cookies';
 
 function App() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
+            {/* <Cookies /> */}
             <div className='alert alert--red'>
                 <p>
                     <b>THIS WEBSITE IS CURRENTLY UNDER RECONSTRUCTION.</b>{' '}

@@ -10,13 +10,13 @@ export default function Button({
     function handleClick(e) {
         //onmousedown e stops focus e
         e.preventDefault();
-        updateSelection(name);
+        if (updateSelection) updateSelection(name);
         e.target.closest('.btn').classList.toggle('btn--is-active');
         toggleClickedState(!clicked);
     }
     function onEnterClick(e) {
         if (e.keyCode === 13) {
-            updateSelection(name);
+            if (updateSelection) updateSelection(name);
             e.target.classList.toggle('btn--is-active');
             toggleClickedState(!clicked);
         }
@@ -24,14 +24,15 @@ export default function Button({
     }
     function handleOnFocus(e) {
         e.target.classList.add('btn--in-focus');
-        e.target.closest('.animated-section').scrollIntoView();
+        const animSection = e.target.closest('.animated-section');
+        if (animSection) animSection.scrollIntoView();
     }
     function handleOnBlur(e) {
         e.target.classList.remove('btn--in-focus');
     }
     useEffect(() => {
         //to keep tab on active btns on resize
-        if (selectionArr.includes(name)) {
+        if (selectionArr && selectionArr.includes(name)) {
             setActive('btn--is-active');
         }
     }, [active]);

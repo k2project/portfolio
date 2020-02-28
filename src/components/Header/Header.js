@@ -34,17 +34,17 @@ function MainNav() {
                     >
                         <li>
                             {' '}
-                            <a href='#skills' onClick={scrollToHash}>
+                            <a href='#skills' onMouseDown={scrollToHash}>
                                 skills
                             </a>
                         </li>
                         <li>
-                            <a href='#projects' onClick={scrollToHash}>
+                            <a href='#projects' onMouseDown={scrollToHash}>
                                 projects
                             </a>
                         </li>
                         <li>
-                            <a href='#resume' onClick={scrollToHash}>
+                            <a href='#resume' onMouseDown={scrollToHash}>
                                 <abbr title='curriculum vitae'>CV</abbr>
                             </a>
                         </li>
