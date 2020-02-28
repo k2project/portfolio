@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Skills.scss';
-import skills from './SkillsList';
+
 import SkillsListMobile from './SkillsListMobile';
 import SkillsListDesktop from './SkillsListDesktop';
 import AnimatedSection from '../../components/AnimatedSection/AnimatedSection';

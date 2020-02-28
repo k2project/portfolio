@@ -71,7 +71,7 @@ function getIdFromPathname(pathname) {
 export function getPostLink(post) {
     const { id, title } = post;
     const titleURL = getTitleURL(title);
-    return '/blog/' + titleURL + '-' + id;
+    return '/notes/' + titleURL + '-' + id;
 }
 export function getPostViaURL(location) {
     const id = getIdFromPathname(location.pathname);

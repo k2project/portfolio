@@ -1,6 +1,5 @@
 import React from 'react';
 import './Resume.scss';
-import Button from './../../components/Button/Button';
 import KrisKopczynskiResume from './../../media/KrisKopczynskiResume.pdf';
 
 function Resume() {

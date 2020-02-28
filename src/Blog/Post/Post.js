@@ -18,7 +18,7 @@ function Post() {
     const post = getPostViaURL(window.location);
     let history = useHistory();
     if (!post) {
-        history.push('/blog');
+        history.push('/notes');
         return null;
     }
     // post exist (id) but link is wrong
@@ -28,7 +28,7 @@ function Post() {
         window.location.pathname !== '/portfolio' + getPostLink(post) &&
         window.location.pathname !== getPostLink(post)
     ) {
-        history.push('/blog');
+        history.push('/notes');
         return null;
     }
     //:og meta

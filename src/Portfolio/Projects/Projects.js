@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.scss';
 import gitHub from './../../media/icons/gitHub.png';
-import LinkNewTab from './../../components/LinkNewTab';
 import Stickers from './../../components/Stickers/Stickers';
 
 function Projects({ projectsSelected, totalProjects }) {
@@ -13,6 +12,7 @@ function Projects({ projectsSelected, totalProjects }) {
         if (project !== null) {
             return <Project project={project} key={i + '_' + project.name} />;
         }
+        return null;
     });
     //adding empty project display to make up the grid
     const [emptyProjects, setEmptyProjectsNum] = useState(0);
@@ -84,7 +84,7 @@ function Projects({ projectsSelected, totalProjects }) {
 
 export default Projects;
 
-function Project({ project: { name, desc, img, web, git, cml } }) {
+function Project({ project: { name, desc, img, web, git, cml, skills } }) {
     const bg = require('./../../media/imgs/' + img);
     const projectStyle = {
         backgroundImage: 'url(' + bg + ')'
@@ -123,9 +123,17 @@ function Project({ project: { name, desc, img, web, git, cml } }) {
                 </div>
                 <div className='project__info'>
                     {desc}
-                    <span className='project__arr' aria-hidden='true'>
-                        &#8594;
-                    </span>
+
+                    <ul
+                        className='project__skills-list'
+                        aria-label={`skills utilised within the ${name} project`}
+                    >
+                        {skills.map((skill, i) => (
+                            <li key={`skillList-${name}-${i}`}>
+                                <span aria-hidden='true'>&#10004;</span> {skill}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
 

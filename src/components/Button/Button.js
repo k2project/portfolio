@@ -35,7 +35,7 @@ export default function Button({
         if (selectionArr && selectionArr.includes(name)) {
             setActive('btn--is-active');
         }
-    }, [active]);
+    }, [active, name, selectionArr]);
 
     return (
         <button
