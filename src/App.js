@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Route,
     Switch,
-    Redirect
+    Redirect,
 } from 'react-router-dom';
 
 import SkipToMainContent from './components/SkipToMainContent';
@@ -18,16 +18,16 @@ function App() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
             {/* <Cookies /> */}
-            <div className='alert alert--red'>
+            {/* <div className='alert alert--red'>
                 <p>
-                    s<b>THIS WEBSITE IS CURRENTLY UNDER RECONSTRUCTION.</b>{' '}
+                    <b>THIS WEBSITE IS CURRENTLY UNDER RECONSTRUCTION.</b>{' '}
                 </p>
                 <p>
                     While I am improving its accessibility some of the features
                     might not be available. <br />
                     Please bear with me and check for updates later.
                 </p>
-            </div>
+            </div> */}
             <SkipToMainContent />
             {/* <AccessibilitySettings /> */}
             <Switch>

@@ -9,6 +9,7 @@ import post8 from './post8';
 import accessibility_links from './accessibility_links'; //id 9
 import accessibility_principles from './accessibility_principles'; //id 11
 import accessibility_semantic from './accessibility_semantic'; //id 12
+import security from './security'; //id 13
 
 // &#123; &#125; //{}
 //&lsaquo; &rsaquo; // <>
@@ -35,6 +36,7 @@ let posts = [
     post7, //bootcamp
     accessibility_principles,
     accessibility_semantic,
+    security,
     post1,
     post2,
     post3,
@@ -42,11 +44,11 @@ let posts = [
     post5,
     post6,
     post8,
-    accessibility_links
+    accessibility_links,
 ];
 
-export const postFeatured = posts.filter(post => post.featured);
-posts = posts.sort(function(a, b) {
+export const postFeatured = posts.filter((post) => post.featured);
+posts = posts.sort(function (a, b) {
     return new Date(b.date) - new Date(a.date);
 });
 
@@ -55,18 +57,14 @@ export default posts;
 function getTitleURL(title) {
     return title
         .split(' ')
-        .map(t => t.replace(/[^\w\s-]/gi, ''))
-        .filter(t => t !== '')
+        .map((t) => t.replace(/[^\w\s-]/gi, ''))
+        .filter((t) => t !== '')
         .join('-')
         .toLowerCase();
 }
 
 function getIdFromPathname(pathname) {
-    return pathname
-        .split('/')
-        .pop()
-        .split('-')
-        .pop();
+    return pathname.split('/').pop().split('-').pop();
 }
 export function getPostLink(post) {
     const { id, title } = post;
@@ -75,7 +73,7 @@ export function getPostLink(post) {
 }
 export function getPostViaURL(location) {
     const id = getIdFromPathname(location.pathname);
-    const post = posts.filter(post => post.id === id)[0];
+    const post = posts.filter((post) => post.id === id)[0];
     if (post) {
         return post;
     }
@@ -95,7 +93,7 @@ export function formatDate(date) {
         'September',
         'October',
         'Novemebr',
-        'December'
+        'December',
     ];
     return (
         months[_date.getMonth()] +
@@ -108,9 +106,9 @@ export function formatDate(date) {
 
 export function getRelatedPosts(post) {
     const relatedPosts = [];
-    posts.forEach(p => {
+    posts.forEach((p) => {
         if (
-            post.tags.some(val => p.tags.includes(val)) &&
+            post.tags.some((val) => p.tags.includes(val)) &&
             !relatedPosts.includes(p) &&
             p.id !== post.id
         ) {
@@ -121,7 +119,7 @@ export function getRelatedPosts(post) {
         const random = getRandom(relatedPosts.length - 1);
         return relatedPosts[random];
     } else {
-        const allPostsButDisplayed = posts.filter(p => p.id !== post.id);
+        const allPostsButDisplayed = posts.filter((p) => p.id !== post.id);
         const random = getRandom(allPostsButDisplayed.length - 1);
         return allPostsButDisplayed[random];
     }
@@ -139,9 +137,9 @@ function getRandom(min, max) {
 export function updateLikedPosts() {
     let saved = JSON.parse(localStorage.getItem('k2BlogLikes'));
     const ids = [];
-    posts.forEach(post => ids.push(+post.id));
+    posts.forEach((post) => ids.push(+post.id));
     if (saved && saved.length > 0) {
-        saved.forEach(el => {
+        saved.forEach((el) => {
             if (!ids.includes(+el)) {
                 saved.splice(saved.indexOf(+el), 1);
             }
