@@ -36,7 +36,7 @@ const rte = {
         <p>
             A responsive SPA built with Meteor.js and React.js. End-to-end
             commercial (cml.) project for an Edinburgh's local theatre. Content
-            managed on a regular bases.
+            managed on regular bases.
         </p>
     ),
     skills: [
@@ -64,7 +64,7 @@ const grant = {
     ),
     desc: (
         <p>
-            A responsive SPA built with React.js. This project featurs all
+            A responsive SPA built with React.js. This project features all
             businesses of a local entrepreneur. End-to-end commercial (cml.)
             project delivered with Agile methodology. Features: multiple
             reusable swipeable carousels and HTML5 Video.
@@ -90,8 +90,8 @@ const calvocoressi = {
     desc: (
         <p>
             A responsive SPA built with React.js. and Node.js, hosted on Heroku.
-            End-to-end commercial (cml.) project for a counselling and
-            psychotherapy.
+            End-to-end commercial (cml.) project for counselling and
+            psychotherapy business.
         </p>
     ),
     skills: [
@@ -121,9 +121,9 @@ const mcBride = {
     desc: (
         <p>
             A responsive SPA built with React.js for an international music
-            director. End-to-end commercial (cml.) project based solely on the
-            client's design. Marc's website features HTML5 Video with fully
-            customised controllers.
+            director. End-to-end commercial (cml.), accessibility compliant
+            project. Marc's website features HTML5 Video with fully customised
+            controllers.
         </p>
     ),
     skills: [
@@ -134,6 +134,7 @@ const mcBride = {
         'GitHub',
         'CSS Grid/Flexbox',
         'Responsive Design',
+        'Accessibility',
     ],
     img: 'mcBride_1.png',
     web: 'http://www.marcmcbride.co.uk/',
@@ -145,8 +146,7 @@ const amb = {
     desc: (
         <p>
             A responsive SPA built with React.js for a Scottish businessman.
-            End-to-end commercial (cml.) project based solely on the client's
-            design.
+            End-to-end commercial (cml.), SEO compliant project.
         </p>
     ),
     skills: [
@@ -190,8 +190,8 @@ const donutChart = {
     desc: (
         <p>
             An interactive and animated chart build with React and SVG. It's a
-            donut chart where you decide on how many slice it's made of with 4
-            different initro animations.
+            doughnut chart where you decide on how many slices it's made of. 4
+            different animations.
         </p>
     ),
     skills: [
@@ -207,11 +207,11 @@ const donutChart = {
     git: 'https://github.com/k2project/donut_chart',
 };
 const cards = {
-    name: ' Marvel Memory Game',
+    name: ' Multilevel Memory Game',
     desc: (
         <p>
-            A React based memory game inspired by my nephew - a huge fan of
-            Marvel comics.{' '}
+            A React-based memory game inspired by my nephew - a huge fan of
+            Marvel comics.
         </p>
     ),
     skills: [
