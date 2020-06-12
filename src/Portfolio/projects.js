@@ -19,11 +19,11 @@ const game = {
         'SVG',
         'Canvas',
         'CSS Grid/Flexbox',
-        'Responsive Design'
+        'Responsive Design',
     ],
     img: 'gameOn.gif',
     web: 'https://k2project.github.io/game_On/',
-    git: 'https://github.com/k2project/game_On'
+    git: 'https://github.com/k2project/game_On',
 };
 const rte = {
     name: (
@@ -48,12 +48,12 @@ const rte = {
         'Meteor.js',
         'Sass',
         'CSS Grid/Flexbox',
-        'Responsive Design'
+        'Responsive Design',
     ],
     img: 'rte_1.png',
     web: 'http://www.rosetheatreedinburgh.com',
     git: null,
-    cml: true
+    cml: true,
 };
 const grant = {
     name: (
@@ -78,12 +78,12 @@ const grant = {
         'GitHub',
         'Sass',
         'CSS Grid/Flexbox',
-        'Responsive Design'
+        'Responsive Design',
     ],
     img: 'grant_1.png',
     web: 'http://www.murraygrantofficial.com/',
     git: 'https://github.com/k2project/mg_official',
-    cml: true
+    cml: true,
 };
 const calvocoressi = {
     name: 'Nujoji Calvocoressi Counselling',
@@ -104,12 +104,12 @@ const calvocoressi = {
         'Heroku',
         'Sass',
         'CSS Grid/Flexbox',
-        'Responsive Design'
+        'Responsive Design',
     ],
     img: 'calvocoressi_1.png',
     web: 'http://www.calvocoressi.com/',
     git: 'https://github.com/k2project/nt-mern',
-    cml: true
+    cml: true,
 };
 const mcBride = {
     name: (
@@ -133,12 +133,12 @@ const mcBride = {
         'React',
         'GitHub',
         'CSS Grid/Flexbox',
-        'Responsive Design'
+        'Responsive Design',
     ],
     img: 'mcBride_1.png',
     web: 'http://www.marcmcbride.co.uk/',
     git: 'https://github.com/k2project/marc_mcBride',
-    cml: true
+    cml: true,
 };
 const amb = {
     name: ' AMB Collaborative',
@@ -156,12 +156,12 @@ const amb = {
         'React',
         'GitHub',
         'CSS Grid/Flexbox',
-        'Responsive Design'
+        'Responsive Design',
     ],
     img: 'amb_1.png',
     web: 'http://www.ambcollaborative.com/',
     git: 'https://github.com/k2project/fred_mcBride',
-    cml: true
+    cml: true,
 };
 const spm = {
     name: ' SPM Advisors',
@@ -183,7 +183,7 @@ const spm = {
     img: 'spm_1.png',
     web: 'http://www.spm-advisors.com/',
     git: null,
-    cml: true
+    cml: true,
 };
 const donutChart = {
     name: ' SVG Animated Chart',
@@ -200,11 +200,11 @@ const donutChart = {
         'JavaScript',
         'React',
         'CSS Grid/Flexbox',
-        'GitHub'
+        'GitHub',
     ],
     img: 'donutChart.gif',
     web: 'https://k2project.github.io/donut_chart/',
-    git: 'https://github.com/k2project/donut_chart'
+    git: 'https://github.com/k2project/donut_chart',
 };
 const cards = {
     name: ' Marvel Memory Game',
@@ -220,22 +220,50 @@ const cards = {
         'JavaScript',
         'React',
         'CSS Grid/Flexbox',
-        'GitHub'
+        'GitHub',
     ],
     img: 'cards.gif',
     web: 'https://k2project.github.io/cards/',
-    git: 'https://github.com/k2project/cards'
+    git: 'https://github.com/k2project/cards',
 };
-// 'CSS3', 'HTML5', 'JavaScript', 'React','jQuery','Node.js', 'Meteor.js', 'GitHub', 'Heroku','Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design',
+const invoice = {
+    name: ' PDF Invoice Generator',
+    desc: (
+        <p>
+            Full-stack MERN application with (back-end generated cookie) user
+            authentication for creating and storing pdf-formatted invoices.
+            Takes advantage of well developed RESTfull API and Redux for the
+            state management. Features custom-built window prompt that monitors
+            unsaved changes.
+        </p>
+    ),
+    skills: [
+        'CSS3',
+        'HTML5',
+        'MERN',
+        'Redux',
+        'User Authentication',
+        'Accessibility',
+        'CSS Grid/Flexbox',
+        'Sass',
+        'GitHub',
+        'Heroku',
+    ],
+    img: 'invoice.png',
+    web: 'https://invoice-pdf-generator.herokuapp.com/',
+    git: 'https://github.com/k2project/invoice-with-session',
+};
+// 'CSS3', 'HTML5', 'JavaScript', 'React','jQuery','Node.js', 'Meteor.js', 'GitHub', 'Heroku','Sass', 'SVG', 'Canvas', 'CSS Grid/Flexbox', 'Responsive Design','MERN',
 const projects = [
     grant,
     donutChart,
-    cards,
-    game,
+    //     spm,
     rte,
+    invoice,
+    cards,
     calvocoressi,
-    amb,
     mcBride,
-    spm
+    game,
+    amb,
 ];
 export default projects;

@@ -13,60 +13,54 @@ const skills = [
     {
         name: 'CSS3',
         img: css3Icon,
-        featured: true
+        featured: true,
     },
     {
         name: 'HTML5',
         img: html5Icon,
-        featured: true
+        featured: true,
     },
     {
         name: 'JavaScript',
         img: jsIcon,
-        featured: true
+        featured: true,
     },
     {
         name: 'React',
         img: reactIcon,
-        featured: true
+        featured: true,
+    },
+    {
+        name: 'Redux',
+    },
+    {
+        name: 'Node.js',
+        img: nodeJs,
+    },
+    {
+        name: 'MERN',
     },
     {
         name: 'Meteor.js',
-        img: meteor
-    },
-    {
-        name: 'Sass',
-        img: sass
-    },
-    {
-        name: 'jQuery',
-        img: jQuery
+        img: meteor,
     },
 
     {
-        name: 'Node.js',
-        img: nodeJs
+        name: 'Sass',
+        img: sass,
+    },
+
+    {
+        name: 'Responsive Design',
     },
     {
         name: 'GitHub',
-        img: gitHub
+        img: gitHub,
     },
     {
         name: 'Heroku',
-        img: heroku
+        img: heroku,
     },
-    {
-        name: 'SVG'
-    },
-    {
-        name: 'Canvas'
-    },
-    {
-        name: 'CSS Grid/Flexbox'
-    },
-    {
-        name: 'Responsive Design'
-    }
     //     {
     //         name: 'Accessibility'
     //     }
