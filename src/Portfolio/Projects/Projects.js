@@ -78,6 +78,11 @@ function Projects({ projectsSelected, totalProjects }) {
                 {projectsToDisplay}
                 {emptyProjectsDisplay}
             </ul>
+            {/* <p>
+                *cml- delivering end-to-end responsive, cross-browser
+                compatible, SEO friendly and accessibility compliant websites
+                commercially since 2018.
+            </p> */}
         </section>
     );
 }
@@ -87,7 +92,7 @@ export default Projects;
 function Project({ project: { name, desc, img, web, git, cml, skills } }) {
     const bg = require('./../../media/imgs/' + img);
     const projectStyle = {
-        backgroundImage: 'url(' + bg + ')'
+        backgroundImage: 'url(' + bg + ')',
     };
     function handleOnFocus(e) {
         e.target.parentElement.classList.add('project--in-focus');

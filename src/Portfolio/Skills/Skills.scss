@@ -6,6 +6,10 @@
     li {
         display: inline;
     }
+    p {
+        font-size: 1.3rem;
+        top: 9rem;
+    }
 }
 
 .skills-mob__primary {
@@ -35,7 +39,6 @@
 @include desktop-sm {
 }
 @include tablet {
-
 }
 @include mobile {
     .skills {
@@ -43,10 +46,8 @@
             display: none;
         }
     }
-
 }
 @include mobile-sm {
-
     .skills-mob__primary ul,
     .skills-mob__secondary ul {
         flex-wrap: wrap;

@@ -32,11 +32,13 @@ function About() {
                         </p>
                         <p>
                             I take proud in being a self-taught developer. I
-                            enjoy turning complex problems into simple,
-                            beautiful and intuitive applications. Currently
-                            learning about Web Accessibility to be able to
-                            provide a better experience to every user!
+                            deliver responsive, cross-browser compatible and SEO
+                            compliant high-quality websites. Currently learning
+                            about Web Accessibility for better EVERY user
+                            experience!
                         </p>
+                        {/* I enjoy turning complex problems into simple,
+                                  beautiful and intuitive applications.  */}
                         <p>
                             <b>On the lookout for a team.</b> A team that I can
                             learn from, grow with and contribute to its success.{' '}

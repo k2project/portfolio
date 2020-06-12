@@ -83,7 +83,7 @@ export default function Skills({ selectProjectsBySkills }) {
             setSelectedSkillsArr([...selectedSkillsArr, skill]);
         } else {
             //remove skill from the list
-            setSelectedSkillsArr(selectedSkillsArr.filter(s => s !== skill));
+            setSelectedSkillsArr(selectedSkillsArr.filter((s) => s !== skill));
         }
         return;
     }
@@ -91,7 +91,7 @@ export default function Skills({ selectProjectsBySkills }) {
         const btnsDynamicAria = document.querySelectorAll(
             '.skills .btn__content-dynamic'
         );
-        Array.from(btnsDynamicAria).forEach(aria => {
+        Array.from(btnsDynamicAria).forEach((aria) => {
             let text = '. Currently selected items: ';
             aria.textContent =
                 arr.length > 0
