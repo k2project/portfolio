@@ -32,10 +32,10 @@ function About() {
                         </p>
                         <p>
                             I take proud in being a self-taught developer. I
-                            deliver responsive, cross-browser compatible and SEO
-                            compliant high-quality websites. Currently learning
-                            about Web Accessibility for better EVERY user
-                            experience!
+                            deliver responsive, cross-browser compatible, SEO
+                            compliant, and engaging websites. Currently
+                            acquiring Web Accessibility because EVERY user
+                            experience matters!
                         </p>
                         {/* I enjoy turning complex problems into simple,
                                   beautiful and intuitive applications.  */}
