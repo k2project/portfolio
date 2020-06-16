@@ -10,7 +10,7 @@ It aslo serves as an online note pad/blog.
 
 # Screenshot/demo
 
-![Screenshot](/media/demo.png)
+![Screenshot](/src/media/demo.png)
 
 # Tech/frameworks used
 
