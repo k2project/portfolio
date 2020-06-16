@@ -4,8 +4,13 @@ My current and up to date online portfolio and personal note organiser.
 
 # Motivation
 
-I have built this project as a showcase of my relevant skills and projects. 
+I have built this project as a showcase of my relevant skills and projects. You can search the projects by the skills utilised to develop it. 
+
 It aslo serves as an online note pad/blog.
+
+# Screenshot/demo
+
+![Screenshot](/media/demo.png)
 
 # Tech/frameworks used
 
