@@ -1,11 +1,11 @@
 # Online Portfolio.
 
-My current and up to date onlone portfolio and personal note organiser.
+My current and up to date online portfolio and personal note organiser.
 
 # Motivation
 
-I have built this project to as a showcase of my relevant skills and projects. 
-It aslo serves as an online note pad.
+I have built this project as a showcase of my relevant skills and projects. 
+It aslo serves as an online note pad/blog.
 
 # Tech/frameworks used
 
