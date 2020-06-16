@@ -2,25 +2,25 @@
 
 My current and up to date online portfolio and personal note organiser.
 
-# Motivation
+## Motivation
 
 I have built this project as a showcase of my relevant skills and projects. You can search the projects by the skills utilised to develop it. 
 
 It aslo serves as an online note pad/blog.
 
-# Screenshot/demo
+## Screenshot/demo
 
 ![Screenshot](/src/media/demo.png)
 
-# Tech/frameworks used
+## Tech/frameworks used
 
 - React
 
-# Demo 
+## Demo 
 
 Hosted with [Github Pages](https://k2project.github.io/portfolio/).
 
-# Available Scripts
+## Available Scripts
 
 This project was bootstrapped with Create React App.
 
