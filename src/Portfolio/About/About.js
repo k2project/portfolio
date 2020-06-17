@@ -33,8 +33,9 @@ function About() {
                         <p>
                             I take proud in being a self-taught developer. I
                             deliver responsive, cross-browser compatible, SEO
-                            compliant websites. I enjoy turning complex problems
-                            into engaging and intuitive applications.
+                            compliant, and engaging websites. Currently
+                            acquiring Web Accessibility because EVERY user
+                            experience matters!
                         </p>
                         <p>
                             <b>On the lookout for a team.</b> A team that I can
