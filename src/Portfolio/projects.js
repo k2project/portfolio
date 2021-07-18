@@ -86,7 +86,7 @@ const grant = {
     cml: true,
 };
 const calvocoressi = {
-    name: 'Nujoji Calvocoressi Counselling',
+    name: 'Nujoji Calvocoressi Psychotherapy & Counselling',
     desc: (
         <p>
             A responsive SPA built with React.js. and Node.js, hosted on Heroku.
